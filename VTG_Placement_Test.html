@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VTG English Center — Placement Test</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap');
+
+  :root {
+    --forest: #2C4A3E;
+    --terra: #C1633D;
+    --beige: #EDE6D6;
+    --green-light: #3D6B5A;
+    --green-pale: #E8F0EC;
+    --terra-light: #F5E0D5;
+    --white: #FFFFFF;
+    --gray-50: #F9FAFB;
+    --gray-100: #F3F4F6;
+    --gray-200: #E5E7EB;
+    --gray-400: #9CA3AF;
+    --gray-600: #4B5563;
+    --gray-800: #1F2937;
+    --correct: #16A34A;
+    --wrong: #DC2626;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--beige);
+    color: var(--gray-800);
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--forest);
+    color: var(--white);
+    padding: 28px 24px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header .brand {
+    font-family: 'Source Serif 4', serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 6px;
+  }
+  .header h1 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .header .sub {
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  /* TIMER BAR */
+  .timer-bar {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 8px;
+    z-index: 100;
+  }
+  .timer-bar .progress-wrap {
+    flex: 1;
+    height: 6px;
+    background: var(--gray-200);
+    border-radius: 3px;
+    margin-right: 16px;
+    overflow: hidden;
+  }
+  .timer-bar .progress-fill {
+    height: 100%;
+    background: var(--forest);
+    border-radius: 3px;
+    transition: width 0.3s;
+  }
+  .timer-bar .timer-text {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--forest);
+    white-space: nowrap;
+    min-width: 56px;
+    text-align: right;
+  }
+  .timer-bar .timer-text.warning { color: var(--terra); }
+  .timer-bar .timer-text.danger { color: var(--wrong); }
+
+  /* SCREENS */
+  .screen { display: none; }
+  .screen.active { display: block; }
+
+  /* INTRO SCREEN */
+  .intro-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .intro-card h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 20px;
+    color: var(--forest);
+    margin-bottom: 16px;
+  }
+  .intro-card p {
+    font-size: 14px;
+    color: var(--gray-600);
+    margin-bottom: 12px;
+  }
+  .intro-card .cefr-table {
+    margin: 16px auto;
+    border-collapse: collapse;
+    font-size: 13px;
+    width: 100%;
+    max-width: 360px;
+  }
+  .cefr-table th {
+    background: var(--forest);
+    color: var(--white);
+    padding: 8px 12px;
+    text-align: left;
+  }
+  .cefr-table td {
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .cefr-table tr:nth-child(even) td { background: var(--gray-50); }
+
+  .form-group {
+    margin: 20px 0 12px;
+    text-align: left;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--forest);
+    margin-bottom: 4px;
+  }
+  .form-group input, .form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s;
+  }
+  .form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: var(--forest);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-primary {
+    background: var(--forest);
+    color: var(--white);
+  }
+  .btn-primary:hover { background: var(--green-light); }
+  .btn-primary:disabled {
+    background: var(--gray-400);
+    cursor: not-allowed;
+  }
+  .btn-terra {
+    background: var(--terra);
+    color: var(--white);
+  }
+  .btn-terra:hover { opacity: 0.9; }
+
+  /* QUESTION CARD */
+  .part-label {
+    font-family: 'Source Serif 4', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--terra);
+    margin-bottom: 4px;
+  }
+  .q-counter {
+    font-size: 13px;
+    color: var(--gray-400);
+    margin-bottom: 12px;
+  }
+  .q-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .q-card .q-number {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--forest);
+    margin-bottom: 8px;
+  }
+  .q-card .q-stem {
+    font-size: 15px;
+    color: var(--gray-800);
+    margin-bottom: 14px;
+    line-height: 1.7;
+  }
+
+  /* Notice boxes for Part 1 & 3 */
+  .notice-box {
+    display: inline-block;
+    border: 2px solid var(--gray-800);
+    border-radius: 6px;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    background: var(--gray-50);
+    max-width: 320px;
+  }
+
+  /* Options */
+  .q-options { list-style: none; }
+  .q-options li {
+    margin-bottom: 8px;
+  }
+  .q-options label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 14px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .q-options label:hover {
+    border-color: var(--forest);
+    background: var(--green-pale);
+  }
+  .q-options input[type="radio"] {
+    margin-top: 3px;
+    accent-color: var(--forest);
+    flex-shrink: 0;
+  }
+  .q-options label.selected {
+    border-color: var(--forest);
+    background: var(--green-pale);
+  }
+
+  /* Reading passage */
+  .reading-passage {
+    background: var(--gray-50);
+    border-left: 3px solid var(--forest);
+    padding: 16px 18px;
+    margin-bottom: 20px;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--gray-600);
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .reading-passage p { margin-bottom: 10px; }
+  .reading-passage::-webkit-scrollbar { width: 4px; }
+  .reading-passage::-webkit-scrollbar-thumb { background: var(--gray-400); border-radius: 2px; }
+
+  .passage-toggle {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--forest);
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 12px;
+    text-decoration: underline;
+  }
+
+  /* NAV */
+  .q-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .q-nav .btn { padding: 10px 24px; font-size: 14px; }
+
+  /* SUBMIT SCREEN */
+  .submit-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .submit-card h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 22px;
+    color: var(--forest);
+    margin-bottom: 12px;
+  }
+
+  /* RESULT SCREEN */
+  .result-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    margin-bottom: 16px;
+  }
+  .result-card h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 24px;
+    color: var(--forest);
+    margin-bottom: 8px;
+  }
+  .score-big {
+    font-family: 'Source Serif 4', serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--forest);
+  }
+  .score-total {
+    font-size: 18px;
+    color: var(--gray-400);
+    margin-bottom: 8px;
+  }
+  .cefr-badge {
+    display: inline-block;
+    background: var(--terra);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 8px 28px;
+    border-radius: 30px;
+    margin: 12px 0 16px;
+  }
+  .cefr-desc {
+    font-size: 14px;
+    color: var(--gray-600);
+    margin-bottom: 20px;
+  }
+
+  /* Detail table */
+  .detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;
+    margin-top: 12px;
+  }
+  .detail-table th {
+    background: var(--forest);
+    color: var(--white);
+    padding: 8px 10px;
+    font-weight: 600;
+  }
+  .detail-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .detail-table tr.wrong td { background: #FEF2F2; }
+  .detail-table tr.right td { background: var(--white); }
+
+  .copy-btn {
+    margin-top: 16px;
+    padding: 10px 24px;
+    font-size: 14px;
+    background: var(--gray-100);
+    border: 1.5px solid var(--gray-200);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .copy-btn:hover { background: var(--gray-200); }
+
+  .send-status {
+    font-size: 13px;
+    margin-top: 10px;
+    color: var(--gray-600);
+  }
+  .send-status.ok { color: var(--correct); }
+  .send-status.fail { color: var(--wrong); }
+
+  /* QUESTION MAP */
+  .q-map {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 6px;
+    margin: 16px 0;
+  }
+  .q-map-btn {
+    width: 100%;
+    aspect-ratio: 1;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 6px;
+    background: var(--white);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .q-map-btn.answered { background: var(--green-pale); border-color: var(--forest); color: var(--forest); }
+  .q-map-btn.current { background: var(--forest); color: var(--white); border-color: var(--forest); }
+
+  @media (max-width: 480px) {
+    .container { padding: 10px; }
+    .header { padding: 20px 16px; }
+    .header h1 { font-size: 22px; }
+    .q-card { padding: 18px 16px; }
+    .q-map { grid-template-columns: repeat(8, 1fr); }
+    .score-big { font-size: 44px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="brand">VTG English Center</div>
+    <h1>Placement Test</h1>
+    <div class="sub">Cambridge English Empower — 40 câu · 30 phút</div>
+  </div>
+
+  <!-- TIMER (hidden during intro) -->
+  <div class="timer-bar" id="timerBar" style="display:none">
+    <div class="progress-wrap"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="timer-text" id="timerText">30:00</div>
+  </div>
+
+  <!-- ========== SCREEN: INTRO ========== -->
+  <div class="screen active" id="screenIntro">
+    <div class="intro-card">
+      <h2>Chào mừng bạn đến bài kiểm tra xếp lớp!</h2>
+      <p>Bài test gồm <strong>40 câu trắc nghiệm</strong>, thời gian <strong>30 phút</strong>.<br>
+      Kết quả sẽ được gửi về cho giáo viên sau khi bạn nộp bài.</p>
+
+      <div class="form-group">
+        <label for="sName">Họ và tên</label>
+        <input type="text" id="sName" placeholder="Nguyễn Văn A" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="sPhone">Số điện thoại (hoặc Zalo)</label>
+        <input type="tel" id="sPhone" placeholder="09xx xxx xxx">
+      </div>
+      <br>
+      <button class="btn btn-primary" id="btnStart" disabled onclick="startTest()">Bắt đầu làm bài</button>
+    </div>
+  </div>
+
+  <!-- ========== SCREEN: QUIZ ========== -->
+  <div class="screen" id="screenQuiz">
+    <div class="part-label" id="partLabel"></div>
+    <div class="q-counter" id="qCounter"></div>
+
+    <div id="passageArea"></div>
+    <div id="questionArea"></div>
+
+    <!-- Question Map -->
+    <div class="q-card" style="padding:16px">
+      <div style="font-size:13px;font-weight:600;color:var(--gray-600);margin-bottom:8px">Bản đồ câu hỏi</div>
+      <div class="q-map" id="qMap"></div>
+    </div>
+
+    <div class="q-nav">
+      <button class="btn btn-primary" id="btnPrev" onclick="goQ(-1)">← Trước</button>
+      <button class="btn btn-primary" id="btnNext" onclick="goQ(1)">Tiếp →</button>
+      <button class="btn btn-terra" id="btnFinish" style="display:none" onclick="showSubmit()">Nộp bài</button>
+    </div>
+  </div>
+
+  <!-- ========== SCREEN: SUBMIT CONFIRM ========== -->
+  <div class="screen" id="screenSubmit">
+    <div class="submit-card">
+      <h2>Xác nhận nộp bài</h2>
+      <p id="submitInfo"></p>
+      <br>
+      <button class="btn btn-primary" onclick="showQuiz()" style="margin-right:8px">Quay lại kiểm tra</button>
+      <button class="btn btn-terra" onclick="finishTest()">Nộp bài ngay</button>
+    </div>
+  </div>
+
+  <!-- ========== SCREEN: RESULT ========== -->
+  <div class="screen" id="screenResult">
+    <div class="result-card">
+      <h2>Kết quả của bạn</h2>
+      <div class="score-big" id="rScore"></div>
+      <div class="score-total" id="rTotal"></div>
+      <div class="cefr-badge" id="rBand"></div>
+      <div class="cefr-desc" id="rDesc"></div>
+      <div class="send-status" id="sendStatus"></div>
+    </div>
+    <div class="q-card">
+      <div style="font-weight:600;margin-bottom:8px;color:var(--forest)">Chi tiết từng câu</div>
+      <div style="overflow-x:auto">
+        <table class="detail-table" id="detailTable">
+          <thead><tr><th>Câu</th><th>Bạn chọn</th><th>Đáp án</th><th>Kết quả</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <button class="copy-btn" onclick="copyResult()">📋 Sao chép kết quả</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== CHỐNG SAO CHÉP =====
+let _allowCopy = false;
+document.addEventListener('copy', e => { if (!_allowCopy) e.preventDefault(); });
+document.addEventListener('cut', e => e.preventDefault());
+document.addEventListener('paste', e => e.preventDefault());
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && ['c','v','x','a','u','s'].includes(e.key.toLowerCase())) {
+    if (!_allowCopy) e.preventDefault();
+  }
+  if (e.key === 'F12') e.preventDefault();
+});
+document.addEventListener('dragstart', e => e.preventDefault());
+
+// ===== CONFIG =====
+const ENDPOINT = "https://script.google.com/macros/s/AKfycby57HegnnckxSVtfJwqULkn4atHPG4G_YMSb5S9GyaSOCyxQLR6kpl1LqJTQi3woSF8/exec";
+const TOTAL_TIME = 30 * 60; // 30 minutes in seconds
+
+// ===== ANSWER KEY =====
+const ANSWERS = {
+  1:'C',2:'B',3:'C',4:'B',5:'A',6:'B',7:'C',8:'A',9:'C',10:'B',
+  11:'A',12:'B',13:'C',14:'B',15:'C',16:'C',17:'C',18:'B',19:'D',20:'A',
+  21:'B',22:'C',23:'C',24:'B',25:'C',26:'A',27:'B',28:'C',29:'C',30:'A',
+  31:'D',32:'C',33:'C',34:'B',35:'C',36:'B',37:'B',38:'B',39:'D',40:'B'
+};
+
+// ===== CEFR BANDS =====
+function getCEFR(score) {
+  if (score <= 9)  return { band: 'Pre-A1', desc: 'Bạn đang ở mức khởi đầu. Hãy bắt đầu với chương trình Starter!' };
+  if (score <= 16) return { band: 'A1', desc: 'Bạn hiểu và sử dụng được các cụm từ quen thuộc hàng ngày.' };
+  if (score <= 23) return { band: 'A2', desc: 'Bạn giao tiếp được trong các tình huống đơn giản, quen thuộc.' };
+  if (score <= 27) return { band: 'B1', desc: 'Bạn xử lý được hầu hết tình huống khi đi du lịch, công việc cơ bản.' };
+  if (score <= 31) return { band: 'B1+', desc: 'Bạn đang tiến gần đến trình độ Intermediate vững chắc.' };
+  if (score <= 35) return { band: 'B2', desc: 'Bạn giao tiếp trôi chảy, tự nhiên với người bản xứ.' };
+  return { band: 'B2+/C1', desc: 'Xuất sắc! Bạn sử dụng tiếng Anh linh hoạt và hiệu quả.' };
+}
+
+// ===== QUESTIONS DATA =====
+const PARTS = [
+  { label: 'Part 1 — Đọc biển báo', range: [1,5], instruction: 'Đọc biển báo/thông báo và chọn đáp án đúng (A, B hoặc C).' },
+  { label: 'Part 2 — Đọc hiểu: Surfing', range: [6,11], instruction: 'Đọc bài văn về Surfing rồi trả lời câu hỏi.', passage: 'surfing' },
+  { label: 'Part 3 — Đọc biển báo', range: [12,16], instruction: 'Đọc biển báo/thông báo và chọn đáp án phù hợp nhất.' },
+  { label: 'Part 4 — Điền từ: The Importance of Trees', range: [17,21], instruction: 'Chọn từ đúng để điền vào chỗ trống.', passage: 'trees' },
+  { label: 'Part 5 — Đọc hiểu: Racing Driver', range: [22,27], instruction: 'Đọc bài văn về Carrie Wilson rồi trả lời câu hỏi.', passage: 'racing' },
+  { label: 'Part 6 — Ngữ pháp & Từ vựng', range: [28,40], instruction: 'Chọn đáp án đúng cho mỗi câu.' },
+];
+
+const PASSAGES = {
+  surfing: `<p><strong>Surfing</strong></p>
+<p>Surfing is often connected with places like Hawaii, Australia and California because of its history, but there are good surfing beaches all over the world, including here in the UK. I went to Cradle Beach in the South West to learn to surf.</p>
+<p>The first thing I had to learn about was the board. Surfboards can be pretty expensive, so I decided to hire one while I found out whether I liked the sport or not. The first surfboards were made from wood but they're usually made from a lighter modern material called fibreglass now. As a beginner, my surf school hired me a board made of foam. This material is soft and light, so it's perfect for your first board.</p>
+<p>I also had to get myself a wetsuit. If you are surfing in the UK, you should not try the sport without one. It keeps you nice and warm, even when the water's at its coldest. You can also get gloves and socks to wear in the water if you suffer from cold hands and feet. I did!</p>
+<p>I also had a 'leash'. This is a cord that is fixed to your board at one end and you wrap the other end around your ankle so that the board is always attached to you in the water. This means that when you fall off your board, you'll always be able to get back on it easily. Being hit by a surfboard in the waves can be painful, so you should always watch where your board is very carefully, especially if there are other surfers near you in the water.</p>
+<p>When you watch other people surfing, it looks easy – it is not! I found it very hard at the beginning of my week of lessons but great fun. I have already booked another week's surfing here for next summer.</p>`,
+
+  trees: `<p><strong>The Importance Of Trees</strong></p>
+<p>Trees are wonderful to look at and their changing colours (17) …… the seasons. Tall and timeless, they have for millions of years been memorable features of the Earth's scenery. On a worldwide scale, forests help to reduce global warming by taking in carbon dioxide but, at the local level, trees also bring great environmental benefits. In hot weather, they (18) …… shade and shelter while, when it rains, they (19) …… the water and help to prevent the soil being (20) …… away. Above all, however, it is the 'permanence' of the trees that is one of their most attractive characteristics; nothing on Earth lives longer than a tree - many big trees on our streets are (21) …… a century old.</p>`,
+
+  racing: `<p><strong>Racing Driver</strong></p>
+<p>Carrie Wilson became a racing driver when she was six years old. She was given a radio-controlled car for her birthday. She entered competitions with it and finished second in a national championship the following year. She was proud that she was winning races against adults. She loved the excitement of travelling to events, and her father thought that she had a natural talent for motor sport.</p>
+<p>The next thing Carrie tried was racing go-karts – miniature cars with engines. She was given a go-kart for her eighth birthday and she won races in different countries. On her tenth birthday, she was given a picture of the famous Brazilian 1970s Formula One champion Emerson Fittipaldi and told her parents, 'One day I want to drive as fast as him.'</p>
+<p>Carrie's parents said they would support her racing career as long as she worked hard at school. She was good at most sports, and represented her school as a basketball player. Her teachers said she was a born champion. She spent every spare minute at competitions or sports training, so it wasn't easy for her to do her homework, but she managed to make some progress in most subjects.</p>
+<p>When she was seventeen Carrie moved on to full-size racing cars. Although it was clear that she was going to have a great future in the sport as a professional driver, she would need to have some help with money if she wanted to continue in the long term. When she left school, her father gave up his job so that he could train her. Before long, Carrie started winning championships and one team called her with an offer, but she decided she wasn't ready.</p>
+<p>Carrie is only 23, but is becoming well known. The cars she drives are getting faster, and she's competing against people who have been driving much longer than her. She makes money from her successes, and her father is now her full-time manager. She needs him to look after her in a tough profession.</p>
+<p>In spite of her success, Carrie admits she still has a lot to do. 'I watch the great drivers, and read about them,' she says. 'Some people blame the car if they lose a race, but I know for me it's usually because I do something wrong. When I make mistakes, I think about them and discuss them with my trainer. That's the only way forward.'</p>`
+};
+
+const QS = [
+  // Part 1
+  { n:1, notice:'Please leave your keys in Reception', stem:'This notice is for', opts:['A. receptionists.','B. mechanics.','C. hotel guests.'] },
+  { n:2, notice:'Do not write in this space', stem:'This notice is for people using', opts:['A. a camera.','B. a pen.','C. a telephone.'] },
+  { n:3, notice:'Please do not leave your luggage here', stem:'This notice is for', opts:['A. waiters.','B. customers.','C. passengers.'] },
+  { n:4, notice:'Book your air travel with us and get FREE HOLIDAY INSURANCE', stem:'This notice is for', opts:['A. car drivers.','B. tourists.','C. pilots.'] },
+  { n:5, notice:'Take one with water before meals', stem:'This notice is for people', opts:['A. taking medicine.','B. feeling thirsty.','C. buying food.'] },
+
+  // Part 2
+  { n:6, stem:'What does the writer say about surfing beaches?', opts:['A. The best ones are in Hawaii, Australia and California.','B. Lots of countries have them.','C. There are only a few good ones in the UK.'] },
+  { n:7, stem:'The writer used a surfboard made of', opts:['A. wood.','B. fibreglass.','C. foam.'] },
+  { n:8, stem:'The writer says that in the UK you should wear a wetsuit', opts:['A. every time you surf.','B. just when the water is coldest.','C. if you get cold easily.'] },
+  { n:9, stem:'In the third paragraph the writer says you should be careful', opts:['A. not to fall off your board.','B. not to take someone else\'s board.','C. not to let your board hit someone.'] },
+  { n:10, stem:'What does the writer say in the final paragraph?', opts:['A. She plans to surf in another place.','B. She enjoyed surfing.','C. She found surfing too difficult.'] },
+  { n:11, stem:'What is the best title for this text?', opts:['A. Starting to Surf','B. The History of Surfing','C. How Surf Boards are Made'] },
+
+  // Part 3
+  { n:12, notice:'Hillside Beach — To protect animals, please take all your rubbish home.', stem:'', opts:['A. Do not bring your pets onto the beach.','B. Do not leave any litter on the beach.','C. Do not disturb animals that live on the beach.'] },
+  { n:13, notice:'THE 9.15 TRAIN TO YORK WILL NOW LEAVE PLATFORM 3 AT 9.55. PASSENGERS WITH RESERVATIONS SHOULD BOARD THE TRAIN NO LATER THAN 9.50.', stem:'What time is the train going to depart?', opts:['A. 9.15','B. 9.50','C. 9.55'] },
+  { n:14, notice:'Please take note that the meeting scheduled to be held in this room at 14.00 will now take place in Room 17.', stem:'The meeting', opts:['A. has been postponed.','B. has been moved.','C. has been cancelled.'] },
+  { n:15, notice:'STUDENTS\' COOKBOOK — A beginner in the kitchen? This will help you. You may find the recipes need time, but they are very easy to follow — and cheap!', stem:'', opts:['A. The book is not expensive.','B. The recipes are quick to prepare.','C. The book has simple instructions.'] },
+  { n:16, notice:'We would gratefully receive your old books and magazines for the hospital waiting room.', stem:'', opts:['A. Please help yourself to a book or magazine while you wait.','B. This reading material is for use in the waiting-room only.','C. We would like your old reading material for our patients.'] },
+
+  // Part 4
+  { n:17, stem:'Trees are wonderful to look at and their changing colours (17) …… the seasons.', opts:['A. repeat','B. copy','C. reflect','D. bear'] },
+  { n:18, stem:'In hot weather, they (18) …… shade and shelter.', opts:['A. deliver','B. provide','C. promote','D. carry'] },
+  { n:19, stem:'…while, when it rains, they (19) …… the water and help to prevent the soil being washed away.', opts:['A. swallow','B. consume','C. soak','D. absorb'] },
+  { n:20, stem:'…they absorb the water and help to prevent the soil being (20) …… away.', opts:['A. carried','B. sent','C. driven','D. put'] },
+  { n:21, stem:'…many big trees on our streets are (21) …… a century old.', opts:['A. wholly','B. at least','C. considerably','D. ahead of'] },
+
+  // Part 5
+  { n:22, stem:'When Carrie Wilson took part in competitions for radio-controlled cars,', opts:['A. she found it difficult to compete against adults.','B. she realised she had a natural ability for motor racing.','C. she found the journeys to the events enjoyable.'] },
+  { n:23, stem:'According to the second paragraph, Carrie hoped', opts:['A. to be a go-kart champion.','B. to win a race in Brazil.','C. to match Fittipaldi\'s speed.'] },
+  { n:24, stem:'What does the third paragraph say about Carrie\'s time at school?', opts:['A. Her parents wanted her to spend more time at school.','B. She had difficulty in doing all her homework.','C. Her teachers gave her time off school to go to sports events.'] },
+  { n:25, stem:'What happened as soon as Carrie left school?', opts:['A. A team offered her a job.','B. She became a professional racing driver.','C. Her father became her trainer.'] },
+  { n:26, stem:'What does the fifth paragraph say about Carrie\'s situation now?', opts:['A. She is very inexperienced compared with some other drivers.','B. She is nervous about driving faster than now.','C. She is looking for a manager who knows the racing profession.'] },
+  { n:27, stem:'In the final paragraph, what does Carrie say about her progress?', opts:['A. She wishes she could learn about motor racing more quickly.','B. She believes she learns from the mistakes she makes.','C. She thinks she will do well when she drives better cars.'] },
+
+  // Part 6
+  { n:28, stem:'Dina ………… have gone to the concert if she had not felt so tired.', opts:['A. will','B. had','C. would','D. did'] },
+  { n:29, stem:'Sam ………… to play for the local football team next year.', opts:['A. thinks','B. dreams','C. hopes','D. imagines'] },
+  { n:30, stem:'Helena ………… that we went out for a meal.', opts:['A. suggested','B. introduced','C. offered','D. invited'] },
+  { n:31, stem:'She kindly offered to ………… me the way to the station.', opts:['A. explain','B. direct','C. describe','D. show'] },
+  { n:32, stem:'It was ………… an exciting football match that the fans ran on to the pitch.', opts:['A. so','B. rather','C. such','D. quite'] },
+  { n:33, stem:'The special deal is only valid until the end of the week, so ………… advantage of it while you can.', opts:['A. have','B. get','C. take','D. bring'] },
+  { n:34, stem:'My family ………… of six people.', opts:['A. forms','B. consists','C. includes','D. contains'] },
+  { n:35, stem:'Advertisements are required not to give a misleading ………… .', opts:['A. awareness','B. effect','C. impression','D. interpretation'] },
+  { n:36, stem:'I applied for a very interesting job but was turned ………… .', opts:['A. up','B. down','C. in','D. out'] },
+  { n:37, stem:'I\'m afraid we\'ll have to walk up the stairs, as the elevator is out of ………… .', opts:['A. function','B. order','C. work','D. operation'] },
+  { n:38, stem:'All the children enjoyed going to school ………… from Harry.', opts:['A. except','B. apart','C. but','D. save'] },
+  { n:39, stem:'Although she was ………… disappointed to lose the game, she didn\'t show it.', opts:['A. gravely','B. severely','C. soundly','D. bitterly'] },
+  { n:40, stem:'The only way we managed to open the coffee jar was with ………… force.', opts:['A. animal','B. brute','C. creature','D. beast'] },
+];
+
+// ===== STATE =====
+let answers = {};
+let currentQ = 0;
+let timerInterval = null;
+let timeLeft = TOTAL_TIME;
+let startTime = null;
+
+// ===== INTRO VALIDATION =====
+const nameInput = document.getElementById('sName');
+const phoneInput = document.getElementById('sPhone');
+const btnStart = document.getElementById('btnStart');
+
+function checkForm() {
+  btnStart.disabled = !(nameInput.value.trim().length >= 2);
+}
+nameInput.addEventListener('input', checkForm);
+phoneInput.addEventListener('input', checkForm);
+
+// ===== START TEST =====
+function startTest() {
+  startTime = Date.now();
+  showScreen('screenQuiz');
+  document.getElementById('timerBar').style.display = 'flex';
+  buildMap();
+  renderQ(0);
+  startTimer();
+}
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+// ===== TIMER =====
+function startTimer() {
+  updateTimerDisplay();
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    updateTimerDisplay();
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      finishTest();
+    }
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = Math.floor(timeLeft / 60);
+  const s = timeLeft % 60;
+  const el = document.getElementById('timerText');
+  el.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  el.className = 'timer-text' + (timeLeft <= 120 ? ' danger' : timeLeft <= 300 ? ' warning' : '');
+  document.getElementById('progressFill').style.width = ((TOTAL_TIME - timeLeft) / TOTAL_TIME * 100) + '%';
+}
+
+// ===== QUESTION MAP =====
+function buildMap() {
+  const map = document.getElementById('qMap');
+  map.innerHTML = '';
+  for (let i = 0; i < 40; i++) {
+    const btn = document.createElement('button');
+    btn.className = 'q-map-btn';
+    btn.textContent = i + 1;
+    btn.onclick = () => renderQ(i);
+    map.appendChild(btn);
+  }
+}
+
+function updateMap() {
+  const btns = document.querySelectorAll('.q-map-btn');
+  btns.forEach((btn, i) => {
+    btn.className = 'q-map-btn';
+    if (i === currentQ) btn.classList.add('current');
+    else if (answers[i + 1] !== undefined) btn.classList.add('answered');
+  });
+}
+
+// ===== RENDER QUESTION =====
+function renderQ(idx) {
+  currentQ = idx;
+  const q = QS[idx];
+  const part = PARTS.find(p => q.n >= p.range[0] && q.n <= p.range[1]);
+
+  document.getElementById('partLabel').textContent = part.label;
+  document.getElementById('qCounter').textContent = `Câu ${q.n} / 40`;
+
+  // Passage
+  const passArea = document.getElementById('passageArea');
+  if (part.passage && PASSAGES[part.passage]) {
+    passArea.innerHTML = `<div class="reading-passage">${PASSAGES[part.passage]}</div>`;
+  } else {
+    passArea.innerHTML = '';
+  }
+
+  // Question
+  let html = '<div class="q-card">';
+  html += `<div class="q-number">Câu ${q.n}</div>`;
+
+  if (q.notice) {
+    html += `<div class="notice-box">${q.notice}</div>`;
+  }
+
+  if (q.stem) {
+    html += `<div class="q-stem">${q.stem}</div>`;
+  }
+
+  html += '<ul class="q-options">';
+  q.opts.forEach((opt, i) => {
+    const letter = opt.charAt(0);
+    const selected = answers[q.n] === letter ? 'selected' : '';
+    html += `<li><label class="${selected}" onclick="selectAnswer(${q.n}, '${letter}', this)">
+      <input type="radio" name="q${q.n}" value="${letter}" ${answers[q.n] === letter ? 'checked' : ''}>
+      ${opt}
+    </label></li>`;
+  });
+  html += '</ul></div>';
+
+  document.getElementById('questionArea').innerHTML = html;
+
+  // Nav buttons
+  document.getElementById('btnPrev').style.display = idx > 0 ? '' : 'none';
+  document.getElementById('btnNext').style.display = idx < 39 ? '' : 'none';
+  document.getElementById('btnFinish').style.display = 'inline-block';
+
+  updateMap();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function selectAnswer(qNum, letter, el) {
+  answers[qNum] = letter;
+  // Update visual
+  el.closest('.q-options').querySelectorAll('label').forEach(l => l.classList.remove('selected'));
+  el.classList.add('selected');
+  updateMap();
+}
+
+function goQ(dir) {
+  const next = currentQ + dir;
+  if (next >= 0 && next < 40) renderQ(next);
+}
+
+// ===== SUBMIT =====
+function showSubmit() {
+  const answered = Object.keys(answers).length;
+  const unanswered = 40 - answered;
+  document.getElementById('submitInfo').innerHTML = `Bạn đã trả lời <strong>${answered}/40</strong> câu.` +
+    (unanswered > 0 ? `<br><span style="color:var(--terra)">Còn ${unanswered} câu chưa trả lời!</span>` : '');
+  showScreen('screenSubmit');
+}
+
+function showQuiz() {
+  showScreen('screenQuiz');
+}
+
+// ===== FINISH =====
+function finishTest() {
+  clearInterval(timerInterval);
+  document.getElementById('timerBar').style.display = 'none';
+
+  let score = 0;
+  const details = [];
+  for (let i = 1; i <= 40; i++) {
+    const chosen = answers[i] || '—';
+    const correct = ANSWERS[i];
+    const isRight = chosen === correct;
+    if (isRight) score++;
+    details.push({ no: i, chosen, correct, result: isRight ? 'Đúng' : 'Sai' });
+  }
+
+  const cefr = getCEFR(score);
+  const duration = Math.round((Date.now() - startTime) / 1000);
+  const durStr = `${Math.floor(duration/60)}p ${duration%60}s`;
+
+  // Show result
+  document.getElementById('rScore').textContent = score;
+  document.getElementById('rTotal').textContent = `/ 40 câu đúng`;
+  document.getElementById('rBand').textContent = cefr.band;
+  document.getElementById('rDesc').textContent = cefr.desc;
+
+  // Detail table
+  const tbody = document.getElementById('detailTable').querySelector('tbody');
+  tbody.innerHTML = '';
+  details.forEach(d => {
+    const tr = document.createElement('tr');
+    tr.className = d.result === 'Đúng' ? 'right' : 'wrong';
+    tr.innerHTML = `<td>${d.no}</td><td>${d.chosen}</td><td>${d.correct}</td>
+      <td style="color:${d.result==='Đúng' ? 'var(--correct)' : 'var(--wrong)'};font-weight:600">${d.result === 'Đúng' ? '✓' : '✗'}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  showScreen('screenResult');
+
+  // Send to Google Sheets
+  const wrongQs = details.filter(d => d.result === 'Sai').map(d => `Q${d.no}`).join(', ');
+  const payload = {
+    name: nameInput.value.trim(),
+    cls: phoneInput.value.trim(),
+    quizName: 'Empower Placement Test',
+    score,
+    total: 40,
+    percent: Math.round(score / 40 * 100),
+    duration: durStr,
+    wrongWords: wrongQs,
+    attemptId: 'PT-' + Date.now().toString(36),
+    details: details.map(d => ({
+      no: d.no,
+      type: 'Multiple Choice',
+      word: `Q${d.no}`,
+      question: QS[d.no - 1].stem || QS[d.no - 1].notice || '',
+      chosen: d.chosen,
+      correct: d.correct,
+      result: d.result
+    }))
+  };
+
+  if (ENDPOINT) {
+    fetch(ENDPOINT, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify(payload)
+    }).then(() => {
+      document.getElementById('sendStatus').textContent = '✓ Đã gửi kết quả về hệ thống.';
+      document.getElementById('sendStatus').className = 'send-status ok';
+    }).catch(() => {
+      document.getElementById('sendStatus').textContent = '⚠ Không gửi được. Hãy sao chép kết quả và gửi qua Zalo.';
+      document.getElementById('sendStatus').className = 'send-status fail';
+    });
+  } else {
+    document.getElementById('sendStatus').textContent = 'Chưa kết nối Google Sheets. Hãy sao chép kết quả gửi giáo viên.';
+    document.getElementById('sendStatus').className = 'send-status';
+  }
+}
+
+// ===== COPY RESULT =====
+function copyResult() {
+  const name = nameInput.value.trim();
+  const phone = phoneInput.value.trim();
+  let score = 0;
+  let wrongList = [];
+  for (let i = 1; i <= 40; i++) {
+    if (answers[i] === ANSWERS[i]) score++;
+    else wrongList.push(`Q${i}: ${answers[i]||'—'} (đáp án: ${ANSWERS[i]})`);
+  }
+  const cefr = getCEFR(score);
+  const text = `📋 KẾT QUẢ PLACEMENT TEST — VTG ENGLISH CENTER
+Họ tên: ${name}
+SĐT: ${phone}
+Điểm: ${score}/40 (${Math.round(score/40*100)}%)
+Band CEFR: ${cefr.band}
+
+Câu sai (${wrongList.length}):
+${wrongList.join('\n')}`;
+
+  _allowCopy = true;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = '✓ Đã sao chép!';
+    setTimeout(() => btn.textContent = '📋 Sao chép kết quả', 2000);
+  }).finally(() => { _allowCopy = false; });
+}
+</script>
+</body>
+</html>
