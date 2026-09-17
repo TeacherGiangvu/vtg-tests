@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>IELTS Writing Demo — Cambridge 21, Test 4</title>
+<style>
+:root{
+  --bg:#ffffff; --fg:#1a1d1b; --muted:#5b6560; --panel:#f4f6f5; --border:#d8dedb;
+  --accent:#0b5b3c; --accent-fg:#ffffff; --header-bg:#0b5b3c; --header-fg:#ffffff; --input-bg:#ffffff;
+  --nav-correct:#1e8e3e; --nav-wrong:#c62828;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15181a; --fg:#e7ebe9; --muted:#9aa39d; --panel:#1e2224; --border:#33393a;
+    --accent:#1f8f63; --accent-fg:#0c120e; --header-bg:#0e2e22; --header-fg:#e7ebe9; --input-bg:#0f1213;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15181a; --fg:#e7ebe9; --muted:#9aa39d; --panel:#1e2224; --border:#33393a;
+  --accent:#1f8f63; --accent-fg:#0c120e; --header-bg:#0e2e22; --header-fg:#e7ebe9; --input-bg:#0f1213;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+.app{display:flex;flex-direction:column;height:100vh;}
+.topbar{background:var(--header-bg);color:var(--header-fg);display:flex;align-items:center;justify-content:space-between;padding:8px 16px;flex-wrap:wrap;gap:8px;}
+.topbar .brand{font-size:14px;font-weight:600;}
+.topbar .brand small{display:block;font-weight:400;opacity:.85;font-size:12px;}
+.timer{font-size:20px;font-weight:700;font-family:monospace;background:rgba(255,255,255,.12);padding:4px 14px;border-radius:6px;}
+.timer.warn{background:#b45309;}
+.timer.danger{background:#b3261e;animation:blink 1s infinite;}
+@keyframes blink{50%{opacity:.4;}}
+.controls{display:flex;gap:6px;align-items:center;}
+.controls button{background:rgba(255,255,255,.14);color:var(--header-fg);border:1px solid rgba(255,255,255,.3);border-radius:5px;padding:5px 10px;font-size:13px;cursor:pointer;}
+.controls button:hover{background:rgba(255,255,255,.26);}
+.controls .submit{background:#e0a020;border-color:#e0a020;color:#231a00;font-weight:700;}
+.tasktabs{display:flex;background:var(--panel);border-bottom:1px solid var(--border);}
+.tasktabs button{flex:1;padding:9px 4px;background:none;border:none;border-bottom:3px solid transparent;color:var(--fg);font-size:13px;cursor:pointer;}
+.tasktabs button.active{border-bottom-color:var(--accent);font-weight:700;color:var(--accent);}
+.split{flex:1;display:flex;overflow:hidden;min-height:0;}
+.prompt,.writer{flex:1 1 50%;overflow-y:auto;padding:20px 22px;min-width:0;}
+.prompt{border-right:1px solid var(--border);}
+.prompt h2{font-size:16px;margin:0 0 10px;}
+.prompt p{font-size:14.5px;line-height:1.6;}
+.chartwrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:14px 0;}
+.pie{width:170px;height:170px;border-radius:50%;flex:0 0 auto;}
+.legend2{font-size:13px;line-height:1.7;}
+.legend2 .sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;}
+table.satisfy{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px;}
+table.satisfy th,table.satisfy td{border:1px solid var(--border);padding:5px 7px;text-align:center;}
+table.satisfy th{background:var(--panel);}
+table.satisfy td:first-child,table.satisfy th:first-child{text-align:left;}
+.writer textarea{width:100%;height:calc(100% - 40px);min-height:340px;resize:vertical;font-size:var(--fontsize,15px);line-height:1.6;padding:12px;border:1px solid var(--border);border-radius:6px;background:var(--input-bg);color:var(--fg);font-family:inherit;}
+.wordcount{font-size:12.5px;color:var(--muted);margin-top:6px;}
+.scorepanel,.startgate{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:60;}
+.scorepanel{background:rgba(0,0,0,.55);display:none;}
+.scorepanel.show{display:flex;}
+.startgate{background:#EDE6D6;overflow-y:auto;padding:32px 16px;}
+.scorecard{background:var(--bg);border-radius:10px;padding:26px 30px;max-width:400px;width:90%;border:1px solid var(--border);text-align:center;}
+.scorecard h2{margin:0 0 4px;}
+.startcard{width:100%;max-width:420px;text-align:center;}
+.cover-mark{font-family:'Source Serif 4',serif;font-weight:600;font-size:1.05rem;color:#2C4A3E;margin-bottom:44px;letter-spacing:.01em;}
+.cover-mark span{color:#C1633D;}
+.cover-title{font-family:'Source Serif 4',serif;font-weight:500;font-size:clamp(1.9rem,7vw,2.5rem);color:#1B2A22;margin:0 0 6px;line-height:1.15;}
+.cover-sub{font-family:'Source Serif 4',serif;font-style:italic;font-size:1.05rem;color:#2C4A3E;margin:0 0 6px;}
+.cover-meta{font-family:'Inter',sans-serif;font-size:.85rem;color:#7C8A80;margin:0 0 28px;}
+.startcard p.cover-note{font-family:'Inter',sans-serif;color:#57624F;font-size:.92rem;margin:0 0 28px;text-align:left;}
+.startcard label{display:block;font-family:'Inter',sans-serif;font-size:.8rem;margin:14px 0 5px;color:#57624F;text-align:left;}
+.startcard input{width:100%;padding:10px 12px;border:1px solid #DBD1B9;border-radius:6px;background:#FAF8F3;color:#1B2A22;font-family:'Inter',sans-serif;font-size:14px;}
+.startcard input:focus{outline:2px solid #C1633D;outline-offset:1px;}
+.startcard .err{color:#B3261E;font-family:'Inter',sans-serif;font-size:12.5px;margin-top:6px;min-height:16px;text-align:left;}
+.startcard button{margin-top:22px;width:100%;background:#2C4A3E;color:#FAF8F3;border:none;padding:12px;border-radius:6px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;cursor:pointer;}
+.startcard button:hover{background:#C1633D;}
+.cover-footer{margin-top:36px;font-family:'Inter',sans-serif;font-size:.78rem;color:#7C8A80;}
+.scorecard .mainbtn{margin-top:14px;background:var(--accent);color:var(--accent-fg);border:none;padding:8px 18px;border-radius:6px;font-size:14px;cursor:pointer;}
+.sendbox{margin-top:12px;padding:10px 12px;border-radius:6px;font-size:13px;text-align:left;}
+.sendbox.pending{background:var(--panel);color:var(--muted);}
+.sendbox.done{background:#1e8e3e22;color:var(--nav-correct);}
+.sendbox.fail{background:#c6282822;color:var(--nav-wrong);}
+.backupbox{margin-top:10px;text-align:left;display:none;}
+.backupbox textarea{width:100%;height:70px;font-size:11px;font-family:monospace;background:var(--panel);color:var(--fg);border:1px solid var(--border);border-radius:6px;padding:6px;}
+.rowbtns{display:flex;gap:8px;margin-top:8px;}
+.rowbtns button{flex:1;margin-top:0;}
+.secondary{background:var(--panel)!important;color:var(--fg)!important;border:1px solid var(--border)!important;}
+@media (max-width:820px){
+  .split{flex-direction:column;overflow-y:auto;}
+  .prompt,.writer{flex:none;overflow-y:visible;}
+  .prompt{border-right:none;border-bottom:1px solid var(--border);}
+  .writer textarea{min-height:260px;}
+}
+</style>
+</head>
+<body>
+<div class="startgate" id="startGate">
+  <div class="startcard">
+    <div class="cover-mark">VTG <span>English</span></div>
+    <h1 class="cover-title">IELTS Writing</h1>
+    <p class="cover-sub">Cambridge 21 · Test 4</p>
+    <p class="cover-meta">Task 1 &amp; Task 2 · 60 phút</p>
+    <p class="cover-note">Nhập họ tên và số điện thoại trước khi bắt đầu. Đồng hồ 60 phút (Task 1: ~20 phút, Task 2: ~40 phút) sẽ chạy từ lúc bấm "Bắt đầu".</p>
+    <label>Họ và tên</label>
+    <input type="text" id="stName" placeholder="Nguyễn Văn A">
+    <label>Số điện thoại</label>
+    <input type="text" id="stPhone" placeholder="09xxxxxxxx">
+    <div class="err" id="stErr"></div>
+    <button id="stStart">Bắt đầu làm bài</button>
+    <div class="cover-footer">VTG English — Hà Nội</div>
+  </div>
+</div>
+<div class="app">
+  <div class="topbar">
+    <div class="brand">IELTS Writing — Computer-delivered demo<small>Cambridge English IELTS 21 · Test 4</small></div>
+    <div class="timer" id="timer">60:00</div>
+    <div class="controls">
+      <button id="fontDec" title="Giảm cỡ chữ">A−</button>
+      <button id="fontInc" title="Tăng cỡ chữ">A+</button>
+      <button id="themeToggle" title="Đổi giao diện sáng/tối">◐</button>
+      <button class="submit" id="submitBtn">Nộp bài</button>
+    </div>
+  </div>
+  <div class="tasktabs" id="tasktabs">
+    <button data-task="1" class="active">Task 1</button>
+    <button data-task="2">Task 2</button>
+  </div>
+  <div class="split">
+    <section class="prompt" id="promptPane"></section>
+    <section class="writer" id="writerPane"></section>
+  </div>
+</div>
+
+<div class="scorepanel" id="scorePanel">
+  <div class="scorecard">
+    <h2>Đã nộp bài</h2>
+    <p style="color:var(--muted);font-size:13.5px;">Task 1: <b id="wc1">0</b> từ · Task 2: <b id="wc2">0</b> từ</p>
+    <p style="font-size:13px;color:var(--muted);">Bài viết không tự chấm điểm — giáo viên sẽ chấm trực tiếp trên bản gửi về.</p>
+    <div class="sendbox" id="sendStatus"></div>
+    <div class="backupbox" id="backupBox">
+      <textarea id="backupText" readonly></textarea>
+      <div class="rowbtns">
+        <button class="secondary" id="btnCopyBackup">Sao chép bài viết</button>
+        <button class="secondary" id="btnRetrySend">Thử gửi lại</button>
+      </div>
+    </div>
+    <button class="mainbtn" id="closeScore">Đóng</button>
+  </div>
+</div>
+
+<script>
+const ENDPOINT = "https://script.google.com/macros/s/AKfycby57HegnnckxSVtfJwqULkn4atHPG4G_YMSb5S9GyaSOCyxQLR6kpl1LqJTQi3woSF8/exec";
+
+const state = { task:1, texts:{1:"",2:""}, fontsize:15, submitted:false, started:false, timeLeft:60*60, student:{name:"",phone:""} };
+let lastPayload = null;
+
+const PIE = [
+  {label:"Full-time undergraduate", pct:44, color:"#0b5b3c"},
+  {label:"Full-time postgraduate", pct:25, color:"#1f8f63"},
+  {label:"Part-time postgraduate", pct:16, color:"#7fbfa3"},
+  {label:"Distance learning (all courses)", pct:8, color:"#d9822b"},
+  {label:"Academic staff", pct:7, color:"#c62828"}
+];
+const SATISFY = [
+  ["Library opening hours",65,35,0],
+  ["Helpfulness of staff",95,5,0],
+  ["Availability of books",50,40,10],
+  ["Availability of journals",45,35,20],
+  ["Reliability of wi-fi",48,33,19]
+];
+
+function pieGradient(){
+  let acc = 0; const parts = [];
+  PIE.forEach(s=>{ const start=acc; acc+=s.pct; parts.push(`${s.color} ${start}% ${acc}%`); });
+  return `conic-gradient(${parts.join(",")})`;
+}
+
+function renderPromptTask1(){
+  let legend = PIE.map(s=>`<div><span class="sw" style="background:${s.color}"></span>${s.label} — ${s.pct}%</div>`).join("");
+  let rows = SATISFY.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td></tr>`).join("");
+  return `<h2>WRITING TASK 1</h2>
+    <p><i>You should spend about 20 minutes on this task.</i></p>
+    <p><b>The chart and table below show the results of a survey of library users at a university.</b><br>
+    Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
+    <p><i>Write at least 150 words.</i></p>
+    <div style="text-align:center;font-weight:600;font-size:13px;margin-top:10px;">Categories of library users</div>
+    <div class="chartwrap">
+      <div class="pie" style="background:${pieGradient()}"></div>
+      <div class="legend2">${legend}</div>
+    </div>
+    <div style="text-align:center;font-weight:600;font-size:13px;margin-top:14px;">Library user satisfaction (%)</div>
+    <table class="satisfy">
+      <tr><th></th><th>Very satisfied</th><th>Fairly satisfied</th><th>Not satisfied</th></tr>
+      ${rows}
+    </table>`;
+}
+function renderPromptTask2(){
+  return `<h2>WRITING TASK 2</h2>
+    <p><i>You should spend about 40 minutes on this task.</i></p>
+    <p>Write about the following topic:</p>
+    <div style="background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:12px 16px;">
+      <p style="margin:0 0 8px;"><b>Some people argue that primary schools focus too much on formal learning.</b></p>
+      <p style="margin:0 0 8px;"><b>To what extent do you agree with this opinion?</b></p>
+      <p style="margin:0;"><b>How important do you think it is for children to play as well as learn in the primary school classroom?</b></p>
+    </div>
+    <p style="margin-top:10px;">Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p>
+    <p><i>Write at least 250 words.</i></p>`;
+}
+function wordCount(t){
+  const trimmed = (t||"").trim();
+  return trimmed ? trimmed.split(/\s+/).length : 0;
+}
+function renderWriter(){
+  const el = document.getElementById('writerPane');
+  const min = state.task===1 ? 150 : 250;
+  el.innerHTML = `<textarea id="essayBox" placeholder="Viết bài của bạn ở đây...">${state.texts[state.task]}</textarea>
+    <div class="wordcount">Số từ: <b id="wcLive">0</b> (tối thiểu ${min} từ)</div>`;
+  const box = document.getElementById('essayBox');
+  box.value = state.texts[state.task];
+  updateWC();
+  box.addEventListener('input', ()=>{
+    state.texts[state.task] = box.value;
+    updateWC();
+  });
+}
+function updateWC(){
+  const box = document.getElementById('essayBox');
+  document.getElementById('wcLive').textContent = wordCount(box.value);
+}
+function switchTask(t){
+  state.task = t;
+  document.querySelectorAll('#tasktabs button').forEach(b=>b.classList.toggle('active', +b.dataset.task===t));
+  document.getElementById('promptPane').innerHTML = t===1 ? renderPromptTask1() : renderPromptTask2();
+  renderWriter();
+}
+document.getElementById('tasktabs').addEventListener('click', e=>{
+  const b = e.target.closest('button[data-task]');
+  if(b) switchTask(+b.dataset.task);
+});
+document.getElementById('fontInc').onclick = ()=>{ state.fontsize=Math.min(22,state.fontsize+1); document.documentElement.style.setProperty('--fontsize', state.fontsize+'px'); };
+document.getElementById('fontDec').onclick = ()=>{ state.fontsize=Math.max(12,state.fontsize-1); document.documentElement.style.setProperty('--fontsize', state.fontsize+'px'); };
+document.getElementById('themeToggle').onclick = ()=>{
+  const r = document.documentElement;
+  const cur = r.getAttribute('data-theme');
+  r.setAttribute('data-theme', cur==='dark' ? 'light' : 'dark');
+};
+
+function fmtTime(s){ const m=Math.floor(s/60), sec=s%60; return String(m).padStart(2,'0')+':'+String(sec).padStart(2,'0'); }
+let timerHandle = setInterval(()=>{
+  if(!state.started || state.submitted) return;
+  state.timeLeft--;
+  if(state.timeLeft<=0){ state.timeLeft=0; doSubmit(); }
+  const t = document.getElementById('timer');
+  t.textContent = fmtTime(state.timeLeft);
+  t.classList.remove('warn','danger');
+  if(state.timeLeft<=300) t.classList.add('danger');
+  else if(state.timeLeft<=600) t.classList.add('warn');
+},1000);
+
+function buildPayload(){
+  return {
+    formType: "ielts_writing",
+    name: state.student.name,
+    phone: state.student.phone,
+    wc1: wordCount(state.texts[1]),
+    wc2: wordCount(state.texts[2]),
+    task1: state.texts[1],
+    task2: state.texts[2],
+    submittedAt: new Date().toISOString()
+  };
+}
+function sendResult(payload){
+  const box = document.getElementById('sendStatus');
+  const backup = document.getElementById('backupBox');
+  if(!ENDPOINT){
+    box.className='sendbox fail';
+    box.innerHTML='<b>Chưa cấu hình nơi nhận kết quả.</b> Bấm "Sao chép bài viết" và gửi cho giáo viên.';
+    document.getElementById('backupText').value = JSON.stringify(payload,null,2);
+    backup.style.display='block';
+    return;
+  }
+  box.className='sendbox pending';
+  box.textContent='Đang gửi bài viết…';
+  backup.style.display='none';
+  fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)})
+    .then(()=>{ box.className='sendbox done'; box.textContent='Đã gửi bài viết cho giáo viên.'; })
+    .catch(()=>{
+      box.className='sendbox fail';
+      box.innerHTML='<b>Gửi không thành công</b> (có thể do mất mạng). Bấm "Thử gửi lại" hoặc "Sao chép bài viết".';
+      document.getElementById('backupText').value = JSON.stringify(payload,null,2);
+      backup.style.display='block';
+    });
+}
+function doSubmit(){
+  if(state.submitted) return;
+  state.submitted = true;
+  clearInterval(timerHandle);
+  document.getElementById('wc1').textContent = wordCount(state.texts[1]);
+  document.getElementById('wc2').textContent = wordCount(state.texts[2]);
+  document.getElementById('scorePanel').classList.add('show');
+  lastPayload = buildPayload();
+  sendResult(lastPayload);
+}
+document.getElementById('submitBtn').onclick = ()=>{
+  if(confirm('Nộp bài viết? Bạn sẽ không thể sửa thêm sau khi nộp.')) doSubmit();
+};
+document.getElementById('closeScore').onclick = ()=> document.getElementById('scorePanel').classList.remove('show');
+document.getElementById('btnRetrySend').onclick = ()=>{ if(lastPayload) sendResult(lastPayload); };
+document.getElementById('btnCopyBackup').onclick = ()=>{
+  const ta = document.getElementById('backupText');
+  ta.select(); ta.setSelectionRange(0,99999);
+  try{
+    if(navigator.clipboard) navigator.clipboard.writeText(ta.value);
+    else document.execCommand('copy');
+    const b = document.getElementById('btnCopyBackup');
+    b.textContent='Đã sao chép ✓';
+    setTimeout(()=>{ b.textContent='Sao chép bài viết'; },2000);
+  }catch(e){ alert('Hãy bôi đen và copy thủ công phần chữ ở trên.'); }
+};
+document.getElementById('stStart').onclick = ()=>{
+  const name = document.getElementById('stName').value.trim();
+  const phone = document.getElementById('stPhone').value.trim();
+  const err = document.getElementById('stErr');
+  if(!name){ err.textContent='Vui lòng nhập họ tên.'; return; }
+  if(!phone || phone.replace(/\D/g,'').length<9){ err.textContent='Vui lòng nhập số điện thoại hợp lệ.'; return; }
+  err.textContent='';
+  state.student = { name, phone };
+  state.started = true;
+  document.getElementById('startGate').style.display='none';
+};
+
+switchTask(1);
+</script>
+</body>
+</html>
