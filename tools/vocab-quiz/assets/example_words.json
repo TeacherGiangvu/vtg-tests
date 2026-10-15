@@ -1,0 +1,232 @@
+{
+  "title": "Vocabulary Quiz — Organic Farming",
+  "kicker": "IELTS Reading",
+  "seconds": 20,
+  "words": [
+    {
+      "w": "claim",
+      "vi": "tuyên bố, khẳng định (chưa chắc đúng)",
+      "def": "to say that something is true, although it has not been proved",
+      "sent": "Organic farming is often ___ to be safer, but many studies reject this idea.",
+      "sentA": "claimed",
+      "coll": "make / support / reject a ___",
+      "collA": "claim"
+    },
+    {
+      "w": "evidence",
+      "vi": "bằng chứng",
+      "def": "facts or signs that show clearly that something is true",
+      "sent": "There is no ___ that organic crops are more nutritious than normal ones.",
+      "sentA": "evidence",
+      "coll": "there is strong ___ that…",
+      "collA": "evidence"
+    },
+    {
+      "w": "significant",
+      "vi": "đáng kể, có ý nghĩa",
+      "def": "large or important enough to have a real effect",
+      "sent": "The review found no statistically ___ difference between the two crops.",
+      "sentA": "significant",
+      "coll": "a statistically ___ difference",
+      "collA": "significant"
+    },
+    {
+      "w": "noticeable",
+      "vi": "dễ nhận thấy, rõ rệt",
+      "def": "easy to see, hear or feel",
+      "sent": "These small differences have no ___ effect on people's health.",
+      "sentA": "noticeable",
+      "coll": "have a ___ effect on sth",
+      "collA": "noticeable"
+    },
+    {
+      "w": "misleading",
+      "vi": "gây hiểu lầm, đánh lừa",
+      "def": "giving a wrong idea or a false impression",
+      "sent": "The simple claim that organic food is healthier is rather ___.",
+      "sentA": "misleading",
+      "coll": "a ___ claim / statement",
+      "collA": "misleading"
+    },
+    {
+      "w": "be contradicted by",
+      "vi": "bị phản bác, bị bác bỏ bởi",
+      "def": "to be proved wrong by other facts",
+      "sent": "The idea that natural food is safer is ___ the fact that many plants contain toxins.",
+      "sentA": "contradicted by",
+      "coll": "be ___ by the fact that…",
+      "collA": "contradicted"
+    },
+    {
+      "w": "expand",
+      "vi": "mở rộng, tăng trưởng",
+      "def": "to become larger in size, number or amount",
+      "sent": "The organic market has been ___ by 25 percent a year.",
+      "sentA": "expanding",
+      "coll": "___ by 25 percent a year",
+      "collA": "expand"
+    },
+    {
+      "w": "improve",
+      "vi": "cải thiện, làm tốt hơn",
+      "def": "to make something better than it was before",
+      "sent": "Crop rotation helps to ___ the quality of the soil.",
+      "sentA": "improve",
+      "coll": "___ soil quality / living standards",
+      "collA": "improve"
+    },
+    {
+      "w": "vary",
+      "vi": "thay đổi, khác nhau tuỳ trường hợp",
+      "def": "to be different in different situations",
+      "sent": "The health value of food will ___ from one product to another.",
+      "sentA": "vary",
+      "coll": "___ depending on sth",
+      "collA": "vary"
+    },
+    {
+      "w": "develop",
+      "vi": "phát triển",
+      "def": "to grow or become bigger and more advanced",
+      "sent": "In ___ countries, having enough food matters more than farming methods.",
+      "sentA": "developing",
+      "coll": "___ countries / parts of the world",
+      "collA": "developing"
+    },
+    {
+      "w": "compared to / with",
+      "vi": "so với",
+      "def": "used when you show the difference between two things",
+      "sent": "The benefits are tiny ___ the pollution caused by transporting food.",
+      "sentA": "compared to",
+      "coll": "A is tiny ___ with B",
+      "collA": "compared"
+    },
+    {
+      "w": "promote",
+      "vi": "thúc đẩy, khuyến khích",
+      "def": "to support and encourage something so that it develops",
+      "sent": "Many governments are ___ natural farming methods.",
+      "sentA": "promoting",
+      "coll": "___ awareness / growth / health",
+      "collA": "promote"
+    },
+    {
+      "w": "approach",
+      "vi": "cách tiếp cận, phương pháp",
+      "def": "a way of dealing with a problem or a situation",
+      "sent": "But is this really the right ___ to food production?",
+      "sentA": "approach",
+      "coll": "the right ___ to sth",
+      "collA": "approach"
+    },
+    {
+      "w": "avoid",
+      "vi": "tránh, né tránh",
+      "def": "to keep away from something or stop it from happening",
+      "sent": "These methods ___ using pesticides and other artificial products.",
+      "sentA": "avoid",
+      "coll": "___ + V-ing",
+      "collA": "avoid"
+    },
+    {
+      "w": "focus",
+      "vi": "sự tập trung; tập trung vào",
+      "def": "to give all your attention to one particular thing",
+      "sent": "Perhaps the ___ should be on helping poor farmers instead.",
+      "sentA": "focus",
+      "coll": "the ___ should be on sth",
+      "collA": "focus"
+    },
+    {
+      "w": "access",
+      "vi": "sự tiếp cận, quyền sử dụng",
+      "def": "the chance or right to use or get something",
+      "sent": "Poor countries need ___ to the most advanced farming techniques.",
+      "sentA": "access",
+      "coll": "gain / have ___ to sth",
+      "collA": "access"
+    },
+    {
+      "w": "benefit",
+      "vi": "lợi ích",
+      "def": "a good or helpful result of something",
+      "sent": "The environmental ___ of organic farming are surprisingly small.",
+      "sentA": "benefits",
+      "coll": "the environmental ___ of sth",
+      "collA": "benefits"
+    },
+    {
+      "w": "severe",
+      "vi": "nghiêm trọng; gắt gao",
+      "def": "very serious, or very strict",
+      "sent": "There are ___ limits to how much organic food can be produced.",
+      "sentA": "severe",
+      "coll": "there are ___ limits to…",
+      "collA": "severe"
+    },
+    {
+      "w": "absence",
+      "vi": "sự thiếu vắng, sự không có",
+      "def": "the fact that something or someone is not there",
+      "sent": "Farmers must find ways to deal with the ___ of man-made chemicals.",
+      "sentA": "absence",
+      "coll": "in the ___ of sth",
+      "collA": "absence"
+    },
+    {
+      "w": "compensate for",
+      "vi": "bù đắp cho, bù lại",
+      "def": "to do something that reduces the bad effect of a loss",
+      "sent": "Crop rotation helps farmers ___ the lack of fertiliser.",
+      "sentA": "compensate for",
+      "coll": "___ for the lack of sth",
+      "collA": "compensate"
+    },
+    {
+      "w": "luxury",
+      "vi": "sự xa xỉ, thứ xa xỉ",
+      "def": "something expensive that is pleasant but not necessary",
+      "sent": "For many shoppers, organic food is simply an expensive ___.",
+      "sentA": "luxury",
+      "coll": "an expensive ___",
+      "collA": "luxury"
+    },
+    {
+      "w": "attraction",
+      "vi": "sức hấp dẫn, điểm thu hút",
+      "def": "a quality that makes something interesting or desirable",
+      "sent": "So what is the ___ of organic food for so many people?",
+      "sentA": "attraction",
+      "coll": "the ___ of sth (for sb)",
+      "collA": "attraction"
+    },
+    {
+      "w": "define",
+      "vi": "định nghĩa; xác định (bản thân)",
+      "def": "to explain exactly what something means or what someone is",
+      "sent": "Buying organic is a way of ___ yourself as a caring person.",
+      "sentA": "defining",
+      "coll": "___ oneself as…",
+      "collA": "define"
+    },
+    {
+      "w": "a number of",
+      "vi": "một số, khá nhiều",
+      "def": "several; more than a few",
+      "sent": "Food quality varies for ___ reasons, including freshness and cooking.",
+      "sentA": "a number of",
+      "coll": "for ___ reasons",
+      "collA": "a number of"
+    },
+    {
+      "w": "be irrelevant to",
+      "vi": "không liên quan, không quan trọng đối với",
+      "def": "not important in a situation, or not connected with it",
+      "sent": "To a farmer in rural Africa, this European debate is ___ daily survival.",
+      "sentA": "irrelevant to",
+      "coll": "be largely / totally ___ to sth",
+      "collA": "irrelevant"
+    }
+  ]
+}
