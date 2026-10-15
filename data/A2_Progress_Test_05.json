@@ -1,0 +1,111 @@
+{
+  "level": "A2",
+  "title": "VTG · A2 Progress Test 5",
+  "heading": "A2 Progress Test 5",
+  "kicker": "VTG English Center · Cambridge English Empower",
+  "quiz_name": "A2 Progress Test 5 (Empower)",
+  "footer": "VTG English Center · Cambridge English Empower A2 Progress Test 5 · © UCLES 2022",
+  "minutes": 40,
+  "audio": "audio/A2_Progress_Test_05_A.mp3",
+  "parts": [
+    {
+      "id": "part1",
+      "label": "Part 1",
+      "name": "Listening — Choose the best reply",
+      "nav": "Nghe",
+      "rubric": "Questions 1 – 8. You will hear eight short sentences. For each one, choose the best reply. You will hear each sentence twice.",
+      "audio": true,
+      "kind": "mcq",
+      "layout": "col",
+      "qs": [
+        {"no": 1, "opts": ["A post office? No, there isn't.", "A post office? Turn left at the station.", "A post office? This is the concert hall."], "correct": "B"},
+        {"no": 2, "opts": ["Where's the metro station?", "Are you certain?", "Is there?"], "correct": "B"},
+        {"no": 3, "opts": ["Are you sure?", "That's right – the bank is on the left.", "Yes, go straight on, and turn into Albert Street."], "correct": "C"},
+        {"no": 4, "opts": ["Right into Surrey Street?", "OK, turn left.", "The bank is on the right."], "correct": "A"},
+        {"no": 5, "opts": ["Turn right at the supermarket, then left.", "Is that left into Park Street?", "So, the stadium is straight along here."], "correct": "A"},
+        {"no": 6, "opts": ["Turn right for the supermarket.", "The cinema is on your left.", "Go straight along Black Street."], "correct": "C"},
+        {"no": 7, "opts": ["That's right.", "Are you sure?", "Great, thanks."], "correct": "A"},
+        {"no": 8, "opts": ["I think so.", "Is there a bank near here?", "Go straight on for about 500 metres."], "correct": "C"}
+      ]
+    },
+    {
+      "id": "part2",
+      "label": "Part 2",
+      "name": "Vocabulary — In the city and at home",
+      "nav": "Từ vựng",
+      "rubric": "Questions 9 – 16. Read the sentences about things you can find in the city or in your home. Choose the missing word (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "qs": [
+        {"no": 9, "text": "People usually only visit a <span class='gap'></span> when they have a problem.", "opts": ["concert hall", "football stadium", "police station"], "correct": "C"},
+        {"no": 10, "text": "Every morning I look in the <span class='gap'></span> and think, 'Wow, I look great!'", "opts": ["lamp", "mirror", "wardrobe"], "correct": "B"},
+        {"no": 11, "text": "This is my favourite <span class='gap'></span> where I sit and watch TV.", "opts": ["cooker", "armchair", "bookcase"], "correct": "B"},
+        {"no": 12, "text": "Every morning, I wash the dishes in the kitchen <span class='gap'></span>.", "opts": ["washing machine", "sink", "mirror"], "correct": "B"},
+        {"no": 13, "text": "I watch football every Saturday at the <span class='gap'></span> near my house.", "opts": ["concert hall", "stadium", "theatre"], "correct": "B"},
+        {"no": 14, "text": "Geraldo lives in a fantastic new <span class='gap'></span> opposite the post office.", "opts": ["office", "flat", "hospital"], "correct": "B"},
+        {"no": 15, "text": "I clean the curtains in the <span class='gap'></span> when they are very dirty.", "opts": ["cooker", "mirror", "washing machine"], "correct": "C"},
+        {"no": 16, "text": "In the centre of my city, there's a beautiful <span class='gap'></span> with many interesting buildings.", "opts": ["square", "café", "flat"], "correct": "A"}
+      ]
+    },
+    {
+      "id": "part3",
+      "label": "Part 3",
+      "name": "Vocabulary — Write the words",
+      "nav": "Viết từ",
+      "rubric": "Questions 17 – 24. Read the descriptions of things you can find in the city or in your home. The first letter is already there. There is one space for each other letter in the word. Gõ trọn vẹn cả cụm từ vào ô trả lời.",
+      "kind": "input",
+      "qs": [
+        {"no": 17, "text": "This is a place where you can get some exercise.", "pattern": "s _ _ _ _ _   c _ _ _ _ _", "correct": "sports centre", "accept": ["sports center"]},
+        {"no": 18, "text": "At night, you can use this to help you see when you want to read.", "pattern": "l _ _ _", "correct": "lamp"},
+        {"no": 19, "text": "When you want to send a letter, you go to this place.", "pattern": "p _ _ _   o _ _ _ _ _", "correct": "post office"},
+        {"no": 20, "text": "You can find this in the kitchen and use it to make a hot meal.", "pattern": "c _ _ _ _ _", "correct": "cooker"},
+        {"no": 21, "text": "At home, when you want to get something to read, you can find something in here.", "pattern": "b _ _ _ _ _ _ _", "correct": "bookcase"},
+        {"no": 22, "text": "You can find these at a window.", "pattern": "c _ _ _ _ _ _ _", "correct": "curtains"},
+        {"no": 23, "text": "There are often apartments and offices inside one of these.", "pattern": "b _ _ _ _ _ _ _", "correct": "building"},
+        {"no": 24, "text": "People walk on this when they go over a river.", "pattern": "b _ _ _ _ _", "correct": "bridge"}
+      ]
+    },
+    {
+      "id": "part4",
+      "label": "Part 4",
+      "name": "Reading — An Unusual House",
+      "nav": "Bài đọc",
+      "rubric": "Questions 25 – 32. Read this text about an unusual house. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "passage": {
+        "title": "An Unusual House",
+        "html": "You can visit a very unusual house in Pennsylvania, in the USA. I think it's great. Like other houses, there <span class=\"bl\">(25) ……</span> a normal front door and there are normal windows, but this house is actually very different from a house like yours or <span class=\"bl\">(26) ……</span>. It's a very, very big shoe! In Shoe House, <span class=\"bl\">(27) ……</span> a living room, one bedroom and a bathroom. It's a big shoe outside, but the house is actually very small inside and <span class=\"bl\">(28) ……</span> much furniture.<br><br>So, <span class=\"bl\">(29) ……</span> house is this? Carla Farrow and her husband Ron live there now. In the house, you can see a picture of Martin Boston, the first owner. In <span class=\"bl\">(30) ……</span> hands, of course, there is a pair of shoes!<br><br><span class=\"bl\">(31) ……</span> unusual houses near you? Do you live in one? If <span class=\"bl\">(32) ……</span> is unusual, email me some pictures of it."
+      },
+      "qs": [
+        {"no": 25, "opts": ["is", "are", "has"], "correct": "A"},
+        {"no": 26, "opts": ["mine", "his", "theirs"], "correct": "A"},
+        {"no": 27, "opts": ["there are", "it is", "there's"], "correct": "C"},
+        {"no": 28, "opts": ["there is", "there are", "there isn't"], "correct": "C"},
+        {"no": 29, "opts": ["who", "whose", "who's"], "correct": "B"},
+        {"no": 30, "opts": ["Martin's", "Martin", "Martins"], "correct": "A"},
+        {"no": 31, "opts": ["Is there some", "Isn't there any", "Are there any"], "correct": "C"},
+        {"no": 32, "opts": ["theirs", "yours", "ours"], "correct": "B"}
+      ]
+    },
+    {
+      "id": "part5",
+      "label": "Part 5",
+      "name": "Grammar — there is / there are, possessives",
+      "nav": "Ngữ pháp",
+      "rubric": "Questions 33 – 40. Read the sentences about things you can find in the city or in your home. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "qs": [
+        {"no": 33, "text": "There <span class='gap'></span> three theatres in the town where I live.", "opts": ["is", "are", "has"], "correct": "B"},
+        {"no": 34, "text": "Why <span class='gap'></span> there any milk in the fridge?", "opts": ["isn't", "aren't", "hasn't"], "correct": "A"},
+        {"no": 35, "text": "My sister's room is next to <span class='gap'></span>.", "opts": ["my", "your", "mine"], "correct": "C"},
+        {"no": 36, "text": "Go straight along the street and <span class='gap'></span> a supermarket on your left.", "opts": ["there are", "there's", "this is"], "correct": "B"},
+        {"no": 37, "text": "There are <span class='gap'></span> good places to listen to classical music in your town.", "opts": ["lots", "some", "any"], "correct": "B"},
+        {"no": 38, "text": "John and Sally live in New York and my apartment is next to <span class='gap'></span>.", "opts": ["they", "their", "theirs"], "correct": "C"},
+        {"no": 39, "text": "My brother lives in London now – it's <span class='gap'></span> favourite city.", "opts": ["his", "he", "him"], "correct": "A"},
+        {"no": 40, "text": "<span class='gap'></span> bedroom is this?", "opts": ["Whose", "Who", "Who's"], "correct": "A"}
+      ]
+    }
+  ]
+}
