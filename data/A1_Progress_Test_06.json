@@ -1,0 +1,335 @@
+{
+  "level": "A1",
+  "title": "VTG · A1 Progress Test 6",
+  "heading": "A1 Progress Test 6",
+  "kicker": "VTG English Center · Cambridge English Empower",
+  "quiz_name": "A1 Progress Test 6 (Empower)",
+  "footer": "VTG English Center · Cambridge English Empower A1 Progress Test 6 · © UCLES 2016",
+  "minutes": 30,
+  "audio": "audio/A1_Progress_Test_06.mp3",
+  "parts": [
+    {
+      "id": "part1",
+      "label": "Part 1",
+      "name": "Listening — Choose the best reply",
+      "nav": "Nghe",
+      "rubric": "Questions 1 – 6. You will hear six short sentences. For each one, choose the best reply. You will hear each sentence twice.",
+      "audio": true,
+      "kind": "mcq",
+      "layout": "col",
+      "qs": [
+        {
+          "no": 1,
+          "opts": [
+            "What's your address?",
+            "I'd like a cup of tea, please.",
+            "That's great, thanks."
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 2,
+          "opts": [
+            "Here you are.",
+            "Thanks, but I'm fine.",
+            "But it's really nice."
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 3,
+          "opts": [
+            "Don't worry, it's OK.",
+            "I'll come with you.",
+            "Would you like a biscuit?"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 4,
+          "opts": [
+            "There isn't a shop near here.",
+            "No, it's OK, thanks.",
+            "It's very expensive."
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 5,
+          "opts": [
+            "Don't worry, I'll come with you.",
+            "No, it's OK, thanks.",
+            "That's great, thanks."
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 6,
+          "opts": [
+            "No sorry, there isn't.",
+            "Thanks, but I'm fine.",
+            "Would you like one?"
+          ],
+          "correct": "C"
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "label": "Part 2",
+      "name": "Vocabulary — Jobs and daily life",
+      "nav": "Từ vựng",
+      "rubric": "Questions 7 – 12. Read the sentences about jobs and daily life. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "qs": [
+        {
+          "no": 7,
+          "text": "Sarah is a <span class='gap'></span> for a large hotel – she welcomes people and answers the telephone.",
+          "opts": [
+            "receptionist",
+            "chef",
+            "student"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 8,
+          "text": "Jo is a <span class='gap'></span> in a busy restaurant and she loves her job.",
+          "opts": [
+            "student",
+            "shop assistant",
+            "waitress"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 9,
+          "text": "My uncle knows the names of all the streets in my town because he is a <span class='gap'></span>.",
+          "opts": [
+            "chef",
+            "taxi driver",
+            "teacher"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 10,
+          "text": "Does your maths <span class='gap'></span> live near the school?",
+          "opts": [
+            "doctor",
+            "waiter",
+            "teacher"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 11,
+          "text": "Lisa doesn't sit down at work because she's a <span class='gap'></span>.",
+          "opts": [
+            "shop assistant",
+            "taxi driver",
+            "bank worker"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 12,
+          "text": "Carlos is a <span class='gap'></span> – he makes cars.",
+          "opts": [
+            "business student",
+            "receptionist",
+            "factory worker"
+          ],
+          "correct": "C"
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "label": "Part 3",
+      "name": "Word formation — Write the words",
+      "nav": "Viết từ",
+      "rubric": "Questions 13 – 18. Read the sentences about daily life. What are the missing words? The first letter is already there. There is one space for each other letter in the word. Gõ trọn vẹn cả cụm từ vào ô trả lời.",
+      "kind": "input",
+      "qs": [
+        {
+          "no": 13,
+          "text": "My mother doesn't <span class='gap'></span> because she isn't hungry – she usually has a big lunch.",
+          "pattern": "h _ _ _   d _ _ _ _ _",
+          "correct": "have dinner"
+        },
+        {
+          "no": 14,
+          "text": "Adam and Tom sometimes <span class='gap'></span> together on the bus in the morning.",
+          "pattern": "g _   t _   w _ _ _",
+          "correct": "go to work"
+        },
+        {
+          "no": 15,
+          "text": "After a long day in the shop, Nadia and Ben <span class='gap'></span> work at 6.00 at night.",
+          "pattern": "f _ _ _ _ _",
+          "correct": "finish"
+        },
+        {
+          "no": 16,
+          "text": "My friends always <span class='gap'></span> early every morning – at about 6.00.",
+          "pattern": "g _ _   u _",
+          "correct": "get up"
+        },
+        {
+          "no": 17,
+          "text": "My parents always <span class='gap'></span> to drink at 11 o'clock in the morning and tea at 3 o'clock.",
+          "pattern": "h _ _ _   c _ _ _ _ _",
+          "correct": "have coffee"
+        },
+        {
+          "no": 18,
+          "text": "What time does Tim <span class='gap'></span> in the factory in the morning?",
+          "pattern": "s _ _ _ _   w _ _ _",
+          "correct": "start work"
+        }
+      ]
+    },
+    {
+      "id": "part4",
+      "label": "Part 4",
+      "name": "Reading — Rob and Zoe",
+      "nav": "Bài đọc",
+      "rubric": "Questions 19 – 24. Read the conversation between Rob and Zoe. Zoe has a sister, Clare. Rob asks about Clare's life. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "passage": {
+        "title": "Rob and Zoe",
+        "html": "<b>Rob:</b> What does your sister do?<br>\n<b>Zoe:</b> Clare? She's a teacher but she <span class=\"bl\">(19) ……</span> in a school.<br>\n<b>Rob:</b> Where does she work?<br>\n<b>Zoe:</b> In a university in the USA.<br>\n<b>Rob:</b> <span class=\"bl\">(20) ……</span> the university have lots of students?<br>\n<b>Zoe:</b> Yes <span class=\"bl\">(21) ……</span> – about 20,000. She <span class=\"bl\">(22) ……</span> every day but she loves it.<br>\n<b>Rob:</b> <span class=\"bl\">(23) ……</span> and see her sometimes?<br>\n<b>Zoe:</b> Yes, but she doesn't have a lot of holiday. She has another job – she's a waitress in a small restaurant.<br>\n<b>Rob:</b> Really? That's interesting.<br>\n<b>Zoe:</b> She <span class=\"bl\">(24) ……</span> it, but she needs the money.<br>\n<b>Rob:</b> Oh, and where's the university?<br>\n<b>Zoe:</b> In Los Angeles.<br>\n<b>Rob:</b> Fantastic!"
+      },
+      "qs": [
+        {
+          "no": 19,
+          "opts": [
+            "don't work",
+            "not work",
+            "doesn't work"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 20,
+          "opts": [
+            "Does",
+            "Do",
+            "Is"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 21,
+          "opts": [
+            "it can",
+            "it does",
+            "it is"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 22,
+          "opts": [
+            "doesn't teach",
+            "don't teach",
+            "not teach"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 23,
+          "opts": [
+            "Do you go",
+            "Does she go",
+            "When you go"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 24,
+          "opts": [
+            "don't like",
+            "doesn't like",
+            "not like"
+          ],
+          "correct": "B"
+        }
+      ]
+    },
+    {
+      "id": "part5",
+      "label": "Part 5",
+      "name": "Grammar — Present simple",
+      "nav": "Ngữ pháp",
+      "rubric": "Questions 25 – 30. Read the sentences about daily life. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "qs": [
+        {
+          "no": 25,
+          "text": "Jill <span class='gap'></span> her work because it's boring.",
+          "opts": [
+            "doesn't like",
+            "don't like",
+            "like"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 26,
+          "text": "Oh, this is a chocolate ice cream but Gina <span class='gap'></span> eat chocolate.",
+          "opts": [
+            "not",
+            "don't",
+            "doesn't"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 27,
+          "text": "David is a university student but <span class='gap'></span> usually have lunch at the university.",
+          "opts": [
+            "there isn't",
+            "he isn't",
+            "he doesn't"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 28,
+          "text": "'Does your father get up early to go to work?' '<span class='gap'></span>'",
+          "opts": [
+            "Yes, he does.",
+            "Yes, he gets up.",
+            "Yes, he is."
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 29,
+          "text": "When <span class='gap'></span> home in the evening?",
+          "opts": [
+            "you get",
+            "do you get",
+            "you do get"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 30,
+          "text": "'Does the film start at 9.00 p.m.?' 'Yes, <span class='gap'></span>.'",
+          "opts": [
+            "it is",
+            "it does",
+            "it starts"
+          ],
+          "correct": "B"
+        }
+      ]
+    }
+  ]
+}
