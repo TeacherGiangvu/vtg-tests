@@ -8,6 +8,7 @@ Public GitHub Pages repo of interactive tests for VTG English Center (pre-A1 to 
 - `data/<LEVEL>_Progress_Test_<NN>.json`: the questions for each test. This is the source of truth.
 - `template/`: the paper template. `tools/vocab-quiz/`: vocabulary quiz builder (`scripts/build_quiz.py`).
 - `tools/build_index.py` regenerates `index.html`. Run it after every new test.
+- `/build-test <LEVEL> <N> <VERSION>` (`.claude/commands/build-test.md`) builds an Empower Progress Test end to end from Google Drive. `tools/check_progress_test.py` reads PDF text and checks a test JSON against the paper and answer key.
 
 ## Token rules (important, Pro plan)
 - NEVER open built `.html` files or audio files. They can be several MB (base64 audio). Edit the JSON and rebuild instead.
