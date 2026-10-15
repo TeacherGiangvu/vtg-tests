@@ -514,7 +514,7 @@ function finish(auto){
         });
       } else {
         key = q.correct;
-        ok = norm(given) === norm(q.correct);
+        ok = [q.correct, ...(q.accept || [])].some(a => norm(given) === norm(a));
         shown = given || "";
         const inp = $("inp" + q.no);
         inp.disabled = true;

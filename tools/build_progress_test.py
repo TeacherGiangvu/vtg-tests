@@ -24,7 +24,7 @@ TEMPLATE = ROOT / "template" / "progress_test_template.html"
 VOCAB_BUILD = ROOT / "tools" / "vocab-quiz" / "scripts" / "build_quiz.py"
 LETTERS = "ABCD"
 PART_KEYS = {"id", "label", "name", "nav", "rubric", "audio", "kind", "layout", "passage", "qs"}
-Q_KEYS = {"no", "text", "opts", "correct", "pattern"}
+Q_KEYS = {"no", "text", "opts", "correct", "pattern", "accept"}
 
 
 def default_endpoint():
@@ -81,10 +81,17 @@ def validate(cfg):
                     errors.append(f"{qt}: correct must be one of {list(LETTERS[:len(opts)])}, not {q.get('correct')!r}")
                 if not q.get("text") and not p.get("audio") and not p.get("passage"):
                     errors.append(f"{qt}: no text, and the part has no audio or passage")
+                if "accept" in q:
+                    errors.append(f"{qt}: 'accept' is only for input questions")
             elif kind == "input":
                 for key in ("text", "pattern", "correct"):
                     if not q.get(key):
                         errors.append(f"{qt}: input question needs '{key}'")
+                accept = q.get("accept", [])
+                if not isinstance(accept, list) or not all(isinstance(a, str) and a.strip() for a in accept):
+                    errors.append(f"{qt}: 'accept' must be a list of non-empty strings")
+                elif any(a.strip().lower() == str(q.get("correct", "")).strip().lower() for a in accept):
+                    errors.append(f"{qt}: 'accept' repeats the main answer")
     if expected_no == 1:
         errors.append("no questions")
     audio = cfg.get("audio")
