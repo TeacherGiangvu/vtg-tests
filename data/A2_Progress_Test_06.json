@@ -1,0 +1,111 @@
+{
+  "level": "A2",
+  "title": "VTG · A2 Progress Test 6",
+  "heading": "A2 Progress Test 6",
+  "kicker": "VTG English Center · Cambridge English Empower",
+  "quiz_name": "A2 Progress Test 6 (Empower)",
+  "footer": "VTG English Center · Cambridge English Empower A2 Progress Test 6 · © UCLES 2022",
+  "minutes": 40,
+  "audio": "audio/A2_Progress_Test_06_A.mp3",
+  "parts": [
+    {
+      "id": "part1",
+      "label": "Part 1",
+      "name": "Listening — Choose the best reply",
+      "nav": "Nghe",
+      "rubric": "Questions 1 – 8. You will hear eight short sentences. For each one, choose the best reply. You will hear each sentence twice.",
+      "audio": true,
+      "kind": "mcq",
+      "layout": "col",
+      "qs": [
+        {"no": 1, "opts": ["She's not here just now.", "Can I call you at work?", "Fred'll be back soon."], "correct": "A"},
+        {"no": 2, "opts": ["Is Carla there?", "You're welcome.", "Sure, no problem."], "correct": "C"},
+        {"no": 3, "opts": ["Can you wait a minute?", "Hi, Lucy, it's Ben.", "Sorry, I have a meeting."], "correct": "B"},
+        {"no": 4, "opts": ["OK, just a minute.", "OK, you can call me at work.", "OK, could he call me back?"], "correct": "C"},
+        {"no": 5, "opts": ["He'll be back soon.", "There is Phil.", "Are you free?"], "correct": "A"},
+        {"no": 6, "opts": ["Thanks for your help.", "Hi, Ben, it's me, Joe.", "Can we chat about it now?"], "correct": "B"},
+        {"no": 7, "opts": ["How can I help?", "I'm not here just now.", "No, it's OK. Can she call me back?"], "correct": "C"},
+        {"no": 8, "opts": ["OK, thanks.", "Is Annie there please?", "She's not there just now."], "correct": "A"}
+      ]
+    },
+    {
+      "id": "part2",
+      "label": "Part 2",
+      "name": "Vocabulary — People and families",
+      "nav": "Từ vựng",
+      "rubric": "Questions 9 – 16. Read the sentences about people and families. Choose the missing word (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "qs": [
+        {"no": 9, "text": "My grandfather is still alive but my <span class='gap'></span> died in 2010 – she was 89 years old.", "opts": ["grandparents", "grandmother", "granddaughter"], "correct": "B"},
+        {"no": 10, "text": "My sister <span class='gap'></span> a new computer last week.", "opts": ["bought", "spent", "cost"], "correct": "A"},
+        {"no": 11, "text": "My little brother was born <span class='gap'></span> a Saturday.", "opts": ["in", "at", "on"], "correct": "C"},
+        {"no": 12, "text": "Sue <span class='gap'></span> to London by car yesterday to meet her mother for lunch.", "opts": ["brought", "made", "went"], "correct": "C"},
+        {"no": 13, "text": "My grandparents moved to their house <span class='gap'></span> 1948.", "opts": ["in", "at", "on"], "correct": "A"},
+        {"no": 14, "text": "My uncle's birthday is <span class='gap'></span> May and we always go for a picnic that day.", "opts": ["on", "at", "in"], "correct": "C"},
+        {"no": 15, "text": "Adam and Joe <span class='gap'></span> friends when they found out they both like football.", "opts": ["went", "got", "became"], "correct": "C"},
+        {"no": 16, "text": "My sister <span class='gap'></span> a big cake for my birthday – she's a very good cook.", "opts": ["ate", "made", "cut"], "correct": "B"}
+      ]
+    },
+    {
+      "id": "part3",
+      "label": "Part 3",
+      "name": "Vocabulary — Write the words",
+      "nav": "Viết từ",
+      "rubric": "Questions 17 – 24. Read the sentences about people and families. What are the missing words? The first letter is already there. There is one space for each other letter in the word. Gõ trọn vẹn cả từ vào ô trả lời.",
+      "kind": "input",
+      "qs": [
+        {"no": 17, "text": "Susanna's sister has three children and so Susanna is an <span class='gap'></span>.", "pattern": "a _ _ _", "correct": "aunt"},
+        {"no": 18, "text": "I <span class='gap'></span> all my money on my brother's birthday present, so I've got no money now.", "pattern": "s _ _ _ _", "correct": "spent"},
+        {"no": 19, "text": "I saw my <span class='gap'></span> John and his father, my Uncle Paul, yesterday.", "pattern": "c _ _ _ _ _", "correct": "cousin"},
+        {"no": 20, "text": "My parents always wanted <span class='gap'></span>, so they were happy when my sons, Tom and Dan, were born.", "pattern": "g _ _ _ _ _ _ _ _ _ _ _ _", "correct": "grandchildren"},
+        {"no": 21, "text": "My sister's new shoes <span class='gap'></span> a lot of money.", "pattern": "c _ _ _", "correct": "cost"},
+        {"no": 22, "text": "I <span class='gap'></span> this old photograph of my uncle – he moved to Australia when he was 19.", "pattern": "f _ _ _ _", "correct": "found"},
+        {"no": 23, "text": "As usual, our whole family <span class='gap'></span> roast lamb for lunch on Sunday.", "pattern": "a _ _", "correct": "ate"},
+        {"no": 24, "text": "Eva's son, Martin, is a doctor and now Martin's daughter, Eva's <span class='gap'></span>, is also a doctor.", "pattern": "g _ _ _ _ _ _ _ _ _ _ _ _", "correct": "granddaughter"}
+      ]
+    },
+    {
+      "id": "part4",
+      "label": "Part 4",
+      "name": "Reading — My early life",
+      "nav": "Bài đọc",
+      "rubric": "Questions 25 – 32. Read a woman's story about when she was a child. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "passage": {
+        "title": "My early life",
+        "html": "When I was a child, I <span class=\"bl\">(25) ……</span> in a small village by the sea. My family had a farm. I loved playing outside in the summer holidays. My older sister <span class=\"bl\">(26) ……</span> at home then but my brothers <span class=\"bl\">(27) ……</span>, and the three of us <span class=\"bl\">(28) ……</span> ourselves. We often played by the sea. We took apples and cola with us and <span class=\"bl\">(29) ……</span> outside all day. There was always lots to do.<br><br>But I remember when it rained there was nothing to do. Then I found some books in my parents' bookcase and the world <span class=\"bl\">(30) ……</span> for me. I took books everywhere with me and read all the time. But my brothers <span class=\"bl\">(31) ……</span> interested in books and thought I wasn't fun anymore! <span class=\"bl\">(32) ……</span> it a good time? Yes, fantastic and I often go back to my old family house where my parents still live."
+      },
+      "qs": [
+        {"no": 25, "opts": ["lives", "lived", "live"], "correct": "B"},
+        {"no": 26, "opts": ["wasn't", "isn't", "weren't"], "correct": "A"},
+        {"no": 27, "opts": ["weren't", "were", "was"], "correct": "B"},
+        {"no": 28, "opts": ["to enjoy", "enjoy", "enjoyed"], "correct": "C"},
+        {"no": 29, "opts": ["stays", "stayed", "stay"], "correct": "B"},
+        {"no": 30, "opts": ["change", "to change", "changed"], "correct": "C"},
+        {"no": 31, "opts": ["weren't", "were", "wasn't"], "correct": "A"},
+        {"no": 32, "opts": ["Is", "Were", "Was"], "correct": "C"}
+      ]
+    },
+    {
+      "id": "part5",
+      "label": "Part 5",
+      "name": "Grammar — Past simple",
+      "nav": "Ngữ pháp",
+      "rubric": "Questions 33 – 40. Read the sentences about people and families. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "qs": [
+        {"no": 33, "text": "<span class='gap'></span> at home when you called?", "opts": ["He was", "Was he", "Is he"], "correct": "B"},
+        {"no": 34, "text": "Where <span class='gap'></span> your older sister born?", "opts": ["is", "was", "were"], "correct": "B"},
+        {"no": 35, "text": "My brother <span class='gap'></span> hard and became a doctor last year.", "opts": ["studied", "study", "studies"], "correct": "A"},
+        {"no": 36, "text": "I <span class='gap'></span> at the same university as my brother.", "opts": ["wasn't", "weren't", "aren't"], "correct": "A"},
+        {"no": 37, "text": "When my brother was young he <span class='gap'></span> sport, and he was really good at football.", "opts": ["loves", "loved", "love"], "correct": "B"},
+        {"no": 38, "text": "When my cousin went to Canada, I <span class='gap'></span> writing to her.", "opts": ["stops", "stop", "stopped"], "correct": "C"},
+        {"no": 39, "text": "'Were all your friends in the same class at school?' 'No, <span class='gap'></span>.'", "opts": ["they aren't", "weren't they", "they weren't"], "correct": "C"},
+        {"no": 40, "text": "My husband usually gets home early but last night he <span class='gap'></span> home very late.", "opts": ["arrived", "arrive", "arrives"], "correct": "A"}
+      ]
+    }
+  ]
+}
