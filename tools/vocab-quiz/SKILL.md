@@ -58,7 +58,21 @@ Trước khi bắt tay, cần biết:
 | `coll` | cụm cố định có `___` | Cụm từ |
 | `collA` | từ điền vào cụm (thường là dạng gốc) | Cụm từ |
 
-Các khóa ngoài `words`: `title` (bắt buộc), `kicker`, `subtitle`, `seconds`, `endpoint` — đều tùy chọn, có mặc định hợp lý.
+Các khóa ngoài `words`: `title` (bắt buộc), `kicker`, `subtitle`, `seconds`, `endpoint`, `types`, `per_type`, `level`, `topic` — đều tùy chọn, có mặc định hợp lý. `level` + `topic` (hoặc tên file `<LEVEL>_Vocab_<Topic>.json`) dùng cho lệnh `/build-vocab`.
+
+### Ngữ pháp (dạng `G`)
+
+File có thể có `words`, `grammar`, hoặc cả hai. Mỗi mục `grammar`:
+
+```json
+{"q": "Yesterday we ___ a bear.", "options": ["see", "saw", "seen"], "answer": 1, "note": "quy tắc ngắn, tùy chọn"}
+```
+
+- Đúng **3** phương án, không trùng nhau; `answer` là chỉ số (0–2) của đáp án đúng; câu `q` có `___`; `note` hiện sau khi trả lời.
+- `types` thêm mã `G` (ví dụ `["A", "C", "G"]`). Bỏ trống `types`: chỉ `words` = bốc 4/5 dạng (như cũ); chỉ `grammar` = `["G"]`; có cả hai = bốc 3 dạng từ vựng rồi phần `G` ở cuối.
+- Phần `G` cần tối thiểu `per_type` câu. Mẫu: `assets/example_grammar.json`.
+- Script chỉ kiểm tra được hình thức; Giang/Claude phải tự đảm bảo mỗi câu chỉ có **một** đáp án đúng.
+- `build_quiz.py --check` chỉ kiểm tra; `--no-send` dựng bản test không gửi kết quả (endpoint rỗng).
 
 ### Nguyên tắc bắt buộc
 
@@ -96,7 +110,7 @@ Không cần mô tả lại chi tiết cho người dùng trừ khi họ hỏi:
 
 ## Khi người dùng muốn sửa engine
 
-Sửa `assets/template.html`. Lưu ý các chỗ trống `__WORDS__`, `__ENDPOINT__`, `__SECONDS__`, `__TITLE__`, `__SUBTITLE__`, `__KICKER__` phải giữ nguyên, nếu không script sẽ không đổ dữ liệu vào được.
+Sửa `assets/template.html`. Lưu ý các chỗ trống `__WORDS__`, `__GRAMMAR__`, `__ENDPOINT__`, `__TYPE_IDS__`, `__PER_TYPE__`, `__SECONDS__`, `__TITLE__`, `__SUBTITLE__`, `__KICKER__` phải giữ nguyên, nếu không script sẽ không đổ dữ liệu vào được.
 
 ## Tài liệu kèm theo
 

@@ -267,6 +267,8 @@ const PER_TYPE = __PER_TYPE__;   /* số câu mỗi phần */
 
 /* ================= DỮ LIỆU 25 TỪ ================= */
 const WORDS = __WORDS__;
+/* Câu ngữ pháp (dạng G): {q, options:[3], answer:chỉ số, note?} */
+const GRAMMAR = __GRAMMAR__;
 
 const TYPES = [
   { id:"A", name:"Chọn nghĩa tiếng Việt", short:"Anh→Việt",
@@ -278,8 +280,11 @@ const TYPES = [
   { id:"D", name:"Chọn từ theo định nghĩa tiếng Anh", short:"Định nghĩa",
     build:w=>`Từ nào khớp với định nghĩa sau?<span class="def">${w.def}</span>`, key:"w" },
   { id:"E", name:"Hoàn thành cụm từ", short:"Cụm từ",
-    build:w=>`Hoàn thành cụm từ sau:<br><span style="font-size:21px">${gapify(w.coll)}</span>`, key:"collA" }
+    build:w=>`Hoàn thành cụm từ sau:<br><span style="font-size:21px">${gapify(w.coll)}</span>`, key:"collA" },
+  { id:"G", name:"Chọn đáp án ngữ pháp đúng", short:"Ngữ pháp", grammar:true,
+    build:g=>gapify(g.q) }
 ];
+const WORD_TYPES = TYPES.filter(t=>!t.grammar);
 
 function gapify(s){ return s.replace("___", '<span class="gap">&nbsp;</span>'); }
 function shuffle(a){
@@ -296,7 +301,9 @@ const TOTAL  = NPARTS * PER_TYPE;
 $("intro-1").innerHTML = `Mỗi lượt gồm <b>${TOTAL} câu</b>, chia thành <b>${NPARTS} phần, mỗi phần ${PER_TYPE} câu</b> — hết ${PER_TYPE} câu là đổi dạng câu hỏi.`;
 $("intro-2").innerHTML = TYPE_IDS
   ? `Các phần lần lượt là: ${TYPE_IDS.map(id=>"<b>"+TYPES.find(t=>t.id===id).short+"</b>").join(", ")}.`
-  : `Ngân hàng có <b>5 dạng</b>: Anh→Việt, Việt→Anh, Điền từ vào câu, Định nghĩa tiếng Anh, Hoàn thành cụm từ. Mỗi lượt bốc ngẫu nhiên <b>4 dạng</b>.`;
+  : GRAMMAR.length
+    ? `Ngân hàng có <b>5 dạng từ vựng</b> (Anh→Việt, Việt→Anh, Điền từ vào câu, Định nghĩa tiếng Anh, Hoàn thành cụm từ) và <b>phần Ngữ pháp</b>. Mỗi lượt bốc ngẫu nhiên <b>3 dạng từ vựng</b>, rồi đến phần Ngữ pháp.`
+    : `Ngân hàng có <b>5 dạng</b>: Anh→Việt, Việt→Anh, Điền từ vào câu, Định nghĩa tiếng Anh, Hoàn thành cụm từ. Mỗi lượt bốc ngẫu nhiên <b>4 dạng</b>.`;
 $("counter").textContent = `Câu 1 / ${TOTAL}`;
 $("sec-part").textContent = `Phần 1 / ${NPARTS}`;
 $("score-total").textContent = `/${TOTAL}`;
@@ -308,12 +315,24 @@ let timerId=null, timeLeft=0;
 
 function buildQuiz(){
   const types = TYPE_IDS ? TYPE_IDS.map(id=>TYPES.find(t=>t.id===id))
-                         : shuffle(TYPES).slice(0,NPARTS);
-  const pool  = shuffle(WORDS).slice(0,TOTAL);
+    : GRAMMAR.length ? [...shuffle(WORD_TYPES).slice(0,NPARTS-1), TYPES.find(t=>t.grammar)]
+                     : shuffle(WORD_TYPES).slice(0,NPARTS);
+  const nWordParts = types.filter(t=>!t.grammar).length;
+  const pool  = shuffle(WORDS).slice(0,nWordParts*PER_TYPE);
+  const gpool = shuffle(GRAMMAR).slice(0,PER_TYPE);
   const qs=[];
+  let wi=0, gi=0;
   types.forEach((t,ti)=>{
     for(let i=0;i<PER_TYPE;i++){
-      const w = pool[ti*PER_TYPE+i];
+      if(t.grammar){
+        const g = gpool[gi++];
+        const correct = g.options[g.answer];
+        qs.push({ part:ti+1, typeName:t.name, typeShort:t.short, word:plainText(gapify(g.q)),
+          grammar:true, note:g.note||"",
+          prompt:t.build(g), correct, options:shuffle(g.options) });
+        continue;
+      }
+      const w = pool[wi++];
       const correct = w[t.key];
       const used = new Set([correct]);
       const distract=[];
@@ -371,6 +390,12 @@ function startTimer(){
   },1000);
 }
 
+/* Gợi ý sau mỗi câu: từ vựng cần nhớ, hoặc quy tắc (note) của câu ngữ pháp */
+function hint(q){
+  if(q.grammar) return q.note ? ` — Quy tắc: <b>${q.note}</b>` : "";
+  return ` — từ vựng cần nhớ: <b>${q.word}</b>`;
+}
+
 function timeUp(){
   stopTimer();
   if(locked) return;
@@ -389,7 +414,7 @@ function timeUp(){
   });
   const fb=$("feedback");
   fb.className="feedback show bad";
-  fb.innerHTML=`<b>⏱ Hết giờ!</b> Câu này tính là sai. Đáp án đúng là: <b>${q.correct}</b> — từ vựng cần nhớ: <b>${q.word}</b>`;
+  fb.innerHTML=`<b>⏱ Hết giờ!</b> Câu này tính là sai. Đáp án đúng là: <b>${q.correct}</b>${hint(q)}`;
   $("btn-next").classList.remove("hidden");
 }
 
@@ -427,9 +452,9 @@ function choose(btn,chosen){
     else el.classList.add("dim");
   });
   const fb=$("feedback");
-  if(ok){ fb.className="feedback show good"; fb.innerHTML=`<b>Chính xác!</b> ${q.correct}`; }
+  if(ok){ fb.className="feedback show good"; fb.innerHTML=`<b>Chính xác!</b> ${q.correct}${q.grammar?hint(q):""}`; }
   else { fb.className="feedback show bad";
-    fb.innerHTML=`<b>Chưa đúng.</b> Đáp án đúng là: <b>${q.correct}</b> — từ vựng cần nhớ: <b>${q.word}</b>`; }
+    fb.innerHTML=`<b>Chưa đúng.</b> Đáp án đúng là: <b>${q.correct}</b>${hint(q)}`; }
   $("btn-next").classList.remove("hidden");
 }
 

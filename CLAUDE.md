@@ -6,7 +6,8 @@ Public GitHub Pages repo of interactive tests for VTG English Center (pre-A1 to 
 - Existing files at the repo root (e.g. `VTG_A1_Progress_Test_6.html`) are already shared with students. NEVER rename, move or delete them: the links would break.
 - New tests: `tests/<LEVEL>/<LEVEL>_Progress_Test_<NN>.html` (two-digit number). Other work: `assignments/`.
 - `data/<LEVEL>_Progress_Test_<NN>.json`: the questions for each test. This is the source of truth.
-- `template/`: the paper template. `tools/vocab-quiz/`: vocabulary quiz builder (`scripts/build_quiz.py`).
+- `template/`: the paper template. `tools/vocab-quiz/`: vocabulary quiz builder (`scripts/build_quiz.py`); a quiz file can have `words`, `grammar` (3-option items, type id `G`), or both.
+- `/build-vocab <json>` (`.claude/commands/build-vocab.md`) validates a vocab/grammar JSON and builds it to `tests/<LEVEL>/<LEVEL>_Vocab_<Topic>.html`. Quiz JSON lives in `data/<LEVEL>_Vocab_<Topic>.json`.
 - `tools/build_index.py` regenerates `index.html`. Run it after every new test.
 - `/build-test <LEVEL> <N> <VERSION>` (`.claude/commands/build-test.md`) builds an Empower Progress Test end to end from Google Drive. `tools/check_progress_test.py` reads PDF text and checks a test JSON against the paper and answer key.
 
@@ -32,6 +33,7 @@ Public GitHub Pages repo of interactive tests for VTG English Center (pre-A1 to 
 
 ## Results
 - Results go to the shared Google Sheet through the Apps Script endpoint (default is in `tools/vocab-quiz/scripts/build_quiz.py`). Send with `fetch`, `no-cors`, `Content-Type: text/plain;charset=utf-8`, JSON-stringified body.
+- **Never submit to the live Sheet when testing.** Test only on a copy built with `"endpoint": ""` (or `build_quiz.py --no-send`), confirm with `grep` that the endpoint is empty, serve only that copy, and never finish a run on a page that has the live endpoint. A page built for publishing keeps the live endpoint and is never opened to test.
 
 ## Publishing
 - Commit new files with a clear message (e.g. `Add A2 Progress Test 03`) and push to `main`. Ask Giang before pushing.

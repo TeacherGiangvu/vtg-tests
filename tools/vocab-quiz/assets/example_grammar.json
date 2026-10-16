@@ -1,0 +1,17 @@
+{
+  "title": "Grammar Quiz — Past Simple",
+  "kicker": "A2 Grammar",
+  "level": "A2",
+  "topic": "Past Simple",
+  "seconds": 20,
+  "types": ["G"],
+  "per_type": 5,
+  "grammar": [
+    {"q": "Yesterday we ___ a bear.", "options": ["see", "saw", "seen"], "answer": 1, "note": "Past simple of see = saw."},
+    {"q": "She ___ to school by bus last week.", "options": ["go", "goes", "went"], "answer": 2, "note": "Past simple of go = went."},
+    {"q": "They ___ football on Sunday.", "options": ["played", "play", "plays"], "answer": 0, "note": "Regular verbs: add -ed."},
+    {"q": "I ___ my keys this morning.", "options": ["lose", "lost", "losed"], "answer": 1, "note": "lose → lost (irregular)."},
+    {"q": "He ___ a letter to his friend yesterday.", "options": ["wrote", "write", "written"], "answer": 0},
+    {"q": "We ___ at home last night.", "options": ["was", "were", "are"], "answer": 1, "note": "I/he/she/it was; we/you/they were."}
+  ]
+}
