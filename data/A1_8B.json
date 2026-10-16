@@ -1,0 +1,295 @@
+{
+  "level": "A1",
+  "topic": "Unit_8B",
+  "title": "Vocabulary & Grammar Quiz — Unit 8B: He saw a bear",
+  "kicker": "Empower A1 · Unit 8B",
+  "subtitle": "Animals, house words, free time + Past simple (positive)",
+  "seconds": 25,
+  "types": [
+    "A",
+    "B",
+    "C",
+    "G"
+  ],
+  "per_type": 5,
+  "words": [
+    {
+      "w": "deer",
+      "vi": "con hươu, con nai",
+      "sent": "The ___ has big horns and eats grass in the forest.",
+      "sentA": "deer"
+    },
+    {
+      "w": "bear",
+      "vi": "con gấu",
+      "sent": "The ___ ate honey and then slept in the forest all winter.",
+      "sentA": "bear"
+    },
+    {
+      "w": "hippo",
+      "vi": "con hà mã",
+      "sent": "A ___ is a very big animal that lives near rivers in Africa.",
+      "sentA": "hippo"
+    },
+    {
+      "w": "snake",
+      "vi": "con rắn",
+      "sent": "A ___ has no legs and moves along the ground.",
+      "sentA": "snake"
+    },
+    {
+      "w": "bird",
+      "vi": "con chim",
+      "sent": "A ___ has two wings and can fly.",
+      "sentA": "bird"
+    },
+    {
+      "w": "garden",
+      "vi": "khu vườn",
+      "sent": "We have flowers and a small tree in our ___.",
+      "sentA": "garden"
+    },
+    {
+      "w": "kitchen",
+      "vi": "nhà bếp",
+      "sent": "My mum is cooking rice in the ___.",
+      "sentA": "kitchen"
+    },
+    {
+      "w": "bathroom",
+      "vi": "phòng tắm",
+      "sent": "I brush my teeth in the ___ every morning.",
+      "sentA": "bathroom"
+    },
+    {
+      "w": "bedroom",
+      "vi": "phòng ngủ",
+      "sent": "My bed and my desk are in my ___.",
+      "sentA": "bedroom"
+    },
+    {
+      "w": "living room",
+      "vi": "phòng khách",
+      "sent": "Our guests sit and talk in the ___ before dinner.",
+      "sentA": "living room"
+    },
+    {
+      "w": "window",
+      "vi": "cửa sổ",
+      "sent": "Please open the ___ — it's very hot in here.",
+      "sentA": "window"
+    },
+    {
+      "w": "sofa",
+      "vi": "ghế sofa",
+      "sent": "Three people can sit on this big, soft ___.",
+      "sentA": "sofa"
+    },
+    {
+      "w": "farm",
+      "vi": "trang trại",
+      "sent": "Cows, pigs and chickens live on a ___.",
+      "sentA": "farm"
+    },
+    {
+      "w": "police",
+      "vi": "cảnh sát",
+      "sent": "Call the ___ — someone took my bike!",
+      "sentA": "police"
+    },
+    {
+      "w": "scared",
+      "vi": "sợ hãi",
+      "sent": "I was ___ because there was a big spider in my bed.",
+      "sentA": "scared"
+    },
+    {
+      "w": "hungry",
+      "vi": "đói",
+      "sent": "I didn't eat anything today, so now I'm very ___.",
+      "sentA": "hungry"
+    },
+    {
+      "w": "river",
+      "vi": "con sông",
+      "sent": "We swam in the ___ and the water was cold.",
+      "sentA": "river"
+    },
+    {
+      "w": "grass",
+      "vi": "cỏ",
+      "sent": "The cows are eating ___ in the field.",
+      "sentA": "grass"
+    },
+    {
+      "w": "jump",
+      "vi": "nhảy",
+      "sent": "Dogs can ___ over small fences.",
+      "sentA": "jump"
+    },
+    {
+      "w": "watch",
+      "vi": "xem",
+      "sent": "I like to ___ a film on Saturday night.",
+      "sentA": "watch"
+    },
+    {
+      "w": "walk",
+      "vi": "đi bộ",
+      "sent": "I ___ to school because it is near my house.",
+      "sentA": "walk"
+    },
+    {
+      "w": "call",
+      "vi": "gọi điện",
+      "sent": "I always ___ my grandmother on Sunday.",
+      "sentA": "call"
+    },
+    {
+      "w": "hear",
+      "vi": "nghe thấy",
+      "sent": "I can't ___ you — the music is too loud.",
+      "sentA": "hear"
+    },
+    {
+      "w": "try",
+      "vi": "thử, cố gắng",
+      "sent": "I want to ___ the new restaurant near my house.",
+      "sentA": "try"
+    },
+    {
+      "w": "breakfast",
+      "vi": "bữa sáng",
+      "sent": "I always have ___ at 6 a.m., before school.",
+      "sentA": "breakfast"
+    },
+    {
+      "w": "dinner",
+      "vi": "bữa tối",
+      "sent": "We have ___ at seven in the evening.",
+      "sentA": "dinner"
+    }
+  ],
+  "grammar": [
+    {
+      "q": "Yesterday I ___ a film at home.",
+      "options": [
+        "watch",
+        "watched",
+        "watching"
+      ],
+      "answer": 1,
+      "note": "Regular verb + -ed: watch → watched"
+    },
+    {
+      "q": "Last night we ___ to a café.",
+      "options": [
+        "go",
+        "went",
+        "goed"
+      ],
+      "answer": 1,
+      "note": "Irregular: go → went"
+    },
+    {
+      "q": "She ___ the bear from the window.",
+      "options": [
+        "saw",
+        "seen",
+        "sees"
+      ],
+      "answer": 0,
+      "note": "Irregular: see → saw"
+    },
+    {
+      "q": "They ___ a strange noise in the garden.",
+      "options": [
+        "hear",
+        "heard",
+        "heared"
+      ],
+      "answer": 1,
+      "note": "Irregular: hear → heard"
+    },
+    {
+      "q": "Andrew ___ the door and looked outside.",
+      "options": [
+        "opens",
+        "opening",
+        "opened"
+      ],
+      "answer": 2,
+      "note": "Regular verb + -ed: open → opened"
+    },
+    {
+      "q": "We ___ pizza for dinner last Friday.",
+      "options": [
+        "eated",
+        "ate",
+        "eat"
+      ],
+      "answer": 1,
+      "note": "Irregular: eat → ate"
+    },
+    {
+      "q": "He ___ home at six o'clock yesterday.",
+      "options": [
+        "came",
+        "comed",
+        "comes"
+      ],
+      "answer": 0,
+      "note": "Irregular: come → came"
+    },
+    {
+      "q": "I ___ a book on the bus last week.",
+      "options": [
+        "readed",
+        "reads",
+        "read"
+      ],
+      "answer": 2,
+      "note": "Irregular: read → read (spelling stays the same)"
+    },
+    {
+      "q": "My friend ___ me last night.",
+      "options": [
+        "called",
+        "calls",
+        "calling"
+      ],
+      "answer": 0,
+      "note": "Regular verb + -ed: call → called"
+    },
+    {
+      "q": "She ___ for ten minutes and then went home.",
+      "options": [
+        "walk",
+        "walked",
+        "walks"
+      ],
+      "answer": 1,
+      "note": "Regular verb + -ed: walk → walked"
+    },
+    {
+      "q": "Yesterday he ___ a lot of cheese.",
+      "options": [
+        "have",
+        "haved",
+        "had"
+      ],
+      "answer": 2,
+      "note": "Irregular: have → had"
+    },
+    {
+      "q": "She ___ to open the window, but it was stuck.",
+      "options": [
+        "tried",
+        "tryed",
+        "try"
+      ],
+      "answer": 0,
+      "note": "Consonant + y → -ied: try → tried"
+    }
+  ]
+}
