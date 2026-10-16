@@ -176,8 +176,8 @@
     </div>
 
     <ul class="intro-list">
-      <li>Mỗi lượt gồm <b>20 câu</b>, chia thành <b>4 phần, mỗi phần 5 câu</b> — hết 5 câu là đổi dạng câu hỏi.</li>
-      <li>Ngân hàng có <b>5 dạng</b>: Anh→Việt, Việt→Anh, Điền từ vào câu, Định nghĩa tiếng Anh, Hoàn thành cụm từ. Mỗi lượt bốc ngẫu nhiên <b>4 dạng</b>.</li>
+      <li id="intro-1"></li>
+      <li id="intro-2"></li>
       <li>Mỗi câu chỉ có <b>__SECONDS__ giây</b> để trả lời. Hết giờ sẽ tự hiện đáp án và <b>câu đó tính là sai</b> — hãy đọc nhanh và chọn dứt khoát.</li>
       <li>Trả lời xong mỗi câu sẽ thấy <b>đáp án đúng ngay</b>. Cuối bài có <b>bảng tổng kết</b> để xem lại.</li>
       <li>Kết quả sẽ được <b>gửi tự động cho thầy/cô</b> khi em làm xong.</li>
@@ -190,10 +190,10 @@
     <div class="whoami" id="whoami"></div>
     <div class="bar-row">
       <div class="bar"><span id="bar-fill"></span></div>
-      <div class="counter" id="counter">Câu 1 / 20</div>
+      <div class="counter" id="counter"></div>
     </div>
     <div class="sectionbar">
-      <div class="t" id="sec-part">Phần 1 / 4</div>
+      <div class="t" id="sec-part"></div>
       <div class="n" id="sec-name">—</div>
     </div>
     <div class="timerwrap" id="timerwrap">
@@ -209,7 +209,7 @@
   <!-- ============ RESULT ============ -->
   <div class="card hidden" id="screen-result">
     <div class="scorebox">
-      <div class="score-n"><span id="score">0</span><small>/20</small></div>
+      <div class="score-n"><span id="score">0</span><small id="score-total"></small></div>
       <div class="score-msg" id="score-msg"></div>
       <div id="score-pill"></div>
     </div>
@@ -262,6 +262,8 @@
    ================================================================== */
 const ENDPOINT = "__ENDPOINT__";
 const SECONDS_PER_Q = __SECONDS__;
+const TYPE_IDS = __TYPE_IDS__;   /* null = bốc ngẫu nhiên 4 trong 5 dạng */
+const PER_TYPE = __PER_TYPE__;   /* số câu mỗi phần */
 
 /* ================= DỮ LIỆU 25 TỪ ================= */
 const WORDS = __WORDS__;
@@ -287,18 +289,31 @@ function shuffle(a){
 }
 const $ = id => document.getElementById(id);
 
+const NPARTS = TYPE_IDS ? TYPE_IDS.length : 4;
+const TOTAL  = NPARTS * PER_TYPE;
+
+/* Điền phần giới thiệu và số câu theo cấu hình */
+$("intro-1").innerHTML = `Mỗi lượt gồm <b>${TOTAL} câu</b>, chia thành <b>${NPARTS} phần, mỗi phần ${PER_TYPE} câu</b> — hết ${PER_TYPE} câu là đổi dạng câu hỏi.`;
+$("intro-2").innerHTML = TYPE_IDS
+  ? `Các phần lần lượt là: ${TYPE_IDS.map(id=>"<b>"+TYPES.find(t=>t.id===id).short+"</b>").join(", ")}.`
+  : `Ngân hàng có <b>5 dạng</b>: Anh→Việt, Việt→Anh, Điền từ vào câu, Định nghĩa tiếng Anh, Hoàn thành cụm từ. Mỗi lượt bốc ngẫu nhiên <b>4 dạng</b>.`;
+$("counter").textContent = `Câu 1 / ${TOTAL}`;
+$("sec-part").textContent = `Phần 1 / ${NPARTS}`;
+$("score-total").textContent = `/${TOTAL}`;
+
 /* ================= TRẠNG THÁI ================= */
 let quiz=[], idx=0, answers=[], locked=false;
 let student={name:"",cls:""}, startedAt=0, lastPayload=null;
 let timerId=null, timeLeft=0;
 
 function buildQuiz(){
-  const types = shuffle(TYPES).slice(0,4);
-  const pool  = shuffle(WORDS).slice(0,20);
+  const types = TYPE_IDS ? TYPE_IDS.map(id=>TYPES.find(t=>t.id===id))
+                         : shuffle(TYPES).slice(0,NPARTS);
+  const pool  = shuffle(WORDS).slice(0,TOTAL);
   const qs=[];
   types.forEach((t,ti)=>{
-    for(let i=0;i<5;i++){
-      const w = pool[ti*5+i];
+    for(let i=0;i<PER_TYPE;i++){
+      const w = pool[ti*PER_TYPE+i];
       const correct = w[t.key];
       const used = new Set([correct]);
       const distract=[];
@@ -380,9 +395,9 @@ function timeUp(){
 
 function renderQ(){
   const q=quiz[idx]; locked=false;
-  $("counter").textContent=`Câu ${idx+1} / 20`;
-  $("bar-fill").style.width=(idx/20*100)+"%";
-  $("sec-part").textContent=`Phần ${q.part} / 4 · câu ${(idx%5)+1} của 5`;
+  $("counter").textContent=`Câu ${idx+1} / ${TOTAL}`;
+  $("bar-fill").style.width=(idx/TOTAL*100)+"%";
+  $("sec-part").textContent=`Phần ${q.part} / ${NPARTS} · câu ${(idx%PER_TYPE)+1} của ${PER_TYPE}`;
   $("sec-name").textContent=q.typeName;
   $("prompt").innerHTML=q.prompt;
   const box=$("opts"); box.innerHTML="";
@@ -396,7 +411,7 @@ function renderQ(){
   });
   const fb=$("feedback"); fb.className="feedback"; fb.innerHTML="";
   $("btn-next").classList.add("hidden");
-  $("btn-next").textContent = (idx===19) ? "Nộp bài & xem kết quả →" : "Câu tiếp theo →";
+  $("btn-next").textContent = (idx===TOTAL-1) ? "Nộp bài & xem kết quả →" : "Câu tiếp theo →";
   startTimer();
 }
 
@@ -421,7 +436,7 @@ function choose(btn,chosen){
 function next(){
   stopTimer();
   idx++;
-  if(idx>=20){ showResult(); return; }
+  if(idx>=TOTAL){ showResult(); return; }
   renderQ(); window.scrollTo({top:0,behavior:"smooth"});
 }
 
@@ -443,9 +458,9 @@ function showResult(){
   $("score").textContent=score;
 
   let msg,pill;
-  if(score>=18){ msg="Xuất sắc! Em đã nắm rất chắc bộ từ này."; pill='<span class="pill a">RẤT TỐT</span>'; }
-  else if(score>=14){ msg="Khá tốt. Chỉ cần ôn lại vài từ ở bảng dưới là ổn."; pill='<span class="pill a">TỐT</span>'; }
-  else if(score>=10){ msg="Đạt yêu cầu, nhưng nên làm lại thêm 1–2 lượt nữa."; pill='<span class="pill b">CẦN ÔN THÊM</span>'; }
+  if(score>=TOTAL*0.9){ msg="Xuất sắc! Em đã nắm rất chắc bộ từ này."; pill='<span class="pill a">RẤT TỐT</span>'; }
+  else if(score>=TOTAL*0.7){ msg="Khá tốt. Chỉ cần ôn lại vài từ ở bảng dưới là ổn."; pill='<span class="pill a">TỐT</span>'; }
+  else if(score>=TOTAL*0.5){ msg="Đạt yêu cầu, nhưng nên làm lại thêm 1–2 lượt nữa."; pill='<span class="pill b">CẦN ÔN THÊM</span>'; }
   else { msg="Hãy đọc lại file từ vựng rồi làm lại nhé — em sẽ tiến bộ nhanh."; pill='<span class="pill c">CẦN HỌC LẠI</span>'; }
   $("score-msg").textContent=msg;
   $("score-pill").innerHTML=pill;
@@ -474,7 +489,7 @@ function showResult(){
     quizName:"__TITLE__",
     attemptId:Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7),
     name:student.name, cls:student.cls,
-    score, total:20, percent:Math.round(score/20*100),
+    score, total:TOTAL, percent:Math.round(score/TOTAL*100),
     duration:fmtDur(dur), submittedAt:new Date().toISOString(),
     wrongWords:wrongWords.join(", "),
     details:answers.map((a,i)=>({
@@ -497,7 +512,7 @@ function buildBackupText(){
     `Bài: ${p.quizName}`,
     `Họ tên: ${p.name}`,
     `Lớp: ${p.cls}`,
-    `Điểm: ${p.score}/20 (${p.percent}%) · Thời gian: ${p.duration}`,
+    `Điểm: ${p.score}/${p.total} (${p.percent}%) · Thời gian: ${p.duration}`,
     `Nộp lúc: ${new Date().toLocaleString("vi-VN")}`,
     `Từ sai: ${p.wrongWords || "không có"}`,
     `Số câu hết giờ: ${p.details.filter(d=>d.chosen.indexOf("HẾT GIỜ")>-1).length}`,
