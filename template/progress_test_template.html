@@ -99,6 +99,7 @@
     font-weight:700;font-size:13.5px;display:flex;align-items:center;justify-content:center;}
   .q.done .qno{background:var(--green);color:#fff;}
   .qtext{font-size:16px;line-height:1.65;padding-top:3px;}
+  .qtext img{display:block;max-width:100%;height:auto;border-radius:10px;margin-top:6px;pointer-events:none;}
   .qtext .gap{display:inline-block;min-width:88px;border-bottom:2px solid var(--terra);
     vertical-align:baseline;margin:0 3px;}
   .opts{display:flex;flex-direction:column;gap:8px;padding-left:41px;}
@@ -331,7 +332,7 @@ const TOTAL_SECONDS = __MINUTES__ * 60;
 
 const PARTS = __PARTS__;
 
-const LETTERS = ["A","B","C","D"];
+const LETTERS = ["A","B","C","D","E","F","G"];
 const TOTAL_Q = __TOTAL_Q__;
 
 /* ================= TRẠNG THÁI ================= */
@@ -530,7 +531,7 @@ function finish(auto){
         no:q.no, part:p.label, partName:p.name,
         question: p.kind === "input"
           ? plain(q.text) + "  [" + q.pattern + "]"
-          : (q.text ? plain(q.text) : "Listening — chọn câu đáp lại phù hợp"),
+          : (q.text ? (plain(q.text) || "Chọn từ phù hợp với hình") : "Listening — chọn câu đáp lại phù hợp"),
         chosen: shown || "(không trả lời)",
         correct: key,
         ok

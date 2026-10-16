@@ -81,7 +81,9 @@ def cmd_check(args):
                         problems.append(f"Q{no}: option not found in the paper: {o!r}")
             else:
                 key_answer = re.sub(r"[()]", "", k).strip()
-                if q["correct"].strip().lower() != key_answer.lower():
+                # some keys print only the missing letters (first letters are already on the paper)
+                missing = " ".join(w[1:] for w in q["correct"].split())
+                if q["correct"].strip().lower() != key_answer.lower() and missing.lower() != key_answer.lower():
                     problems.append(f"Q{no}: JSON says {q['correct']!r}, key says {k!r}")
                 pw = pattern_words(q["pattern"])
                 firsts = [w.split()[0] for w in pw]

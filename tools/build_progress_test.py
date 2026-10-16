@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "template" / "progress_test_template.html"
 VOCAB_BUILD = ROOT / "tools" / "vocab-quiz" / "scripts" / "build_quiz.py"
-LETTERS = "ABCD"
+LETTERS = "ABCDEFG"
 PART_KEYS = {"id", "label", "name", "nav", "rubric", "audio", "kind", "layout", "passage", "qs"}
 Q_KEYS = {"no", "text", "opts", "correct", "pattern", "accept"}
 
