@@ -1,0 +1,663 @@
+<title>VTG B2 End-of-Course Test</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Light-only look. Layout: one centred column; sticky bar holds tabs + audio. VTG brand: forest green, terracotta, warm paper. */
+:root{
+  --bg:#FBFAF6; --card:#FFFFFF; --soft:#F5F2E9; --ink:#1B1B19; --grey:#3E3E39; --line:#B5AD98;
+  --green:#1F3D31; --green-d:#142A21; --on-green:#FFFFFF; --terra:#B04E26; --terra-bg:#FDF3E3;
+  --ok:#1E6B48; --ok-bg:#E6F5EC; --bad:#A12A2A; --bad-bg:#FCEAEA;
+  --serif:'Source Serif 4',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;
+  padding-block:20px 70px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--terra);text-transform:uppercase;margin-bottom:6px}
+h1{font-family:var(--serif);font-size:clamp(24px,5vw,31px);line-height:1.15;color:var(--green);margin:0 0 6px;text-wrap:balance}
+h2{font-family:var(--serif);font-size:21px;color:var(--green);margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--grey);font-size:14px;font-style:italic}
+.card{background:var(--card);border-radius:14px;padding:24px;border:1px solid var(--line);box-shadow:0 2px 12px rgba(31,61,49,.08);margin-bottom:18px;min-width:0}
+.btn{font:600 15px var(--sans);border:none;border-radius:9px;padding:12px 24px;cursor:pointer;background:var(--green);color:var(--on-green)}
+.btn:hover{background:var(--green-d)} .btn.terra{background:var(--terra);color:#fff} .btn.ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn.sm{padding:7px 14px;font-size:13px} .btn:focus-visible,.opt:focus-visible,input:focus-visible,audio:focus-visible{outline:3px solid var(--terra);outline-offset:2px}
+.list{margin:0 0 20px;padding:0;list-style:none}
+.list li{position:relative;padding-left:24px;margin-bottom:9px}
+.list li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--terra)}
+.field{margin-bottom:14px}.field label{display:block;font-size:13px;font-weight:600;color:var(--green);margin-bottom:5px}
+input[type=text]{width:100%;font:16px var(--sans);color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:9px;padding:11px 13px}
+input.err{border-color:var(--bad);background:var(--bad-bg)}
+.formbox{background:var(--soft);border-radius:11px;padding:18px 18px 6px;margin-bottom:20px;border-left:4px solid var(--terra)}
+
+/* sticky bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:8px 0 10px;margin-bottom:10px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tab{flex:1 1 140px;font:600 14px var(--sans);padding:11px 14px;border-radius:9px;border:1.5px solid var(--green);background:transparent;color:var(--green);cursor:pointer;text-align:left}
+.tab[aria-selected=true]{background:var(--green);color:var(--on-green)}
+.tab small{display:block;font-weight:500;opacity:.85;font-size:12px}
+.clock{font:700 15px var(--sans);font-variant-numeric:tabular-nums;padding:8px 12px;border-radius:9px;background:var(--soft);color:var(--green);border:1.5px solid var(--line)}
+.clock.warn{color:var(--terra);border-color:var(--terra)} .clock.over{color:var(--bad);border-color:var(--bad)}
+.player{margin-top:10px;background:var(--card);border-radius:11px;padding:10px 12px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.player audio{width:100%;height:40px}
+.jumps{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:12.5px;color:var(--grey)}
+.prog{font-size:13px;color:var(--grey);margin-top:6px}
+
+.part{margin-bottom:6px}
+.partbar{background:var(--green);color:var(--on-green);border-radius:9px;padding:10px 16px;margin:6px 0 14px}
+.partbar b{font-family:var(--serif);font-size:18px;display:block}.partbar span{font-size:12.5px;opacity:.9}
+.q{padding:16px 0;border-bottom:1px solid var(--line)}.q:last-child{border-bottom:none}
+.qt{font-weight:500;margin-bottom:10px;display:flex;gap:10px}
+.qn{flex:none;min-width:28px;height:28px;border-radius:7px;background:var(--terra-bg);color:var(--terra);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;padding:0 6px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opts.row{display:grid;grid-template-columns:repeat(4,1fr)}@media (max-width:560px){.opts.row{grid-template-columns:repeat(2,1fr)}}
+.opt{display:flex;gap:10px;align-items:flex-start;text-align:left;font:15px/1.45 var(--sans);color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:10px;padding:10px 13px;cursor:pointer;min-width:0;min-height:48px;align-items:center;width:100%}
+.opt:hover:not(.sel){border-color:var(--green);background:var(--soft)}
+.opt .l{flex:none;width:26px;height:26px;border-radius:6px;background:var(--soft);border:1.5px solid var(--line);color:var(--green);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.opt.sel{border-color:var(--green);background:var(--green);color:var(--on-green);font-weight:600} .opt.sel .l{background:var(--on-green);color:var(--green)}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)} .opt.ok .l{background:var(--ok);color:var(--card)}
+.opt.no{border-color:var(--bad);background:var(--bad-bg)} .opt.no .l{background:var(--bad);color:var(--card)}
+.opt[disabled]{cursor:default}
+.gaptext p{margin:0 0 14px}
+.gap{display:inline-flex;align-items:baseline;gap:4px;margin:2px 1px}
+.gap .gn{font-weight:700;color:var(--terra);font-size:13px}
+.gap input{width:clamp(110px,26vw,190px);padding:5px 8px;font-size:15px;border-radius:7px;border-width:0 0 2px 0;border-bottom:2px solid var(--terra);background:var(--soft)}
+.gap input.ok{border-color:var(--ok);background:var(--ok-bg)}.gap input.no{border-color:var(--bad);background:var(--bad-bg)}
+.fix{font-size:12.5px;color:var(--ok);font-weight:600;margin-left:4px}
+.passage{background:var(--soft);border-radius:11px;padding:16px 18px;margin-bottom:8px}
+.passage h3{font-family:var(--serif);font-size:18px;color:var(--green);margin:0 0 10px}
+.passage p{margin:0 0 12px}.passage p:last-child{margin:0}.passage .n{font-weight:700;color:var(--terra)}
+.passage .who{font-weight:700;color:var(--green);display:block;margin-bottom:2px;letter-spacing:.04em;font-size:13px;text-transform:uppercase}
+.subbar{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:22px}
+.warnbox{background:var(--terra-bg);border-left:4px solid var(--terra);border-radius:9px;padding:12px 15px;margin-bottom:14px}
+.hidden{display:none!important}
+
+/* result */
+.score{text-align:center;padding:6px 0 14px}
+.big{font-family:var(--serif);font-size:54px;font-weight:700;color:var(--green);line-height:1}.big small{font-size:26px;color:var(--grey)}
+.pill{display:inline-block;margin-top:12px;padding:6px 16px;border-radius:99px;font-size:13px;font-weight:700;letter-spacing:.04em}
+.pill.a{background:var(--ok-bg);color:var(--ok)}.pill.b{background:var(--terra-bg);color:var(--terra)}.pill.c{background:var(--bad-bg);color:var(--bad)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.stat{background:var(--soft);border-radius:10px;padding:12px 14px}.stat b{font-size:22px;font-family:var(--serif);color:var(--green);display:block;font-variant-numeric:tabular-nums}.stat span{font-size:12.5px;color:var(--grey)}
+.send{border-radius:10px;padding:13px 15px;margin:10px 0;font-size:14px}
+.send.pending{background:var(--soft);border-left:4px solid var(--grey)}.send.done{background:var(--ok-bg);border-left:4px solid var(--ok)}.send.fail{background:var(--bad-bg);border-left:4px solid var(--bad)}
+textarea{width:100%;height:130px;font:12.5px/1.5 ui-monospace,Consolas,monospace;border:1.5px solid var(--line);border-radius:9px;padding:10px;color:var(--ink);background:var(--card);margin-top:8px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{background:var(--green);color:var(--on-green);text-align:left;padding:8px 10px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.y{color:var(--ok);font-weight:700}td.n{color:var(--bad);font-weight:700}
+
+/* speaking */
+.choice{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0 18px}
+@media (max-width:520px){.choice{grid-template-columns:1fr}}
+.choice button{text-align:left;font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:11px;padding:14px 16px;cursor:pointer}
+.choice button b{display:block;font-family:var(--serif);font-size:18px;color:var(--green)}
+.choice button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:var(--on-green)}
+.choice button[aria-pressed=true] b{color:var(--on-green)}
+.struct{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0 16px}
+.meter{height:10px;background:var(--soft);border:1px solid var(--line);border-radius:99px;overflow:hidden;margin:8px 0}
+.meter i{display:block;height:100%;width:0;background:var(--ok);transition:width .08s}
+.mic{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.sphead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.dots{display:flex;gap:6px}.dots i{width:26px;height:8px;border-radius:99px;background:var(--line)}.dots i.done{background:var(--ok)}.dots i.cur{background:var(--terra)}
+.qbox{background:var(--soft);border-radius:12px;padding:20px;margin:6px 0 16px;border:1px solid var(--line)}
+.qbox .id{font-weight:700;color:var(--terra);font-size:13px;letter-spacing:.06em}
+.qbox .qq{font-family:var(--serif);font-size:clamp(19px,4.5vw,24px);line-height:1.35;margin:6px 0 0;color:var(--ink)}
+.qbox ul{margin:10px 0 0 18px;padding:0}.qbox li{margin-bottom:4px}
+.phase{display:flex;align-items:center;gap:14px;border-radius:12px;padding:14px 16px;border:2px solid var(--line);background:var(--card)}
+.phase .big2{font:700 34px var(--sans);font-variant-numeric:tabular-nums;min-width:74px}
+.phase.prep{border-color:var(--terra)} .phase.prep .big2{color:var(--terra)}
+.phase.rec{border-color:var(--bad);background:var(--bad-bg)} .phase.rec .big2{color:var(--bad)}
+.rdot{width:14px;height:14px;border-radius:50%;background:var(--bad);display:inline-block;margin-right:6px}
+@media (prefers-reduced-motion:no-preference){.phase.rec .rdot{animation:bl 1s infinite}@keyframes bl{50%{opacity:.25}}}
+.errbox{background:var(--bad-bg);border-left:4px solid var(--bad);border-radius:9px;padding:12px 15px;margin:10px 0}
+.reclist{margin:10px 0 0;padding:0;list-style:none;font-size:14px}.reclist li{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:6px 0;border-bottom:1px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){.opt{transition:.12s}}
+</style>
+
+<div class="wrap">
+  <header style="margin-bottom:16px">
+    <div class="kicker">VTG English Center · Cambridge Empower B2</div>
+    <h1>End-of-Course Test: Listening &amp; Reading</h1>
+    <div class="sub">Bài kiểm tra cuối khoá trình độ B2 · Speaking, Listening, Reading</div>
+  </header>
+
+  <!-- START -->
+  <section id="s-start" class="card">
+    <ul class="list">
+      <li><b>Speaking</b> (khoảng 8 phút) làm <b>đầu tiên</b>: em chọn Đề A hoặc Đề B, bấm <b>Sẵn sàng</b>, mỗi câu hiện ra và sau 10 giây micro tự ghi âm. Em phải xong Speaking mới được làm các phần còn lại.</li>
+      <li><b>Listening</b> (25 câu, khoảng 35 phút): bản ghi âm tự nói hướng dẫn và nói mỗi đoạn <b>2 lần</b>. Em cần đeo tai nghe và ngồi nơi yên tĩnh.</li>
+      <li><b>Reading &amp; Use of English</b> (30 câu, 30 phút): đồng hồ bắt đầu chạy khi em mở tab Reading lần đầu.</li>
+      <li>Mỗi câu 1 điểm. Em có thể chuyển qua lại giữa hai tab và sửa đáp án trước khi bấm <b>Nộp bài</b>.</li>
+      <li>Câu điền từ: viết đúng chính tả, không cần viết hoa.</li>
+    </ul>
+    <div class="formbox">
+      <div class="field"><label for="in-name">Họ và tên</label><input type="text" id="in-name" autocomplete="name"></div>
+      <div class="field"><label for="in-cls">Lớp</label><input type="text" id="in-cls" placeholder="Ví dụ: B2-01"></div>
+    </div>
+    <button class="btn terra" id="btn-start">Tiếp tục sang bài Speaking</button>
+  </section>
+
+  <!-- SPEAKING -->
+  <section id="s-speak" class="hidden">
+    <div class="card" id="sp-choose">
+      <h2>Bước 1 · Speaking</h2>
+      <p class="sub">Làm trước các phần khác. Bài ghi âm của em được gửi cho thầy chấm sau.</p>
+      <p style="margin:14px 0 0;font-weight:600">Chọn đề (chỉ chọn một, không đổi được sau khi bắt đầu):</p>
+      <div class="choice">
+        <button type="button" id="pick-A" aria-pressed="false"><b>Đề A</b>People, places and money</button>
+        <button type="button" id="pick-B" aria-pressed="false"><b>Đề B</b>Choices and changes</button>
+      </div>
+      <div class="tw"><table class="struct"><thead><tr><th>Phần</th><th>Chuẩn bị</th><th>Nói</th></tr></thead><tbody>
+        <tr><td>Part 1 · Interview (4 câu)</td><td>10 giây mỗi câu</td><td>khoảng 25–30 giây</td></tr>
+        <tr><td>Part 2 · Long turn (1 thẻ đề)</td><td>1 phút</td><td>1 đến 1,5 phút (tối đa 2 phút)</td></tr>
+        <tr><td>Part 3 · Discussion (2 câu)</td><td>10 giây mỗi câu</td><td>khoảng 40–45 giây</td></tr></tbody></table></div>
+      <ul class="list">
+        <li>Hiện câu hỏi, đếm ngược 10 giây rồi <b>micro tự bật</b>. Em không cần bấm gì để bắt đầu nói.</li>
+        <li>Mỗi câu chỉ ghi âm một lần, <b>không ghi lại</b>. Đồng hồ chạy liên tục suốt bài.</li>
+        <li>Nói xong sớm, bấm <b>Xong câu này</b> để sang câu kế tiếp.</li>
+      </ul>
+      <p style="font-weight:600;margin-bottom:6px">Kiểm tra micro</p>
+      <div class="mic"><button class="btn ghost sm" id="btn-mic" type="button">Bật micro để thử</button><span class="sub" id="mic-msg">Bấm, cho phép trình duyệt dùng micro, rồi nói thử một câu.</span></div>
+      <div class="meter" aria-hidden="true"><i id="meter"></i></div>
+      <div id="mic-err" class="errbox hidden"></div>
+      <div style="margin-top:16px"><button class="btn terra" id="btn-ready" type="button" disabled>Sẵn sàng</button></div>
+    </div>
+
+    <div class="card hidden" id="sp-run">
+      <div class="sphead"><span class="clock" id="sp-clock" title="Tổng thời gian đã trôi qua">00:00</span><span id="sp-part" class="kicker" style="margin:0"></span><div class="dots" id="sp-dots"></div></div>
+      <div class="qbox" id="sp-q"></div>
+      <div class="phase prep" id="sp-phase"><div class="big2" id="sp-t">10</div><div><b id="sp-pl">Đọc câu hỏi và chuẩn bị</b><div class="sub" id="sp-ps"></div></div></div>
+      <div class="meter" aria-hidden="true"><i id="meter2"></i></div>
+      <div class="subbar" style="margin-top:8px"><span class="sub" id="sp-hint"></span><button class="btn" id="btn-next" type="button" disabled>Xong câu này</button></div>
+    </div>
+
+    <div class="card hidden" id="sp-done">
+      <h2>Đã xong phần Speaking</h2>
+      <div class="send pending" id="sp-send">Đang gửi bản ghi âm cho thầy…</div>
+      <div id="sp-fallback" class="hidden"><p class="sub">Nếu vẫn lỗi sau khi thử lại, tải các file bên dưới và gửi cho thầy qua Zalo.</p><ul class="reclist" id="sp-list"></ul><button class="btn ghost sm" id="btn-spretry" type="button">Thử gửi lại</button></div>
+      <div class="subbar"><span class="sub">Tiếp theo: Listening và Reading.</span><button class="btn terra" id="btn-gotest" type="button" disabled>Làm tiếp Listening &amp; Reading</button></div>
+    </div>
+  </section>
+
+  <!-- TEST -->
+  <section id="s-test" class="hidden">
+    <div class="bar">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="tab-L" aria-selected="true">Listening<small id="cnt-L">0/25 đã trả lời</small></button>
+        <button class="tab" role="tab" id="tab-R" aria-selected="false">Reading &amp; Use of English<small id="cnt-R">0/30 đã trả lời</small></button>
+        <div class="clock hidden" id="clock" title="Thời gian còn lại của phần Reading">30:00</div>
+      </div>
+      <div class="player" id="player">
+        <audio id="aud" controls preload="metadata" src="B2_End_of_Course_Listening.mp3"></audio>
+        <div class="jumps">Nhảy tới:
+          <button class="btn ghost sm" data-t="0">Part 1</button>
+          <button class="btn ghost sm" data-t="783">Part 2</button>
+          <button class="btn ghost sm" data-t="1476">Part 3</button>
+          <span>(mốc gần đúng; bản ghi tự đọc hướng dẫn)</span>
+        </div>
+      </div>
+    </div>
+    <div id="panel-L"></div>
+    <div id="panel-R" class="hidden"></div>
+
+    <div class="card" id="submitbox">
+      <div id="unans" class="warnbox hidden"></div>
+      <div class="subbar">
+        <span class="sub" id="submsg">Kiểm tra lại cả hai phần rồi nộp bài.</span>
+        <span><button class="btn terra" id="btn-submit">Nộp bài</button>
+        <button class="btn ghost hidden" id="btn-back">Làm tiếp</button></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="s-result" class="hidden">
+    <div class="card">
+      <div class="score"><div class="big"><span id="r-total">0</span><small>/55</small></div>
+        <div id="r-pill"></div><p class="sub" id="r-msg" style="margin-top:10px"></p></div>
+      <div class="stats" id="r-stats"></div>
+      <div class="send pending" id="sendbox">Đang gửi kết quả cho thầy…</div>
+      <div id="backup" class="hidden"><button class="btn ghost sm" id="btn-retry">Thử gửi lại</button>
+        <button class="btn ghost sm" id="btn-copy">Sao chép kết quả</button><textarea id="backup-text" readonly></textarea></div>
+    </div>
+    <div class="card">
+      <h2>Xem lại bài làm</h2><p class="sub">Xanh: đúng · Đỏ: sai. Đáp án đúng hiện bên dưới câu sai.</p>
+      <div id="review"></div>
+    </div>
+    <button class="btn" id="btn-again">Làm lại từ đầu</button>
+  </section>
+</div>
+
+<script>
+"use strict";
+var ENDPOINT="https://script.google.com/macros/s/AKfycby57HegnnckxSVtfJwqULkn4atHPG4G_YMSb5S9GyaSOCyxQLR6kpl1LqJTQi3woSF8/exec";
+var QUIZ_NAME="Empower B2 End of Course - Listening + Reading";
+var READ_SECONDS=30*60;
+
+/* ---------- DATA ---------- */
+function mc(id,q,opts,k){return {id:id,t:"mc",q:q,o:opts,k:k};}
+function gp(id,pat,show){return {id:id,t:"gap",re:pat,show:show};}
+
+var L1=[
+ mc("L1","You will hear two people talking about living in the city. What does the woman say about the part of the city she lives in?",["There's too much traffic congestion.","The public transport could be better.","There are not enough parking spaces."],1),
+ mc("L2","You will hear two friends talking about money. What have the two speakers got in common?",["They are saving up for something.","They make a living in the same way.","They regularly donate to charity."],0),
+ mc("L3","You will hear a successful actor talking to an interviewer on a radio programme. What regret does the actor have?",["that he didn't get married when he was younger","that he only became an actor later in life","that he had initially refused to work abroad"],2),
+ mc("L4","You will hear a woman talking about her friend, Max. When does Max sometimes annoy the woman?",["when he's unreliable","when he's unsympathetic","when he's unrealistic"],0),
+ mc("L5","You will hear a woman leaving a telephone message. What does the woman say about her father's illness?",["The doctors are not sure what is wrong with him.","She is uncertain when he will leave the hospital.","She thinks his illness started last week."],1),
+ mc("L6","You will hear a woman phoning her friend about their planned meeting. Why is the woman phoning her friend?",["to arrange another date for their meeting","to explain why she might not go shopping","to add more details to their plan for Saturday"],1),
+ mc("L7","You will hear part of a programme about people and their hobbies. Why did the man give up his painting class?",["He was impatient.","He was irresponsible.","He was inexperienced."],0),
+ mc("L8","You will hear a man and a woman talking about a room in the man's house. What job did the man hire somebody else to do?",["building the furniture","painting the room","making the window"],2)
+];
+var L2=[
+ gp("L9",/^(a |the )?(radio )?conversations?$/,"(a) (radio) conversation(s)"),
+ gp("L10",/^(to )?record$/,"record"),
+ gp("L11",/^(a |the )?(big )?search( operation)?$/,"search (operation)"),
+ gp("L12",/^(a |the )?tun+el+s?$/,"tunnel"),
+ gp("L13",/^(3|three) months?$/,"3 / three months"),
+ gp("L14",/^(a |the )?reputation$/,"reputation"),
+ gp("L15",/^illegal$/,"illegal"),
+ gp("L16",/^(750|seven hundred( and)? fifty)$/,"750 / seven hundred (and) fifty"),
+ gp("L17",/^(a |the )?prison$/,"prison"),
+ gp("L18",/^(a |the )?sentence$/,"sentence")
+];
+var L2text=[
+ "Rowlands was listening to the radio when he was surprised to hear {L9} between a gang of thieves.",
+ "The policeman told Rowlands to {L10} anything he heard between the thieves.",
+ "After listening to what Rowlands had discovered, the police started a big {L11}.",
+ "The robbers had to make sure that while they made a {L12} they did not attract any attention.",
+ "It was estimated by the police that the gang spent nearly {L13} planning the crime.",
+ "None of the bank robbers had a {L14} for being expert criminals.",
+ "The use of two-way radios was {L15} in 1971.",
+ "A decision was made to visit up to {L16} banks in the city of London.",
+ "The police searched for criminals Desmond Wolfe had worked with before, who were not currently in {L17}.",
+ "Because he was older, Wolfe was given a {L18} of eight years."
+];
+var L3=[
+ mc("L19","What has Stella recently written?",["a review","an article","a book"],2),
+ mc("L20","What surprised Stella most during her research?",["People have less free time now than before.","Technology helps people to slow down.","People seem to enjoy being very busy."],0),
+ mc("L21","Why does Stella mention Einstein?",["to highlight a disadvantage","to support her argument","to explain people's ideas"],1),
+ mc("L22","Which positive examples of speed does Ben give?",["different means of transport","different types of sports","different ways of communicating"],1),
+ mc("L23","Stella thinks people can improve their lives by",["taking up a new hobby.","becoming more optimistic.","enjoying the present."],2),
+ mc("L24","What effect have Ben's new eating habits had?",["He feels satisfied quickly.","He finds he requires less food.","He appreciates a wider range of tastes."],2),
+ mc("L25","What conclusions has Stella reached regarding sleep?",["Too much is not good for you.","Most people do not get enough.","It is not recommended during the day."],1)
+];
+
+var R1=[
+ ["Although","However","Instead","Despite"],["want","satisfy","like","wish"],["reliable","self-confident","influenced","dependent"],
+ ["giving up","trying out","going ahead","getting on"],["for","along","with","over"],["got","reached","arrived","come"],
+ ["strict","rigorous","strong","tough"],["believe","expect","consider","experience"],["except","unless","rather","otherwise"],["give","have","get","take"]
+].map(function(o,i){return mc("R"+(i+1),"Gap ("+(i+1)+")",o,[1,2,3,0,2,1,3,1,2,3][i]);});
+var R1text=[
+ "Paul Miller is a journalist, so you would think that he would find it pretty difficult to give up using the internet for a year. <span class=n>(1)</span> , that's exactly what he decided to do. It's not that Paul didn't <span class=n>(2)</span> going online. In fact, he found he was spending a large part of his day glued to the screen. He felt that he had become too <span class=n>(3)</span> on it for everything. Like many of us, Paul couldn't imagine <span class=n>(4)</span> the internet for a full day, not checking his emails and his Twitter account. How on earth would he cope <span class=n>(5)</span> being offline for a whole year?",
+ "Paul has just <span class=n>(6)</span> the halfway point of his challenge - six months with no internet have passed. And so what has it been like for him? Well, Paul admits that, at first, he did find it very <span class=n>(7)</span> not being able to contact people online. As you'd <span class=n>(8)</span> , it was the social networking sites that he missed most of all.",
+ "Interestingly, Paul is now finding it easier <span class=n>(9)</span> than harder as the weeks without the internet go by. He finds that he has much more time to read books and meet friends face to face these days. He advises other people to <span class=n>(10)</span> a go at living without the internet, even if they can't manage it for a whole year!"
+];
+var R2=[
+ gp("R11",/^what$/,"what"),gp("R12",/^has$/,"has"),gp("R13",/^too$/,"too"),gp("R14",/^have$/,"have"),
+ gp("R15",/^(if|when|provided( that)?|providing( that)?)$/,"if / when / provided / providing")
+];
+var R2text=[
+ "More and more people are moving to cities to live, but how is people's quality of life being affected by this? People have different opinions about {R11} contributes to them having a 'good quality of city life'. Some would choose having plenty of parks, others a lack of crime.",
+ "Most people, though, would agree that traffic congestion {R12} already become a really serious problem in their lives. People spend far {R13} much time stuck in their cars and getting angry. It's thought that, by the middle of the century, most cities will {R14} introduced much better public transport. {R15} this happens, a whole range of problems will be solved for people living in cities."
+];
+var R3passage=[
+ "Trade goes back as far as recorded history and doubtless even further. The farmer exchanged corn for fish from the fisherman. All very fine, but it meant the farmer and the fisherman had to stay where they were. That's where money had the advantage. Once it was decided what a currency (whether it was seashells or gold coins) was worth, you could travel out of your area and its value stayed the same.",
+ "For many centuries, the actual value of the metals used in the coins showed the value which they represented in terms of trade. A gold coin has almost always represented a higher value than a silver one for example, because gold itself is more precious. <b>This</b> changed with the introduction of notes, made of paper, and now plastic credit cards are being used for the majority of our buying and shopping needs.",
+ "Using a credit card has become the normal way of paying for most people today, but it is a relatively recent invention and a very important one in the history of money. And it isn't difficult to see why! Having a lot of cash on you has always had its disadvantages - you might lose it or be robbed. Some people have blamed the spread of diseases on dirty coins and notes being passed around in society. A pocketful of loose change can become rather heavy and uncomfortable to carry around.",
+ "Research indicates that people feel it's less dishonest to cheat others when using a credit card than cash. Psychologists believe that credit cards put a greater distance between the buyer and the seller and so cheating someone by using a card seems less dishonest than when using cash, because it makes the victim seem more remote. Dishonesty wouldn't have been a problem with the face-to-face exchange between our fisherman and farmer.",
+ "So would a bright, cashless society really make us happier or better people? It would certainly be more efficient. But I have to tell you that I lost my credit card three months ago and do you know what? I haven't replaced it yet and I haven't really missed it at all!"
+];
+var R3=[
+ mc("R16","In the first paragraph what point is the writer making about the introduction of money?",["It made a wider range of products available.","It allowed people more freedom.","It brought different kinds of people together.","It made certain products less expensive."],1),
+ mc("R17","In the second paragraph, what does the writer mean by 'this' (in bold)?",["the need for both notes and coins","the development of different currencies","the metal used equalling the value of the coin","using plastic and paper to show a currency's value"],2),
+ mc("R18","In the third paragraph, what is the writer's purpose?",["to explain the rise in popularity of the credit card","to show surprise at some reasons for not using cash","to introduce a new view of the history of money","to contrast people's attitudes to money now and in the past"],0),
+ mc("R19","In the fourth paragraph, the writer says that credit cards tend to",["encourage people to distrust others more.","make victims of crime become more dishonest themselves.","allow people to leave the scene of their crime more quickly.","make people feel less guilty when cheating others."],3),
+ mc("R20","Which statement best sums up the writer's thoughts?",["The history of money is always changing, but not necessarily for the better.","Money has always caused problems between people and continues to do so.","It is quite likely that attitudes to money will change considerably in the future.","History has shown that money does not always make people happier."],0)
+];
+var R4people=[
+ ["A","Ed Walker","I was dragging myself up to 11,500 feet in Morocco's Atlas Mountains but it wasn't the crashing headache that got me down, it was the terrible anxiety - a feature of altitude sickness apparently. It's difficult to carry on when you're convinced that you and your three hiking buddies are about to die. We should have gone straight back down, but we couldn't find the path and had to camp the night in a tent on a windblown mountainside. I made it - just - through the sub-zero night, but only with the help of an excellent sleeping bag, and a handful of painkillers. You can imagine how amazing it felt when, less than 24 hours later, I was down the mountain, relaxing in a hot bath in the hotel and wondering what all the fuss had been about."],
+ ["B","Tom Ross","After a 17-hour train journey, I arrived in Dibrugarh, India at 6 am, and I was looking forward to getting into a comfortable hotel bed. So it was with no small amount of horror that I arrived at the hotel. It was on a dirt road, along which lorries raised great clouds of dust. The corridors rang with the sounds of televisions and the wiring was terrifying! I sat at a dirty table in the dining room and felt desperate. Then I pulled out my guidebook - it recommended a place out in the countryside about six miles away. An hour later I was in a beautiful 18th-century palace surrounded by breathtaking gardens. White-jacketed staff steered me to the biggest room I have ever stayed in. That night I dined on the terrace and it was superb - here I was in the middle of nowhere, and yet the impressive dishes wouldn't have been out of place in the best restaurant."],
+ ["C","Sean Yates","There I was, sleeping in a yurt - a traditional tent. It was the middle of the night, and I woke to the sound of rain. As water dripped onto my sleeping bag, I thought I was in for trouble. In fact, my stay in a yurt in Lycia, Turkey, turned out to be my best holiday of the year. The main building was a restored farmhouse, then there were 15 yurts arranged around its gardens. The views across the farmland stretched all the way to the Taurus Mountains in one direction and the Turquoise Coast in another. It was the perfect setting in which to enjoy home-cooked meals, a swimming pool, and yoga lessons below the trees twice a day. By the end of my week, I was totally relaxed."],
+ ["D","Ron Jones","Italy was my highlight but Venice was too hot and packed with tourists, so I headed off to Rome as soon as I could and had an amazing time in the city's second-century Trajan's Market. There, I explored fascinating corridors lined with chambers that had once been shops. They seemed just hours before to have been emptied of their jars of oil and wine and folds of rich cloth. You need less of an act of imagination here than anywhere else in Rome to travel back almost two thousand years into the past and fill the market with shoppers in togas, or strolling Roman soldiers."]
+];
+var R4=[
+ ["felt exhausted when he reached his destination?",1],["did some regular exercise on holiday?",2],["had to cope with freezing temperatures?",0],
+ ["was disappointed with some travel arrangements that had been made for him?",1],["strongly believed that he was in serious danger?",0],
+ ["wandered down some interesting corridors?",3],["ate a delicious evening meal outside?",1],["felt like he had gone back in time?",3],
+ ["spent his whole holiday sleeping in a tent?",2],["got lost?",0]
+].map(function(x,i){return mc("R"+(21+i),x[0],["Ed Walker","Tom Ross","Sean Yates","Ron Jones"],x[1]);});
+
+/* parts: id, skill, title, hint */
+var ALL=[]; // flattened questions with part info
+function reg(arr,skill,part){arr.forEach(function(q){q.skill=skill;q.part=part;ALL.push(q);});}
+reg(L1,"Listening","Listening Part 1");reg(L2,"Listening","Listening Part 2");reg(L3,"Listening","Listening Part 3");
+reg(R1,"Reading","Reading Part 1");reg(R2,"Reading","Reading Part 2");reg(R3,"Reading","Reading Part 3");reg(R4,"Reading","Reading Part 4");
+var LET="ABCD";
+
+/* ---------- STATE ---------- */
+var $=function(i){return document.getElementById(i)};
+var ans={}, student={}, started=0, readStart=0, tick=null, submitted=false, lastPayload=null, confirmArmed=false;
+
+/* ---------- RENDER ---------- */
+function mcHTML(q,n){
+  var h='<div class="q" data-id="'+q.id+'"><div class="qt"><span class="qn">'+n+'</span><span>'+q.q+'</span></div><div class="opts'+(q.o[0].length<14&&q.o.length===4?' row':'')+'">';
+  q.o.forEach(function(o,i){h+='<button type="button" class="opt" data-q="'+q.id+'" data-i="'+i+'"><span class="l">'+LET[i]+'</span><span>'+o+'</span></button>';});
+  return h+'</div></div>';
+}
+function gapHTML(id){
+  var n=id.slice(1);
+  return '<span class="gap"><span class="gn">('+n+')</span><input type="text" data-g="'+id+'" id="g-'+id+'" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Question '+n+'"></span>';
+}
+function partBar(t,s){return '<div class="partbar"><b>'+t+'</b><span>'+s+'</span></div>';}
+function build(){
+  var h='<div class="card part">'+partBar("Part 1 · Questions 1–8","Chọn A, B hoặc C. Mỗi đoạn được nghe 2 lần.");
+  L1.forEach(function(q,i){h+=mcHTML(q,i+1);});
+  h+='</div><div class="card part">'+partBar("Part 2 · Questions 9–18","The Baker Street Bank Robbery (London, 1971). Điền vào chỗ trống.")+'<div class="gaptext">';
+  L2text.forEach(function(t){h+='<p>'+t.replace(/\{(L\d+)\}/g,function(m,id){return gapHTML(id);})+'</p>';});
+  h+='</div></div><div class="card part">'+partBar("Part 3 · Questions 19–25","Stella và Ben nói về tốc độ và áp lực của cuộc sống hiện đại.");
+  L3.forEach(function(q,i){h+=mcHTML(q,19+i);});
+  $("panel-L").innerHTML=h+'</div>';
+
+  h='<div class="card part">'+partBar("Part 1 · Questions 1–10","Living without the Internet. Chọn đáp án đúng cho mỗi chỗ trống.")+'<div class="passage"><h3>Living without the Internet</h3>';
+  R1text.forEach(function(t){h+='<p>'+t+'</p>';});
+  h+='</div>';R1.forEach(function(q,i){h+=mcHTML(q,i+1);});
+  h+='</div><div class="card part">'+partBar("Part 2 · Questions 11–15","The Quality of City Life. Điền MỘT từ vào mỗi chỗ trống.")+'<div class="gaptext passage"><h3>The Quality of City Life</h3>';
+  R2text.forEach(function(t){h+='<p>'+t.replace(/\{(R\d+)\}/g,function(m,id){return gapHTML(id);})+'</p>';});
+  h+='</div></div><div class="card part">'+partBar("Part 3 · Questions 16–20","Money, Money, Money! Đọc bài và chọn A, B, C hoặc D.")+'<div class="passage"><h3>Money, Money, Money!</h3>';
+  R3passage.forEach(function(t){h+='<p>'+t+'</p>';});
+  h+='</div>';R3.forEach(function(q,i){h+=mcHTML(q,16+i);});
+  h+='</div><div class="card part">'+partBar("Part 4 · Questions 21–30","Bốn nhà báo du lịch kể lại điểm nhấn trong năm. Mỗi nhà báo có thể được chọn nhiều lần.")+'<div class="passage">';
+  R4people.forEach(function(p){h+='<p><span class="who">'+p[0]+' · '+p[1]+'</span>'+p[2]+'</p>';});
+  h+='</div><p style="margin:14px 0 0;font-weight:600">Which journalist…</p>';
+  R4.forEach(function(q,i){h+=mcHTML(q,21+i);});
+  $("panel-R").innerHTML=h+'</div>';
+}
+
+/* ---------- LOGIC ---------- */
+function norm(s){return (s||"").toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim();}
+function isRight(q){
+  var a=ans[q.id]; if(a===undefined||a==="")return false;
+  return q.t==="mc" ? a===q.k : q.re.test(norm(a));
+}
+function answered(q){var a=ans[q.id];return a!==undefined&&String(a).trim()!=="";}
+function updateCounts(){
+  ["Listening","Reading"].forEach(function(s){
+    var qs=ALL.filter(function(q){return q.skill===s;});
+    var n=qs.filter(answered).length;
+    $(s==="Listening"?"cnt-L":"cnt-R").textContent=n+"/"+qs.length+" đã trả lời";
+  });
+}
+function pick(qid,i){
+  if(submitted)return; ans[qid]=i;
+  document.querySelectorAll('.opt[data-q="'+qid+'"]').forEach(function(b){b.classList.toggle("sel",+b.dataset.i===i);});
+  updateCounts();
+}
+function showTab(t){
+  var L=t==="L";
+  $("panel-L").classList.toggle("hidden",!L);$("panel-R").classList.toggle("hidden",L);
+  $("tab-L").setAttribute("aria-selected",L);$("tab-R").setAttribute("aria-selected",!L);
+  $("player").classList.toggle("hidden",!L);
+  if(!L && !readStart && !submitted){startClock();}
+  window.scrollTo({top:0});
+}
+function fmt(s){s=Math.max(0,s);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
+function startClock(){
+  readStart=Date.now();$("clock").classList.remove("hidden");
+  tick=setInterval(function(){
+    var left=READ_SECONDS-Math.floor((Date.now()-readStart)/1000);
+    var c=$("clock");c.textContent=fmt(left);
+    c.classList.toggle("warn",left<=300&&left>60);c.classList.toggle("over",left<=60);
+    if(left<=0){clearInterval(tick);doSubmit(true);}
+  },1000);
+}
+function trySubmit(){
+  if(submitted)return;
+  var miss=ALL.filter(function(q){return !answered(q);});
+  var box=$("unans");
+  if(miss.length&&!confirmArmed){
+    var L=miss.filter(function(q){return q.skill==="Listening";}).length,R=miss.length-L;
+    box.classList.remove("hidden");
+    box.innerHTML="Em còn <b>"+miss.length+" câu</b> chưa trả lời (Listening: "+L+", Reading: "+R+"). Bấm <b>Nộp bài</b> lần nữa để nộp luôn, hoặc <b>Làm tiếp</b>.";
+    $("btn-back").classList.remove("hidden");confirmArmed=true;return;
+  }
+  doSubmit(false);
+}
+function doSubmit(auto){
+  if(submitted)return;submitted=true;clearInterval(tick);
+  $("aud").pause();
+  var secs=Math.round((Date.now()-started)/1000);
+  var sc={Listening:0,Reading:0},part={};
+  ALL.forEach(function(q){var ok=isRight(q);if(ok){sc[q.skill]++;part[q.part]=(part[q.part]||0)+1;}});
+  var total=sc.Listening+sc.Reading,pct=Math.round(total/55*100);
+  $("s-test").classList.add("hidden");$("s-result").classList.remove("hidden");
+  $("r-total").textContent=total;
+  var pill,msg;
+  if(pct>=75){pill='<span class="pill a">RẤT TỐT</span>';msg="Em đã sẵn sàng hoàn thành trình độ B2. Xem lại vài câu sai bên dưới nhé.";}
+  else if(pct>=60){pill='<span class="pill a">ĐẠT</span>';msg="Kết quả khá. Ôn lại các phần sai trước buổi chữa bài.";}
+  else if(pct>=45){pill='<span class="pill b">CẦN ÔN THÊM</span>';msg="Em cần ôn lại các dạng bài bị sai nhiều.";}
+  else{pill='<span class="pill c">CẦN HỌC LẠI</span>';msg="Hãy trao đổi với thầy để có kế hoạch ôn tập lại.";}
+  if(auto)msg="Hết 30 phút phần Reading, bài đã được nộp tự động. "+msg;
+  $("r-pill").innerHTML=pill;$("r-msg").textContent=msg;
+  var parts=["Listening Part 1","Listening Part 2","Listening Part 3","Reading Part 1","Reading Part 2","Reading Part 3","Reading Part 4"];
+  var sz={}; ALL.forEach(function(q){sz[q.part]=(sz[q.part]||0)+1;});
+  var sh='<div class="stat"><b>'+spRecs.length+'</b><span>Speaking: bản ghi (thầy chấm sau)</span></div><div class="stat"><b>'+sc.Listening+'/25</b><span>Listening</span></div><div class="stat"><b>'+sc.Reading+'/30</b><span>Reading &amp; Use of English</span></div>';
+  parts.forEach(function(p){sh+='<div class="stat"><b>'+(part[p]||0)+'/'+sz[p]+'</b><span>'+p+'</span></div>';});
+  $("r-stats").innerHTML=sh;
+  renderReview();
+  var wrong=ALL.filter(function(q){return !isRight(q);}).map(function(q){return qlabel(q);});
+  lastPayload={quizName:QUIZ_NAME,attemptId:spAttempt,
+    name:student.name,cls:student.cls,score:total,total:55,percent:pct,duration:fmt(secs),submittedAt:new Date().toISOString(),
+    speakingTest:spTest,speakingSent:spRecs.length,wrongWords:"Speaking "+(spRecs.length?"đề "+spTest+" ("+spRecs.length+" bản ghi, chờ chấm); ":"không có; ")+"Listening "+sc.Listening+"/25; Reading "+sc.Reading+"/30; sai: "+(wrong.join(", ")||"không"),
+    details:ALL.map(function(q,i){return {no:i+1,type:q.part,word:qlabel(q),question:plain(q),
+      chosen:answered(q)?chosenText(q):"(bỏ trống)",correct:correctText(q),result:isRight(q)?"Đúng":"Sai"};})};
+  $("backup-text").value=backupText();
+  send();window.scrollTo({top:0});
+}
+function qlabel(q){return (q.skill==="Listening"?"L":"R")+q.id.slice(1);}
+function plain(q){return q.t==="mc"?q.q.replace(/<[^>]+>/g,""):"Gap "+q.id.slice(1);}
+function chosenText(q){var a=ans[q.id];return q.t==="mc"?LET[a]+". "+q.o[a]:String(a).trim();}
+function correctText(q){return q.t==="mc"?LET[q.k]+". "+q.o[q.k]:q.show;}
+function renderReview(){
+  var h='<div class="tw"><table><thead><tr><th>Câu</th><th>Phần</th><th>Em chọn</th><th>Đáp án</th><th></th></tr></thead><tbody>';
+  ALL.forEach(function(q){var ok=isRight(q);
+    h+='<tr><td>'+qlabel(q)+'</td><td>'+q.part.replace(" Part "," P")+'</td><td>'+(answered(q)?chosenText(q):"<i>(bỏ trống)</i>")+'</td><td>'+(ok?"":correctText(q))+'</td><td class="'+(ok?"y":"n")+'">'+(ok?"✓":"✗")+'</td></tr>';});
+  $("review").innerHTML=h+'</tbody></table></div>';
+}
+function backupText(){
+  var p=lastPayload,w=p.details.filter(function(d){return d.result==="Sai";});
+  var l=["=== KẾT QUẢ B2 END-OF-COURSE (VTG) ===","Họ tên: "+p.name,"Lớp: "+p.cls,"Điểm: "+p.score+"/55 ("+p.percent+"%)",p.wrongWords,"Thời gian: "+p.duration,"--- Câu sai ---"];
+  if(!w.length)l.push("(không có)");w.forEach(function(d){l.push(d.word+": "+d.chosen+" → "+d.correct);});
+  return l.join("\n");
+}
+function setSend(c,t){var b=$("sendbox");b.className="send "+c;b.innerHTML=t;}
+function send(){
+  setSend("pending","Đang gửi kết quả cho thầy…");$("backup").classList.add("hidden");
+  fetch(ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(lastPayload)})
+   .then(function(){setSend("done","<b>Đã gửi kết quả cho thầy.</b> Em xem lại bài làm bên dưới.");})
+   .catch(function(){setSend("fail","<b>Chưa gửi được kết quả.</b> Bấm <b>Thử gửi lại</b>, hoặc <b>Sao chép kết quả</b> rồi gửi vào nhóm Zalo cho thầy.");$("backup").classList.remove("hidden");});
+}
+
+
+/* ---------- SPEAKING ---------- */
+var SP={
+ A:{title:"Test A – People, places and money",
+  p1:[["A1","What kind of person do you think makes a good friend or a good colleague? Why?"],["A2","Tell me about your home. Is there anything you would like to change or have done to it?"],["A3","Tell me about a place you have visited. What is it famous for?"],["A4","How do you usually spend your money? Do you try to save some of it?"]],
+  p2:{title:"Describe a city or town that you know well.",sub:"It can be a place where you live or a place you have visited.",pts:["where it is and what it is like","what you like about it","what problems it has, or how it has changed","and what would make it a better place to live"]},
+  p3:[["A5","Do you think the natural world will be in a better or worse state in twenty years from now? Why?"],["A6","If you were given a large amount of money, what would you do with it? Why?"]]},
+ B:{title:"Test B – Choices and changes",
+  p1:[["B1","What do you think you will be doing this time next year? What will you have achieved by then?"],["B2","Do you prefer visiting new places or going back to places you know? Why?"],["B3","Tell me about a film or TV programme that you have enjoyed recently."],["B4","Is there something you did recently that you now think you should have done differently?"]],
+  p2:{title:"Describe a difficult decision that you had to make.",sub:"For example, a decision about money, study, work or family.",pts:["what the decision was","what choices you had","what you decided and why","and what you would do differently if you could go back"]},
+  p3:[["B5","Is tourism good or bad for a place? What are the advantages and disadvantages?"],["B6","Why do you think some people break the law? What could be done to stop them?"]]}
+};
+var spTest=null,spItems=[],spIdx=-1,spStream=null,spRec=null,spChunks=[],spPhase="",spPhaseStart=0,spClockStart=0,spLoop=null,spRecs=[],spMime="",spAudioCtx=null,spAnalyser=null,spAttempt=Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7);
+
+function spBuild(t){
+  var d=SP[t],a=[];
+  d.p1.forEach(function(q){a.push({id:q[0],part:"Part 1 – Interview",q:q[1],prep:10,min:5,max:40,target:"khoảng 25–30 giây"});});
+  a.push({id:t+"-P2",part:"Part 2 – Long turn",q:d.p2.title,cue:d.p2,prep:60,min:60,max:120,target:"1 đến 1,5 phút (tối đa 2 phút)"});
+  d.p3.forEach(function(q){a.push({id:q[0],part:"Part 3 – Discussion",q:q[1],prep:10,min:10,max:55,target:"khoảng 40–45 giây"});});
+  return a;
+}
+function pickTest(t){
+  if(spItems.length)return;
+  spTest=t;["A","B"].forEach(function(x){$("pick-"+x).setAttribute("aria-pressed",x===t);});
+  spReadyCheck();
+}
+function spReadyCheck(){$("btn-ready").disabled=!(spTest&&spStream);}
+function spMeterLoop(){
+  if(!spAnalyser)return;
+  var d=new Uint8Array(spAnalyser.fftSize);spAnalyser.getByteTimeDomainData(d);
+  var m=0;for(var i=0;i<d.length;i++){m=Math.max(m,Math.abs(d[i]-128));}
+  var w=Math.min(100,Math.round(m/60*100));$("meter").style.width=w+"%";$("meter2").style.width=w+"%";
+  requestAnimationFrame(spMeterLoop);
+}
+function spMicErr(e){
+  var b=$("mic-err");b.classList.remove("hidden");
+  var n=(e&&e.name)||"";
+  b.innerHTML=(n==="NotAllowedError"||n==="SecurityError")
+   ?"<b>Trình duyệt chưa cho dùng micro.</b> Bấm biểu tượng ổ khoá cạnh địa chỉ trang, chọn cho phép Micro rồi bấm lại. Nếu em mở bài trong Zalo hoặc Facebook, hãy mở bằng Chrome hoặc Safari."
+   :"<b>Không bật được micro.</b> Kiểm tra micro đã cắm chưa, đóng các ứng dụng khác đang dùng micro rồi thử lại. ("+(n||"lỗi không rõ")+")";
+}
+function spMic(){
+  if(!navigator.mediaDevices||!window.MediaRecorder){spMicErr({name:"Unsupported"});return;}
+  navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true}}).then(function(st){
+    spStream=st;$("mic-err").classList.add("hidden");
+    $("mic-msg").textContent="Micro hoạt động nếu thanh bên dưới nhảy khi em nói.";
+    $("btn-mic").textContent="Micro đã bật ✓";
+    try{spAudioCtx=new (window.AudioContext||window.webkitAudioContext)();var src=spAudioCtx.createMediaStreamSource(st);spAnalyser=spAudioCtx.createAnalyser();spAnalyser.fftSize=512;src.connect(spAnalyser);spMeterLoop();}catch(e){}
+    var c=["audio/webm;codecs=opus","audio/webm","audio/mp4","audio/ogg;codecs=opus"];
+    spMime="";c.forEach(function(m){if(!spMime&&MediaRecorder.isTypeSupported(m))spMime=m;});
+    spReadyCheck();
+  }).catch(spMicErr);
+}
+function dotsHTML(){var h="";spItems.forEach(function(x,i){h+='<i class="'+(i<spIdx?"done":i===spIdx?"cur":"")+'"></i>';});return h;}
+function spStart(){
+  if(!spTest||!spStream)return;
+  spItems=spBuild(spTest);spIdx=-1;spClockStart=Date.now();
+  $("sp-choose").classList.add("hidden");$("sp-run").classList.remove("hidden");
+  window.scrollTo({top:0});
+  clearInterval(spLoop);spLoop=setInterval(spTick,200);
+  spNext();
+}
+function spNext(){
+  spIdx++;
+  if(spIdx>=spItems.length){spFinish();return;}
+  var it=spItems[spIdx];
+  $("sp-part").textContent=it.part;$("sp-dots").innerHTML=dotsHTML();
+  var q='<div class="id">'+it.id+'</div><p class="qq">'+it.q+'</p>';
+  if(it.cue){q+='<p style="margin:10px 0 0;color:var(--grey)">'+it.cue.sub+'</p><p style="margin:10px 0 0;font-weight:600">You should say:</p><ul>'+it.cue.pts.map(function(x){return "<li>"+x+"</li>";}).join("")+'</ul>';}
+  $("sp-q").innerHTML=q;
+  spPhase="prep";spPhaseStart=Date.now();
+  $("btn-next").disabled=true;
+  $("sp-hint").textContent="Micro sẽ tự bật khi hết giờ chuẩn bị.";
+  spPaint();
+}
+function spPaint(){
+  var it=spItems[spIdx],ph=$("sp-phase"),e=(Date.now()-spPhaseStart)/1000;
+  if(spPhase==="prep"){
+    ph.className="phase prep";$("sp-t").textContent=Math.max(0,Math.ceil(it.prep-e));
+    $("sp-pl").textContent="Đọc câu hỏi và chuẩn bị";$("sp-ps"). textContent="Sau đó micro tự ghi âm. Cần nói: "+it.target+".";
+  }else if(spPhase==="rec"){
+    ph.className="phase rec";$("sp-t").textContent=fmt(Math.floor(e));
+    $("sp-pl").innerHTML='<span class="rdot"></span>Đang ghi âm. Hãy nói ngay';
+    $("sp-ps").textContent="Cần nói: "+it.target+". Tự dừng sau "+fmt(it.max)+".";
+    var ok=e>=it.min;$("btn-next").disabled=!ok;
+    $("sp-hint").textContent=ok?"":"Nút Xong câu này mở sau "+Math.ceil(it.min-e)+" giây.";
+  }
+}
+function spTick(){
+  $("sp-clock").textContent=fmt(Math.floor((Date.now()-spClockStart)/1000));
+  if(spIdx<0||spIdx>=spItems.length)return;
+  var it=spItems[spIdx],e=(Date.now()-spPhaseStart)/1000;
+  if(spPhase==="prep"&&e>=it.prep){spRecStart();return;}
+  if(spPhase==="rec"&&e>=it.max){spRecStop();return;}
+  spPaint();
+}
+function spRecStart(){
+  spPhase="rec";spPhaseStart=Date.now();spChunks=[];
+  try{
+    spRec=new MediaRecorder(spStream,spMime?{mimeType:spMime,audioBitsPerSecond:32000}:{audioBitsPerSecond:32000});
+    spRec.ondataavailable=function(ev){if(ev.data&&ev.data.size)spChunks.push(ev.data);};
+    spRec.start(1000);
+  }catch(e){spRec=null;}
+  spPaint();
+}
+function spRecStop(){
+  if(spPhase!=="rec")return;
+  spPhase="saving";$("btn-next").disabled=true;
+  var it=spItems[spIdx],secs=Math.round((Date.now()-spPhaseStart)/1000);
+  var fin=function(){
+    var blob=new Blob(spChunks,{type:(spRec&&spRec.mimeType)||spMime||"audio/webm"});
+    spRecs.push({id:it.id,part:it.part,question:it.q,seconds:secs,blob:blob});
+    spNext();
+  };
+  if(spRec&&spRec.state!=="inactive"){spRec.onstop=fin;try{spRec.stop();}catch(e){fin();}}else fin();
+}
+function spFinish(){
+  clearInterval(spLoop);
+  $("sp-run").classList.add("hidden");$("sp-done").classList.remove("hidden");
+  if(spStream){spStream.getTracks().forEach(function(t){t.stop();});}
+  spAnalyser=null;window.scrollTo({top:0});
+  spUpload();
+}
+function blobB64(b){return new Promise(function(res,rej){var f=new FileReader();f.onload=function(){res(String(f.result).split(",")[1]||"");};f.onerror=rej;f.readAsDataURL(b);});}
+function spUpload(){
+  var box=$("sp-send");box.className="send pending";box.textContent="Đang gửi "+spRecs.length+" bản ghi âm cho thầy…";
+  $("sp-fallback").classList.add("hidden");
+  var ty=(spRecs[0]&&spRecs[0].blob.type)||"";
+  var ext=/mp4/.test(ty)?"m4a":/ogg/.test(ty)?"ogg":"webm";
+  var empty=spRecs.filter(function(r){return r.blob.size<500;}).length;
+  Promise.all(spRecs.map(function(r){return blobB64(r.blob);})).then(function(b64){
+    var recs=spRecs.map(function(r,i){return {id:r.id,part:r.part,question:r.question,seconds:r.seconds,mime:r.blob.type,ext:ext,audio:b64[i]};});
+    return fetch(ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body:JSON.stringify({formType:"speaking",type:"speaking",attemptId:spAttempt,name:student.name,cls:student.cls,test:spTest,testTitle:SP[spTest].title,submittedAt:new Date().toISOString(),recordings:recs})});
+  }).then(function(){
+    box.className="send done";box.innerHTML="<b>Đã gửi bài Speaking cho thầy.</b>"+(empty?" Có "+empty+" bản ghi gần như trống, em nên báo thầy.":"");
+    $("btn-gotest").disabled=false;
+  }).catch(function(){
+    box.className="send fail";box.innerHTML="<b>Chưa gửi được bài Speaking</b> (có thể do mạng). Em bấm Thử gửi lại.";
+    $("sp-fallback").classList.remove("hidden");
+    $("sp-list").innerHTML=spRecs.map(function(r){var u=URL.createObjectURL(r.blob);return '<li><b>'+r.id+'</b> '+r.seconds+' giây <a href="'+u+'" download="'+student.name.replace(/[^\w]+/g,"_")+"_"+r.id+"."+ext+'">Tải về</a></li>';}).join("");
+    $("btn-gotest").disabled=false;
+  });
+}
+
+/* ---------- EVENTS ---------- */
+document.addEventListener("click",function(e){
+  var o=e.target.closest(".opt");if(o&&o.dataset.q){pick(o.dataset.q,+o.dataset.i);return;}
+  var j=e.target.closest("[data-t]");if(j){var a=$("aud");a.currentTime=+j.dataset.t;a.play().catch(function(){});}
+});
+document.addEventListener("input",function(e){
+  var g=e.target.dataset&&e.target.dataset.g;if(g){ans[g]=e.target.value;updateCounts();}
+});
+$("tab-L").onclick=function(){showTab("L")};$("tab-R").onclick=function(){showTab("R")};
+$("btn-start").onclick=function(){
+  var n=$("in-name"),c=$("in-cls"),bad=false;
+  [n,c].forEach(function(x){x.classList.toggle("err",!x.value.trim());if(!x.value.trim())bad=true;});
+  if(bad)return;
+  student={name:n.value.trim(),cls:c.value.trim()};started=Date.now();
+  $("s-start").classList.add("hidden");$("s-speak").classList.remove("hidden");
+  spReadyCheck();window.scrollTo({top:0});
+};
+function enterTest(){
+  $("s-speak").classList.add("hidden");$("s-test").classList.remove("hidden");
+  build();updateCounts();showTab("L");
+}
+$("btn-gotest").onclick=enterTest;
+$("pick-A").onclick=function(){pickTest("A")};$("pick-B").onclick=function(){pickTest("B")};
+$("btn-mic").onclick=spMic;$("btn-ready").onclick=spStart;
+$("btn-next").onclick=spRecStop;$("btn-spretry").onclick=spUpload;
+$("btn-submit").onclick=trySubmit;
+$("btn-back").onclick=function(){confirmArmed=false;$("unans").classList.add("hidden");$("btn-back").classList.add("hidden");};
+$("btn-retry").onclick=send;
+$("btn-copy").onclick=function(){
+  var t=$("backup-text");t.select();
+  var done=function(){$("btn-copy").textContent="Đã sao chép ✓";setTimeout(function(){$("btn-copy").textContent="Sao chép kết quả";},2000);};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t.value).then(done,function(){});
+};
+$("btn-again").onclick=function(){location.reload();};
+</script>
