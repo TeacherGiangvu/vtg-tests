@@ -115,6 +115,15 @@ td.y{color:var(--ok);font-weight:700}td.n{color:var(--bad);font-weight:700}
 @media (prefers-reduced-motion:no-preference){.phase.rec .rdot{animation:bl 1s infinite}@keyframes bl{50%{opacity:.25}}}
 .errbox{background:var(--bad-bg);border-left:4px solid var(--bad);border-radius:9px;padding:12px 15px;margin:10px 0}
 .reclist{margin:10px 0 0;padding:0;list-style:none;font-size:14px}.reclist li{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:6px 0;border-bottom:1px solid var(--line)}
+
+.prow{display:flex;align-items:center;gap:12px}
+.pbar{flex:1;height:10px;border-radius:99px;background:var(--soft);border:1px solid var(--line);overflow:hidden;pointer-events:none}
+.pbar i{display:block;height:100%;width:0;background:var(--green)}
+.ptime{font:600 13px var(--sans);font-variant-numeric:tabular-nums;color:var(--grey);min-width:48px;text-align:right}
+/* anti-copy */
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+input,textarea{-webkit-user-select:text;user-select:text}
+@media print{body{display:none!important}}
 @media (prefers-reduced-motion:no-preference){.opt{transition:.12s}}
 </style>
 
@@ -128,17 +137,17 @@ td.y{color:var(--ok);font-weight:700}td.n{color:var(--bad);font-weight:700}
   <!-- START -->
   <section id="s-start" class="card">
     <ul class="list">
-      <li><b>Speaking</b> (khoảng 8 phút) làm <b>đầu tiên</b>: em chọn Đề A hoặc Đề B, bấm <b>Sẵn sàng</b>, mỗi câu hiện ra và sau 10 giây micro tự ghi âm. Em phải xong Speaking mới được làm các phần còn lại.</li>
-      <li><b>Listening</b> (25 câu, khoảng 35 phút): bản ghi âm tự nói hướng dẫn và nói mỗi đoạn <b>2 lần</b>. Em cần đeo tai nghe và ngồi nơi yên tĩnh.</li>
-      <li><b>Reading &amp; Use of English</b> (30 câu, 30 phút): đồng hồ bắt đầu chạy khi em mở tab Reading lần đầu.</li>
-      <li>Mỗi câu 1 điểm. Em có thể chuyển qua lại giữa hai tab và sửa đáp án trước khi bấm <b>Nộp bài</b>.</li>
+      <li><b>Speaking</b> (khoảng 8 phút) làm <b>đầu tiên</b>: em chọn Đề A hoặc Đề B, bấm <b>Sẵn sàng</b>, mỗi câu hiện ra và sau 10 giây micro tự ghi âm. Xong Speaking mới được làm Listening.</li>
+      <li><b>Listening</b> (25 câu, khoảng 35 phút): bản ghi âm tự nói hướng dẫn và nói mỗi đoạn <b>2 lần</b>. Bài nghe <b>không tua được</b>. Em cần đeo tai nghe và ngồi nơi yên tĩnh.</li>
+      <li><b>Reading &amp; Use of English</b> (30 câu, 30 phút): chỉ mở sau khi em nộp bài Listening. Đồng hồ chạy khi em bấm sang Reading.</li>
+      <li>Mỗi câu 1 điểm. Trong từng phần em có thể sửa đáp án trước khi nộp. Đã nộp Listening thì không quay lại được.</li>
       <li>Câu điền từ: viết đúng chính tả, không cần viết hoa.</li>
     </ul>
     <div class="formbox">
       <div class="field"><label for="in-name">Họ và tên</label><input type="text" id="in-name" autocomplete="name"></div>
       <div class="field"><label for="in-cls">Lớp</label><input type="text" id="in-cls" placeholder="Ví dụ: B2-01"></div>
     </div>
-    <button class="btn terra" id="btn-start">Tiếp tục sang bài Speaking</button>
+    <button class="btn terra" id="btn-start">Bắt đầu bài Test</button>
   </section>
 
   <!-- SPEAKING -->
@@ -148,13 +157,13 @@ td.y{color:var(--ok);font-weight:700}td.n{color:var(--bad);font-weight:700}
       <p class="sub">Làm trước các phần khác. Bài ghi âm của em được gửi cho thầy chấm sau.</p>
       <p style="margin:14px 0 0;font-weight:600">Chọn đề (chỉ chọn một, không đổi được sau khi bắt đầu):</p>
       <div class="choice">
-        <button type="button" id="pick-A" aria-pressed="false"><b>Đề A</b>People, places and money</button>
-        <button type="button" id="pick-B" aria-pressed="false"><b>Đề B</b>Choices and changes</button>
+        <button type="button" id="pick-A" aria-pressed="false"><b>Đề A</b></button>
+        <button type="button" id="pick-B" aria-pressed="false"><b>Đề B</b></button>
       </div>
       <div class="tw"><table class="struct"><thead><tr><th>Phần</th><th>Chuẩn bị</th><th>Nói</th></tr></thead><tbody>
-        <tr><td>Part 1 · Interview (4 câu)</td><td>10 giây mỗi câu</td><td>khoảng 25–30 giây</td></tr>
+        <tr><td>Part 1 · Interview (4 câu)</td><td>10 giây mỗi câu</td><td>20 giây mỗi câu</td></tr>
         <tr><td>Part 2 · Long turn (1 thẻ đề)</td><td>1 phút</td><td>1 đến 1,5 phút (tối đa 2 phút)</td></tr>
-        <tr><td>Part 3 · Discussion (2 câu)</td><td>10 giây mỗi câu</td><td>khoảng 40–45 giây</td></tr></tbody></table></div>
+        <tr><td>Part 3 · Discussion (2 câu)</td><td>10 giây mỗi câu</td><td>25 giây mỗi câu</td></tr></tbody></table></div>
       <ul class="list">
         <li>Hiện câu hỏi, đếm ngược 10 giây rồi <b>micro tự bật</b>. Em không cần bấm gì để bắt đầu nói.</li>
         <li>Mỗi câu chỉ ghi âm một lần, <b>không ghi lại</b>. Đồng hồ chạy liên tục suốt bài.</li>
@@ -187,28 +196,30 @@ td.y{color:var(--ok);font-weight:700}td.n{color:var(--bad);font-weight:700}
   <section id="s-test" class="hidden">
     <div class="bar">
       <div class="tabs" role="tablist">
-        <button class="tab" role="tab" id="tab-L" aria-selected="true">Listening<small id="cnt-L">0/25 đã trả lời</small></button>
-        <button class="tab" role="tab" id="tab-R" aria-selected="false">Reading &amp; Use of English<small id="cnt-R">0/30 đã trả lời</small></button>
+        <button class="tab" role="tab" id="tab-L" aria-selected="true" disabled>Listening<small id="cnt-L">0/25 đã trả lời</small></button>
+        <button class="tab" role="tab" id="tab-R" aria-selected="false" disabled>Reading &amp; Use of English<small id="cnt-R">0/30 đã trả lời</small></button>
         <div class="clock hidden" id="clock" title="Thời gian còn lại của phần Reading">30:00</div>
       </div>
       <div class="player" id="player">
-        <audio id="aud" controls preload="metadata" src="B2_End_of_Course_Listening.mp3"></audio>
-        <div class="jumps">Nhảy tới:
-          <button class="btn ghost sm" data-t="0">Part 1</button>
-          <button class="btn ghost sm" data-t="783">Part 2</button>
-          <button class="btn ghost sm" data-t="1476">Part 3</button>
-          <span>(mốc gần đúng; bản ghi tự đọc hướng dẫn)</span>
-        </div>
+        <audio id="aud" preload="auto" controlsList="nodownload noplaybackrate" src="B2_End_of_Course_Listening.mp3"></audio>
+        <div class="prow"><button class="btn sm" id="btn-play" type="button">Bắt đầu nghe</button>
+          <div class="pbar" aria-hidden="true"><i id="pfill"></i></div><span class="ptime" id="ptime">00:00</span></div>
+        <div class="sub" style="margin-top:6px">Bản ghi chỉ phát một lần theo thứ tự, không tua được. Em có thể tạm dừng và nghe tiếp.</div>
       </div>
     </div>
     <div id="panel-L"></div>
     <div id="panel-R" class="hidden"></div>
+    <div class="card hidden" id="mid">
+      <h2>Đã nộp bài Listening</h2>
+      <p class="sub">Em không quay lại phần Listening được nữa. Bấm nút bên dưới để sang Reading. Đồng hồ 30 phút bắt đầu chạy ngay khi em bấm.</p>
+      <div style="margin-top:14px"><button class="btn terra" id="btn-toR" type="button">Sang bài Reading</button></div>
+    </div>
 
     <div class="card" id="submitbox">
       <div id="unans" class="warnbox hidden"></div>
       <div class="subbar">
-        <span class="sub" id="submsg">Kiểm tra lại cả hai phần rồi nộp bài.</span>
-        <span><button class="btn terra" id="btn-submit">Nộp bài</button>
+        <span class="sub" id="submsg">Kiểm tra lại phần Listening rồi nộp bài nghe.</span>
+        <span><button class="btn terra" id="btn-submit">Nộp bài Listening</button>
         <button class="btn ghost hidden" id="btn-back">Làm tiếp</button></span>
       </div>
     </div>
@@ -396,12 +407,44 @@ function pick(qid,i){
   document.querySelectorAll('.opt[data-q="'+qid+'"]').forEach(function(b){b.classList.toggle("sel",+b.dataset.i===i);});
   updateCounts();
 }
+var stage="L",lastT=0,played=false;
 function showTab(t){
   var L=t==="L";
   $("panel-L").classList.toggle("hidden",!L);$("panel-R").classList.toggle("hidden",L);
   $("tab-L").setAttribute("aria-selected",L);$("tab-R").setAttribute("aria-selected",!L);
   $("player").classList.toggle("hidden",!L);
   if(!L && !readStart && !submitted){startClock();}
+  window.scrollTo({top:0});
+}
+function setupAudio(){
+  var a=$("aud"),btn=$("btn-play"),dur=0;
+  function paint(){
+    dur=a.duration||dur;
+    $("pfill").style.width=(dur?Math.min(100,a.currentTime/dur*100):0)+"%";
+    $("ptime").textContent=fmt(Math.floor(a.currentTime));
+  }
+  btn.onclick=function(){
+    if(a.ended)return;
+    if(a.paused){a.play().then(function(){played=true;btn.textContent="Tạm dừng";}).catch(function(){});}
+    else{a.pause();btn.textContent="Nghe tiếp";}
+  };
+  a.addEventListener("timeupdate",function(){if(!a.seeking&&Math.abs(a.currentTime-lastT)<2)lastT=a.currentTime;paint();});
+  a.addEventListener("seeking",function(){if(Math.abs(a.currentTime-lastT)>1)a.currentTime=lastT;});
+  a.addEventListener("ratechange",function(){a.playbackRate=1;});
+  a.addEventListener("ended",function(){btn.textContent="Đã nghe xong";btn.disabled=true;lastT=a.duration||lastT;paint();});
+}
+function toReading(){
+  stage="R";
+  $("mid").classList.add("hidden");$("submitbox").classList.remove("hidden");
+  $("btn-submit").textContent="Nộp bài";$("submsg").textContent="Kiểm tra lại phần Reading rồi nộp bài.";
+  confirmArmed=false;$("unans").classList.add("hidden");$("btn-back").classList.add("hidden");
+  showTab("R");
+}
+function submitListening(){
+  var a=$("aud");a.pause();stage="M";
+  $("panel-L").classList.add("hidden");$("player").classList.add("hidden");$("submitbox").classList.add("hidden");
+  $("mid").classList.remove("hidden");$("tab-L").setAttribute("aria-selected","false");
+  confirmArmed=false;$("unans").classList.add("hidden");$("btn-back").classList.add("hidden");
   window.scrollTo({top:0});
 }
 function fmt(s){s=Math.max(0,s);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
@@ -416,15 +459,15 @@ function startClock(){
 }
 function trySubmit(){
   if(submitted)return;
-  var miss=ALL.filter(function(q){return !answered(q);});
+  var sk=stage==="L"?"Listening":"Reading";
+  var miss=ALL.filter(function(q){return q.skill===sk&&!answered(q);});
   var box=$("unans");
   if(miss.length&&!confirmArmed){
-    var L=miss.filter(function(q){return q.skill==="Listening";}).length,R=miss.length-L;
     box.classList.remove("hidden");
-    box.innerHTML="Em còn <b>"+miss.length+" câu</b> chưa trả lời (Listening: "+L+", Reading: "+R+"). Bấm <b>Nộp bài</b> lần nữa để nộp luôn, hoặc <b>Làm tiếp</b>.";
+    box.innerHTML="Em còn <b>"+miss.length+" câu</b> chưa trả lời. Bấm <b>"+$("btn-submit").textContent+"</b> lần nữa để nộp luôn, hoặc <b>Làm tiếp</b>.";
     $("btn-back").classList.remove("hidden");confirmArmed=true;return;
   }
-  doSubmit(false);
+  if(stage==="L")submitListening();else doSubmit(false);
 }
 function doSubmit(auto){
   if(submitted)return;submitted=true;clearInterval(tick);
@@ -497,9 +540,9 @@ var spTest=null,spItems=[],spIdx=-1,spStream=null,spRec=null,spChunks=[],spPhase
 
 function spBuild(t){
   var d=SP[t],a=[];
-  d.p1.forEach(function(q){a.push({id:q[0],part:"Part 1 – Interview",q:q[1],prep:10,min:5,max:40,target:"khoảng 25–30 giây"});});
+  d.p1.forEach(function(q){a.push({id:q[0],part:"Part 1 – Interview",q:q[1],prep:10,min:5,max:20,target:"20 giây"});});
   a.push({id:t+"-P2",part:"Part 2 – Long turn",q:d.p2.title,cue:d.p2,prep:60,min:60,max:120,target:"1 đến 1,5 phút (tối đa 2 phút)"});
-  d.p3.forEach(function(q){a.push({id:q[0],part:"Part 3 – Discussion",q:q[1],prep:10,min:10,max:55,target:"khoảng 40–45 giây"});});
+  d.p3.forEach(function(q){a.push({id:q[0],part:"Part 3 – Discussion",q:q[1],prep:10,min:10,max:25,target:"25 giây"});});
   return a;
 }
 function pickTest(t){
@@ -626,15 +669,27 @@ function spUpload(){
   });
 }
 
+
+/* ---------- CHỐNG SAO CHÉP ---------- */
+(function(){
+  var inField=function(t){return t&&(t.tagName==="INPUT"||t.tagName==="TEXTAREA");};
+  ["copy","cut","dragstart"].forEach(function(ev){document.addEventListener(ev,function(e){if(!inField(e.target))e.preventDefault();});});
+  document.addEventListener("contextmenu",function(e){e.preventDefault();});
+  document.addEventListener("selectstart",function(e){if(!inField(e.target))e.preventDefault();});
+  document.addEventListener("keydown",function(e){
+    var k=(e.key||"").toLowerCase(),m=e.ctrlKey||e.metaKey;
+    if(k==="f12"||(m&&e.shiftKey&&["i","j","c"].indexOf(k)>-1)||(m&&["u","s","p"].indexOf(k)>-1)||(m&&["c","x","a"].indexOf(k)>-1&&!inField(e.target)))e.preventDefault();
+  });
+})();
+
 /* ---------- EVENTS ---------- */
 document.addEventListener("click",function(e){
   var o=e.target.closest(".opt");if(o&&o.dataset.q){pick(o.dataset.q,+o.dataset.i);return;}
-  var j=e.target.closest("[data-t]");if(j){var a=$("aud");a.currentTime=+j.dataset.t;a.play().catch(function(){});}
 });
 document.addEventListener("input",function(e){
   var g=e.target.dataset&&e.target.dataset.g;if(g){ans[g]=e.target.value;updateCounts();}
 });
-$("tab-L").onclick=function(){showTab("L")};$("tab-R").onclick=function(){showTab("R")};
+$("btn-toR").onclick=toReading;
 $("btn-start").onclick=function(){
   var n=$("in-name"),c=$("in-cls"),bad=false;
   [n,c].forEach(function(x){x.classList.toggle("err",!x.value.trim());if(!x.value.trim())bad=true;});
@@ -645,7 +700,7 @@ $("btn-start").onclick=function(){
 };
 function enterTest(){
   $("s-speak").classList.add("hidden");$("s-test").classList.remove("hidden");
-  build();updateCounts();showTab("L");
+  build();updateCounts();setupAudio();showTab("L");
 }
 $("btn-gotest").onclick=enterTest;
 $("pick-A").onclick=function(){pickTest("A")};$("pick-B").onclick=function(){pickTest("B")};
