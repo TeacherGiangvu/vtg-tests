@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>VTG B2 Speaking Test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Light-only look. Layout: one centred column; sticky bar holds tabs + audio. VTG brand: forest green, terracotta, warm paper. */
+:root{
+  --bg:#FBFAF6; --card:#FFFFFF; --soft:#F5F2E9; --ink:#1B1B19; --grey:#3E3E39; --line:#B5AD98;
+  --green:#1F3D31; --green-d:#142A21; --on-green:#FFFFFF; --terra:#B04E26; --terra-bg:#FDF3E3;
+  --ok:#1E6B48; --ok-bg:#E6F5EC; --bad:#A12A2A; --bad-bg:#FCEAEA;
+  color-scheme:light; --serif:'Source Serif 4',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;
+  padding-block:20px 70px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--terra);text-transform:uppercase;margin-bottom:6px}
+h1{font-family:var(--serif);font-size:clamp(24px,5vw,31px);line-height:1.15;color:var(--green);margin:0 0 6px;text-wrap:balance}
+h2{font-family:var(--serif);font-size:21px;color:var(--green);margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--grey);font-size:14px;font-style:italic}
+.card{background:var(--card);border-radius:14px;padding:24px;border:1px solid var(--line);box-shadow:0 2px 12px rgba(31,61,49,.08);margin-bottom:18px;min-width:0}
+.btn{font:600 15px var(--sans);border:none;border-radius:9px;padding:12px 24px;cursor:pointer;background:var(--green);color:var(--on-green)}
+.btn:hover{background:var(--green-d)} .btn.terra{background:var(--terra);color:#fff} .btn.ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn.sm{padding:7px 14px;font-size:13px} .btn:focus-visible,.opt:focus-visible,input:focus-visible,audio:focus-visible{outline:3px solid var(--terra);outline-offset:2px}
+.list{margin:0 0 20px;padding:0;list-style:none}
+.list li{position:relative;padding-left:24px;margin-bottom:9px}
+.list li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--terra)}
+.field{margin-bottom:14px}.field label{display:block;font-size:13px;font-weight:600;color:var(--green);margin-bottom:5px}
+input[type=text]{width:100%;font:16px var(--sans);color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:9px;padding:11px 13px}
+input.err{border-color:var(--bad);background:var(--bad-bg)}
+.formbox{background:var(--soft);border-radius:11px;padding:18px 18px 6px;margin-bottom:20px;border-left:4px solid var(--terra)}
+
+/* sticky bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:8px 0 10px;margin-bottom:10px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tab{flex:1 1 140px;font:600 14px var(--sans);padding:11px 14px;border-radius:9px;border:1.5px solid var(--green);background:transparent;color:var(--green);cursor:pointer;text-align:left}
+.tab[aria-selected=true]{background:var(--green);color:var(--on-green)}
+.tab small{display:block;font-weight:500;opacity:.85;font-size:12px}
+.clock{font:700 15px var(--sans);font-variant-numeric:tabular-nums;padding:8px 12px;border-radius:9px;background:var(--soft);color:var(--green);border:1.5px solid var(--line)}
+.clock.warn{color:var(--terra);border-color:var(--terra)} .clock.over{color:var(--bad);border-color:var(--bad)}
+.player{margin-top:10px;background:var(--card);border-radius:11px;padding:10px 12px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.player audio{width:100%;height:40px}
+.jumps{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:12.5px;color:var(--grey)}
+.prog{font-size:13px;color:var(--grey);margin-top:6px}
+
+.part{margin-bottom:6px}
+.partbar{background:var(--green);color:var(--on-green);border-radius:9px;padding:10px 16px;margin:6px 0 14px}
+.partbar b{font-family:var(--serif);font-size:18px;display:block}.partbar span{font-size:12.5px;opacity:.9}
+.q{padding:16px 0;border-bottom:1px solid var(--line)}.q:last-child{border-bottom:none}
+.qt{font-weight:500;margin-bottom:10px;display:flex;gap:10px}
+.qn{flex:none;min-width:28px;height:28px;border-radius:7px;background:var(--terra-bg);color:var(--terra);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;padding:0 6px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opts.row{display:grid;grid-template-columns:repeat(4,1fr)}@media (max-width:560px){.opts.row{grid-template-columns:repeat(2,1fr)}}
+.opt{display:flex;gap:10px;align-items:flex-start;text-align:left;font:15px/1.45 var(--sans);color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:10px;padding:10px 13px;cursor:pointer;min-width:0;min-height:48px;align-items:center;width:100%}
+.opt:hover:not(.sel){border-color:var(--green);background:var(--soft)}
+.opt .l{flex:none;width:26px;height:26px;border-radius:6px;background:var(--soft);border:1.5px solid var(--line);color:var(--green);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.opt.sel{border-color:var(--green);background:var(--green);color:var(--on-green);font-weight:600} .opt.sel .l{background:var(--on-green);color:var(--green)}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)} .opt.ok .l{background:var(--ok);color:var(--card)}
+.opt.no{border-color:var(--bad);background:var(--bad-bg)} .opt.no .l{background:var(--bad);color:var(--card)}
+.opt[disabled]{cursor:default}
+.gaptext p{margin:0 0 14px}
+.gap{display:inline-flex;align-items:baseline;gap:4px;margin:2px 1px}
+.gap .gn{font-weight:700;color:var(--terra);font-size:13px}
+.gap input{width:clamp(110px,26vw,190px);padding:5px 8px;font-size:15px;border-radius:7px;border-width:0 0 2px 0;border-bottom:2px solid var(--terra);background:var(--soft)}
+.gap input.ok{border-color:var(--ok);background:var(--ok-bg)}.gap input.no{border-color:var(--bad);background:var(--bad-bg)}
+.fix{font-size:12.5px;color:var(--ok);font-weight:600;margin-left:4px}
+.passage{background:var(--soft);border-radius:11px;padding:16px 18px;margin-bottom:8px}
+.passage h3{font-family:var(--serif);font-size:18px;color:var(--green);margin:0 0 10px}
+.passage p{margin:0 0 12px}.passage p:last-child{margin:0}.passage .n{font-weight:700;color:var(--terra)}
+.passage .who{font-weight:700;color:var(--green);display:block;margin-bottom:2px;letter-spacing:.04em;font-size:13px;text-transform:uppercase}
+.subbar{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:22px}
+.warnbox{background:var(--terra-bg);border-left:4px solid var(--terra);border-radius:9px;padding:12px 15px;margin-bottom:14px}
+.hidden{display:none!important}
+
+/* result */
+.score{text-align:center;padding:6px 0 14px}
+.big{font-family:var(--serif);font-size:54px;font-weight:700;color:var(--green);line-height:1}.big small{font-size:26px;color:var(--grey)}
+.pill{display:inline-block;margin-top:12px;padding:6px 16px;border-radius:99px;font-size:13px;font-weight:700;letter-spacing:.04em}
+.pill.a{background:var(--ok-bg);color:var(--ok)}.pill.b{background:var(--terra-bg);color:var(--terra)}.pill.c{background:var(--bad-bg);color:var(--bad)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.stat{background:var(--soft);border-radius:10px;padding:12px 14px}.stat b{font-size:22px;font-family:var(--serif);color:var(--green);display:block;font-variant-numeric:tabular-nums}.stat span{font-size:12.5px;color:var(--grey)}
+.send{border-radius:10px;padding:13px 15px;margin:10px 0;font-size:14px}
+.send.pending{background:var(--soft);border-left:4px solid var(--grey)}.send.done{background:var(--ok-bg);border-left:4px solid var(--ok)}.send.fail{background:var(--bad-bg);border-left:4px solid var(--bad)}
+textarea{width:100%;height:130px;font:12.5px/1.5 ui-monospace,Consolas,monospace;border:1.5px solid var(--line);border-radius:9px;padding:10px;color:var(--ink);background:var(--card);margin-top:8px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{background:var(--green);color:var(--on-green);text-align:left;padding:8px 10px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.y{color:var(--ok);font-weight:700}td.n{color:var(--bad);font-weight:700}
+
+/* speaking */
+.choice{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0 18px}
+@media (max-width:520px){.choice{grid-template-columns:1fr}}
+.choice button{text-align:left;font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:11px;padding:14px 16px;cursor:pointer}
+.choice button b{display:block;font-family:var(--serif);font-size:18px;color:var(--green)}
+.choice button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:var(--on-green)}
+.choice button[aria-pressed=true] b{color:var(--on-green)}
+.struct{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0 16px}
+.meter{height:10px;background:var(--soft);border:1px solid var(--line);border-radius:99px;overflow:hidden;margin:8px 0}
+.meter i{display:block;height:100%;width:0;background:var(--ok);transition:width .08s}
+.mic{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.sphead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.dots{display:flex;gap:6px}.dots i{width:26px;height:8px;border-radius:99px;background:var(--line)}.dots i.done{background:var(--ok)}.dots i.cur{background:var(--terra)}
+.qbox{background:var(--soft);border-radius:12px;padding:20px;margin:6px 0 16px;border:1px solid var(--line)}
+.qbox .id{font-weight:700;color:var(--terra);font-size:13px;letter-spacing:.06em}
+.qbox .qq{font-family:var(--serif);font-size:clamp(19px,4.5vw,24px);line-height:1.35;margin:6px 0 0;color:var(--ink)}
+.qbox ul{margin:10px 0 0 18px;padding:0}.qbox li{margin-bottom:4px}
+.phase{display:flex;align-items:center;gap:14px;border-radius:12px;padding:14px 16px;border:2px solid var(--line);background:var(--card)}
+.phase .big2{font:700 34px var(--sans);font-variant-numeric:tabular-nums;min-width:74px}
+.phase.prep{border-color:var(--terra)} .phase.prep .big2{color:var(--terra)}
+.phase.rec{border-color:var(--bad);background:var(--bad-bg)} .phase.rec .big2{color:var(--bad)}
+.rdot{width:14px;height:14px;border-radius:50%;background:var(--bad);display:inline-block;margin-right:6px}
+@media (prefers-reduced-motion:no-preference){.phase.rec .rdot{animation:bl 1s infinite}@keyframes bl{50%{opacity:.25}}}
+.errbox{background:var(--bad-bg);border-left:4px solid var(--bad);border-radius:9px;padding:12px 15px;margin:10px 0}
+.reclist{margin:10px 0 0;padding:0;list-style:none;font-size:14px}.reclist li{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:6px 0;border-bottom:1px solid var(--line)}
+
+.prow{display:flex;align-items:center;gap:12px}
+.pbar{flex:1;height:10px;border-radius:99px;background:var(--soft);border:1px solid var(--line);overflow:hidden;pointer-events:none}
+.pbar i{display:block;height:100%;width:0;background:var(--green)}
+.ptime{font:600 13px var(--sans);font-variant-numeric:tabular-nums;color:var(--grey);min-width:48px;text-align:right}
+/* anti-copy */
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+input,textarea{-webkit-user-select:text;user-select:text}
+@media print{body{display:none!important}}
+
+/* writing */
+.wtext{width:100%;height:clamp(260px,46vh,420px);font:16px/1.6 var(--sans);resize:vertical;margin-top:10px}
+.hint{margin:0 0 6px;font-size:14px;color:var(--grey)}.hint summary{cursor:pointer;font-weight:600;color:var(--green)}.hint ul{margin:8px 0 0 18px;padding:0}
+.qbox img.chart{display:block;max-width:100%;height:auto;margin:12px 0 4px;border-radius:8px;border:1px solid var(--line);background:#fff;pointer-events:none;-webkit-user-drag:none}
+.qbox p.wp{margin:8px 0 0}
+@media (prefers-reduced-motion:no-preference){.opt{transition:.12s}}
+</style>
+</head><body>
+<div class="wrap">
+  <header style="margin-bottom:16px">
+    <div class="kicker">VTG English Center · Cambridge Empower B2</div>
+    <h1>End-of-Course Test: Speaking</h1>
+    <div class="sub">Bài kiểm tra Speaking cuối khoá trình độ B2</div>
+  </header>
+
+  <section id="s-start" class="card">
+    <ul class="list">
+      <li>Em chọn <b>Đề A hoặc Đề B</b>, làm cả ba phần của đề: Part 1 (4 câu), Part 2 (1 thẻ đề), Part 3 (2 câu). Tổng khoảng 7 phút.</li>
+      <li>Mỗi câu hiện ra, em có thời gian chuẩn bị rồi <b>micro tự bật</b>: Part 1 chuẩn bị 10 giây, nói 20 giây. Part 2 chuẩn bị 1 phút, nói tối đa 2 phút. Part 3 chuẩn bị 10 giây, nói 25 giây.</li>
+      <li>Mỗi câu chỉ ghi một lần, <b>không ghi lại</b>. Đồng hồ chạy liên tục suốt bài.</li>
+      <li>Em cần ngồi nơi yên tĩnh, cho phép trình duyệt dùng micro, và <b>không đóng trang</b> cho đến khi bản ghi gửi xong. Nên dùng Chrome hoặc Safari.</li>
+    </ul>
+    <div class="formbox">
+      <div class="field"><label for="in-name">Họ và tên</label><input type="text" id="in-name" autocomplete="name"></div>
+      <div class="field"><label for="in-cls">Lớp</label><input type="text" id="in-cls" placeholder="Ví dụ: B2-01"></div>
+    </div>
+    <button class="btn terra" id="btn-start" type="button">Bắt đầu bài Test</button>
+  </section>
+
+  <section id="s-speak" class="hidden">
+    <div class="card" id="sp-choose">
+      <h2>Bài Speaking</h2>
+      <p class="sub">Bài ghi âm của em được gửi cho thầy và thầy chấm sau.</p>
+      <p style="margin:14px 0 0;font-weight:600">Chọn đề (chỉ chọn một, không đổi được sau khi bắt đầu):</p>
+      <div class="choice">
+        <button type="button" id="pick-A" aria-pressed="false"><b>Đề A</b></button>
+        <button type="button" id="pick-B" aria-pressed="false"><b>Đề B</b></button>
+      </div>
+      <div class="tw"><table class="struct"><thead><tr><th>Phần</th><th>Chuẩn bị</th><th>Nói</th></tr></thead><tbody>
+        <tr><td>Part 1 · Interview (4 câu)</td><td>10 giây mỗi câu</td><td>20 giây mỗi câu</td></tr>
+        <tr><td>Part 2 · Long turn (1 thẻ đề)</td><td>1 phút</td><td>1 đến 1,5 phút (tối đa 2 phút)</td></tr>
+        <tr><td>Part 3 · Discussion (2 câu)</td><td>10 giây mỗi câu</td><td>25 giây mỗi câu</td></tr></tbody></table></div>
+      <ul class="list">
+        <li>Hiện câu hỏi, đếm ngược 10 giây rồi <b>micro tự bật</b>. Em không cần bấm gì để bắt đầu nói.</li>
+        <li>Mỗi câu chỉ ghi âm một lần, <b>không ghi lại</b>. Đồng hồ chạy liên tục suốt bài.</li>
+        <li>Nói xong sớm, bấm <b>Xong câu này</b> để sang câu kế tiếp.</li>
+      </ul>
+      <p style="font-weight:600;margin-bottom:6px">Kiểm tra micro</p>
+      <div class="mic"><button class="btn ghost sm" id="btn-mic" type="button">Bật micro để thử</button><span class="sub" id="mic-msg">Bấm, cho phép trình duyệt dùng micro, rồi nói thử một câu.</span></div>
+      <div class="meter" aria-hidden="true"><i id="meter"></i></div>
+      <div id="mic-err" class="errbox hidden"></div>
+      <div style="margin-top:16px"><button class="btn terra" id="btn-ready" type="button" disabled>Sẵn sàng</button></div>
+    </div>
+
+    <div class="card hidden" id="sp-run">
+      <div class="sphead"><span class="clock" id="sp-clock" title="Tổng thời gian đã trôi qua">00:00</span><span id="sp-part" class="kicker" style="margin:0"></span><div class="dots" id="sp-dots"></div></div>
+      <div class="qbox" id="sp-q"></div>
+      <div class="phase prep" id="sp-phase"><div class="big2" id="sp-t">10</div><div><b id="sp-pl">Đọc câu hỏi và chuẩn bị</b><div class="sub" id="sp-ps"></div></div></div>
+      <div class="meter" aria-hidden="true"><i id="meter2"></i></div>
+      <div class="subbar" style="margin-top:8px"><span class="sub" id="sp-hint"></span><button class="btn" id="btn-next" type="button" disabled>Xong câu này</button></div>
+    </div>
+
+    <div class="card hidden" id="sp-done">
+      <h2 id="sp-done-h">Đang gửi bài Speaking</h2>
+      <div class="send pending" id="sp-send">Đang gửi các bản ghi âm cho thầy…</div>
+      <ul class="reclist" id="sp-list"></ul>
+      <div class="subbar"><span class="sub" id="sp-foot">Em đừng đóng trang cho đến khi tất cả bản ghi được gửi xong.</span>
+        <button class="btn terra hidden" id="btn-spretry" type="button">Gửi lại các bản chưa gửi</button></div>
+    </div>
+  </section>
+</div>
+
+<script>
+"use strict";
+var ENDPOINT="https://script.google.com/macros/s/AKfycby57HegnnckxSVtfJwqULkn4atHPG4G_YMSb5S9GyaSOCyxQLR6kpl1LqJTQi3woSF8/exec";
+var $=function(i){return document.getElementById(i)};
+function fmt(s){s=Math.max(0,s);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
+
+var student={};
+/* ---------- SPEAKING ---------- */
+var SP={
+ A:{title:"Test A – People, places and money",
+  p1:[["A1","What kind of person do you think makes a good friend or a good colleague? Why?"],["A2","Tell me about your home. Is there anything you would like to change or have done to it?"],["A3","Tell me about a place you have visited. What is it famous for?"],["A4","How do you usually spend your money? Do you try to save some of it?"]],
+  p2:{title:"Describe a city or town that you know well.",sub:"It can be a place where you live or a place you have visited.",pts:["where it is and what it is like","what you like about it","what problems it has, or how it has changed","and what would make it a better place to live"]},
+  p3:[["A5","Do you think the natural world will be in a better or worse state in twenty years from now? Why?"],["A6","If you were given a large amount of money, what would you do with it? Why?"]]},
+ B:{title:"Test B – Choices and changes",
+  p1:[["B1","What do you think you will be doing this time next year? What will you have achieved by then?"],["B2","Do you prefer visiting new places or going back to places you know? Why?"],["B3","Tell me about a film or TV programme that you have enjoyed recently."],["B4","Is there something you did recently that you now think you should have done differently?"]],
+  p2:{title:"Describe a difficult decision that you had to make.",sub:"For example, a decision about money, study, work or family.",pts:["what the decision was","what choices you had","what you decided and why","and what you would do differently if you could go back"]},
+  p3:[["B5","Is tourism good or bad for a place? What are the advantages and disadvantages?"],["B6","Why do you think some people break the law? What could be done to stop them?"]]}
+};
+var SPEAKING_ON=false;
+var spTest=null,spItems=[],spIdx=-1,spStream=null,spRec=null,spChunks=[],spPhase="",spPhaseStart=0,spClockStart=0,spLoop=null,spRecs=[],spMime="",spAudioCtx=null,spAnalyser=null,spAttempt=Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7);
+
+function spBuild(t){
+  var d=SP[t],a=[];
+  d.p1.forEach(function(q){a.push({id:q[0],part:"Part 1 – Interview",q:q[1],prep:10,min:5,max:20,target:"20 giây"});});
+  a.push({id:t+"-P2",part:"Part 2 – Long turn",q:d.p2.title,cue:d.p2,prep:60,min:60,max:120,target:"1 đến 1,5 phút (tối đa 2 phút)"});
+  d.p3.forEach(function(q){a.push({id:q[0],part:"Part 3 – Discussion",q:q[1],prep:10,min:10,max:25,target:"25 giây"});});
+  return a;
+}
+function pickTest(t){
+  if(spItems.length)return;
+  spTest=t;["A","B"].forEach(function(x){$("pick-"+x).setAttribute("aria-pressed",x===t);});
+  spReadyCheck();
+}
+function spReadyCheck(){$("btn-ready").disabled=!(spTest&&spStream);}
+function spMeterLoop(){
+  if(!spAnalyser)return;
+  var d=new Uint8Array(spAnalyser.fftSize);spAnalyser.getByteTimeDomainData(d);
+  var m=0;for(var i=0;i<d.length;i++){m=Math.max(m,Math.abs(d[i]-128));}
+  var w=Math.min(100,Math.round(m/60*100));$("meter").style.width=w+"%";$("meter2").style.width=w+"%";
+  requestAnimationFrame(spMeterLoop);
+}
+function spMicErr(e){
+  var b=$("mic-err");b.classList.remove("hidden");
+  var n=(e&&e.name)||"";
+  b.innerHTML=(n==="NotAllowedError"||n==="SecurityError")
+   ?"<b>Trình duyệt chưa cho dùng micro.</b> Bấm biểu tượng ổ khoá cạnh địa chỉ trang, chọn cho phép Micro rồi bấm lại. Nếu em mở bài trong Zalo hoặc Facebook, hãy mở bằng Chrome hoặc Safari."
+   :"<b>Không bật được micro.</b> Kiểm tra micro đã cắm chưa, đóng các ứng dụng khác đang dùng micro rồi thử lại. ("+(n||"lỗi không rõ")+")";
+}
+function spMic(){
+  if(!navigator.mediaDevices||!window.MediaRecorder){spMicErr({name:"Unsupported"});return;}
+  navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true}}).then(function(st){
+    spStream=st;$("mic-err").classList.add("hidden");
+    $("mic-msg").textContent="Micro hoạt động nếu thanh bên dưới nhảy khi em nói.";
+    $("btn-mic").textContent="Micro đã bật ✓";
+    try{spAudioCtx=new (window.AudioContext||window.webkitAudioContext)();var src=spAudioCtx.createMediaStreamSource(st);spAnalyser=spAudioCtx.createAnalyser();spAnalyser.fftSize=512;src.connect(spAnalyser);spMeterLoop();}catch(e){}
+    var c=["audio/webm;codecs=opus","audio/webm","audio/mp4","audio/ogg;codecs=opus"];
+    spMime="";c.forEach(function(m){if(!spMime&&MediaRecorder.isTypeSupported(m))spMime=m;});
+    spReadyCheck();
+  }).catch(spMicErr);
+}
+function dotsHTML(){var h="";spItems.forEach(function(x,i){h+='<i class="'+(i<spIdx?"done":i===spIdx?"cur":"")+'"></i>';});return h;}
+function spStart(){
+  if(!spTest||!spStream)return;
+  spItems=spBuild(spTest);spIdx=-1;spClockStart=Date.now();
+  $("sp-choose").classList.add("hidden");$("sp-run").classList.remove("hidden");
+  window.scrollTo({top:0});
+  clearInterval(spLoop);spLoop=setInterval(spTick,200);
+  spNext();
+}
+function spNext(){
+  spIdx++;
+  if(spIdx>=spItems.length){spFinish();return;}
+  var it=spItems[spIdx];
+  $("sp-part").textContent=it.part;$("sp-dots").innerHTML=dotsHTML();
+  var q='<div class="id">'+it.id+'</div><p class="qq">'+it.q+'</p>';
+  if(it.cue){q+='<p style="margin:10px 0 0;color:var(--grey)">'+it.cue.sub+'</p><p style="margin:10px 0 0;font-weight:600">You should say:</p><ul>'+it.cue.pts.map(function(x){return "<li>"+x+"</li>";}).join("")+'</ul>';}
+  $("sp-q").innerHTML=q;
+  spPhase="prep";spPhaseStart=Date.now();
+  $("btn-next").disabled=true;
+  $("sp-hint").textContent="Micro sẽ tự bật khi hết giờ chuẩn bị.";
+  spPaint();
+}
+function spPaint(){
+  var it=spItems[spIdx],ph=$("sp-phase"),e=(Date.now()-spPhaseStart)/1000;
+  if(spPhase==="prep"){
+    ph.className="phase prep";$("sp-t").textContent=Math.max(0,Math.ceil(it.prep-e));
+    $("sp-pl").textContent="Đọc câu hỏi và chuẩn bị";$("sp-ps"). textContent="Sau đó micro tự ghi âm. Cần nói: "+it.target+".";
+  }else if(spPhase==="rec"){
+    ph.className="phase rec";$("sp-t").textContent=fmt(Math.floor(e));
+    $("sp-pl").innerHTML='<span class="rdot"></span>Đang ghi âm. Hãy nói ngay';
+    $("sp-ps").textContent="Cần nói: "+it.target+". Tự dừng sau "+fmt(it.max)+".";
+    var ok=e>=it.min;$("btn-next").disabled=!ok;
+    $("sp-hint").textContent=ok?"":"Nút Xong câu này mở sau "+Math.ceil(it.min-e)+" giây.";
+  }
+}
+function spTick(){
+  $("sp-clock").textContent=fmt(Math.floor((Date.now()-spClockStart)/1000));
+  if(spIdx<0||spIdx>=spItems.length)return;
+  var it=spItems[spIdx],e=(Date.now()-spPhaseStart)/1000;
+  if(spPhase==="prep"&&e>=it.prep){spRecStart();return;}
+  if(spPhase==="rec"&&e>=it.max){spRecStop();return;}
+  spPaint();
+}
+function spRecStart(){
+  spPhase="rec";spPhaseStart=Date.now();spChunks=[];
+  try{
+    spRec=new MediaRecorder(spStream,spMime?{mimeType:spMime,audioBitsPerSecond:32000}:{audioBitsPerSecond:32000});
+    spRec.ondataavailable=function(ev){if(ev.data&&ev.data.size)spChunks.push(ev.data);};
+    spRec.start(1000);
+  }catch(e){spRec=null;}
+  spPaint();
+}
+function spRecStop(){
+  if(spPhase!=="rec")return;
+  spPhase="saving";$("btn-next").disabled=true;
+  var it=spItems[spIdx],secs=Math.round((Date.now()-spPhaseStart)/1000);
+  var fin=function(){
+    var blob=new Blob(spChunks,{type:(spRec&&spRec.mimeType)||spMime||"audio/webm"});
+    spRecs.push({id:it.id,part:it.part,question:it.q,seconds:secs,blob:blob});
+    spNext();
+  };
+  if(spRec&&spRec.state!=="inactive"){spRec.onstop=fin;try{spRec.stop();}catch(e){fin();}}else fin();
+}
+function spFinish(){
+  clearInterval(spLoop);
+  $("sp-run").classList.add("hidden");$("sp-done").classList.remove("hidden");
+  if(spStream){spStream.getTracks().forEach(function(t){t.stop();});}
+  spAnalyser=null;window.scrollTo({top:0});
+  spUpload();
+}
+function blobB64(b){return new Promise(function(res,rej){var f=new FileReader();f.onload=function(){res(String(f.result).split(",")[1]||"");};f.onerror=rej;f.readAsDataURL(b);});}
+
+/* ---------- GỬI TỪNG BẢN GHI (có xác nhận) ---------- */
+function postJSON(p){
+  return fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(p)})
+   .then(function(r){return r.text();})
+   .then(function(t){var j;try{j=JSON.parse(t);}catch(e){return {state:"unknown"};}return j&&j.ok?{state:"ok"}:{state:"fail",msg:(j&&j.error)||"lỗi từ máy chủ"};})
+   .catch(function(){return {state:"unknown"};});
+}
+var upState=[],uploading=false;
+function extOf(t){return /mp4/.test(t)?"m4a":/ogg/.test(t)?"ogg":"webm";}
+function renderUp(){
+  var ok=0,h="";
+  spRecs.forEach(function(r,i){
+    var s=upState[i],txt;
+    if(!s)txt="đang chờ";
+    else if(s==="sending")txt="đang gửi…";
+    else if(s.state==="ok"){txt="<b>đã gửi</b>";ok++;}
+    else if(s.state==="unknown")txt="chưa xác nhận được";
+    else txt="lỗi ("+s.msg+")";
+    var dl="";
+    if(s&&s!=="sending"&&s.state!=="ok"){var u=URL.createObjectURL(r.blob);dl=' <a href="'+u+'" download="'+student.name.replace(/[^\w]+/g,"_")+"_"+r.id+"."+extOf(r.blob.type)+'">Tải về</a>';}
+    h+="<li><b>"+r.id+"</b> · "+r.part+" · "+r.seconds+" giây · "+txt+dl+"</li>";
+  });
+  $("sp-list").innerHTML=h;
+  var box=$("sp-send"),all=ok===spRecs.length;
+  if(uploading){box.className="send pending";box.textContent="Đang gửi "+(ok)+"/"+spRecs.length+" bản ghi…";}
+  else if(all){box.className="send done";box.innerHTML="<b>Đã gửi đủ "+spRecs.length+" bản ghi cho thầy.</b> Em đã hoàn thành bài Speaking.";$("sp-done-h").textContent="Đã xong bài Speaking";$("sp-foot").textContent="Em có thể đóng trang.";$("btn-spretry").classList.add("hidden");}
+  else{box.className="send fail";box.innerHTML="<b>Có "+(spRecs.length-ok)+" bản ghi chưa gửi được.</b> Giữ nguyên trang này và bấm <b>Gửi lại</b>. Nếu vẫn lỗi, tải các file về và gửi cho thầy qua Zalo.";$("btn-spretry").classList.remove("hidden");}
+}
+function spUpload(){
+  if(uploading)return;uploading=true;
+  var queue=[];spRecs.forEach(function(r,i){if(!(upState[i]&&upState[i].state==="ok"))queue.push(i);});
+  var next=function(){
+    if(!queue.length){uploading=false;renderUp();return;}
+    var i=queue.shift(),r=spRecs[i];upState[i]="sending";renderUp();
+    blobB64(r.blob).then(function(b64){
+      return postJSON({formType:"b2_speaking",attemptId:spAttempt,name:student.name,cls:student.cls,test:spTest,testTitle:SP[spTest].title,
+        submittedAt:new Date().toISOString(),index:i+1,count:spRecs.length,
+        rec:{id:r.id,part:r.part,question:r.question,seconds:r.seconds,mime:r.blob.type,ext:extOf(r.blob.type),audio:b64}});
+    }).then(function(s){upState[i]=s;renderUp();next();});
+  };
+  renderUp();next();
+}
+window.addEventListener("beforeunload",function(e){
+  if(spRecs.length&&upState.some(function(s){return !s||s==="sending"||s.state!=="ok";})&&!(spRecs.length&&upState.length===spRecs.length&&upState.every(function(s){return s&&s.state==="ok";}))){e.preventDefault();e.returnValue="";}
+});
+/* ---------- CHỐNG SAO CHÉP ---------- */
+(function(){
+  var inField=function(t){return t&&(t.tagName==="INPUT"||t.tagName==="TEXTAREA");};
+  ["copy","cut","dragstart"].forEach(function(ev){document.addEventListener(ev,function(e){if(!inField(e.target))e.preventDefault();});});
+  document.addEventListener("contextmenu",function(e){e.preventDefault();});
+  document.addEventListener("selectstart",function(e){if(!inField(e.target))e.preventDefault();});
+  document.addEventListener("keydown",function(e){
+    var k=(e.key||"").toLowerCase(),m=e.ctrlKey||e.metaKey;
+    if(k==="f12"||(m&&e.shiftKey&&["i","j","c"].indexOf(k)>-1)||(m&&["u","s","p"].indexOf(k)>-1)||(m&&["c","x","a"].indexOf(k)>-1&&!inField(e.target)))e.preventDefault();
+  });
+})();
+
+/* ---------- SỰ KIỆN ---------- */
+$("btn-start").onclick=function(){
+  var n=$("in-name"),c=$("in-cls"),bad=false;
+  [n,c].forEach(function(x){x.classList.toggle("err",!x.value.trim());if(!x.value.trim())bad=true;});
+  if(bad)return;
+  student={name:n.value.trim(),cls:c.value.trim()};
+  $("s-start").classList.add("hidden");$("s-speak").classList.remove("hidden");
+  spReadyCheck();window.scrollTo({top:0});
+};
+$("pick-A").onclick=function(){pickTest("A")};$("pick-B").onclick=function(){pickTest("B")};
+$("btn-mic").onclick=spMic;$("btn-ready").onclick=spStart;
+$("btn-next").onclick=spRecStop;$("btn-spretry").onclick=spUpload;
+</script>
+</body></html>
