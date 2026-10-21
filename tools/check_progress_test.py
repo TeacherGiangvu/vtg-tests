@@ -83,7 +83,21 @@ def cmd_check(args):
                 key_answer = re.sub(r"[()]", "", k).strip()
                 # some keys print only the missing letters (first letters are already on the paper)
                 missing = " ".join(w[1:] for w in q["correct"].split())
-                if q["correct"].strip().lower() != key_answer.lower() and missing.lower() != key_answer.lower():
+                def letters(s):
+                    return re.sub(r"[^a-z]", "", s.lower())
+
+                def is_subseq(small, big):
+                    it = iter(big)
+                    return all(ch in it for ch in small)
+
+                # keys for multi-word answers may skip the first letter of each word and the spaces
+                # ("et axi" for "get a taxi"); several alternatives are separated by "/"
+                accepted = [q["correct"]] + list(q.get("accept", []))
+                key_ok = any(
+                    a.strip().lower() == alt.strip().lower() or " ".join(w[1:] for w in a.split()).lower() == alt.strip().lower()
+                    or (letters(alt) and is_subseq(letters(alt), letters(a)))
+                    for a in accepted for alt in key_answer.split("/"))
+                if not key_ok:
                     problems.append(f"Q{no}: JSON says {q['correct']!r}, key says {k!r}")
                 pw = pattern_words(q["pattern"])
                 firsts = [w.split()[0] for w in pw]
@@ -96,7 +110,9 @@ def cmd_check(args):
                         problems.append(f"Q{no}: accepted answer {a!r} does not fit the pattern")
             if q.get("text"):
                 t = squash(re.sub(r"<[^>]+>", " ", q["text"]))
-                if t not in paper:
+                # when the paper prints the letters inline ("really c _ _ _ ."), the gap stands for the pattern
+                t_inline = squash(re.sub(r"<[^>]+>", " ", q["text"].replace("<span class='gap'></span>", q.get("pattern", ""))))
+                if t not in paper and not (p["kind"] == "input" and t_inline in paper):
                     problems.append(f"Q{no}: sentence not found word for word in the paper (check it by eye)")
         if p.get("passage"):
             html = re.sub(r"<br\s*/?>", " ", p["passage"]["html"])
