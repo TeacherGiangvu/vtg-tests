@@ -114,6 +114,13 @@
   @keyframes knock{30%{transform:translateX(-24px);filter:brightness(3)}60%{transform:translateX(-12px)}}
   .bigshake{animation:shake2 .5s steps(8)}
   @keyframes shake2{25%{transform:translate(-8px,4px)}50%{transform:translate(8px,-4px)}75%{transform:translate(-6px,2px)}}
+
+  .field{display:block;width:100%;font-family:inherit;font-size:12px;padding:12px;margin:10px 0 0;
+    background:var(--cream);color:var(--ink);border:4px solid var(--ink);box-shadow:4px 4px 0 var(--ink);outline:none}
+  .field:focus{background:#fff;border-color:var(--orange)}
+  .link{font-size:8px;text-align:right;margin-top:6px;color:var(--green)}
+  .link.off{color:#8d92b8}
+  button.big:disabled{opacity:.45;cursor:not-allowed}
 </style>
 </head>
 <body>
@@ -129,7 +136,9 @@
       <canvas id="t-hero" style="left:20%"></canvas>
       <canvas id="t-boss" style="right:20%"></canvas>
     </div>
-    <button class="big" id="start">&#9654; PRESS START</button>
+    <input class="field" id="pname" maxlength="40" placeholder="YOUR NAME" autocomplete="off">
+    <input class="field" id="pclass" maxlength="30" placeholder="CLASS (e.g. K12-A)" autocomplete="off">
+    <button class="big" id="start" disabled>&#9654; PRESS START</button>
     <p class="sub" style="margin-top:18px;font-size:9px">3 LIVES &middot; KEYS 1-4 TO ANSWER</p>
   </section>
 
@@ -140,6 +149,7 @@
       <span class="hearts" id="hearts"></span>
       <span id="score">SCORE 0000</span>
     </div>
+    <div class="link" id="link"></div>
     <div class="stage" id="stage">
       <canvas id="hero"></canvas>
       <canvas id="enemy"></canvas>
@@ -306,6 +316,18 @@ const QUESTIONS = [
 ];
 const NAMES = ['SLIME','BAT','GHOST','SKULL','DRAGON BOSS'];
 
+/* ---------------- Teacher link ---------------- */
+// Paste the Apps Script web-app URL here (ends with /exec). Empty = practice mode, nothing is sent.
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbygXjEL_LEHqqeGoR98uzyKvXBpyWPEq6XbPHmDRBkD-LtPfzSAg05zt93ZWb6acOy7cA/exec';
+let sid = '', player = {name:'', cls:''}, qStart = 0;
+function send(obj){
+  if(!ENDPOINT) return;
+  try{
+    fetch(ENDPOINT, {method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body: JSON.stringify(Object.assign({sid, name:player.name, cls:player.cls, t:Date.now()}, obj))}).catch(()=>{});
+  }catch(e){}
+}
+
 /* ---------------- Game state ---------------- */
 const $ = id => document.getElementById(id);
 let i = 0, lives = 3, score = 0, locked = false, correctCount = 0;
@@ -318,7 +340,8 @@ function renderScore(){ $('score').textContent = 'SCORE ' + String(score).padSta
 
 function load(){
   const Q = QUESTIONS[i];
-  locked = false;
+  locked = false; qStart = Date.now();
+  send({type:'question', q:i});
   $('lvl').textContent = 'LEVEL ' + (i+1) + '/5';
   $('tag').textContent = Q.boss ? '!! BOSS BATTLE !! ' + NAMES[i] : NAMES[i] + ' APPEARS!';
   $('tag').className = 'tag' + (Q.boss ? ' boss' : '');
@@ -397,6 +420,7 @@ function answer(k){
     msg.className = 'msg wrong';
     msg.textContent = 'OUCH! ' + Q.why;
   }
+  send({type:'answer', q:i, choice:k, ok:k===Q.ans, ms:Date.now()-qStart, score, lives});
   renderHearts(); renderScore();
   $('next').textContent = (lives<=0) ? 'CONTINUE ▶' : (i===4 ? 'FINISH ▶' : 'NEXT ▶');
   $('next').classList.remove('hidden');
@@ -437,6 +461,7 @@ function next(){
 
 function finish(){
   const win = lives>0;
+  send({type:'finish', status: win?'won':'gameover', score, lives, correct:correctCount});
   show('end');
   $('end-title').textContent = win ? 'YOU WIN!' : 'GAME OVER';
   $('end-title').style.color = win ? 'var(--yellow)' : 'var(--red)';
@@ -450,6 +475,14 @@ function finish(){
 }
 
 function start(){
+  const nm = $('pname').value.trim();
+  if(!nm){ $('pname').focus(); return; }
+  player = {name:nm, cls:$('pclass').value.trim()};
+  try{ localStorage.setItem('aq_player', JSON.stringify(player)); }catch(e){}
+  sid = Date.now().toString(36) + Math.random().toString(36).slice(2,7);
+  $('link').textContent = ENDPOINT ? 'TEACHER LINK: ON – ' + nm : 'PRACTICE MODE';
+  $('link').className = 'link' + (ENDPOINT ? '' : ' off');
+  send({type:'join', total:QUESTIONS.length});
   i = 0; lives = 3; score = 0; correctCount = 0;
   show('play'); draw($('hero'), 'hero', 8, false); sfx.click(); load();
 }
@@ -458,12 +491,16 @@ function start(){
 draw($('t-hero'), 'hero', 8, false);
 draw($('t-boss'), 'boss', 10, true);
 $('start').onclick = start;
+function chk(){ $('start').disabled = !$('pname').value.trim(); }
+$('pname').addEventListener('input', chk);
+try{ const sv = JSON.parse(localStorage.getItem('aq_player')||'null'); if(sv){ $('pname').value = sv.name||''; $('pclass').value = sv.cls||''; } }catch(e){}
+chk();
 $('again').onclick = () => { start(); };
 $('next').onclick = next;
 $('mute').onclick = () => { soundOn = !soundOn; $('mute').textContent = 'SOUND: ' + (soundOn?'ON':'OFF'); };
 document.addEventListener('keydown', e=>{
   if($('play').classList.contains('hidden')) {
-    if(e.key==='Enter' && !$('title').classList.contains('hidden')) start();
+    if(e.key==='Enter' && !$('title').classList.contains('hidden') && $('pname').value.trim()) start();
     return;
   }
   if(!locked && '1234'.includes(e.key)){
