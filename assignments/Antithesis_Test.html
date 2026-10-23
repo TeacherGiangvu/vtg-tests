@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Antithesis Quiz | Phenikaa University</title>
+<style>
+  :root{--navy:#223771;--dark:#002060;--orange:#F26522;--bg:#eef1fa;--ink:#1a2146;--green:#2fb344;--red:#e03131}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+  header{background:var(--navy);color:#fff;border-bottom:6px solid var(--orange);padding:14px 20px;display:flex;align-items:center;gap:12px}
+  header b{letter-spacing:1px}
+  header span{opacity:.85;font-size:13px}
+  header .sp{flex:1}
+  #timer{font-variant-numeric:tabular-nums;font-weight:bold;background:#fff;color:var(--navy);padding:4px 10px;border-radius:4px}
+  main{max-width:680px;margin:26px auto;padding:0 16px}
+  .card{background:#fff;border:2px solid var(--navy);border-radius:10px;padding:24px;box-shadow:0 4px 0 var(--navy)}
+  h1{margin:0 0 4px;color:var(--navy);font-size:26px}
+  .sub{color:#555;margin:0 0 18px}
+  label{display:block;font-weight:bold;margin:14px 0 6px}
+  input{width:100%;font:inherit;padding:11px 12px;border:2px solid #b8bfdc;border-radius:6px}
+  input:focus{outline:none;border-color:var(--orange)}
+  button{font:inherit;font-weight:bold;cursor:pointer;border:0;border-radius:6px;padding:12px 22px}
+  .primary{background:var(--orange);color:#fff}
+  .primary:disabled{opacity:.4;cursor:not-allowed}
+  .primary:hover:not(:disabled){background:#d9531a}
+  .bar{height:10px;background:#dde2f3;border-radius:5px;overflow:hidden;margin-bottom:6px}
+  .bar i{display:block;height:100%;background:var(--orange);transition:width .3s}
+  .qn{color:#555;font-size:13px;margin-bottom:14px;display:flex;justify-content:space-between}
+  .q{font-size:20px;line-height:1.5;margin:0 0 18px;font-weight:bold;color:var(--dark)}
+  .opt{display:block;width:100%;text-align:left;background:#f4f6fd;border:2px solid #c6cde8;margin-bottom:10px;padding:14px 16px;font-weight:normal;font-size:16px}
+  .opt:hover{border-color:var(--navy)}
+  .opt.sel{background:#e3e9ff;border-color:var(--navy);box-shadow:inset 5px 0 0 var(--orange)}
+  .opt.ok{background:#dff5e3;border-color:var(--green)}
+  .opt.no{background:#fde2e2;border-color:var(--red)}
+  .row{display:flex;justify-content:flex-end;margin-top:8px}
+  .big{font-size:56px;font-weight:bold;color:var(--navy);text-align:center;margin:6px 0}
+  .stats{display:flex;gap:12px;margin:12px 0 18px}
+  .stats div{flex:1;background:#f4f6fd;border:2px solid #c6cde8;border-radius:8px;text-align:center;padding:10px}
+  .stats b{display:block;font-size:22px;color:var(--navy)}
+  .rev{border-top:1px solid #dde2f3;padding:12px 0}
+  .rev small{color:#555}
+  .tag{display:inline-block;font-size:12px;font-weight:bold;padding:2px 8px;border-radius:10px;margin-left:6px}
+  .tag.ok{background:#dff5e3;color:#1b6b2c}.tag.no{background:#fde2e2;color:#a61e1e}
+  .hide{display:none}
+  .note{font-size:12px;color:#777;text-align:center;margin-top:14px}
+</style>
+</head>
+<body>
+<header>
+  <b>PHENIKAA UNIVERSITY</b><span>Contrastive Linguistics · Topic 7</span>
+  <span class="sp"></span><span id="timer" class="hide">0:00</span>
+</header>
+<main>
+
+  <section id="start" class="card">
+    <h1>Antithesis in English and Vietnamese</h1>
+    <p class="sub">Quick quiz · 5 multiple-choice questions</p>
+    <label for="pname">Full name</label>
+    <input id="pname" maxlength="40" placeholder="e.g. Nguyen Van A" autocomplete="off">
+    <label for="pclass">Class</label>
+    <input id="pclass" maxlength="30" placeholder="e.g. K12-A" autocomplete="off">
+    <div class="row" style="margin-top:20px"><button class="primary" id="go" disabled>Start quiz</button></div>
+    <p class="note">Your answers and time are sent to the teacher. Both your score and your speed count.</p>
+  </section>
+
+  <section id="quiz" class="card hide">
+    <div class="bar"><i id="bar"></i></div>
+    <div class="qn"><span id="qn">Question 1 of 5</span><span id="pl"></span></div>
+    <p class="q" id="qt"></p>
+    <div id="opts"></div>
+    <div class="row"><button class="primary" id="next" disabled>Next</button></div>
+  </section>
+
+  <section id="result" class="card hide">
+    <h1 id="rname">Well done!</h1>
+    <p class="sub">Your result has been sent to the teacher.</p>
+    <div class="big" id="rscore"></div>
+    <div class="stats"><div><b id="rcorrect"></b>correct</div><div><b id="rtime"></b>total time</div></div>
+    <div id="review"></div>
+  </section>
+
+</main>
+
+<script>
+// Apps Script web-app URL. Empty = practice mode (nothing is sent).
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbygXjEL_LEHqqeGoR98uzyKvXBpyWPEq6XbPHmDRBkD-LtPfzSAg05zt93ZWb6acOy7cA/exec';
+
+const QUESTIONS = [
+ {q:'Antithesis puts ______ ideas in parallel form.', opts:['similar','contrasting','unrelated'], ans:1,
+  why:'Antithesis = contrasting meaning + balanced, parallel form.'},
+ {q:'Which sentence is antithesis?', opts:['Easy come, easy go.','United we stand, divided we fall.','Time is money.'], ans:1,
+  why:'"United we stand, divided we fall" has two opposite halves. "Easy come, easy go" repeats one idea.'},
+ {q:'Which language forms opposites with affixes (happy – unhappy)?', opts:['English','Vietnamese','Both equally'], ans:0,
+  why:'English uses un-, dis-. Vietnamese uses separate words: vui / buồn.'},
+ {q:'In “Khôn nhà dại chợ”, the two contrasting pairs are:',
+  opts:['khôn – nhà and dại – chợ','khôn – dại and nhà – chợ','khôn – chợ and dại – nhà'], ans:1,
+  why:'Wise at home, foolish at the market: khôn ↔ dại, nhà ↔ chợ.'},
+ {q:'“Ask not what your country can do for you; ask what you can do for your country.” This sentence combines antithesis with:',
+  opts:['metaphor','chiasmus','alliteration','hyperbole'], ans:1,
+  why:'Chiasmus: "country" and "you" swap places between the two halves (JFK, 1961).'}
+];
+
+const $ = id => document.getElementById(id);
+let sid = '', player = {name:'', cls:''}, i = 0, picked = -1, qStart = 0, t0 = 0, tick = null, results = [];
+
+function send(obj){
+  if(!ENDPOINT) return;
+  try{
+    fetch(ENDPOINT, {method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body: JSON.stringify(Object.assign({sid, name:player.name, cls:player.cls, t:Date.now()}, obj))}).catch(()=>{});
+  }catch(e){}
+}
+const fmt = ms => { const s = Math.round(ms/1000); return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); };
+function show(id){ ['start','quiz','result'].forEach(s=>$(s).classList.toggle('hide', s!==id)); }
+
+function chk(){ $('go').disabled = !$('pname').value.trim() || !$('pclass').value.trim(); }
+$('pname').oninput = $('pclass').oninput = chk;
+try{ const sv = JSON.parse(localStorage.getItem('aq_player')||'null'); if(sv){ $('pname').value = sv.name||''; $('pclass').value = sv.cls||''; } }catch(e){}
+chk();
+
+$('go').onclick = () => {
+  player = {name:$('pname').value.trim(), cls:$('pclass').value.trim()};
+  try{ localStorage.setItem('aq_player', JSON.stringify(player)); }catch(e){}
+  sid = Date.now().toString(36) + Math.random().toString(36).slice(2,7);
+  i = 0; results = []; t0 = Date.now();
+  send({type:'join', total:QUESTIONS.length});
+  $('timer').classList.remove('hide');
+  tick = setInterval(()=>{ $('timer').textContent = fmt(Date.now()-t0); }, 500);
+  show('quiz'); load();
+};
+
+function load(){
+  const Q = QUESTIONS[i]; picked = -1; qStart = Date.now();
+  send({type:'question', q:i});
+  $('qn').textContent = 'Question ' + (i+1) + ' of ' + QUESTIONS.length;
+  $('pl').textContent = player.name;
+  $('bar').style.width = (i/QUESTIONS.length*100) + '%';
+  $('qt').textContent = Q.q;
+  $('next').disabled = true;
+  $('next').textContent = i === QUESTIONS.length-1 ? 'Finish' : 'Next';
+  const box = $('opts'); box.innerHTML = '';
+  Q.opts.forEach((t,k)=>{
+    const b = document.createElement('button');
+    b.className = 'opt'; b.textContent = 'ABCD'[k] + '.  ' + t;
+    b.onclick = () => { picked = k; [...box.children].forEach((c,n)=>c.classList.toggle('sel', n===k)); $('next').disabled = false; };
+    box.appendChild(b);
+  });
+}
+
+$('next').onclick = () => {
+  if(picked < 0) return;
+  const Q = QUESTIONS[i], ok = picked === Q.ans, ms = Date.now() - qStart;
+  results.push({choice:picked, ok, ms});
+  const correct = results.filter(r=>r.ok).length;
+  send({type:'answer', q:i, choice:picked, ok, ms, score:correct, lives:3});
+  if(i < QUESTIONS.length-1){ i++; load(); }
+  else finish();
+};
+
+function finish(){
+  clearInterval(tick);
+  const correct = results.filter(r=>r.ok).length, total = results.reduce((a,r)=>a+r.ms,0);
+  send({type:'finish', status:'done', score:correct, lives:3, correct});
+  $('timer').classList.add('hide');
+  $('rname').textContent = correct === QUESTIONS.length ? 'Perfect, ' + player.name + '!' : 'Well done, ' + player.name + '!';
+  $('rscore').textContent = correct + ' / ' + QUESTIONS.length;
+  $('rcorrect').textContent = correct; $('rtime').textContent = fmt(total);
+  $('review').innerHTML = '';
+  QUESTIONS.forEach((Q,n)=>{
+    const r = results[n], d = document.createElement('div'); d.className = 'rev';
+    const t = document.createElement('div'); t.innerHTML = '<b></b><span class="tag ' + (r.ok?'ok':'no') + '">' + (r.ok?'correct':'wrong') + '</span>';
+    t.firstChild.textContent = (n+1) + '. ' + Q.q;
+    const a = document.createElement('small');
+    a.textContent = (r.ok ? 'Your answer: ' + Q.opts[Q.ans] : 'Your answer: ' + Q.opts[r.choice] + '  →  Correct: ' + Q.opts[Q.ans]) + '. ' + Q.why;
+    d.append(t, a); $('review').appendChild(d);
+  });
+  show('result');
+}
+document.addEventListener('keydown', e=>{
+  if(e.key==='Enter' && !$('start').classList.contains('hide') && !$('go').disabled) $('go').click();
+});
+</script>
+</body>
+</html>
