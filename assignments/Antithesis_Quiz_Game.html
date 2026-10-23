@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Antithesis Quest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#223771; --dark:#10183a; --orange:#F26522; --cream:#fff6e0;
+    --green:#4cd964; --red:#ff4d4d; --yellow:#ffd23f; --ink:#0b1030;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%}
+  body{
+    background:var(--dark);
+    background-image:
+      linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size:16px 16px;
+    font-family:'Press Start 2P','Courier New',monospace;
+    color:var(--cream);
+    image-rendering:pixelated;
+    padding:16px;
+    display:flex;justify-content:center;
+  }
+  .game{width:100%;max-width:760px}
+  .box{
+    background:var(--navy);
+    border:4px solid var(--cream);
+    box-shadow:0 0 0 4px var(--ink), 8px 8px 0 4px var(--ink);
+    padding:14px;
+    margin-bottom:22px;
+  }
+  h1{font-size:clamp(20px,5vw,34px);line-height:1.4;margin:0 0 10px;color:var(--yellow);text-shadow:4px 4px 0 var(--ink);text-align:center}
+  .sub{font-size:11px;line-height:1.9;text-align:center;color:var(--cream)}
+  .hud{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px;flex-wrap:wrap}
+  .hearts{letter-spacing:3px;color:var(--red);font-size:16px}
+  .hearts .lost{color:#4a4f73}
+  .stage{
+    position:relative;height:200px;overflow:hidden;
+    background:linear-gradient(#1d2a63 0 62%, #2e7d32 62% 66%, #3b5d2a 66%);
+    border:4px solid var(--ink);margin-top:12px;
+  }
+  .stage .star{position:absolute;width:4px;height:4px;background:#fff;animation:tw 2s steps(2) infinite}
+  @keyframes tw{50%{opacity:.2}}
+  canvas{position:absolute;bottom:34px}
+  #hero{left:12%;animation:bob 1s steps(2) infinite}
+  #enemy{right:12%;animation:bob 1.2s steps(2) infinite reverse}
+  @keyframes bob{50%{transform:translateY(-6px)}}
+  .attack{animation:lunge .4s steps(4) !important}
+  @keyframes lunge{50%{transform:translateX(90px)}}
+  .hit{animation:flash .5s steps(2) !important}
+  @keyframes flash{0%,100%{opacity:1}50%{opacity:0;transform:translateX(8px)}}
+  .shake{animation:shake .4s steps(4)}
+  @keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+  .die{animation:die .8s steps(6) forwards !important}
+  @keyframes die{to{transform:translateY(60px) rotate(30deg);opacity:0}}
+  .hp{height:14px;background:var(--ink);border:3px solid var(--cream);margin-top:10px}
+  .hp i{display:block;height:100%;background:var(--red);transition:width .4s steps(5)}
+  .tag{font-size:10px;color:var(--orange);margin:14px 0 8px}
+  .tag.boss{color:var(--red);animation:blink 1s steps(2) infinite}
+  @keyframes blink{50%{opacity:.4}}
+  .q{font-size:clamp(11px,2.6vw,14px);line-height:1.9;margin:0 0 14px;min-height:80px}
+  .opts{display:grid;gap:10px}
+  button{
+    font-family:inherit;font-size:clamp(10px,2.4vw,12px);line-height:1.7;text-align:left;
+    color:var(--ink);background:var(--cream);
+    border:4px solid var(--ink);box-shadow:4px 4px 0 var(--ink);
+    padding:10px 12px;cursor:pointer;
+  }
+  button:hover:not(:disabled){background:var(--yellow)}
+  button:active:not(:disabled){transform:translate(4px,4px);box-shadow:none}
+  button.ok{background:var(--green)}
+  button.bad{background:var(--red);color:#fff}
+  button:disabled{cursor:default}
+  button.big{background:var(--orange);color:#fff;text-align:center;font-size:14px;padding:14px 18px;display:block;margin:16px auto 0}
+  button.big:hover{background:var(--yellow);color:var(--ink)}
+  .msg{font-size:11px;line-height:1.9;margin-top:14px;min-height:44px}
+  .msg.good{color:var(--green)} .msg.wrong{color:var(--yellow)}
+  .foot{font-size:8px;line-height:2;text-align:center;opacity:.7}
+  .mute{position:fixed;top:10px;right:10px;font-size:9px;padding:6px 8px;box-shadow:3px 3px 0 var(--ink)}
+  .stars{font-size:28px;text-align:center;color:var(--yellow);letter-spacing:6px;margin:14px 0}
+  .big-score{font-size:18px;text-align:center;margin:8px 0}
+  .hidden{display:none}
+  .vn{font-family:'Courier New',monospace;font-weight:bold}
+
+  /* ---------- battle effects ---------- */
+  .fx{position:absolute;pointer-events:none;z-index:5}
+  .slash{width:90px;height:12px;background:#fff;box-shadow:0 0 0 4px var(--yellow),0 0 0 8px var(--orange);
+    transform:translate(-50%,-50%) rotate(-40deg) scaleX(0);animation:slash .35s steps(5) forwards}
+  .slash.b{transform:translate(-50%,-50%) rotate(40deg) scaleX(0);animation-name:slashb}
+  .slash.red{background:#ffdede;box-shadow:0 0 0 4px var(--red),0 0 0 8px #7a0000}
+  @keyframes slash{40%{transform:translate(-50%,-50%) rotate(-40deg) scaleX(1)}100%{transform:translate(-50%,-50%) rotate(-40deg) scaleX(1);opacity:0}}
+  @keyframes slashb{40%{transform:translate(-50%,-50%) rotate(40deg) scaleX(1)}100%{transform:translate(-50%,-50%) rotate(40deg) scaleX(1);opacity:0}}
+  .bolt{width:28px;height:28px;background:var(--yellow);box-shadow:0 0 0 4px var(--orange),0 0 0 8px #fff3;
+    transform:translate(-50%,-50%) rotate(45deg);transition:left .3s steps(6)}
+  .bolt.big{width:44px;height:44px;background:#fff;box-shadow:0 0 0 6px var(--red),0 0 0 12px var(--orange)}
+  .dmg{font-size:18px;color:var(--yellow);text-shadow:3px 3px 0 var(--ink);transform:translate(-50%,-50%);
+    animation:rise .9s steps(8) forwards;white-space:nowrap}
+  .dmg.red{color:var(--red)}
+  .dmg.crit{font-size:24px;color:#fff;text-shadow:3px 3px 0 var(--red)}
+  @keyframes rise{to{transform:translate(-50%,-150%);opacity:0}}
+  .spark{width:10px;height:10px;background:var(--yellow);animation:burst .7s steps(7) forwards}
+  .spark.o{background:var(--orange)} .spark.w{background:#fff} .spark.r{background:var(--red)}
+  @keyframes burst{to{transform:translate(var(--dx),var(--dy));opacity:0}}
+  .flash{inset:0;background:#fff;opacity:0;animation:fl .25s steps(2)}
+  .flash.red{background:var(--red)}
+  @keyframes fl{50%{opacity:.7}}
+  .eattack{animation:elunge .4s steps(4) !important}
+  @keyframes elunge{50%{transform:translateX(-110px)}}
+  .knock{animation:knock .5s steps(5) !important}
+  @keyframes knock{30%{transform:translateX(-24px);filter:brightness(3)}60%{transform:translateX(-12px)}}
+  .bigshake{animation:shake2 .5s steps(8)}
+  @keyframes shake2{25%{transform:translate(-8px,4px)}50%{transform:translate(8px,-4px)}75%{transform:translate(-6px,2px)}}
+</style>
+</head>
+<body>
+<button class="mute" id="mute" aria-label="Toggle sound">SOUND: ON</button>
+
+<main class="game">
+
+  <!-- TITLE -->
+  <section id="title" class="box">
+    <h1>ANTITHESIS<br>QUEST</h1>
+    <p class="sub">English vs Vietnamese<br>Beat 5 monsters with your knowledge!</p>
+    <div class="stage" style="height:170px">
+      <canvas id="t-hero" style="left:20%"></canvas>
+      <canvas id="t-boss" style="right:20%"></canvas>
+    </div>
+    <button class="big" id="start">&#9654; PRESS START</button>
+    <p class="sub" style="margin-top:18px;font-size:9px">3 LIVES &middot; KEYS 1-4 TO ANSWER</p>
+  </section>
+
+  <!-- GAME -->
+  <section id="play" class="box hidden">
+    <div class="hud">
+      <span id="lvl">LEVEL 1/5</span>
+      <span class="hearts" id="hearts"></span>
+      <span id="score">SCORE 0000</span>
+    </div>
+    <div class="stage" id="stage">
+      <canvas id="hero"></canvas>
+      <canvas id="enemy"></canvas>
+    </div>
+    <div class="hp"><i id="hp" style="width:100%"></i></div>
+    <div class="tag" id="tag">MONSTER APPEARS!</div>
+    <p class="q" id="q"></p>
+    <div class="opts" id="opts"></div>
+    <div class="msg" id="msg"></div>
+    <button class="big hidden" id="next">NEXT &#9654;</button>
+  </section>
+
+  <!-- END -->
+  <section id="end" class="box hidden">
+    <h1 id="end-title">YOU WIN!</h1>
+    <div class="stars" id="end-stars"></div>
+    <div class="big-score" id="end-score"></div>
+    <p class="sub" id="end-msg"></p>
+    <button class="big" id="again">&#8635; PLAY AGAIN</button>
+  </section>
+
+  <p class="foot">TOPIC 7 &middot; ANTITHESIS IN ENGLISH AND VIETNAMESE<br>PHENIKAA UNIVERSITY &middot; CONTRASTIVE LINGUISTICS</p>
+</main>
+
+<script>
+/* ---------------- Pixel sprites ---------------- */
+const PAL = {k:'#0b1030', s:'#ffcc99', b:'#4a7bff', o:'#F26522', w:'#ffffff', r:'#ff4d4d',
+             g:'#4cd964', G:'#2e9c45', y:'#ffd23f', p:'#a15cff', P:'#6b2fc7', d:'#555a7a', e:'#bfc4e8', n:'#8b5a2b'};
+const SPR = {
+hero:[
+"....kkkk....",
+"...kbbbbk...",
+"..kbbbbbbk..",
+"..kssssssk..",
+"..kskssksk..",
+"..kssssssk..",
+"...kkkkkk...",
+".kkooooookk.",
+"kssoyyyyossk",
+"kssooooooss.",
+".kkooooookk.",
+"..kbbkkbbk..",
+"..kbk..kbk..",
+"..kkk..kkk.."],
+slime:[
+"............",
+"....kkkk....",
+"..kkggggkk..",
+".kggggggggk.",
+".kgwwggwwgk.",
+"kggwkggwkggk",
+"kggggggggggk",
+"kgggkkkkgggk",
+"kGggggggggGk",
+".kGGGGGGGGk.",
+"..kkkkkkkk.."],
+bat:[
+"............",
+"k..........k",
+"kk..k..k..kk",
+"kpkkpkkpkkpk",
+"kppppppppppk",
+"kpppwppwpppk",
+".kpppppppppk",
+"..kppkkppk..",
+"...kppppk...",
+"....kkkk...."],
+ghost:[
+"....kkkk....",
+"..kkeeeekk..",
+".keeeeeeeek.",
+".keekeekeek.",
+".keekeekeek.",
+".keeeeeeeek.",
+".keeekkeeek.",
+".keeeeeeeek.",
+".keeeeeeeek.",
+".kekeekeekk.",
+"..k.kk.kk.k."],
+skull:[
+"............",
+"...kkkkkk...",
+"..kwwwwwwk..",
+".kwwwwwwwwk.",
+".kwkkwwkkwk.",
+".kwkkwwkkwk.",
+".kwwwkkwwwk.",
+"..kwwwwwwk..",
+"...kwkwkwk..",
+"...kkkkkkk.."],
+boss:[
+"r..........r",
+"rr..kkkk..rr",
+".rrkrrrrkrr.",
+"..krrrrrrk..",
+".krwkrrkwrk.",
+".krkkrrkkrk.",
+".krrrrrrrrk.",
+"kyrrkkkkrryk",
+"kyyrwkwkryyk",
+".kyrrrrrryk.",
+"..kkrrrrkk..",
+"...kk..kk..."]
+};
+function draw(canvas, name, scale, flip){
+  const m = SPR[name], w = Math.max(...m.map(r=>r.length)), h = m.length;
+  canvas.width = w*scale; canvas.height = h*scale;
+  const c = canvas.getContext('2d');
+  c.clearRect(0,0,canvas.width,canvas.height);
+  m.forEach((row,y)=>{
+    for(let x=0;x<row.length;x++){
+      const ch = row[x]; if(ch==='.') continue;
+      c.fillStyle = PAL[ch] || '#fff';
+      const px = flip ? (w-1-x) : x;
+      c.fillRect(px*scale, y*scale, scale, scale);
+    }
+  });
+}
+
+/* ---------------- Sound (square-wave beeps) ---------------- */
+let soundOn = true, actx = null;
+function beep(freq, dur, when=0, type='square', vol=.08){
+  if(!soundOn) return;
+  try{
+    actx = actx || new (window.AudioContext||window.webkitAudioContext)();
+    const o = actx.createOscillator(), g = actx.createGain();
+    o.type = type; o.frequency.value = freq;
+    g.gain.value = vol; o.connect(g); g.connect(actx.destination);
+    const t = actx.currentTime + when;
+    o.start(t); g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(.001, t+dur);
+    o.stop(t+dur);
+  }catch(e){}
+}
+const sfx = {
+  click:()=>beep(440,.06),
+  slash:()=>{beep(900,.07,0,'sawtooth',.1);beep(500,.1,.05,'sawtooth',.1)},
+  zap:()=>{beep(300,.08,0,'square');beep(600,.08,.07);beep(1200,.12,.14)},
+  boom:()=>{beep(120,.25,0,'sawtooth',.14);beep(80,.35,.08,'sawtooth',.14)},
+  hurt:()=>{beep(180,.12,0,'square',.12);beep(110,.2,.08,'square',.12)},
+  good:()=>{beep(523,.1);beep(659,.1,.1);beep(784,.2,.2)},
+  bad:()=>{beep(220,.15,0,'sawtooth');beep(147,.3,.15,'sawtooth')},
+  win:()=>[523,659,784,1047,784,1047].forEach((f,i)=>beep(f,.15,i*.13)),
+  lose:()=>[392,330,262,196].forEach((f,i)=>beep(f,.25,i*.22,'sawtooth'))
+};
+
+/* ---------------- Questions ---------------- */
+const QUESTIONS = [
+ {enemy:'slime', q:'Antithesis puts ______ ideas in parallel form.',
+  opts:['similar','contrasting','unrelated'], ans:1,
+  why:'Antithesis = contrasting meaning + balanced, parallel form.'},
+ {enemy:'bat', q:'Which sentence is antithesis?',
+  opts:['Easy come, easy go.','United we stand, divided we fall.','Time is money.'], ans:1,
+  why:'"United we stand, divided we fall": two opposite halves. "Easy come, easy go" repeats one idea.'},
+ {enemy:'ghost', q:'Which language forms opposites with affixes (happy - unhappy)?',
+  opts:['English','Vietnamese','Both equally'], ans:0,
+  why:'English uses un-, dis-. Vietnamese uses separate words: vui / buồn.'},
+ {enemy:'skull', q:'In “Khôn nhà dại chợ”, the two contrasting pairs are:',
+  opts:['khôn – nhà and dại – chợ','khôn – dại and nhà – chợ','khôn – chợ and dại – nhà'], ans:1,
+  why:'Wise at home, foolish at the market: khôn ↔ dại, nhà ↔ chợ.', vn:true},
+ {enemy:'boss', boss:true, pts:200,
+  q:'“Ask not what your country can do for you; ask what you can do for your country.” This sentence combines antithesis with:',
+  opts:['metaphor','chiasmus','alliteration','hyperbole'], ans:1,
+  why:'Chiasmus: "country" and "you" swap places between the two halves (JFK, 1961).'}
+];
+const NAMES = ['SLIME','BAT','GHOST','SKULL','DRAGON BOSS'];
+
+/* ---------------- Game state ---------------- */
+const $ = id => document.getElementById(id);
+let i = 0, lives = 3, score = 0, locked = false, correctCount = 0;
+
+function show(id){ ['title','play','end'].forEach(s=>$(s).classList.toggle('hidden', s!==id)); }
+function renderHearts(){
+  $('hearts').innerHTML = [0,1,2].map(n=> n<lives ? '♥' : '<span class="lost">♥</span>').join('');
+}
+function renderScore(){ $('score').textContent = 'SCORE ' + String(score).padStart(4,'0'); }
+
+function load(){
+  const Q = QUESTIONS[i];
+  locked = false;
+  $('lvl').textContent = 'LEVEL ' + (i+1) + '/5';
+  $('tag').textContent = Q.boss ? '!! BOSS BATTLE !! ' + NAMES[i] : NAMES[i] + ' APPEARS!';
+  $('tag').className = 'tag' + (Q.boss ? ' boss' : '');
+  $('q').textContent = Q.q;
+  $('q').className = 'q' + (Q.vn ? ' vn' : '');
+  $('msg').textContent = ''; $('msg').className = 'msg';
+  $('next').classList.add('hidden');
+  $('hp').style.width = '100%';
+  const e = $('enemy'); e.className = '';
+  draw(e, Q.enemy, Q.boss ? 10 : 8, true);
+  const o = $('opts'); o.innerHTML = '';
+  Q.opts.forEach((t,k)=>{
+    const b = document.createElement('button');
+    b.textContent = 'ABCD'[k] + '. ' + t;
+    if(Q.vn) b.classList.add('vn');
+    b.onclick = () => answer(k);
+    o.appendChild(b);
+  });
+  renderHearts(); renderScore();
+}
+
+function answer(k){
+  if(locked) return; locked = true;
+  const Q = QUESTIONS[i], btns = [...$('opts').children];
+  btns.forEach(b=>b.disabled = true);
+  btns[Q.ans].classList.add('ok');
+  const hero = $('hero'), enemy = $('enemy'), msg = $('msg');
+  const boss = !!Q.boss;
+  if(k === Q.ans){
+    correctCount++; const pts = Q.pts || 100; score += pts;
+    hero.classList.add('attack');
+    setTimeout(()=>hero.classList.remove('attack'), 450);
+    const p = rel(enemy);
+    const hit = ()=>{
+      sfx.slash(); slash(p.x, p.y); flash(false);
+      enemy.classList.add('hit');
+      spawn('dmg' + (boss ? ' crit' : ''), p.x, p.y - 30, boss ? 'CRITICAL! -' + pts : '-' + pts);
+      $('hp').style.width = boss ? '50%' : '40%';
+    };
+    const finish = ()=>{
+      enemy.classList.remove('hit'); enemy.classList.add('die');
+      sparks(p.x, p.y, boss ? 36 : 18);
+      sfx.boom(); $('hp').style.width = '0%';
+      if(boss){ $('stage').classList.add('bigshake'); flash(false); setTimeout(()=>$('stage').classList.remove('bigshake'), 550); }
+      sfx.good();
+    };
+    if(boss){
+      // fireball flies to the boss, then a triple slash
+      const h = rel(hero), b = spawn('bolt big', h.x + 30, h.y);
+      sfx.zap();
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{ b.style.left = (p.x - 20) + 'px'; }));
+      setTimeout(()=>{ b.remove(); hit(); }, 330);
+      setTimeout(()=>{ slash(p.x - 10, p.y + 10); sfx.slash(); }, 520);
+      setTimeout(()=>{ slash(p.x + 10, p.y - 10); sfx.slash(); }, 700);
+      setTimeout(finish, 900);
+    } else {
+      setTimeout(hit, 200);
+      setTimeout(finish, 650);
+    }
+    msg.className = 'msg good';
+    msg.textContent = (boss ? 'CRITICAL HIT! ' : 'HIT! ') + Q.why;
+  } else {
+    btns[k].classList.add('bad');
+    lives--; sfx.bad();
+    enemy.classList.add('eattack');
+    setTimeout(()=>enemy.classList.remove('eattack'), 450);
+    const hp = rel(hero);
+    setTimeout(()=>{
+      slash(hp.x, hp.y, true); flash(true); sfx.hurt();
+      hero.classList.add('knock');
+      spawn('dmg red', hp.x, hp.y - 40, '-1 ♥');
+      sparks(hp.x, hp.y, 10, true);
+      $('stage').classList.add('bigshake');
+    }, 200);
+    setTimeout(()=>{ hero.classList.remove('knock'); $('stage').classList.remove('bigshake'); }, 750);
+    msg.className = 'msg wrong';
+    msg.textContent = 'OUCH! ' + Q.why;
+  }
+  renderHearts(); renderScore();
+  $('next').textContent = (lives<=0) ? 'CONTINUE ▶' : (i===4 ? 'FINISH ▶' : 'NEXT ▶');
+  $('next').classList.remove('hidden');
+}
+
+/* ---------------- Battle effects ---------------- */
+function rel(el){
+  const s = $('stage').getBoundingClientRect(), r = el.getBoundingClientRect();
+  return {x: r.left - s.left + r.width/2, y: r.top - s.top + r.height/2};
+}
+function spawn(cls, x, y, txt){
+  const d = document.createElement('div');
+  d.className = 'fx ' + cls; d.style.left = x + 'px'; d.style.top = y + 'px';
+  if(txt) d.textContent = txt;
+  $('stage').appendChild(d);
+  setTimeout(()=>d.remove(), 1000);
+  return d;
+}
+function slash(x, y, red){
+  const c = red ? ' red' : '';
+  spawn('slash' + c, x, y); spawn('slash b' + c, x, y);
+}
+function flash(red){ spawn('flash' + (red ? ' red' : ''), 0, 0); }
+function sparks(x, y, n, red){
+  const cols = red ? ['r','o','w'] : ['','o','w'];
+  for(let q=0;q<n;q++){
+    const a = Math.random()*Math.PI*2, d = 40 + Math.random()*70;
+    const s = spawn('spark ' + cols[q % cols.length], x, y);
+    s.style.setProperty('--dx', Math.cos(a)*d + 'px');
+    s.style.setProperty('--dy', Math.sin(a)*d + 'px');
+  }
+}
+
+function next(){
+  if(lives<=0 || i===4){ return finish(); }
+  i++; sfx.click(); load();
+}
+
+function finish(){
+  const win = lives>0;
+  show('end');
+  $('end-title').textContent = win ? 'YOU WIN!' : 'GAME OVER';
+  $('end-title').style.color = win ? 'var(--yellow)' : 'var(--red)';
+  const stars = Math.max(0, Math.min(3, correctCount>=5?3: correctCount>=4?2: correctCount>=2?1:0));
+  $('end-stars').textContent = '★'.repeat(stars) + '☆'.repeat(3-stars);
+  $('end-score').textContent = 'SCORE ' + String(score).padStart(4,'0') + '  ·  ' + correctCount + '/5';
+  $('end-msg').textContent = win
+    ? (correctCount===5 ? 'PERFECT! You are an Antithesis Master!' : 'Well done! You beat the dragon!')
+    : 'The monsters won this time. Try again!';
+  (win ? sfx.win : sfx.lose)();
+}
+
+function start(){
+  i = 0; lives = 3; score = 0; correctCount = 0;
+  show('play'); draw($('hero'), 'hero', 8, false); sfx.click(); load();
+}
+
+/* ---------------- Wiring ---------------- */
+draw($('t-hero'), 'hero', 8, false);
+draw($('t-boss'), 'boss', 10, true);
+$('start').onclick = start;
+$('again').onclick = () => { start(); };
+$('next').onclick = next;
+$('mute').onclick = () => { soundOn = !soundOn; $('mute').textContent = 'SOUND: ' + (soundOn?'ON':'OFF'); };
+document.addEventListener('keydown', e=>{
+  if($('play').classList.contains('hidden')) {
+    if(e.key==='Enter' && !$('title').classList.contains('hidden')) start();
+    return;
+  }
+  if(!locked && '1234'.includes(e.key)){
+    const k = +e.key-1; if(k < QUESTIONS[i].opts.length) answer(k);
+  } else if(locked && (e.key==='Enter' || e.key===' ')){ e.preventDefault(); next(); }
+});
+/* twinkling stars */
+document.querySelectorAll('.stage').forEach(st=>{
+  for(let n=0;n<12;n++){
+    const s=document.createElement('span'); s.className='star';
+    s.style.left=Math.random()*96+'%'; s.style.top=Math.random()*55+'%';
+    s.style.animationDelay=(Math.random()*2)+'s'; st.appendChild(s);
+  }
+});
+</script>
+</body>
+</html>
