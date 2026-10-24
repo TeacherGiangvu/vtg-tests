@@ -1,0 +1,259 @@
+{
+  "level": "A1",
+  "topic": "Unit_9A",
+  "title": "Vocabulary & Grammar Quiz — Unit 9A: I didn’t stay in a hotel",
+  "kicker": "Empower A1 · Unit 9A",
+  "subtitle": "Transport + Past simple (negative: didn’t + verb)",
+  "seconds": 25,
+  "types": [
+    "A",
+    "B",
+    "C",
+    "G"
+  ],
+  "per_type": 5,
+  "words": [
+    {
+      "w": "bike",
+      "vi": "xe đạp",
+      "sent": "Julie goes to school on her ___ every morning.",
+      "sentA": "bike"
+    },
+    {
+      "w": "bus",
+      "vi": "xe buýt",
+      "sent": "We waited at the stop for the ___ for ten minutes.",
+      "sentA": "bus"
+    },
+    {
+      "w": "train",
+      "vi": "tàu hoả",
+      "sent": "The ___ to London leaves from Platform 3.",
+      "sentA": "train"
+    },
+    {
+      "w": "car",
+      "vi": "xe ô tô",
+      "sent": "My father drives a big black ___.",
+      "sentA": "car"
+    },
+    {
+      "w": "plane",
+      "vi": "máy bay",
+      "sent": "The ___ flew from Hanoi to Tokyo in five hours.",
+      "sentA": "plane"
+    },
+    {
+      "w": "ship",
+      "vi": "tàu thuỷ, tàu lớn",
+      "sent": "A big ___ with a thousand people sailed across the sea.",
+      "sentA": "ship"
+    },
+    {
+      "w": "taxi",
+      "vi": "xe taxi",
+      "sent": "It was late, so we took a ___ home.",
+      "sentA": "taxi"
+    },
+    {
+      "w": "tram",
+      "vi": "xe điện (chạy trên đường ray trong thành phố)",
+      "sent": "In Lisbon, a yellow ___ goes up the hill.",
+      "sentA": "tram"
+    },
+    {
+      "w": "underground",
+      "vi": "tàu điện ngầm",
+      "sent": "The ___ in London is very old and deep.",
+      "sentA": "underground"
+    },
+    {
+      "w": "drive",
+      "vi": "lái xe",
+      "sent": "She can ___ a car, but she can’t ride a bike.",
+      "sentA": "drive"
+    },
+    {
+      "w": "fly",
+      "vi": "bay; đi máy bay",
+      "sent": "We ___ to Tokyo every summer. It’s the fastest way.",
+      "sentA": "fly"
+    },
+    {
+      "w": "walk",
+      "vi": "đi bộ",
+      "sent": "My school is near, so I ___ there every day.",
+      "sentA": "walk"
+    },
+    {
+      "w": "go by",
+      "vi": "đi bằng (phương tiện)",
+      "sent": "We ___ bus to the city centre.",
+      "sentA": "go by"
+    },
+    {
+      "w": "get a taxi",
+      "vi": "bắt taxi",
+      "sent": "It’s raining. Let’s ___ to the airport.",
+      "sentA": "get a taxi"
+    },
+    {
+      "w": "take a bus",
+      "vi": "đi xe buýt",
+      "sent": "I usually ___ to work, but today I’m walking.",
+      "sentA": "take a bus"
+    },
+    {
+      "w": "on holiday",
+      "vi": "đi nghỉ, đi du lịch",
+      "sent": "They are ___ in Spain this week.",
+      "sentA": "on holiday"
+    },
+    {
+      "w": "airport",
+      "vi": "sân bay",
+      "sent": "We arrived at the ___ two hours before the flight.",
+      "sentA": "airport"
+    },
+    {
+      "w": "station",
+      "vi": "nhà ga",
+      "sent": "I met my friend at the train ___.",
+      "sentA": "station"
+    },
+    {
+      "w": "ticket",
+      "vi": "vé",
+      "sent": "I bought a ___ for the 9 o’clock train.",
+      "sentA": "ticket"
+    },
+    {
+      "w": "boat",
+      "vi": "thuyền, tàu nhỏ",
+      "sent": "We crossed the river in a small ___.",
+      "sentA": "boat"
+    }
+  ],
+  "grammar": [
+    {
+      "q": "Yesterday we ___ stay in a hotel.",
+      "options": [
+        "don’t",
+        "didn’t",
+        "doesn’t"
+      ],
+      "answer": 1,
+      "note": "Past negative: didn’t + verb"
+    },
+    {
+      "q": "She ___ get a taxi to the airport.",
+      "options": [
+        "didn’t",
+        "don’t",
+        "wasn’t"
+      ],
+      "answer": 0,
+      "note": "Past negative: didn’t + verb"
+    },
+    {
+      "q": "I didn’t ___ a bus to the station.",
+      "options": [
+        "took",
+        "take",
+        "taking"
+      ],
+      "answer": 1,
+      "note": "After didn’t use the base verb: take"
+    },
+    {
+      "q": "They didn’t ___ to the city by train.",
+      "options": [
+        "went",
+        "going",
+        "go"
+      ],
+      "answer": 2,
+      "note": "After didn’t use the base verb: go"
+    },
+    {
+      "q": "We ___ listen to music last night.",
+      "options": [
+        "didn’t",
+        "aren’t",
+        "don’t"
+      ],
+      "answer": 0,
+      "note": "Past negative: didn’t + verb"
+    },
+    {
+      "q": "He didn’t ___ his emails for three weeks.",
+      "options": [
+        "read",
+        "reads",
+        "reading"
+      ],
+      "answer": 0,
+      "note": "After didn’t use the base verb: read"
+    },
+    {
+      "q": "My parents ___ by car. They went by train.",
+      "options": [
+        "didn’t go",
+        "don’t go",
+        "didn’t went"
+      ],
+      "answer": 0,
+      "note": "didn’t + base verb: didn’t go"
+    },
+    {
+      "q": "Julian ___ stay in a big hotel. He camped in a garden.",
+      "options": [
+        "didn’t",
+        "don’t",
+        "isn’t"
+      ],
+      "answer": 0,
+      "note": "Past negative: didn’t + verb"
+    },
+    {
+      "q": "We ___ have a lot of money.",
+      "options": [
+        "didn’t",
+        "doesn’t",
+        "aren’t"
+      ],
+      "answer": 0,
+      "note": "Past negative: didn’t + verb"
+    },
+    {
+      "q": "She ___ watch TV. She read a book.",
+      "options": [
+        "didn’t",
+        "doesn’t",
+        "wasn’t"
+      ],
+      "answer": 0,
+      "note": "Past negative: didn’t + verb"
+    },
+    {
+      "q": "I ___ by plane last year. I went by boat.",
+      "options": [
+        "didn’t fly",
+        "don’t fly",
+        "didn’t flew"
+      ],
+      "answer": 0,
+      "note": "didn’t + base verb: didn’t fly"
+    },
+    {
+      "q": "Did you ___ to Hanoi by bus?",
+      "options": [
+        "went",
+        "go",
+        "going"
+      ],
+      "answer": 1,
+      "note": "After did use the base verb: go"
+    }
+  ]
+}
