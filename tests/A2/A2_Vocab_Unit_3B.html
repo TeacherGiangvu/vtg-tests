@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VTG · Unit 3B — Imagine You Haven't Got the Internet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#2C4A3E; --green-dark:#1F352C; --terra:#C1633D;
+    --beige:#EDE6D6; --beige-soft:#F7F4EC; --ink:#2B2B28; --grey:#5A5A55;
+    --line:#D8D2C2; --ok:#2F7D5B; --ok-bg:#E7F3EC; --bad:#B33A3A; --bad-bg:#FBEAEA;
+    --serif:'Source Serif 4', Georgia, serif;
+    --sans:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;padding:24px 16px 60px;font-family:var(--sans);color:var(--ink);
+    background:var(--beige);-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;}
+  header{margin-bottom:18px;}
+  .kicker{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--terra);
+    text-transform:uppercase;margin-bottom:6px;}
+  h1{font-family:var(--serif);font-size:30px;line-height:1.15;color:var(--green);margin:0 0 6px;}
+  .sub{font-size:14px;color:var(--grey);font-style:italic;}
+  .card{background:#fff;border-radius:14px;padding:26px 26px 24px;
+    box-shadow:0 2px 14px rgba(44,74,62,.09);}
+
+  .intro-list{margin:0 0 22px;padding-left:0;list-style:none;}
+  .intro-list li{position:relative;padding-left:26px;margin-bottom:11px;font-size:15px;line-height:1.55;}
+  .intro-list li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;
+    border-radius:50%;background:var(--terra);}
+  .intro-list b{color:var(--green);}
+
+  .field{margin-bottom:14px;}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--green);margin-bottom:6px;}
+  .field input{width:100%;font-family:var(--sans);font-size:16px;color:var(--ink);
+    border:1.5px solid var(--line);border-radius:9px;padding:12px 14px;background:#fff;}
+  .field input:focus{outline:none;border-color:var(--green);}
+  .field input.err{border-color:var(--bad);background:var(--bad-bg);}
+  .field .hint{font-size:12px;color:var(--grey);margin-top:5px;font-style:italic;}
+  .formbox{background:var(--beige-soft);border-radius:11px;padding:18px 18px 6px;margin-bottom:20px;
+    border-left:4px solid var(--terra);}
+  .formbox h3{margin:0 0 14px;font-family:var(--serif);font-size:17px;color:var(--green);}
+
+  .btn{font-family:var(--sans);font-size:15px;font-weight:600;border:none;border-radius:9px;
+    padding:13px 26px;cursor:pointer;background:var(--green);color:#fff;transition:.15s;}
+  .btn:hover{background:var(--green-dark);}
+  .btn.ghost{background:transparent;color:var(--green);border:1.5px solid var(--green);}
+  .btn.ghost:hover{background:var(--beige-soft);}
+  .btn.terra{background:var(--terra);}
+  .btn.terra:hover{background:#A9542F;}
+  .btn.sm{padding:9px 18px;font-size:13.5px;}
+
+  .bar-row{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
+  .bar{flex:1;height:7px;background:var(--beige);border-radius:99px;overflow:hidden;}
+  .bar span{display:block;height:100%;background:var(--terra);width:0;transition:width .3s;border-radius:99px;}
+  .counter{font-size:13px;font-weight:600;color:var(--grey);white-space:nowrap;}
+  .timerwrap{display:flex;align-items:center;gap:11px;margin:14px 0 4px;}
+  .clock{flex:none;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;
+    justify-content:center;font-weight:700;font-size:17px;font-variant-numeric:tabular-nums;
+    background:var(--beige);color:var(--green);border:2.5px solid var(--green);transition:.2s;}
+  .tbar{flex:1;height:9px;background:var(--beige);border-radius:99px;overflow:hidden;}
+  .tbar span{display:block;height:100%;width:100%;background:var(--green);
+    border-radius:99px;transition:width 1s linear, background .2s;}
+  .timerwrap.warn .clock{border-color:var(--terra);color:var(--terra);background:#FDF2E4;}
+  .timerwrap.warn .tbar span{background:var(--terra);}
+  .timerwrap.danger .clock{border-color:var(--bad);color:var(--bad);background:var(--bad-bg);
+    animation:pulse .9s ease-in-out infinite;}
+  .timerwrap.danger .tbar span{background:var(--bad);}
+  .timerwrap.over .clock{border-color:var(--grey);color:var(--grey);background:#EEE;animation:none;}
+  .timerwrap.over .tbar span{background:var(--grey);}
+  @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.09);}}
+  .opt.missed{border-color:var(--line);background:#F2F1EC;}
+  .whoami{font-size:12px;color:var(--grey);margin-bottom:10px;}
+  .sectionbar{background:var(--green);color:#fff;border-radius:9px;padding:11px 16px;margin:10px 0 20px;}
+  .sectionbar .t{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--beige);font-weight:600;}
+  .sectionbar .n{font-family:var(--serif);font-size:18px;font-weight:600;margin-top:2px;}
+
+  .qprompt{font-size:19px;line-height:1.6;margin:0 0 20px;font-weight:500;}
+  .qprompt .hl{font-weight:700;color:var(--green);}
+  .qprompt .gap{display:inline-block;min-width:96px;border-bottom:2.5px solid var(--terra);vertical-align:baseline;}
+  .qprompt .def{display:block;background:var(--beige-soft);border-left:4px solid var(--terra);
+    padding:12px 15px;border-radius:0 8px 8px 0;font-size:17px;font-style:italic;margin-top:4px;}
+  .opts{display:flex;flex-direction:column;gap:10px;}
+  .opt{display:flex;align-items:flex-start;gap:12px;border:1.5px solid var(--line);border-radius:10px;
+    padding:13px 15px;cursor:pointer;background:#fff;font-size:15.5px;line-height:1.45;text-align:left;
+    font-family:var(--sans);color:var(--ink);transition:.12s;}
+  .opt:hover:not(.locked){border-color:var(--green);background:var(--beige-soft);}
+  .opt .letter{flex:none;width:24px;height:24px;border-radius:6px;background:var(--beige);color:var(--green);
+    font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:-1px;}
+  .opt.locked{cursor:default;}
+  .opt.correct{border-color:var(--ok);background:var(--ok-bg);}
+  .opt.correct .letter{background:var(--ok);color:#fff;}
+  .opt.wrong{border-color:var(--bad);background:var(--bad-bg);}
+  .opt.wrong .letter{background:var(--bad);color:#fff;}
+  .opt.dim{opacity:.5;}
+  .feedback{margin-top:16px;padding:13px 16px;border-radius:9px;font-size:14.5px;line-height:1.5;display:none;}
+  .feedback.show{display:block;}
+  .feedback.good{background:var(--ok-bg);border-left:4px solid var(--ok);}
+  .feedback.bad{background:var(--bad-bg);border-left:4px solid var(--bad);}
+  .feedback b{color:var(--green);}
+  .foot{display:flex;justify-content:flex-end;margin-top:18px;}
+
+  .scorebox{text-align:center;padding:6px 0 18px;}
+  .score-n{font-family:var(--serif);font-size:52px;font-weight:700;color:var(--green);line-height:1;}
+  .score-n small{font-size:26px;color:var(--grey);font-weight:600;}
+  .score-msg{margin-top:10px;font-size:15px;color:var(--grey);}
+  .pill{display:inline-block;margin-top:14px;padding:6px 16px;border-radius:99px;
+    font-size:13px;font-weight:700;letter-spacing:.04em;}
+  .pill.a{background:var(--ok-bg);color:var(--ok);}
+  .pill.b{background:#FDF2E4;color:var(--terra);}
+  .pill.c{background:var(--bad-bg);color:var(--bad);}
+
+  /* send status */
+  .sendbox{border-radius:10px;padding:14px 16px;font-size:14px;line-height:1.55;margin-bottom:8px;
+    display:flex;align-items:flex-start;gap:11px;}
+  .sendbox .ico{flex:none;font-size:17px;line-height:1.3;}
+  .sendbox.pending{background:var(--beige-soft);border-left:4px solid var(--grey);}
+  .sendbox.done{background:var(--ok-bg);border-left:4px solid var(--ok);}
+  .sendbox.fail{background:var(--bad-bg);border-left:4px solid var(--bad);}
+  .sendbox b{color:var(--green);}
+  #backup{margin-top:12px;}
+  #backup textarea{width:100%;height:120px;font-family:ui-monospace,Menlo,Consolas,monospace;
+    font-size:12.5px;line-height:1.5;border:1.5px solid var(--line);border-radius:9px;
+    padding:11px 12px;color:var(--ink);background:#fff;resize:vertical;}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px;}
+  th{background:var(--green);color:#fff;text-align:left;padding:9px 10px;font-size:11.5px;
+    letter-spacing:.07em;text-transform:uppercase;font-weight:600;}
+  td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.45;}
+  tr:nth-child(even) td{background:var(--beige-soft);}
+  td.st{font-weight:700;white-space:nowrap;}
+  td.st.ok{color:var(--ok);} td.st.no{color:var(--bad);}
+  .yourans.no{color:var(--bad);text-decoration:line-through;}
+  .rightans{color:var(--ok);font-weight:600;}
+  .tblwrap{overflow-x:auto;margin:0 -6px;}
+  h2.sec{font-family:var(--serif);font-size:20px;color:var(--green);margin:30px 0 4px;
+    padding-bottom:7px;border-bottom:2px solid var(--terra);}
+  .sec-note{font-size:13px;color:var(--grey);font-style:italic;margin-bottom:12px;}
+  .weakword{display:inline-block;background:#fff;border:1.5px solid var(--terra);color:var(--green);
+    font-weight:600;font-size:14px;padding:6px 13px;border-radius:99px;margin:0 7px 8px 0;}
+  .actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;}
+  footer{text-align:center;font-size:12px;color:var(--grey);margin-top:26px;padding-top:14px;
+    border-top:1px solid var(--line);}
+  .hidden{display:none;}
+  @media(max-width:520px){
+    h1{font-size:24px;} .card{padding:20px 17px;} .qprompt{font-size:17px;}
+    .actions .btn{flex:1;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">VTG English Center · A2 · Technology</div>
+    <h1>Unit 3B — Imagine You Haven't Got the Internet</h1>
+    <div class="sub">27 từ &amp; cụm · 20 câu mỗi lượt · 15 giây mỗi câu</div>
+  </header>
+
+  <!-- ============ START ============ -->
+  <div class="card" id="screen-start">
+    <div class="formbox">
+      <h3>Thông tin học viên</h3>
+      <div class="field">
+        <label for="in-name">Họ và tên <span style="color:#C1633D">*</span></label>
+        <input type="text" id="in-name" placeholder="Ví dụ: Nguyễn Thị Lan Anh" autocomplete="name">
+        <div class="hint">Ghi đầy đủ họ tên để thầy/cô nhận đúng kết quả của em.</div>
+      </div>
+      <div class="field">
+        <label for="in-class">Lớp</label>
+        <input type="text" id="in-class" placeholder="Ví dụ: IELTS L3 — T5/CN">
+      </div>
+    </div>
+
+    <ul class="intro-list">
+      <li>Mỗi lượt gồm <b>20 câu</b>, chia thành <b>4 phần, mỗi phần 5 câu</b> — hết 5 câu là đổi dạng câu hỏi.</li>
+      <li>Ngân hàng có <b>5 dạng</b>: Anh→Việt, Việt→Anh, Điền từ vào câu, Định nghĩa tiếng Anh, Hoàn thành cụm từ. Mỗi lượt bốc ngẫu nhiên <b>4 dạng</b>.</li>
+      <li>Mỗi câu chỉ có <b>15 giây</b> để trả lời. Hết giờ sẽ tự hiện đáp án và <b>câu đó tính là sai</b> — hãy đọc nhanh và chọn dứt khoát.</li>
+      <li>Trả lời xong mỗi câu sẽ thấy <b>đáp án đúng ngay</b>. Cuối bài có <b>bảng tổng kết</b> để xem lại.</li>
+      <li>Kết quả sẽ được <b>gửi tự động cho thầy/cô</b> khi em làm xong.</li>
+    </ul>
+    <button class="btn" id="btn-start">Bắt đầu làm bài</button>
+  </div>
+
+  <!-- ============ QUIZ ============ -->
+  <div class="card hidden" id="screen-quiz">
+    <div class="whoami" id="whoami"></div>
+    <div class="bar-row">
+      <div class="bar"><span id="bar-fill"></span></div>
+      <div class="counter" id="counter">Câu 1 / 20</div>
+    </div>
+    <div class="sectionbar">
+      <div class="t" id="sec-part">Phần 1 / 4</div>
+      <div class="n" id="sec-name">—</div>
+    </div>
+    <div class="timerwrap" id="timerwrap">
+      <div class="clock" id="clock">20</div>
+      <div class="tbar"><span id="tbar-fill"></span></div>
+    </div>
+    <div class="qprompt" id="prompt"></div>
+    <div class="opts" id="opts"></div>
+    <div class="feedback" id="feedback"></div>
+    <div class="foot"><button class="btn hidden" id="btn-next">Câu tiếp theo →</button></div>
+  </div>
+
+  <!-- ============ RESULT ============ -->
+  <div class="card hidden" id="screen-result">
+    <div class="scorebox">
+      <div class="score-n"><span id="score">0</span><small>/20</small></div>
+      <div class="score-msg" id="score-msg"></div>
+      <div id="score-pill"></div>
+    </div>
+
+    <div class="sendbox pending" id="sendbox">
+      <span class="ico" id="send-ico">⏳</span>
+      <div id="send-text">Đang gửi kết quả cho thầy/cô…</div>
+    </div>
+    <div id="backup" class="hidden">
+      <textarea id="backup-text" readonly></textarea>
+      <div style="margin-top:9px;display:flex;gap:9px;flex-wrap:wrap">
+        <button class="btn terra sm" id="btn-copy">Sao chép kết quả</button>
+        <button class="btn ghost sm" id="btn-retry">Thử gửi lại</button>
+      </div>
+    </div>
+
+    <h2 class="sec">Bảng tổng kết</h2>
+    <div class="sec-note">Xem lại từng câu — câu sai được đánh dấu đỏ kèm đáp án đúng.</div>
+    <div class="tblwrap">
+      <table>
+        <thead><tr>
+          <th style="width:34px">#</th><th style="width:96px">Dạng</th><th>Câu hỏi</th>
+          <th style="width:120px">Em chọn</th><th style="width:120px">Đáp án đúng</th><th style="width:54px">KQ</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <div id="weakbox" class="hidden">
+      <h2 class="sec">Từ cần học lại</h2>
+      <div class="sec-note">Những từ em trả lời chưa đúng trong lượt này.</div>
+      <div id="weaklist"></div>
+    </div>
+
+    <div class="actions">
+      <button class="btn terra" id="btn-again">Làm lại (bộ câu hỏi mới)</button>
+      <button class="btn ghost" id="btn-home">Đổi tên / thoát</button>
+    </div>
+  </div>
+
+  <footer>VTG English Center · Unit 3B — Imagine You Haven't Got the Internet</footer>
+</div>
+
+<script>
+/* ==================================================================
+   ⚙️  CẤU HÌNH — DÁN ĐƯỜNG LINK APPS SCRIPT CỦA BẠN VÀO ĐÂY
+   Sau khi Deploy Web App trên Google Sheet, copy link dạng
+   https://script.google.com/macros/s/AKfycb...../exec
+   rồi dán vào giữa hai dấu nháy dưới đây.
+   ================================================================== */
+const ENDPOINT = "https://script.google.com/macros/s/AKfycby57HegnnckxSVtfJwqULkn4atHPG4G_YMSb5S9GyaSOCyxQLR6kpl1LqJTQi3woSF8/exec";
+const SECONDS_PER_Q = 15;
+
+/* ================= DỮ LIỆU 25 TỪ ================= */
+const WORDS = [
+  {
+    "w": "computer",
+    "vi": "máy tính (để bàn)",
+    "def": "a big machine on a desk with a screen, a keyboard and a mouse",
+    "sent": "Don's got an old desktop ___ with a big screen and a mouse.",
+    "sentA": "computer",
+    "coll": "a ___ mouse",
+    "collA": "computer"
+  },
+  {
+    "w": "smartphone",
+    "vi": "điện thoại thông minh",
+    "def": "a mobile phone that can use apps and go online",
+    "sent": "I've got my daughter's old ___, so I can call her and use apps.",
+    "sentA": "smartphone",
+    "coll": "make calls on my ___",
+    "collA": "smartphone"
+  },
+  {
+    "w": "tablet",
+    "vi": "máy tính bảng",
+    "def": "a flat computer with a touch screen; it is bigger than a phone",
+    "sent": "Onur's got a ___. It's bigger than a phone, but it hasn't got a keyboard.",
+    "sentA": "tablet",
+    "coll": "a phone is small, but a ___ is bigger",
+    "collA": "tablet"
+  },
+  {
+    "w": "smartwatch",
+    "vi": "đồng hồ thông minh",
+    "def": "a watch that can show messages and count your steps",
+    "sent": "My ___ is on my wrist, and it tells me how many steps I walk.",
+    "sentA": "smartwatch",
+    "coll": "wear a ___ on your wrist",
+    "collA": "smartwatch"
+  },
+  {
+    "w": "speaker",
+    "vi": "cái loa",
+    "def": "a machine that plays music loudly so many people can hear it",
+    "sent": "Turn on the ___ so everyone at the party can hear the music.",
+    "sentA": "speaker",
+    "coll": "music comes out of the ___",
+    "collA": "speaker"
+  },
+  {
+    "w": "keyboard",
+    "vi": "bàn phím",
+    "def": "the part of a computer with letters and numbers that you press",
+    "sent": "I press the letters on the ___ to type my homework.",
+    "sentA": "keyboard",
+    "coll": "press a key on the ___",
+    "collA": "keyboard"
+  },
+  {
+    "w": "printer",
+    "vi": "máy in",
+    "def": "a machine that puts words and pictures from a computer onto paper",
+    "sent": "I often print out maps with my ___, so it's very useful.",
+    "sentA": "printer",
+    "coll": "put paper in the ___",
+    "collA": "printer"
+  },
+  {
+    "w": "headphones",
+    "vi": "tai nghe",
+    "def": "things you wear over your ears to listen to music alone",
+    "sent": "I wear my ___ on the bus so other people can't hear my music.",
+    "sentA": "headphones",
+    "coll": "put on your ___",
+    "collA": "headphones"
+  },
+  {
+    "w": "camera",
+    "vi": "máy ảnh",
+    "def": "a machine you use to take photos",
+    "sent": "Chris has got a digital ___, but he takes most photos with his phone.",
+    "sentA": "camera",
+    "coll": "a digital ___",
+    "collA": "camera"
+  },
+  {
+    "w": "laptop",
+    "vi": "máy tính xách tay",
+    "def": "a small computer that you can carry and use anywhere",
+    "sent": "He's got a new ___. It's got a keyboard, and he carries it in his bag to work on the train.",
+    "sentA": "laptop",
+    "coll": "carry a ___ in your bag",
+    "collA": "laptop"
+  },
+  {
+    "w": "gadget",
+    "vi": "thiết bị, đồ công nghệ nhỏ",
+    "def": "a small, useful machine, for example a phone or a smartwatch",
+    "sent": "Don, Bella and Chris talk about their ___: phones, cameras and computers.",
+    "sentA": "gadgets",
+    "coll": "the latest ___",
+    "collA": "gadget"
+  },
+  {
+    "w": "the Internet",
+    "vi": "mạng Internet",
+    "def": "the system that connects computers all over the world",
+    "sent": "Imagine you haven't got ___. Could you live without it for a month?",
+    "sentA": "the Internet",
+    "coll": "live without ___",
+    "collA": "the Internet"
+  },
+  {
+    "w": "go online",
+    "vi": "lên mạng, truy cập Internet",
+    "def": "to start using the Internet",
+    "sent": "Our Wi-Fi is broken, so I can't ___ today.",
+    "sentA": "go online",
+    "coll": "go ___ to check your emails",
+    "collA": "online"
+  },
+  {
+    "w": "find information",
+    "vi": "tìm kiếm thông tin",
+    "def": "to look for facts about something",
+    "sent": "Alfie goes to the library to ___ for his homework.",
+    "sentA": "find information",
+    "coll": "find ___ about a topic",
+    "collA": "information"
+  },
+  {
+    "w": "send emails",
+    "vi": "gửi thư điện tử (email)",
+    "def": "to write messages on a computer and send them to other people",
+    "sent": "Every morning I check my inbox and ___ to my teachers.",
+    "sentA": "send emails",
+    "coll": "write and send an ___",
+    "collA": "email"
+  },
+  {
+    "w": "watch films",
+    "vi": "xem phim",
+    "def": "to look at movies on a screen",
+    "sent": "We sit on the sofa with popcorn and ___ on Friday night.",
+    "sentA": "watch films",
+    "coll": "watch ___ online",
+    "collA": "films"
+  },
+  {
+    "w": "post pictures",
+    "vi": "đăng ảnh (lên mạng)",
+    "def": "to put photos on the Internet for other people to see",
+    "sent": "My sister loves to ___ of her food on Instagram.",
+    "sentA": "post pictures",
+    "coll": "post ___ on Facebook",
+    "collA": "pictures"
+  },
+  {
+    "w": "play games",
+    "vi": "chơi trò chơi (điện tử)",
+    "def": "to have fun with computer or video games",
+    "sent": "My brother likes to ___ like Minecraft after school.",
+    "sentA": "play games",
+    "coll": "play online ___",
+    "collA": "games"
+  },
+  {
+    "w": "buy things",
+    "vi": "mua đồ, mua sắm",
+    "def": "to pay money to get something",
+    "sent": "My mum doesn't ___ online. She goes to the shops to get them.",
+    "sentA": "buy things",
+    "coll": "buy ___ online",
+    "collA": "things"
+  },
+  {
+    "w": "download music",
+    "vi": "tải nhạc về máy",
+    "def": "to copy songs from the Internet onto your phone or computer",
+    "sent": "I ___ onto my phone, so I can listen to songs on the plane.",
+    "sentA": "download music",
+    "coll": "download ___ and videos",
+    "collA": "music"
+  },
+  {
+    "w": "social media",
+    "vi": "mạng xã hội",
+    "def": "websites and apps like Facebook and TikTok where people share things",
+    "sent": "I'm not on ___, so I have no idea what my friends are doing.",
+    "sentA": "social media",
+    "coll": "spend hours on ___",
+    "collA": "social media"
+  },
+  {
+    "w": "chat",
+    "vi": "trò chuyện, nhắn tin (thân mật)",
+    "def": "to talk or send short messages in a friendly way",
+    "sent": "I can't ___ with my friends on Messenger now, so I go out and see them.",
+    "sentA": "chat",
+    "coll": "have a ___ with a friend",
+    "collA": "chat"
+  },
+  {
+    "w": "newspaper",
+    "vi": "tờ báo (in trên giấy)",
+    "def": "big sheets of paper with the news that you can buy every day",
+    "sent": "My dad can't read the news online, so he buys a ___.",
+    "sentA": "newspaper",
+    "coll": "read a ___ every morning",
+    "collA": "newspaper"
+  },
+  {
+    "w": "library",
+    "vi": "thư viện",
+    "def": "a building where you can read and borrow books",
+    "sent": "Now I haven't got the Internet, so I go to the ___ and do my homework there.",
+    "sentA": "library",
+    "coll": "borrow books from the ___",
+    "collA": "library"
+  },
+  {
+    "w": "supermarket",
+    "vi": "siêu thị",
+    "def": "a big shop that sells food and things for the home",
+    "sent": "My mum does her shopping at the ___ every weekend.",
+    "sentA": "supermarket",
+    "coll": "do the shopping at the ___",
+    "collA": "supermarket"
+  },
+  {
+    "w": "free time",
+    "vi": "thời gian rảnh",
+    "def": "time when you are not working or studying",
+    "sent": "My dad doesn't do any work at home now, so he's got more ___.",
+    "sentA": "free time",
+    "coll": "in your ___",
+    "collA": "free time"
+  },
+  {
+    "w": "useful",
+    "vi": "hữu ích, có ích",
+    "def": "helping you to do something",
+    "sent": "Maps on my phone are very ___ when I travel to a new city.",
+    "sentA": "useful",
+    "coll": "very ___ for homework",
+    "collA": "useful"
+  }
+];
+
+const TYPES = [
+  { id:"A", name:"Chọn nghĩa tiếng Việt", short:"Anh→Việt",
+    build:w=>`Từ <span class="hl">${w.w}</span> có nghĩa là gì?`, key:"vi" },
+  { id:"B", name:"Chọn từ tiếng Anh đúng", short:"Việt→Anh",
+    build:w=>`Từ/cụm tiếng Anh nào mang nghĩa <span class="hl">"${w.vi}"</span>?`, key:"w" },
+  { id:"C", name:"Điền từ vào câu", short:"Điền từ",
+    build:w=>gapify(w.sent), key:"sentA" },
+  { id:"D", name:"Chọn từ theo định nghĩa tiếng Anh", short:"Định nghĩa",
+    build:w=>`Từ nào khớp với định nghĩa sau?<span class="def">${w.def}</span>`, key:"w" },
+  { id:"E", name:"Hoàn thành cụm từ", short:"Cụm từ",
+    build:w=>`Hoàn thành cụm từ sau:<br><span style="font-size:21px">${gapify(w.coll)}</span>`, key:"collA" }
+];
+
+function gapify(s){ return s.replace("___", '<span class="gap">&nbsp;</span>'); }
+function shuffle(a){
+  const x=a.slice();
+  for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]];}
+  return x;
+}
+const $ = id => document.getElementById(id);
+
+/* ================= TRẠNG THÁI ================= */
+let quiz=[], idx=0, answers=[], locked=false;
+let student={name:"",cls:""}, startedAt=0, lastPayload=null;
+let timerId=null, timeLeft=0;
+
+function buildQuiz(){
+  const types = shuffle(TYPES).slice(0,4);
+  const pool  = shuffle(WORDS).slice(0,20);
+  const qs=[];
+  types.forEach((t,ti)=>{
+    for(let i=0;i<5;i++){
+      const w = pool[ti*5+i];
+      const correct = w[t.key];
+      const used = new Set([correct]);
+      const distract=[];
+      for(const d of shuffle(WORDS)){
+        if(distract.length===3) break;
+        const txt=d[t.key];
+        if(used.has(txt)) continue;
+        used.add(txt); distract.push(txt);
+      }
+      qs.push({ part:ti+1, typeName:t.name, typeShort:t.short, word:w.w,
+        prompt:t.build(w), correct, options:shuffle([correct,...distract]) });
+    }
+  });
+  return qs;
+}
+
+function startQuiz(){
+  const nameEl=$("in-name");
+  if(!$("screen-start").classList.contains("hidden")){
+    const nm=nameEl.value.trim();
+    if(nm.length<2){ nameEl.classList.add("err"); nameEl.focus(); return; }
+    nameEl.classList.remove("err");
+    student.name=nm;
+    student.cls=$("in-class").value.trim() || "(chưa ghi lớp)";
+  }
+  stopTimer();
+  quiz=buildQuiz(); idx=0; answers=[]; startedAt=Date.now();
+  $("whoami").textContent = `${student.name} · ${student.cls}`;
+  $("screen-start").classList.add("hidden");
+  $("screen-result").classList.add("hidden");
+  $("screen-quiz").classList.remove("hidden");
+  renderQ();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function stopTimer(){ if(timerId){ clearInterval(timerId); timerId=null; } }
+
+function paintTimer(){
+  const wrap=$("timerwrap");
+  $("clock").textContent=timeLeft;
+  $("tbar-fill").style.width=(timeLeft/SECONDS_PER_Q*100)+"%";
+  wrap.classList.remove("warn","danger","over");
+  if(timeLeft<=5) wrap.classList.add("danger");
+  else if(timeLeft<=10) wrap.classList.add("warn");
+}
+
+function startTimer(){
+  stopTimer();
+  timeLeft=SECONDS_PER_Q;
+  paintTimer();
+  timerId=setInterval(()=>{
+    timeLeft--;
+    if(timeLeft<=0){ timeLeft=0; paintTimer(); timeUp(); return; }
+    paintTimer();
+  },1000);
+}
+
+function timeUp(){
+  stopTimer();
+  if(locked) return;
+  locked=true;
+  const wrap=$("timerwrap");
+  wrap.classList.remove("warn","danger");
+  wrap.classList.add("over");
+  $("clock").textContent="0";
+  const q=quiz[idx];
+  answers.push({q,chosen:"(hết giờ)",ok:false,timeout:true});
+  [...$("opts").children].forEach(el=>{
+    el.classList.add("locked");
+    const txt=el.querySelector("span:last-child").textContent;
+    if(txt===q.correct) el.classList.add("correct");
+    else el.classList.add("missed");
+  });
+  const fb=$("feedback");
+  fb.className="feedback show bad";
+  fb.innerHTML=`<b>⏱ Hết giờ!</b> Câu này tính là sai. Đáp án đúng là: <b>${q.correct}</b> — từ vựng cần nhớ: <b>${q.word}</b>`;
+  $("btn-next").classList.remove("hidden");
+}
+
+function renderQ(){
+  const q=quiz[idx]; locked=false;
+  $("counter").textContent=`Câu ${idx+1} / 20`;
+  $("bar-fill").style.width=(idx/20*100)+"%";
+  $("sec-part").textContent=`Phần ${q.part} / 4 · câu ${(idx%5)+1} của 5`;
+  $("sec-name").textContent=q.typeName;
+  $("prompt").innerHTML=q.prompt;
+  const box=$("opts"); box.innerHTML="";
+  const letters=["A","B","C","D"];
+  q.options.forEach((opt,i)=>{
+    const b=document.createElement("button");
+    b.className="opt";
+    b.innerHTML=`<span class="letter">${letters[i]}</span><span>${opt}</span>`;
+    b.onclick=()=>choose(b,opt);
+    box.appendChild(b);
+  });
+  const fb=$("feedback"); fb.className="feedback"; fb.innerHTML="";
+  $("btn-next").classList.add("hidden");
+  $("btn-next").textContent = (idx===19) ? "Nộp bài & xem kết quả →" : "Câu tiếp theo →";
+  startTimer();
+}
+
+function choose(btn,chosen){
+  if(locked) return; locked=true; stopTimer();
+  const q=quiz[idx], ok=(chosen===q.correct);
+  answers.push({q,chosen,ok});
+  [...$("opts").children].forEach(el=>{
+    el.classList.add("locked");
+    const txt=el.querySelector("span:last-child").textContent;
+    if(txt===q.correct) el.classList.add("correct");
+    else if(el===btn) el.classList.add("wrong");
+    else el.classList.add("dim");
+  });
+  const fb=$("feedback");
+  if(ok){ fb.className="feedback show good"; fb.innerHTML=`<b>Chính xác!</b> ${q.correct}`; }
+  else { fb.className="feedback show bad";
+    fb.innerHTML=`<b>Chưa đúng.</b> Đáp án đúng là: <b>${q.correct}</b> — từ vựng cần nhớ: <b>${q.word}</b>`; }
+  $("btn-next").classList.remove("hidden");
+}
+
+function next(){
+  stopTimer();
+  idx++;
+  if(idx>=20){ showResult(); return; }
+  renderQ(); window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function plainText(html){
+  return html.replace(/<span class="gap">&nbsp;<\/span>/g,"______")
+             .replace(/<br>/g," ").replace(/<[^>]+>/g,"").trim();
+}
+function fmtDur(ms){
+  const s=Math.round(ms/1000);
+  return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
+}
+
+function showResult(){
+  stopTimer();
+  const score=answers.filter(a=>a.ok).length;
+  const dur=Date.now()-startedAt;
+  $("screen-quiz").classList.add("hidden");
+  $("screen-result").classList.remove("hidden");
+  $("score").textContent=score;
+
+  let msg,pill;
+  if(score>=18){ msg="Xuất sắc! Em đã nắm rất chắc bộ từ này."; pill='<span class="pill a">RẤT TỐT</span>'; }
+  else if(score>=14){ msg="Khá tốt. Chỉ cần ôn lại vài từ ở bảng dưới là ổn."; pill='<span class="pill a">TỐT</span>'; }
+  else if(score>=10){ msg="Đạt yêu cầu, nhưng nên làm lại thêm 1–2 lượt nữa."; pill='<span class="pill b">CẦN ÔN THÊM</span>'; }
+  else { msg="Hãy đọc lại file từ vựng rồi làm lại nhé — em sẽ tiến bộ nhanh."; pill='<span class="pill c">CẦN HỌC LẠI</span>'; }
+  $("score-msg").textContent=msg;
+  $("score-pill").innerHTML=pill;
+
+  const tb=$("tbody"); tb.innerHTML="";
+  answers.forEach((a,i)=>{
+    const tr=document.createElement("tr");
+    tr.innerHTML=`<td>${i+1}</td><td>${a.q.typeShort}</td><td>${plainText(a.q.prompt)}</td>
+      <td class="yourans ${a.ok?"":"no"}" ${a.timeout?'style="text-decoration:none;font-style:italic"':""}>${a.timeout?"⏱ Hết giờ":a.chosen}</td>
+      <td class="rightans">${a.q.correct}</td>
+      <td class="st ${a.ok?"ok":"no"}">${a.ok?"✓":"✗"}</td>`;
+    tb.appendChild(tr);
+  });
+
+  const nTimeout=answers.filter(a=>a.timeout).length;
+  if(nTimeout){
+    $("score-msg").textContent += ` (${nTimeout} câu bị hết giờ)`;
+  }
+  const wrongWords=[...new Set(answers.filter(a=>!a.ok).map(a=>a.q.word))];
+  if(wrongWords.length){
+    $("weakbox").classList.remove("hidden");
+    $("weaklist").innerHTML=wrongWords.map(w=>`<span class="weakword">${w}</span>`).join("");
+  } else $("weakbox").classList.add("hidden");
+
+  lastPayload={
+    quizName:"Unit 3B — Imagine You Haven't Got the Internet",
+    attemptId:Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7),
+    name:student.name, cls:student.cls,
+    score, total:20, percent:Math.round(score/20*100),
+    duration:fmtDur(dur), submittedAt:new Date().toISOString(),
+    wrongWords:wrongWords.join(", "),
+    details:answers.map((a,i)=>({
+      no:i+1, type:a.q.typeShort, word:a.q.word,
+      question:plainText(a.q.prompt),
+      chosen:a.timeout?"(HẾT GIỜ - không trả lời)":a.chosen,
+      correct:a.q.correct,
+      result:a.ok?"Đúng":"Sai"
+    }))
+  };
+  buildBackupText();
+  sendResult();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function buildBackupText(){
+  const p=lastPayload;
+  const lines=[
+    "=== KẾT QUẢ QUIZ VTG ===",
+    `Bài: ${p.quizName}`,
+    `Họ tên: ${p.name}`,
+    `Lớp: ${p.cls}`,
+    `Điểm: ${p.score}/20 (${p.percent}%) · Thời gian: ${p.duration}`,
+    `Nộp lúc: ${new Date().toLocaleString("vi-VN")}`,
+    `Từ sai: ${p.wrongWords || "không có"}`,
+    `Số câu hết giờ: ${p.details.filter(d=>d.chosen.indexOf("HẾT GIỜ")>-1).length}`,
+    "--- Chi tiết câu sai ---"
+  ];
+  const wrong=p.details.filter(d=>d.result==="Sai");
+  if(!wrong.length) lines.push("(Không có câu sai)");
+  else wrong.forEach(d=>lines.push(`Câu ${d.no} [${d.type}] ${d.word}: ${d.chosen} → đúng là "${d.correct}"`));
+  $("backup-text").value=lines.join("\n");
+}
+
+function setSend(state,html){
+  const box=$("sendbox");
+  box.className="sendbox "+state;
+  $("send-ico").textContent = state==="done" ? "✓" : state==="fail" ? "!" : "⏳";
+  $("send-text").innerHTML=html;
+}
+
+function sendResult(){
+  if(!ENDPOINT){
+    setSend("fail","<b>Chưa cấu hình nơi nhận kết quả.</b> Em hãy bấm <b>Sao chép kết quả</b> bên dưới và gửi vào nhóm Zalo cho thầy/cô nhé.");
+    $("backup").classList.remove("hidden");
+    return;
+  }
+  setSend("pending","Đang gửi kết quả cho thầy/cô…");
+  $("backup").classList.add("hidden");
+  fetch(ENDPOINT,{
+    method:"POST",
+    mode:"no-cors",
+    headers:{"Content-Type":"text/plain;charset=utf-8"},
+    body:JSON.stringify(lastPayload)
+  }).then(()=>{
+    setSend("done","<b>Đã gửi kết quả cho thầy/cô.</b> Em có thể xem lại bảng tổng kết bên dưới.");
+    $("backup").classList.add("hidden");
+  }).catch(()=>{
+    setSend("fail","<b>Gửi không thành công</b> (có thể do mất mạng). Em bấm <b>Thử gửi lại</b>, hoặc <b>Sao chép kết quả</b> rồi gửi vào nhóm Zalo cho thầy/cô.");
+    $("backup").classList.remove("hidden");
+  });
+}
+
+/* ================= SỰ KIỆN ================= */
+$("btn-start").onclick=startQuiz;
+$("in-name").addEventListener("keydown",e=>{ if(e.key==="Enter") startQuiz(); });
+$("btn-next").onclick=next;
+$("btn-again").onclick=startQuiz;
+$("btn-retry").onclick=sendResult;
+$("btn-copy").onclick=()=>{
+  const ta=$("backup-text");
+  ta.select(); ta.setSelectionRange(0,99999);
+  try{
+    if(navigator.clipboard) navigator.clipboard.writeText(ta.value);
+    else document.execCommand("copy");
+    $("btn-copy").textContent="Đã sao chép ✓";
+    setTimeout(()=>{$("btn-copy").textContent="Sao chép kết quả";},2000);
+  }catch(e){ alert("Em hãy bôi đen và copy thủ công phần chữ ở trên nhé."); }
+};
+$("btn-home").onclick=()=>{
+  $("screen-result").classList.add("hidden");
+  $("screen-start").classList.remove("hidden");
+  window.scrollTo({top:0,behavior:"smooth"});
+};
+</script>
+</body>
+</html>
