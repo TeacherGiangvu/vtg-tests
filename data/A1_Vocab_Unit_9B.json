@@ -1,0 +1,259 @@
+{
+  "level": "A1",
+  "topic": "Unit_9B",
+  "title": "Vocabulary & Grammar Quiz — Unit 9B: How did you get there?",
+  "kicker": "Empower A1 · Unit 9B",
+  "subtitle": "Seasons, weather + Past simple questions (Did you …?)",
+  "seconds": 25,
+  "types": [
+    "A",
+    "B",
+    "C",
+    "G"
+  ],
+  "per_type": 5,
+  "words": [
+    {
+      "w": "spring",
+      "vi": "mùa xuân",
+      "sent": "Flowers come out in ___, and the weather gets warmer.",
+      "sentA": "spring"
+    },
+    {
+      "w": "summer",
+      "vi": "mùa hè",
+      "sent": "We go to the beach in ___ because it is hot.",
+      "sentA": "summer"
+    },
+    {
+      "w": "autumn",
+      "vi": "mùa thu",
+      "sent": "In ___, the leaves on the trees turn red and yellow.",
+      "sentA": "autumn"
+    },
+    {
+      "w": "winter",
+      "vi": "mùa đông",
+      "sent": "It is very cold in ___ and sometimes it snows.",
+      "sentA": "winter"
+    },
+    {
+      "w": "hot",
+      "vi": "nóng",
+      "sent": "It’s 38 degrees today. It’s really ___.",
+      "sentA": "hot"
+    },
+    {
+      "w": "cold",
+      "vi": "lạnh",
+      "sent": "Put on your coat. It’s very ___ outside.",
+      "sentA": "cold"
+    },
+    {
+      "w": "warm",
+      "vi": "ấm",
+      "sent": "It isn’t hot or cold. It’s a nice ___ day.",
+      "sentA": "warm"
+    },
+    {
+      "w": "sunny",
+      "vi": "có nắng",
+      "sent": "We went to the beach because it was ___ and hot.",
+      "sentA": "sunny"
+    },
+    {
+      "w": "cloudy",
+      "vi": "nhiều mây",
+      "sent": "It’s grey and ___ today. I can’t see the sun.",
+      "sentA": "cloudy"
+    },
+    {
+      "w": "windy",
+      "vi": "có gió",
+      "sent": "It was very ___, so my hat flew away.",
+      "sentA": "windy"
+    },
+    {
+      "w": "rainy",
+      "vi": "có mưa",
+      "sent": "Take an umbrella. It’s a ___ day.",
+      "sentA": "rainy"
+    },
+    {
+      "w": "snowy",
+      "vi": "có tuyết",
+      "sent": "It was cold and ___, so we made a snowman.",
+      "sentA": "snowy"
+    },
+    {
+      "w": "rain",
+      "vi": "mưa",
+      "sent": "We stayed at home because of the ___.",
+      "sentA": "rain"
+    },
+    {
+      "w": "snow",
+      "vi": "tuyết",
+      "sent": "The children played in the ___ and made a snowman.",
+      "sentA": "snow"
+    },
+    {
+      "w": "wind",
+      "vi": "gió",
+      "sent": "There was a lot of ___ and the sea was dangerous.",
+      "sentA": "wind"
+    },
+    {
+      "w": "cloud",
+      "vi": "đám mây",
+      "sent": "I can see a big grey ___ in the sky.",
+      "sentA": "cloud"
+    },
+    {
+      "w": "island",
+      "vi": "hòn đảo",
+      "sent": "We went to an ___ in Greece last summer.",
+      "sentA": "island"
+    },
+    {
+      "w": "camp",
+      "vi": "cắm trại",
+      "sent": "We didn’t stay in a hotel. We decided to ___ in a garden.",
+      "sentA": "camp"
+    },
+    {
+      "w": "holiday",
+      "vi": "kỳ nghỉ",
+      "sent": "We had a great ___ in Spain last year.",
+      "sentA": "holiday"
+    },
+    {
+      "w": "cheap",
+      "vi": "rẻ",
+      "sent": "The tickets were only $4. They were very ___.",
+      "sentA": "cheap"
+    }
+  ],
+  "grammar": [
+    {
+      "q": "Where ___ you go on holiday last year?",
+      "options": [
+        "did",
+        "do",
+        "went"
+      ],
+      "answer": 0,
+      "note": "Question: Where did + you + base verb"
+    },
+    {
+      "q": "___ you enjoy it there?",
+      "options": [
+        "Did",
+        "Do",
+        "Were"
+      ],
+      "answer": 0,
+      "note": "Yes / No question: Did + subject + base verb"
+    },
+    {
+      "q": "How did you ___ there?",
+      "options": [
+        "got",
+        "get",
+        "getting"
+      ],
+      "answer": 1,
+      "note": "After did use the base verb: get"
+    },
+    {
+      "q": "What ___ you do yesterday?",
+      "options": [
+        "did",
+        "does",
+        "were"
+      ],
+      "answer": 0,
+      "note": "Past question: did + subject + base verb"
+    },
+    {
+      "q": "Did she ___ to the beach?",
+      "options": [
+        "went",
+        "go",
+        "goes"
+      ],
+      "answer": 1,
+      "note": "After did use the base verb: go"
+    },
+    {
+      "q": "How ___ they travel around Italy?",
+      "options": [
+        "did",
+        "do",
+        "were"
+      ],
+      "answer": 0,
+      "note": "Wh- + did + subject + base verb"
+    },
+    {
+      "q": "Did you like it?  Yes, I ___.",
+      "options": [
+        "did",
+        "liked",
+        "do"
+      ],
+      "answer": 0,
+      "note": "Short answer: Yes, I did."
+    },
+    {
+      "q": "Did he stay in a hotel?  No, he ___.",
+      "options": [
+        "didn’t",
+        "doesn’t",
+        "wasn’t"
+      ],
+      "answer": 0,
+      "note": "Short answer: No, he didn’t."
+    },
+    {
+      "q": "What ___ the weather like yesterday?",
+      "options": [
+        "was",
+        "did",
+        "were"
+      ],
+      "answer": 0,
+      "note": "The weather = it, past of be: was"
+    },
+    {
+      "q": "___ you see the film last night?",
+      "options": [
+        "Did",
+        "Were",
+        "Do"
+      ],
+      "answer": 0,
+      "note": "Past question: Did + subject + base verb"
+    },
+    {
+      "q": "Who ___ you meet at the party?",
+      "options": [
+        "did",
+        "do",
+        "were"
+      ],
+      "answer": 0,
+      "note": "Question: Who did + you + base verb"
+    },
+    {
+      "q": "Where ___ she go on summer holiday?",
+      "options": [
+        "did",
+        "does",
+        "do"
+      ],
+      "answer": 0,
+      "note": "Past question: did + subject + base verb"
+    }
+  ]
+}
