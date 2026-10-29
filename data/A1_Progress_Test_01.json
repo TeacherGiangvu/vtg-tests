@@ -1,0 +1,312 @@
+{
+  "level": "A1",
+  "title": "VTG · A1 Progress Test 1",
+  "heading": "A1 Progress Test 1",
+  "kicker": "VTG English Center · Cambridge English Empower",
+  "quiz_name": "A1 Progress Test 1 (Empower)",
+  "footer": "VTG English Center · Cambridge English Empower A1 Progress Test 1 · © UCLES 2016",
+  "minutes": 30,
+  "audio": "audio/A1_Progress_Test_01.mp3",
+  "parts": [
+    {
+      "id": "part1",
+      "label": "Part 1",
+      "name": "Listening — Choose the best reply",
+      "nav": "Nghe",
+      "rubric": "Questions 1 – 6. You will hear six short sentences. For each one, choose the best reply. You will hear each sentence twice.",
+      "audio": true,
+      "kind": "mcq",
+      "layout": "col",
+      "qs": [
+        {
+          "no": 1,
+          "opts": [
+            "Hi, my name’s Sophia.",
+            "I’m good.",
+            "And you?"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 2,
+          "opts": [
+            "And you?",
+            "I’m good, thanks.",
+            "Good to meet you, too."
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 3,
+          "opts": [
+            "Where’s Carlo?",
+            "Nice to meet you, too.",
+            "Good afternoon."
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 4,
+          "opts": [
+            "Hi, I’m Anna.",
+            "Oh, not bad, thanks.",
+            "Where’s Megan?"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 5,
+          "opts": [
+            "And you?",
+            "Nice to meet you.",
+            "I’m fine, thank you."
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 6,
+          "opts": [
+            "Good afternoon.",
+            "I’m OK, thanks.",
+            "Good to meet you, too."
+          ],
+          "correct": "B"
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "label": "Part 2",
+      "name": "Vocabulary — Countries and nationalities 1",
+      "nav": "Quốc gia 1",
+      "rubric": "Questions 7 – 12. Read the sentences about countries and nationalities. What are the missing words? The first letter is already there. There is one space for each other letter in the word. Gõ trọn vẹn từ vào ô trả lời.",
+      "kind": "input",
+      "layout": "col",
+      "qs": [
+        {
+          "no": 7,
+          "text": "My friend Alex is American – he’s from a city in <span class='gap'></span>.",
+          "pattern": "t _ _   U _ _",
+          "correct": "the USA"
+        },
+        {
+          "no": 8,
+          "text": "Hi, I’m from Beijing in <span class='gap'></span> and I’m Chinese.",
+          "pattern": "C _ _ _ _",
+          "correct": "China"
+        },
+        {
+          "no": 9,
+          "text": "This is my friend Lena – she’s from Moscow in <span class='gap'></span> and she’s Russian.",
+          "pattern": "R _ _ _ _ _",
+          "correct": "Russia"
+        },
+        {
+          "no": 10,
+          "text": "My friend’s name is Maria and she’s from Brazil – she’s <span class='gap'></span>.",
+          "pattern": "B _ _ _ _ _ _ _ _",
+          "correct": "Brazilian"
+        },
+        {
+          "no": 11,
+          "text": "His name is Carlo and he’s from Italy – he’s <span class='gap'></span>.",
+          "pattern": "I _ _ _ _ _ _",
+          "correct": "Italian"
+        },
+        {
+          "no": 12,
+          "text": "John is British and he’s from Manchester, a city in <span class='gap'></span>.",
+          "pattern": "B _ _ _ _ _ _",
+          "correct": "Britain"
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "label": "Part 3",
+      "name": "Vocabulary — Countries and nationalities 2",
+      "nav": "Quốc gia 2",
+      "rubric": "Questions 13 – 18. Read the sentences about countries and nationalities. What are the missing words? The first letter is already there. There is one space for each other letter in the word. Gõ trọn vẹn từ vào ô trả lời.",
+      "kind": "input",
+      "layout": "col",
+      "qs": [
+        {
+          "no": 13,
+          "text": "My teacher is British – he is from <span class='gap'></span>.",
+          "pattern": "t _ _   U _",
+          "correct": "the UK"
+        },
+        {
+          "no": 14,
+          "text": "Hello, I’m Akira from Tokyo in <span class='gap'></span> – I’m Japanese.",
+          "pattern": "J _ _ _ _",
+          "correct": "Japan"
+        },
+        {
+          "no": 15,
+          "text": "Is everyone in your class from Poland – are they all <span class='gap'></span>?",
+          "pattern": "P _ _ _ _ _",
+          "correct": "Polish"
+        },
+        {
+          "no": 16,
+          "text": "My name is John – I’m from Toronto in Canada and I’m <span class='gap'></span>.",
+          "pattern": "C _ _ _ _ _ _ _",
+          "correct": "Canadian"
+        },
+        {
+          "no": 17,
+          "text": "The receptionist is from Ankara in <span class='gap'></span> – she’s Turkish.",
+          "pattern": "T _ _ _ _ _",
+          "correct": "Turkey"
+        },
+        {
+          "no": 18,
+          "text": "This is Megan from Australia – she’s my friend and she’s <span class='gap'></span>.",
+          "pattern": "A _ _ _ _ _ _ _ _ _",
+          "correct": "Australian"
+        }
+      ]
+    },
+    {
+      "id": "part4",
+      "label": "Part 4",
+      "name": "Reading — Harumi’s email",
+      "nav": "Đọc",
+      "rubric": "Questions 19 – 24. Read the email from Harumi. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "passage": {
+        "title": "From: Harumi · To: Anna",
+        "html": "<p>Hi Anna</p><p>How <span class=\"bl\">(19) ……</span>? And how are your friends, Hannah and Megan? I’m fine. I’m not in Japan now – I <span class=\"bl\">(20) ……</span> a student in a small language school in Britain. It’s a good school. <span class=\"bl\">(21) ……</span> you a student now?</p><p>My teacher’s name is Darren and he’s nice. He isn’t British – he’s from Toronto in Canada. <span class=\"bl\">(22) ……</span> your English teacher from? Is he from the UK?</p><p>My friends here are students and <span class=\"bl\">(23) ……</span> in my class. Their names are Laura and Carlo. They <span class=\"bl\">(24) ……</span> from Japan – they’re from Bologna in Italy and they’re married. We’re good friends now.</p><p>Harumi</p>"
+      },
+      "qs": [
+        {
+          "no": 19,
+          "opts": [
+            "is she",
+            "am I",
+            "are you"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 20,
+          "opts": [
+            "is",
+            "am",
+            "are"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 21,
+          "opts": [
+            "Are",
+            "Is",
+            "Am"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 22,
+          "opts": [
+            "Where’s",
+            "How’s",
+            "What’s"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 23,
+          "opts": [
+            "he’s",
+            "they’re",
+            "I’m"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 24,
+          "opts": [
+            "isn’t",
+            "aren’t",
+            "am not"
+          ],
+          "correct": "B"
+        }
+      ]
+    },
+    {
+      "id": "part5",
+      "label": "Part 5",
+      "name": "Grammar — be",
+      "nav": "Ngữ pháp",
+      "rubric": "Questions 25 – 30. Read the sentences about people, countries and nationalities. Choose the best answer, A, B or C, for each space.",
+      "kind": "mcq",
+      "layout": "row",
+      "qs": [
+        {
+          "no": 25,
+          "text": "Hello, my name’s Joe and I <span class='gap'></span> from London.",
+          "opts": [
+            "am",
+            "is",
+            "are"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 26,
+          "text": "We aren’t from Australia <span class='gap'></span> from Canada.",
+          "opts": [
+            "we’re",
+            "he’s",
+            "they’re"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 27,
+          "text": "No, you <span class='gap'></span> in my class.",
+          "opts": [
+            "isn’t",
+            "aren’t",
+            "am not"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 28,
+          "text": "Your teacher’s nice – where <span class='gap'></span> he from?",
+          "opts": [
+            "are",
+            "is",
+            "am"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 29,
+          "text": "Hello, <span class='gap'></span> your name?",
+          "opts": [
+            "who’s",
+            "how’s",
+            "what’s"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 30,
+          "text": "Kumiko is Japanese, but she <span class='gap'></span> from Tokyo.",
+          "opts": [
+            "am not",
+            "aren’t",
+            "isn’t"
+          ],
+          "correct": "C"
+        }
+      ]
+    }
+  ]
+}
