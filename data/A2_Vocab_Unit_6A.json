@@ -1,0 +1,31 @@
+{
+  "level": "A2",
+  "topic": "Unit_6A",
+  "title": "Vocabulary Quiz — Unit 6A: Family",
+  "kicker": "Empower A2 · Unit 6A · Review",
+  "subtitle": "Family words, be born / be married, months, years and dates",
+  "seconds": 10,
+  "words": [
+    {"w": "aunt", "vi": "cô, dì, bác gái (chị/em gái của bố mẹ)", "def": "the sister of your mother or father", "sent": "My mother's sister Alice is my ___.", "sentA": "aunt", "coll": "my ___ Alice (my mum's sister)", "collA": "aunt"},
+    {"w": "uncle", "vi": "chú, bác, cậu (anh/em trai của bố mẹ)", "def": "the brother of your mother or father", "sent": "My father's brother Simone is my ___.", "sentA": "uncle", "coll": "my ___ Simone (my dad's brother)", "collA": "uncle"},
+    {"w": "cousin", "vi": "anh/chị/em họ", "def": "the child of your aunt or uncle", "sent": "My uncle's son Rick is my ___ — we're the same age.", "sentA": "cousin", "coll": "my ___ Rick (my uncle's son)", "collA": "cousin"},
+    {"w": "grandparents", "vi": "ông bà", "def": "the parents of your mother or father", "sent": "My parents' parents are my ___.", "sentA": "grandparents", "coll": "visit my ___ at the weekend", "collA": "grandparents"},
+    {"w": "grandmother", "vi": "bà (nội/ngoại)", "def": "the mother of your mother or father", "sent": "My father's mother is my ___. She was a doctor.", "sentA": "grandmother", "coll": "my ___ (my mum's mother)", "collA": "grandmother"},
+    {"w": "grandfather", "vi": "ông (nội/ngoại)", "def": "the father of your mother or father", "sent": "My mother's father is my ___. He was born in 1943.", "sentA": "grandfather", "coll": "my ___ (my dad's father)", "collA": "grandfather"},
+    {"w": "grandchildren", "vi": "các cháu (con của con mình)", "def": "the children of your son or daughter", "sent": "We've got two children and three ___.", "sentA": "grandchildren", "coll": "spend time with their ___", "collA": "grandchildren"},
+    {"w": "granddaughter", "vi": "cháu gái (con của con mình)", "def": "the daughter of your son or daughter", "sent": "My son's daughter Olivia is my ___.", "sentA": "granddaughter", "coll": "their ___ Olivia (their son's girl)", "collA": "granddaughter"},
+    {"w": "grandson", "vi": "cháu trai (con của con mình)", "def": "the son of your son or daughter", "sent": "My daughter's son Hugo is my ___.", "sentA": "grandson", "coll": "their ___ Hugo (their daughter's boy)", "collA": "grandson"},
+    {"w": "parents", "vi": "bố mẹ", "def": "your mother and father", "sent": "My mother and father are my ___. They live in Hanoi.", "sentA": "parents", "coll": "live with my ___", "collA": "parents"},
+    {"w": "family tree", "vi": "cây gia phả (sơ đồ gia đình)", "def": "a drawing that shows all the people in a family", "sent": "Draw your ___ and show it to a partner.", "sentA": "family tree", "coll": "draw a family ___", "collA": "tree"},
+    {"w": "be born", "vi": "được sinh ra", "def": "to start your life", "sent": "Greg's grandfather ___ in Italy in 1943.", "sentA": "was born", "coll": "Where were you ___? — In Hanoi.", "collA": "born"},
+    {"w": "be married", "vi": "đã kết hôn, là vợ chồng", "def": "to be husband and wife", "sent": "My grandparents ___ in 1968 — that's more than 50 years ago!", "sentA": "were married", "coll": "They were ___ in 1968.", "collA": "married"},
+    {"w": "retire", "vi": "nghỉ hưu", "def": "to stop working because you are old", "sent": "My grandmother was a doctor, but she ___ in 2010.", "sentA": "retired", "coll": "___ from work at 60", "collA": "retire"},
+    {"w": "only child", "vi": "con một (không có anh chị em)", "def": "a person who has no brothers or sisters", "sent": "I haven't got any brothers or sisters — I'm an ___.", "sentA": "only child", "coll": "an only ___ (no brothers or sisters)", "collA": "child"},
+    {"w": "January", "vi": "tháng Một", "def": "the first month of the year", "sent": "The year starts on the first of ___.", "sentA": "January", "coll": "on the first of ___ (New Year's Day)", "collA": "January"},
+    {"w": "February", "vi": "tháng Hai", "def": "the second month of the year, the shortest month", "sent": "My birthday is on the twenty-first of ___, the second month.", "sentA": "February", "coll": "the shortest month: ___", "collA": "February"},
+    {"w": "August", "vi": "tháng Tám", "def": "the eighth month of the year", "sent": "The month after July is ___.", "sentA": "August", "coll": "July, ___, September", "collA": "August"},
+    {"w": "nineteen forty-five", "vi": "năm 1945 (cách đọc năm)", "def": "how we say the year 1945", "sent": "Vietnam's Independence Day was in 1945 — we say ___.", "sentA": "nineteen forty-five", "coll": "1945 = nineteen forty-___", "collA": "five"},
+    {"w": "the sixteenth of July", "vi": "ngày 16 tháng 7 (cách đọc ngày)", "def": "how we say the date 16 July", "sent": "Greg's birthday is on 16 July — we say ___.", "sentA": "the sixteenth of July", "coll": "16 July = the ___ of July", "collA": "sixteenth"},
+    {"w": "two thousand and ten", "vi": "năm 2010 (cách đọc năm)", "def": "how we say the year 2010", "sent": "She retired in 2010 — we say ___.", "sentA": "two thousand and ten", "coll": "2010 = two ___ and ten", "collA": "thousand"}
+  ]
+}
