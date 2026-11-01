@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_7B",
+  "title": "Vocabulary Quiz — Unit 7B: Clothes and colours",
+  "kicker": "Empower A1 · Unit 7C · Review",
+  "subtitle": "Clothes, colours and fashion words from 7B",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "jacket",
+      "vi": "áo khoác ngắn (áo vest)",
+      "def": "a short coat you wear over a shirt",
+      "sent": "Tom Ford wears a white shirt and a dark grey ___.",
+      "sentA": "jacket",
+      "coll": "a ___ and tie for work",
+      "collA": "jacket"
+    },
+    {
+      "w": "coat",
+      "vi": "áo khoác dài (áo choàng)",
+      "def": "a long warm thing you wear outside in winter",
+      "sent": "It’s very cold today, so wear your long winter ___.",
+      "sentA": "coat",
+      "coll": "a warm winter ___",
+      "collA": "coat"
+    },
+    {
+      "w": "shirt",
+      "vi": "áo sơ mi",
+      "def": "a top with buttons and a collar",
+      "sent": "Johnnie usually wears jeans and a white ___ with buttons.",
+      "sentA": "shirt",
+      "coll": "a ___ with buttons",
+      "collA": "shirt"
+    },
+    {
+      "w": "skirt",
+      "vi": "chân váy",
+      "def": "a woman’s piece of clothing that hangs from the waist",
+      "sent": "Carolina Herrera usually wears a black ___ and a white blouse.",
+      "sentA": "skirt",
+      "coll": "a short ___",
+      "collA": "skirt"
+    },
+    {
+      "w": "trousers",
+      "vi": "quần dài",
+      "def": "clothes for your legs, with two parts, one for each leg",
+      "sent": "Ali usually wears a light blue shirt and dark grey ___.",
+      "sentA": "trousers",
+      "coll": "a pair of black ___",
+      "collA": "trousers"
+    },
+    {
+      "w": "T-shirt",
+      "vi": "áo phông, áo thun",
+      "def": "a simple top with short arms and no buttons",
+      "sent": "Greg never wears his old ___ — it’s too small.",
+      "sentA": "T-shirt",
+      "coll": "a cotton ___ with short sleeves",
+      "collA": "T-shirt"
+    },
+    {
+      "w": "dress",
+      "vi": "váy liền",
+      "def": "a piece of clothing for a woman, top and skirt in one",
+      "sent": "Michelle usually wears a red ___.",
+      "sentA": "dress",
+      "coll": "a long party ___",
+      "collA": "dress"
+    },
+    {
+      "w": "blouse",
+      "vi": "áo sơ mi nữ",
+      "def": "a shirt for women",
+      "sent": "My boss always wears a ___ and trousers.",
+      "sentA": "blouse",
+      "coll": "a silk ___ for women",
+      "collA": "blouse"
+    },
+    {
+      "w": "jeans",
+      "vi": "quần bò, quần jean",
+      "def": "blue trousers made of strong cotton",
+      "sent": "Sara doesn’t like those ___, so they throw them away.",
+      "sentA": "jeans",
+      "coll": "a pair of blue ___",
+      "collA": "jeans"
+    },
+    {
+      "w": "shoes",
+      "vi": "giày",
+      "def": "things you wear on your feet",
+      "sent": "Do you wear ___ at home, or do you take them off?",
+      "sentA": "shoes",
+      "coll": "a pair of black ___",
+      "collA": "shoes"
+    },
+    {
+      "w": "hat",
+      "vi": "cái mũ",
+      "def": "a thing you wear on your head",
+      "sent": "Shinji usually wears a dark grey ___ on his head.",
+      "sentA": "hat",
+      "coll": "a sun ___",
+      "collA": "hat"
+    },
+    {
+      "w": "glasses",
+      "vi": "kính (đeo mắt)",
+      "def": "two pieces of glass you wear in front of your eyes to see better",
+      "sent": "I can’t read this. Where are my ___?",
+      "sentA": "glasses",
+      "coll": "wear ___ to read",
+      "collA": "glasses"
+    },
+    {
+      "w": "dark",
+      "vi": "đậm, tối (màu)",
+      "def": "nearer to black, not light",
+      "sent": "Tom Ford’s jacket is nearly black — it’s ___ grey.",
+      "sentA": "dark",
+      "coll": "___ blue, nearly black",
+      "collA": "dark"
+    },
+    {
+      "w": "light",
+      "vi": "nhạt, sáng (màu)",
+      "def": "nearer to white, not dark",
+      "sent": "This blue is nearly white — it’s ___ blue.",
+      "sentA": "light",
+      "coll": "___ green, nearly white",
+      "collA": "light"
+    },
+    {
+      "w": "grey",
+      "vi": "màu xám",
+      "def": "the colour between black and white",
+      "sent": "The sky is ___ — it’s going to rain.",
+      "sentA": "grey",
+      "coll": "a ___ cloud",
+      "collA": "grey"
+    },
+    {
+      "w": "brown",
+      "vi": "màu nâu",
+      "def": "the colour of chocolate or coffee",
+      "sent": "Sunyin usually wears a white blouse and a ___ skirt.",
+      "sentA": "brown",
+      "coll": "___ like chocolate",
+      "collA": "brown"
+    },
+    {
+      "w": "yellow",
+      "vi": "màu vàng",
+      "def": "the colour of a banana or the sun",
+      "sent": "Carmen usually wears a ___ T-shirt and dark blue trousers.",
+      "sentA": "yellow",
+      "coll": "___ like a banana",
+      "collA": "yellow"
+    },
+    {
+      "w": "colourful",
+      "vi": "sặc sỡ, nhiều màu",
+      "def": "with a lot of different colours",
+      "sent": "Fashion designers make ___ clothes, but they don’t usually wear them.",
+      "sentA": "colourful",
+      "coll": "___ clothes with red, blue and yellow",
+      "collA": "colourful"
+    },
+    {
+      "w": "fashion designer",
+      "vi": "nhà thiết kế thời trang",
+      "def": "a person whose job is to make new clothes",
+      "sent": "Tom Ford is a famous ___. He makes beautiful clothes.",
+      "sentA": "fashion designer",
+      "coll": "a famous ___",
+      "collA": "fashion designer"
+    },
+    {
+      "w": "throw away",
+      "vi": "vứt đi",
+      "def": "to put something in the bin because you don’t want it",
+      "sent": "There are a lot of old clothes. We need to ___ some.",
+      "sentA": "throw away",
+      "coll": "___ old clothes",
+      "collA": "throw away"
+    }
+  ]
+}

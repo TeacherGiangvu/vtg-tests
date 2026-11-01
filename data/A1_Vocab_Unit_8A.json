@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_8A",
+  "title": "Vocabulary Quiz — Unit 8A: Past events and time",
+  "kicker": "Empower A1 · Unit 8B · Review",
+  "subtitle": "Events, past time expressions and words from 8A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "party",
+      "vi": "bữa tiệc",
+      "def": "a time when people meet to eat, drink, dance and have fun",
+      "sent": "Morgan was at a ___ at her home last weekend — there was music and dancing.",
+      "sentA": "party",
+      "coll": "a birthday ___",
+      "collA": "party"
+    },
+    {
+      "w": "sports game",
+      "vi": "trận đấu thể thao",
+      "def": "a time when two teams play, for example football",
+      "sent": "Antonio was at a ___ in Bristol — it was the Final!",
+      "sentA": "sports game",
+      "coll": "watch a ___ with two teams",
+      "collA": "sports game"
+    },
+    {
+      "w": "concert",
+      "vi": "buổi hoà nhạc, buổi biểu diễn ca nhạc",
+      "def": "a time when people play music for a lot of people",
+      "sent": "About 1,000 people were at our ___ in Milan.",
+      "sentA": "concert",
+      "coll": "a rock ___",
+      "collA": "concert"
+    },
+    {
+      "w": "meeting",
+      "vi": "cuộc họp",
+      "def": "a time when people come together to talk about work",
+      "sent": "Cara was at a ___ in Dublin about newspaper photography.",
+      "sentA": "meeting",
+      "coll": "a work ___ at 9:00",
+      "collA": "meeting"
+    },
+    {
+      "w": "event",
+      "vi": "sự kiện",
+      "def": "something important that happens, like a party or a concert",
+      "sent": "A party, a game, a concert and a meeting are all ___.",
+      "sentA": "events",
+      "coll": "a big ___ in the city",
+      "collA": "event"
+    },
+    {
+      "w": "photographer",
+      "vi": "nhiếp ảnh gia",
+      "def": "a person who takes photos as a job",
+      "sent": "Cara is a ___. She takes photos for newspapers.",
+      "sentA": "photographer",
+      "coll": "a newspaper ___",
+      "collA": "photographer"
+    },
+    {
+      "w": "team",
+      "vi": "đội (thể thao)",
+      "def": "a group of people who play a sport together",
+      "sent": "Antonio is the doctor for the football ___.",
+      "sentA": "team",
+      "coll": "travel with the ___",
+      "collA": "team"
+    },
+    {
+      "w": "band",
+      "vi": "ban nhạc",
+      "def": "a group of people who play music together",
+      "sent": "Ava sings in a ___ with two guitar players.",
+      "sentA": "band",
+      "coll": "a rock ___",
+      "collA": "band"
+    },
+    {
+      "w": "on tour",
+      "vi": "đi lưu diễn",
+      "def": "travelling to different cities to play music",
+      "sent": "Last week Ava was ___ with her band — three cities in five days.",
+      "sentA": "on tour",
+      "coll": "a band ___ in Europe",
+      "collA": "on tour"
+    },
+    {
+      "w": "exciting",
+      "vi": "hấp dẫn, sôi động, gây phấn khích",
+      "def": "making you feel very happy and full of energy",
+      "sent": "How was the game? — It was really ___!",
+      "sentA": "exciting",
+      "coll": "an ___ football game",
+      "collA": "exciting"
+    },
+    {
+      "w": "interesting",
+      "vi": "thú vị (đáng chú ý, muốn biết thêm)",
+      "def": "making you want to know more",
+      "sent": "Was the meeting good? — Yes, it was really ___.",
+      "sentA": "interesting",
+      "coll": "an ___ book",
+      "collA": "interesting"
+    },
+    {
+      "w": "fun",
+      "vi": "vui",
+      "def": "something you enjoy doing",
+      "sent": "Was the party good? — Yes, it was a lot of ___.",
+      "sentA": "fun",
+      "coll": "a lot of ___",
+      "collA": "fun"
+    },
+    {
+      "w": "away",
+      "vi": "đi vắng, đi xa",
+      "def": "not at home, in another place",
+      "sent": "Were you at home at the weekend? — No, I was ___ in Milan.",
+      "sentA": "away",
+      "coll": "be ___ for the weekend",
+      "collA": "away"
+    },
+    {
+      "w": "holiday",
+      "vi": "ngày nghỉ, kỳ nghỉ",
+      "def": "a day when you don’t go to work",
+      "sent": "You weren’t at work yesterday. — No, it was a ___ for me.",
+      "sentA": "holiday",
+      "coll": "a public ___",
+      "collA": "holiday"
+    },
+    {
+      "w": "yesterday",
+      "vi": "hôm qua",
+      "def": "the day before today",
+      "sent": "Today I’m in London, but ___ I was in Dublin.",
+      "sentA": "yesterday",
+      "coll": "___ afternoon",
+      "collA": "yesterday"
+    },
+    {
+      "w": "ago",
+      "vi": "cách đây, trước (đặt sau khoảng thời gian)",
+      "def": "before now; we use it after a time, like two days ___",
+      "sent": "I was in Madrid two months ___.",
+      "sentA": "ago",
+      "coll": "three days ___",
+      "collA": "ago"
+    },
+    {
+      "w": "last night",
+      "vi": "tối qua, đêm qua",
+      "def": "the evening or night before today",
+      "sent": "Where were you ___? — I was at the cinema at 9 p.m.",
+      "sentA": "last night",
+      "coll": "a party ___ at 10 p.m.",
+      "collA": "last night"
+    },
+    {
+      "w": "last weekend",
+      "vi": "cuối tuần trước",
+      "def": "the Saturday and Sunday before this week",
+      "sent": "Morgan, Marcella and Henri were all at parties ___.",
+      "sentA": "last weekend",
+      "coll": "on Saturday ___",
+      "collA": "last weekend"
+    },
+    {
+      "w": "this morning",
+      "vi": "sáng nay",
+      "def": "today, before 12 o’clock",
+      "sent": "I was at work ___ and now it’s 3 p.m.",
+      "sentA": "this morning",
+      "coll": "early ___",
+      "collA": "this morning"
+    },
+    {
+      "w": "last year",
+      "vi": "năm ngoái",
+      "def": "the year before this year",
+      "sent": "We were in Bristol ___, in 2025.",
+      "sentA": "last year",
+      "coll": "in summer ___",
+      "collA": "last year"
+    }
+  ]
+}

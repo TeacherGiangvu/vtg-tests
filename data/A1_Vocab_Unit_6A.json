@@ -1,0 +1,30 @@
+{
+  "level": "A1",
+  "topic": "Unit_6A",
+  "title": "Vocabulary Quiz — Unit 6A: Jobs",
+  "kicker": "Empower A1 · Unit 6B · Review",
+  "subtitle": "Jobs and work words from 6A",
+  "seconds": 10,
+  "words": [
+    {"w": "football player", "vi": "cầu thủ bóng đá", "def": "a person who plays football in a team for money", "sent": "Felipe is a ___. He plays in a team, and the weekend is the most important time.", "sentA": "football player", "coll": "a famous ___ in Barcelona", "collA": "football player"},
+    {"w": "student", "vi": "sinh viên, học sinh", "def": "a person who studies at a school or university", "sent": "Fatima is a ___. She studies business at university.", "sentA": "student", "coll": "a university ___", "collA": "student"},
+    {"w": "receptionist", "vi": "lễ tân", "def": "a person at the front desk of a hotel or office who helps visitors", "sent": "The ___ at the hotel gives you the key to your room.", "sentA": "receptionist", "coll": "a hotel ___", "collA": "receptionist"},
+    {"w": "waiter", "vi": "bồi bàn nam, nam phục vụ", "def": "a man who brings food and drinks to tables in a restaurant", "sent": "My brother is a ___. He works in a restaurant and brings the food.", "sentA": "waiter", "coll": "Excuse me, ___! Can I have the menu?", "collA": "waiter"},
+    {"w": "waitress", "vi": "nữ phục vụ bàn", "def": "a woman who brings food and drinks to tables in a restaurant", "sent": "My sister is a ___. She works in a café and brings people their coffee.", "sentA": "waitress", "coll": "she’s a ___ in a café", "collA": "waitress"},
+    {"w": "taxi driver", "vi": "tài xế taxi", "def": "a person who drives people in a car and they pay", "sent": "Diana is a ___. She sits all day, but she meets interesting people.", "sentA": "taxi driver", "coll": "a ___ in a yellow car", "collA": "taxi driver"},
+    {"w": "factory worker", "vi": "công nhân nhà máy", "def": "a person who makes things like cars or phones in a big building", "sent": "He’s a ___. He makes cars in a big building.", "sentA": "factory worker", "coll": "a ___ in a car factory", "collA": "factory worker"},
+    {"w": "office worker", "vi": "nhân viên văn phòng", "def": "a person who works at a desk with a computer and papers", "sent": "She’s an ___. She sits at a desk with a computer from 9 to 5.", "sentA": "office worker", "coll": "an ___ at a desk", "collA": "office worker"},
+    {"w": "shop assistant", "vi": "nhân viên bán hàng", "def": "a person who helps people buy things in a shop", "sent": "Shona is a ___. She works in a shop and meets a lot of different people.", "sentA": "shop assistant", "coll": "a ___ in a clothes shop", "collA": "shop assistant"},
+    {"w": "bank worker", "vi": "nhân viên ngân hàng", "def": "a person who works in a bank with money", "sent": "Sam is a ___. He works with money all day.", "sentA": "bank worker", "coll": "a ___ with a lot of money", "collA": "bank worker"},
+    {"w": "businessman", "vi": "doanh nhân (nam)", "def": "a man who works for a company and buys or sells things", "sent": "He’s a ___. He has meetings with other companies every day.", "sentA": "businessman", "coll": "a rich ___ in a suit", "collA": "businessman"},
+    {"w": "businesswoman", "vi": "nữ doanh nhân", "def": "a woman who works for a company and buys or sells things", "sent": "My aunt is a ___. She has her own company.", "sentA": "businesswoman", "coll": "a ___ with her own company", "collA": "businesswoman"},
+    {"w": "chef", "vi": "đầu bếp", "def": "a person who cooks food in a restaurant", "sent": "My friend Kumiko is a ___. She cooks in a big restaurant.", "sentA": "chef", "coll": "the ___ in the kitchen", "collA": "chef"},
+    {"w": "IT worker", "vi": "nhân viên công nghệ thông tin", "def": "a person who works with computers and helps when they don’t work", "sent": "My computer doesn’t work. I need an ___.", "sentA": "IT worker", "coll": "an ___ who fixes computers", "collA": "IT worker"},
+    {"w": "teacher", "vi": "giáo viên", "def": "a person who helps children or students learn", "sent": "Fred is a ___ at a school in Samoa. He teaches English.", "sentA": "teacher", "coll": "an English ___", "collA": "teacher"},
+    {"w": "doctor", "vi": "bác sĩ", "def": "a person who helps sick people get well", "sent": "Luiza is a ___. She works in a small hospital in Ghana.", "sentA": "doctor", "coll": "go to the ___ when you are sick", "collA": "doctor"},
+    {"w": "job", "vi": "nghề, công việc (danh từ)", "def": "the work you do to get money, like doctor or teacher", "sent": "Fred loves his work. It’s a really good ___.", "sentA": "job", "coll": "a good ___", "collA": "job"},
+    {"w": "meet", "vi": "gặp, gặp gỡ", "def": "to see and talk to people", "sent": "I work in a shop and ___ a lot of different people.", "sentA": "meet", "coll": "___ interesting people", "collA": "meet"},
+    {"w": "sit", "vi": "ngồi", "def": "to be on a chair, not standing", "sent": "Diana drives a taxi. She ___ all day in her car.", "sentA": "sits", "coll": "___ at a desk all day", "collA": "sit"},
+    {"w": "team", "vi": "đội, nhóm", "def": "a group of people who play or work together", "sent": "Felipe plays in a football ___.", "sentA": "team", "coll": "play in a ___", "collA": "team"}
+  ]
+}
