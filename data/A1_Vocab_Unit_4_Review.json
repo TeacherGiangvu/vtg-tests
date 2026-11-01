@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_4_Review",
+  "title": "Vocabulary Quiz — Unit 4 review",
+  "kicker": "Empower A1 · Unit 5A · Review",
+  "subtitle": "Common verbs, family, numbers and photo phrases (Unit 4)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "live",
+      "vi": "sống, ở",
+      "def": "to have your home in a place",
+      "sent": "My sister ___ in Toronto.",
+      "sentA": "lives",
+      "coll": "___ in a city",
+      "collA": "live"
+    },
+    {
+      "w": "speak",
+      "vi": "nói (ngôn ngữ)",
+      "def": "to use a language",
+      "sent": "He ___ Spanish and English.",
+      "sentA": "speaks",
+      "coll": "___ English",
+      "collA": "speak"
+    },
+    {
+      "w": "teach",
+      "vi": "dạy",
+      "def": "to help people learn",
+      "sent": "She ___ young children.",
+      "sentA": "teaches",
+      "coll": "___ maths",
+      "collA": "teach"
+    },
+    {
+      "w": "meet",
+      "vi": "gặp",
+      "def": "to see friends and talk",
+      "sent": "I ___ my friends for coffee.",
+      "sentA": "meet",
+      "coll": "___ friends",
+      "collA": "meet"
+    },
+    {
+      "w": "study",
+      "vi": "học",
+      "def": "to learn at school or university",
+      "sent": "My brother ___ at university.",
+      "sentA": "studies",
+      "coll": "___ English",
+      "collA": "study"
+    },
+    {
+      "w": "mother",
+      "vi": "mẹ",
+      "def": "your female parent",
+      "sent": "My father’s wife is my ___.",
+      "sentA": "mother",
+      "coll": "my ___ and father",
+      "collA": "mother"
+    },
+    {
+      "w": "daughter",
+      "vi": "con gái",
+      "def": "a girl child",
+      "sent": "Kylie is a girl. Jackie is her mother. Kylie is Jackie’s ___.",
+      "sentA": "daughter",
+      "coll": "their ___",
+      "collA": "daughter"
+    },
+    {
+      "w": "husband",
+      "vi": "chồng",
+      "def": "the man a woman is married to",
+      "sent": "Jackie is married to Tom. Tom is her ___.",
+      "sentA": "husband",
+      "coll": "her ___",
+      "collA": "husband"
+    },
+    {
+      "w": "wife",
+      "vi": "vợ",
+      "def": "the woman a man is married to",
+      "sent": "Tom is married to Jackie. Jackie is his ___.",
+      "sentA": "wife",
+      "coll": "his ___",
+      "collA": "wife"
+    },
+    {
+      "w": "parents",
+      "vi": "bố mẹ",
+      "def": "your mother and father",
+      "sent": "My mother and father are my ___.",
+      "sentA": "parents",
+      "coll": "my ___",
+      "collA": "parents"
+    },
+    {
+      "w": "children",
+      "vi": "con cái, trẻ em",
+      "def": "more than one child",
+      "sent": "They have three ___.",
+      "sentA": "children",
+      "coll": "young ___",
+      "collA": "children"
+    },
+    {
+      "w": "baby",
+      "vi": "em bé",
+      "def": "a very young child",
+      "sent": "The ___ is three months old.",
+      "sentA": "baby",
+      "coll": "a new ___",
+      "collA": "baby"
+    },
+    {
+      "w": "people",
+      "vi": "mọi người",
+      "def": "men, women and children",
+      "sent": "There are a lot of ___ in the photo.",
+      "sentA": "people",
+      "coll": "a lot of ___",
+      "collA": "people"
+    },
+    {
+      "w": "photo",
+      "vi": "bức ảnh",
+      "def": "a picture you take with a camera or phone",
+      "sent": "Do you have ___ of your family?",
+      "sentA": "photos",
+      "coll": "take a ___",
+      "collA": "photo"
+    },
+    {
+      "w": "picture",
+      "vi": "bức tranh, bức ảnh",
+      "def": "a photo or a painting",
+      "sent": "Nice ___! Who’s this?",
+      "sentA": "picture",
+      "coll": "a nice ___",
+      "collA": "picture"
+    },
+    {
+      "w": "Who’s this?",
+      "vi": "đây là ai?",
+      "def": "a question about a person in a photo",
+      "sent": "___ — This is my sister Jackie.",
+      "sentA": "Who’s this?",
+      "coll": "___ — It’s my brother.",
+      "collA": "Who’s this?"
+    },
+    {
+      "w": "Nice picture!",
+      "vi": "ảnh đẹp quá!",
+      "def": "what you say when you like a photo",
+      "sent": "This is my family. — ___",
+      "sentA": "Nice picture!",
+      "coll": "Oh, ___",
+      "collA": "Nice picture!"
+    },
+    {
+      "w": "forty",
+      "vi": "bốn mươi (40)",
+      "def": "the number 40",
+      "sent": "Twenty + twenty = ___.",
+      "sentA": "forty",
+      "coll": "___ years old",
+      "collA": "forty"
+    },
+    {
+      "w": "sixty-three",
+      "vi": "sáu mươi ba (63)",
+      "def": "the number 63",
+      "sent": "Sixty + three = ___.",
+      "sentA": "sixty-three",
+      "coll": "___ (63)",
+      "collA": "sixty-three"
+    },
+    {
+      "w": "ninety-nine",
+      "vi": "chín mươi chín (99)",
+      "def": "the number 99",
+      "sent": "A hundred − one = ___.",
+      "sentA": "ninety-nine",
+      "coll": "___ (99)",
+      "collA": "ninety-nine"
+    }
+  ]
+}

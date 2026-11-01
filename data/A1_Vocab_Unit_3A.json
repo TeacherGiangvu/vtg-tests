@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_3A",
+  "title": "Vocabulary Quiz — Unit 3A: Food and drinks",
+  "kicker": "Empower A1 · Unit 3B · Review",
+  "subtitle": "Food 1, drinks and I eat / I don’t eat from 3A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "fruit",
+      "vi": "trái cây, hoa quả",
+      "def": "apples, bananas and oranges",
+      "sent": "I eat a lot of ___ — apples and bananas.",
+      "sentA": "fruit",
+      "coll": "fresh ___",
+      "collA": "fruit"
+    },
+    {
+      "w": "rice",
+      "vi": "cơm, gạo",
+      "def": "small white grains we cook and eat, very common in Asia",
+      "sent": "In Vietnam, we eat ___ every day.",
+      "sentA": "rice",
+      "coll": "a bowl of ___",
+      "collA": "rice"
+    },
+    {
+      "w": "meat",
+      "vi": "thịt",
+      "def": "food from animals, like chicken or beef",
+      "sent": "Rajit doesn’t like ___ — he’s a vegetarian.",
+      "sentA": "meat",
+      "coll": "red ___",
+      "collA": "meat"
+    },
+    {
+      "w": "bread",
+      "vi": "bánh mì",
+      "def": "food made from flour; you make sandwiches with it",
+      "sent": "I have ___ and butter for breakfast.",
+      "sentA": "bread",
+      "coll": "a piece of ___",
+      "collA": "bread"
+    },
+    {
+      "w": "vegetables",
+      "vi": "rau củ",
+      "def": "food from plants, like carrots and potatoes",
+      "sent": "They eat a lot of fruit and ___ every day.",
+      "sentA": "vegetables",
+      "coll": "green ___",
+      "collA": "vegetables"
+    },
+    {
+      "w": "eggs",
+      "vi": "trứng",
+      "def": "food from chickens, white or brown outside",
+      "sent": "I have two ___ for breakfast.",
+      "sentA": "eggs",
+      "coll": "boiled ___",
+      "collA": "eggs"
+    },
+    {
+      "w": "fish",
+      "vi": "cá",
+      "def": "an animal that lives in water; we eat it",
+      "sent": "They don’t eat bread or ___.",
+      "sentA": "fish",
+      "coll": "___ and chips",
+      "collA": "fish"
+    },
+    {
+      "w": "water",
+      "vi": "nước",
+      "def": "a clear drink from the tap or a bottle",
+      "sent": "I drink a lot of ___ — two litres a day.",
+      "sentA": "water",
+      "coll": "a glass of ___",
+      "collA": "water"
+    },
+    {
+      "w": "milk",
+      "vi": "sữa",
+      "def": "a white drink from cows",
+      "sent": "Children drink ___ every morning.",
+      "sentA": "milk",
+      "coll": "a glass of ___",
+      "collA": "milk"
+    },
+    {
+      "w": "tea",
+      "vi": "trà",
+      "def": "a hot drink made with leaves",
+      "sent": "I drink green ___ after lunch.",
+      "sentA": "tea",
+      "coll": "a cup of ___",
+      "collA": "tea"
+    },
+    {
+      "w": "coffee",
+      "vi": "cà phê",
+      "def": "a hot brown or black drink that wakes you up",
+      "sent": "I drink ___ every morning at 7:00.",
+      "sentA": "coffee",
+      "coll": "a cup of ___",
+      "collA": "coffee"
+    },
+    {
+      "w": "fruit juice",
+      "vi": "nước ép trái cây",
+      "def": "a drink made from oranges or apples",
+      "sent": "I have a glass of ___ with my breakfast.",
+      "sentA": "fruit juice",
+      "coll": "a glass of ___",
+      "collA": "fruit juice"
+    },
+    {
+      "w": "cola",
+      "vi": "nước ngọt cola",
+      "def": "a sweet brown drink with bubbles",
+      "sent": "Children like ___, but it isn’t good for them.",
+      "sentA": "cola",
+      "coll": "a can of ___",
+      "collA": "cola"
+    },
+    {
+      "w": "vegetarian",
+      "vi": "người ăn chay",
+      "def": "a person who doesn’t eat meat or fish",
+      "sent": "Rajit doesn’t eat meat. He’s a ___.",
+      "sentA": "vegetarian",
+      "coll": "a ___ restaurant",
+      "collA": "vegetarian"
+    },
+    {
+      "w": "eat",
+      "vi": "ăn",
+      "def": "to put food in your mouth",
+      "sent": "I’m hungry. Let’s ___ a sandwich.",
+      "sentA": "eat",
+      "coll": "___ breakfast",
+      "collA": "eat"
+    },
+    {
+      "w": "drink",
+      "vi": "uống",
+      "def": "to take water, milk or tea into your mouth",
+      "sent": "I’m thirsty. I want to ___ some water.",
+      "sentA": "drink",
+      "coll": "___ a lot of water",
+      "collA": "drink"
+    },
+    {
+      "w": "like",
+      "vi": "thích",
+      "def": "to think something is nice",
+      "sent": "Do you ___ my new shoes? — Yes, they’re nice.",
+      "sentA": "like",
+      "coll": "I really ___ bread",
+      "collA": "like"
+    },
+    {
+      "w": "every day",
+      "vi": "hằng ngày, mỗi ngày",
+      "def": "on all days, Monday to Sunday",
+      "sent": "Do you eat vegetables ___? — Yes.",
+      "sentA": "every day",
+      "coll": "drink milk ___",
+      "collA": "every day"
+    },
+    {
+      "w": "I don’t",
+      "vi": "tôi không (trả lời phủ định)",
+      "def": "a short no answer to Do you …?",
+      "sent": "Do you eat meat? — No, ___.",
+      "sentA": "I don’t",
+      "coll": "No, ___ like fish.",
+      "collA": "I don’t"
+    },
+    {
+      "w": "food",
+      "vi": "thức ăn, đồ ăn",
+      "def": "things you eat",
+      "sent": "Italian ___ is great — I love pizza.",
+      "sentA": "food",
+      "coll": "Vietnamese ___",
+      "collA": "food"
+    }
+  ]
+}

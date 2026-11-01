@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_9_Review",
+  "title": "Vocabulary Quiz — Unit 9 review",
+  "kicker": "Empower A1 · Unit 10A · Review",
+  "subtitle": "Transport, seasons and weather (Unit 9)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "bike",
+      "vi": "xe đạp",
+      "def": "a thing with two wheels; you push it with your feet",
+      "sent": "Julie goes to school on her ___ every morning.",
+      "sentA": "bike",
+      "coll": "ride a ___",
+      "collA": "bike"
+    },
+    {
+      "w": "bus",
+      "vi": "xe buýt",
+      "def": "a big vehicle that carries a lot of people on the road",
+      "sent": "We waited at the stop for the ___ for ten minutes.",
+      "sentA": "bus",
+      "coll": "take a ___ to work",
+      "collA": "bus"
+    },
+    {
+      "w": "train",
+      "vi": "tàu hoả",
+      "def": "a long vehicle that goes on a railway",
+      "sent": "The ___ to London leaves from Platform 3.",
+      "sentA": "train",
+      "coll": "get on the ___ at the station",
+      "collA": "train"
+    },
+    {
+      "w": "plane",
+      "vi": "máy bay",
+      "def": "a vehicle that flies in the sky",
+      "sent": "The ___ flew from Hanoi to Tokyo in five hours.",
+      "sentA": "plane",
+      "coll": "get on a ___ at the airport",
+      "collA": "plane"
+    },
+    {
+      "w": "ship",
+      "vi": "tàu thuỷ, tàu lớn",
+      "def": "a very big boat",
+      "sent": "A big ___ with a thousand people sailed across the sea.",
+      "sentA": "ship",
+      "coll": "a cruise ___ on the sea",
+      "collA": "ship"
+    },
+    {
+      "w": "taxi",
+      "vi": "xe taxi",
+      "def": "a car with a driver you pay to take you somewhere",
+      "sent": "It was late, so we took a ___ home.",
+      "sentA": "taxi",
+      "coll": "get a ___ (pay the driver)",
+      "collA": "taxi"
+    },
+    {
+      "w": "underground",
+      "vi": "tàu điện ngầm",
+      "def": "trains that go under a city",
+      "sent": "The ___ in London is very old and deep.",
+      "sentA": "underground",
+      "coll": "the London ___ (trains under the city)",
+      "collA": "underground"
+    },
+    {
+      "w": "airport",
+      "vi": "sân bay",
+      "def": "a place where planes take off and land",
+      "sent": "We arrived at the ___ two hours before the flight.",
+      "sentA": "airport",
+      "coll": "fly from the ___",
+      "collA": "airport"
+    },
+    {
+      "w": "ticket",
+      "vi": "vé",
+      "def": "a paper you need to travel on a train or plane",
+      "sent": "I bought a ___ for the 9 o’clock train.",
+      "sentA": "ticket",
+      "coll": "a return ___",
+      "collA": "ticket"
+    },
+    {
+      "w": "boat",
+      "vi": "thuyền, tàu nhỏ",
+      "def": "a small vehicle that goes on water",
+      "sent": "We crossed the river in a small ___.",
+      "sentA": "boat",
+      "coll": "a small fishing ___",
+      "collA": "boat"
+    },
+    {
+      "w": "spring",
+      "vi": "mùa xuân",
+      "def": "the season after winter, when flowers start to grow",
+      "sent": "Flowers come out in ___, and the weather gets warmer.",
+      "sentA": "spring",
+      "coll": "flowers in ___",
+      "collA": "spring"
+    },
+    {
+      "w": "summer",
+      "vi": "mùa hè",
+      "def": "the hottest season of the year",
+      "sent": "We go to the beach in ___ because it is hot.",
+      "sentA": "summer",
+      "coll": "hot ___ holidays",
+      "collA": "summer"
+    },
+    {
+      "w": "autumn",
+      "vi": "mùa thu",
+      "def": "the season after summer, when leaves fall",
+      "sent": "In ___, the leaves on the trees turn red and yellow.",
+      "sentA": "autumn",
+      "coll": "red ___ leaves",
+      "collA": "autumn"
+    },
+    {
+      "w": "winter",
+      "vi": "mùa đông",
+      "def": "the coldest season of the year",
+      "sent": "It is very cold in ___ and sometimes it snows.",
+      "sentA": "winter",
+      "coll": "cold ___ nights",
+      "collA": "winter"
+    },
+    {
+      "w": "sunny",
+      "vi": "có nắng",
+      "def": "with a lot of sun",
+      "sent": "We went to the beach because it was ___ and hot.",
+      "sentA": "sunny",
+      "coll": "a ___ day at the beach",
+      "collA": "sunny"
+    },
+    {
+      "w": "cloudy",
+      "vi": "nhiều mây",
+      "def": "with a lot of clouds in the sky",
+      "sent": "It’s grey and ___ today. I can’t see the sun.",
+      "sentA": "cloudy",
+      "coll": "a grey, ___ sky",
+      "collA": "cloudy"
+    },
+    {
+      "w": "windy",
+      "vi": "có gió",
+      "def": "with a lot of wind",
+      "sent": "It was very ___, so my hat flew away.",
+      "sentA": "windy",
+      "coll": "a ___ day — hold your hat!",
+      "collA": "windy"
+    },
+    {
+      "w": "rainy",
+      "vi": "có mưa",
+      "def": "with a lot of rain",
+      "sent": "Take an umbrella. It’s a ___ day.",
+      "sentA": "rainy",
+      "coll": "the ___ season",
+      "collA": "rainy"
+    },
+    {
+      "w": "snowy",
+      "vi": "có tuyết",
+      "def": "with a lot of snow",
+      "sent": "It was cold and ___, so we made a snowman.",
+      "sentA": "snowy",
+      "coll": "a ___ mountain",
+      "collA": "snowy"
+    },
+    {
+      "w": "warm",
+      "vi": "ấm",
+      "def": "a little hot; nice, not cold",
+      "sent": "It isn’t hot or cold. It’s a nice ___ day.",
+      "sentA": "warm",
+      "coll": "a ___ jacket",
+      "collA": "warm"
+    }
+  ]
+}

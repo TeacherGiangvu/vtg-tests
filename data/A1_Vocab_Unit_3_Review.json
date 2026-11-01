@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_3_Review",
+  "title": "Vocabulary Quiz — Unit 3 review",
+  "kicker": "Empower A1 · Unit 4A · Review",
+  "subtitle": "Food, drinks, times and café phrases (Unit 3)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "rice",
+      "vi": "cơm, gạo",
+      "def": "small white grains we cook and eat",
+      "sent": "In Vietnam we eat ___ every day.",
+      "sentA": "rice",
+      "coll": "a bowl of ___",
+      "collA": "rice"
+    },
+    {
+      "w": "vegetables",
+      "vi": "rau củ",
+      "def": "food from plants, like carrots",
+      "sent": "They eat a lot of fruit and ___.",
+      "sentA": "vegetables",
+      "coll": "green ___",
+      "collA": "vegetables"
+    },
+    {
+      "w": "milk",
+      "vi": "sữa",
+      "def": "a white drink from cows",
+      "sent": "Children drink ___ every morning.",
+      "sentA": "milk",
+      "coll": "a glass of ___",
+      "collA": "milk"
+    },
+    {
+      "w": "fruit juice",
+      "vi": "nước ép trái cây",
+      "def": "a drink made from oranges or apples",
+      "sent": "I have a glass of ___ with breakfast.",
+      "sentA": "fruit juice",
+      "coll": "fresh ___",
+      "collA": "fruit juice"
+    },
+    {
+      "w": "cheese",
+      "vi": "phô mai",
+      "def": "yellow or white food made from milk",
+      "sent": "I sometimes have bread and ___.",
+      "sentA": "cheese",
+      "coll": "a ___ sandwich",
+      "collA": "cheese"
+    },
+    {
+      "w": "sandwich",
+      "vi": "bánh mì kẹp",
+      "def": "two pieces of bread with food inside",
+      "sent": "I have a ___ for lunch.",
+      "sentA": "sandwich",
+      "coll": "an egg ___",
+      "collA": "sandwich"
+    },
+    {
+      "w": "potato",
+      "vi": "khoai tây",
+      "def": "a vegetable from the ground; chips are made from it",
+      "sent": "I have meat and a ___ for dinner.",
+      "sentA": "potato",
+      "coll": "a baked ___",
+      "collA": "potato"
+    },
+    {
+      "w": "cake",
+      "vi": "bánh ngọt",
+      "def": "a sweet food for birthdays",
+      "sent": "Can I have a piece of chocolate ___?",
+      "sentA": "cake",
+      "coll": "banana ___",
+      "collA": "cake"
+    },
+    {
+      "w": "breakfast",
+      "vi": "bữa sáng",
+      "def": "the first meal of the day",
+      "sent": "I have ___ at 7:30.",
+      "sentA": "breakfast",
+      "coll": "have ___ at seven",
+      "collA": "breakfast"
+    },
+    {
+      "w": "dinner",
+      "vi": "bữa tối",
+      "def": "the meal in the evening",
+      "sent": "We have ___ at 8 p.m.",
+      "sentA": "dinner",
+      "coll": "have ___ late",
+      "collA": "dinner"
+    },
+    {
+      "w": "always",
+      "vi": "luôn luôn",
+      "def": "every time",
+      "sent": "I ___ have coffee in the morning.",
+      "sentA": "always",
+      "coll": "___ on time",
+      "collA": "always"
+    },
+    {
+      "w": "never",
+      "vi": "không bao giờ",
+      "def": "not at any time",
+      "sent": "I ___ eat meat — I’m a vegetarian.",
+      "sentA": "never",
+      "coll": "___ late",
+      "collA": "never"
+    },
+    {
+      "w": "o’clock",
+      "vi": "… giờ đúng",
+      "def": "used for the time when there are no minutes, like 4:00",
+      "sent": "It’s 4:00 — it’s four ___.",
+      "sentA": "o’clock",
+      "coll": "at seven ___",
+      "collA": "o’clock"
+    },
+    {
+      "w": "quarter past",
+      "vi": "… giờ mười lăm",
+      "def": "15 minutes after the hour",
+      "sent": "It’s 4:15 — it’s a ___ four.",
+      "sentA": "quarter past",
+      "coll": "a ___ nine (9:15)",
+      "collA": "quarter past"
+    },
+    {
+      "w": "a cup of",
+      "vi": "một tách / cốc (trà, cà phê)",
+      "def": "used with tea or coffee",
+      "sent": "I’d like ___ coffee, please.",
+      "sentA": "a cup of",
+      "coll": "___ tea",
+      "collA": "a cup of"
+    },
+    {
+      "w": "a glass of",
+      "vi": "một ly (nước, nước ép)",
+      "def": "used with water, cola or juice",
+      "sent": "Can I have ___ orange juice?",
+      "sentA": "a glass of",
+      "coll": "___ cola",
+      "collA": "a glass of"
+    },
+    {
+      "w": "a piece of",
+      "vi": "một miếng (bánh)",
+      "def": "used with cake",
+      "sent": "I’d like ___ chocolate cake, please.",
+      "sentA": "a piece of",
+      "coll": "___ banana cake",
+      "collA": "a piece of"
+    },
+    {
+      "w": "I’d like",
+      "vi": "tôi muốn (lịch sự)",
+      "def": "a polite way to say I want",
+      "sent": "___ a cup of tea, please.",
+      "sentA": "I’d like",
+      "coll": "___ a sandwich, please",
+      "collA": "I’d like"
+    },
+    {
+      "w": "Can I have …?",
+      "vi": "cho tôi … được không?",
+      "def": "a polite question to ask for something in a café",
+      "sent": "___ a cup of tea, please?",
+      "sentA": "Can I have",
+      "coll": "___ the menu, please?",
+      "collA": "Can I have"
+    },
+    {
+      "w": "menu",
+      "vi": "thực đơn",
+      "def": "a list of the food and drinks in a café",
+      "sent": "Can I see the ___? — Sandwiches are £3.00.",
+      "sentA": "menu",
+      "coll": "the café ___",
+      "collA": "menu"
+    }
+  ]
+}

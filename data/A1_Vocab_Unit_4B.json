@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_4B",
+  "title": "Vocabulary Quiz — Unit 4B: Family and people",
+  "kicker": "Empower A1 · Unit 4C · Review",
+  "subtitle": "Family words, people and numbers 21–100 from 4B",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "mother",
+      "vi": "mẹ",
+      "def": "your female parent",
+      "sent": "My father’s wife is my ___.",
+      "sentA": "mother",
+      "coll": "my ___ and father",
+      "collA": "mother"
+    },
+    {
+      "w": "father",
+      "vi": "bố, cha",
+      "def": "your male parent",
+      "sent": "My mother’s husband is my ___.",
+      "sentA": "father",
+      "coll": "my ___’s car",
+      "collA": "father"
+    },
+    {
+      "w": "son",
+      "vi": "con trai",
+      "def": "a boy child of a mother or father",
+      "sent": "Tom is a boy. I’m his mother. He’s my ___.",
+      "sentA": "son",
+      "coll": "their ___ Tom",
+      "collA": "son"
+    },
+    {
+      "w": "daughter",
+      "vi": "con gái",
+      "def": "a girl child of a mother or father",
+      "sent": "Anna is a girl. I’m her father. She’s my ___.",
+      "sentA": "daughter",
+      "coll": "my ___ Anna",
+      "collA": "daughter"
+    },
+    {
+      "w": "husband",
+      "vi": "chồng",
+      "def": "the man a woman is married to",
+      "sent": "Lisa is married to Tom. Tom is her ___.",
+      "sentA": "husband",
+      "coll": "her ___ and children",
+      "collA": "husband"
+    },
+    {
+      "w": "wife",
+      "vi": "vợ",
+      "def": "the woman a man is married to",
+      "sent": "Tom is married to Lisa. Lisa is his ___.",
+      "sentA": "wife",
+      "coll": "his ___ and son",
+      "collA": "wife"
+    },
+    {
+      "w": "sister",
+      "vi": "chị / em gái",
+      "def": "a girl or woman with the same parents as you",
+      "sent": "My parents’ daughter is my ___.",
+      "sentA": "sister",
+      "coll": "my older ___",
+      "collA": "sister"
+    },
+    {
+      "w": "brother",
+      "vi": "anh / em trai",
+      "def": "a boy or man with the same parents as you",
+      "sent": "My parents’ son is my ___.",
+      "sentA": "brother",
+      "coll": "my little ___",
+      "collA": "brother"
+    },
+    {
+      "w": "parents",
+      "vi": "bố mẹ",
+      "def": "your mother and father",
+      "sent": "My mother and father are my ___.",
+      "sentA": "parents",
+      "coll": "my ___’ house",
+      "collA": "parents"
+    },
+    {
+      "w": "children",
+      "vi": "con cái, trẻ em",
+      "def": "more than one child",
+      "sent": "They have three ___ — two boys and a girl.",
+      "sentA": "children",
+      "coll": "young ___",
+      "collA": "children"
+    },
+    {
+      "w": "men",
+      "vi": "những người đàn ông",
+      "def": "more than one man",
+      "sent": "There are two ___ and three women in the photo.",
+      "sentA": "men",
+      "coll": "two ___",
+      "collA": "men"
+    },
+    {
+      "w": "women",
+      "vi": "những người phụ nữ",
+      "def": "more than one woman",
+      "sent": "There are four ___ in my family.",
+      "sentA": "women",
+      "coll": "two ___",
+      "collA": "women"
+    },
+    {
+      "w": "boy",
+      "vi": "cậu bé, bé trai",
+      "def": "a male child",
+      "sent": "He’s a ___ — he’s eight.",
+      "sentA": "boy",
+      "coll": "a little ___",
+      "collA": "boy"
+    },
+    {
+      "w": "girl",
+      "vi": "cô bé, bé gái",
+      "def": "a female child",
+      "sent": "She’s a ___ — she’s six.",
+      "sentA": "girl",
+      "coll": "a little ___",
+      "collA": "girl"
+    },
+    {
+      "w": "baby",
+      "vi": "em bé",
+      "def": "a very young child",
+      "sent": "The ___ is only three months old.",
+      "sentA": "baby",
+      "coll": "a new ___",
+      "collA": "baby"
+    },
+    {
+      "w": "people",
+      "vi": "mọi người, người (số nhiều)",
+      "def": "men, women and children",
+      "sent": "There are a lot of ___ in the city.",
+      "sentA": "people",
+      "coll": "a lot of ___",
+      "collA": "people"
+    },
+    {
+      "w": "forty-two",
+      "vi": "bốn mươi hai (42)",
+      "def": "the number 42",
+      "sent": "Forty + two = ___.",
+      "sentA": "forty-two",
+      "coll": "___ years old (42)",
+      "collA": "forty-two"
+    },
+    {
+      "w": "eighty-five",
+      "vi": "tám mươi lăm (85)",
+      "def": "the number 85",
+      "sent": "Eighty + five = ___.",
+      "sentA": "eighty-five",
+      "coll": "___ euros (85)",
+      "collA": "eighty-five"
+    },
+    {
+      "w": "a hundred",
+      "vi": "một trăm (100)",
+      "def": "the number 100",
+      "sent": "Fifty + fifty = ___.",
+      "sentA": "a hundred",
+      "coll": "___ people (100)",
+      "collA": "a hundred"
+    },
+    {
+      "w": "family",
+      "vi": "gia đình",
+      "def": "your mother, father, brothers, sisters and so on",
+      "sent": "There are five people in my ___.",
+      "sentA": "family",
+      "coll": "a big ___",
+      "collA": "family"
+    }
+  ]
+}

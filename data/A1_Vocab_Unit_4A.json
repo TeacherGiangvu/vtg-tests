@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_4A",
+  "title": "Vocabulary Quiz — Unit 4A: Common verbs",
+  "kicker": "Empower A1 · Unit 4B · Review",
+  "subtitle": "Common verbs and study words from 4A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "live",
+      "vi": "sống, ở",
+      "def": "to have your home in a place",
+      "sent": "I ___ in Auckland, in New Zealand.",
+      "sentA": "live",
+      "coll": "___ in a big house",
+      "collA": "live"
+    },
+    {
+      "w": "work",
+      "vi": "làm việc",
+      "def": "to do your job",
+      "sent": "I ___ in a factory.",
+      "sentA": "work",
+      "coll": "___ at home",
+      "collA": "work"
+    },
+    {
+      "w": "study",
+      "vi": "học",
+      "def": "to learn at school or university",
+      "sent": "I ___ Italian at university.",
+      "sentA": "study",
+      "coll": "___ English",
+      "collA": "study"
+    },
+    {
+      "w": "speak",
+      "vi": "nói (một ngôn ngữ)",
+      "def": "to use a language",
+      "sent": "I ___ Spanish and English.",
+      "sentA": "speak",
+      "coll": "___ three languages",
+      "collA": "speak"
+    },
+    {
+      "w": "go",
+      "vi": "đi",
+      "def": "to move to a place",
+      "sent": "I ___ to the cinema every weekend.",
+      "sentA": "go",
+      "coll": "___ to school",
+      "collA": "go"
+    },
+    {
+      "w": "play",
+      "vi": "chơi (thể thao)",
+      "def": "to do a sport or game",
+      "sent": "We ___ tennis on Saturdays.",
+      "sentA": "play",
+      "coll": "___ football",
+      "collA": "play"
+    },
+    {
+      "w": "teach",
+      "vi": "dạy",
+      "def": "to help people learn",
+      "sent": "I ___ young children at a school.",
+      "sentA": "teach",
+      "coll": "___ English",
+      "collA": "teach"
+    },
+    {
+      "w": "meet",
+      "vi": "gặp",
+      "def": "to see friends and talk",
+      "sent": "I ___ my friends for coffee every day.",
+      "sentA": "meet",
+      "coll": "___ friends",
+      "collA": "meet"
+    },
+    {
+      "w": "house",
+      "vi": "ngôi nhà",
+      "def": "a building where a family lives",
+      "sent": "We live in a big ___ with a garden.",
+      "sentA": "house",
+      "coll": "a big ___",
+      "collA": "house"
+    },
+    {
+      "w": "factory",
+      "vi": "nhà máy",
+      "def": "a big building where people make things",
+      "sent": "I work in a car ___.",
+      "sentA": "factory",
+      "coll": "a car ___",
+      "collA": "factory"
+    },
+    {
+      "w": "university",
+      "vi": "trường đại học",
+      "def": "a place where students study after school",
+      "sent": "What do you study at ___? — I study Italian.",
+      "sentA": "university",
+      "coll": "go to ___",
+      "collA": "university"
+    },
+    {
+      "w": "school",
+      "vi": "trường học",
+      "def": "a place where children learn",
+      "sent": "We study at ___ from Monday to Friday.",
+      "sentA": "school",
+      "coll": "go to ___",
+      "collA": "school"
+    },
+    {
+      "w": "subject",
+      "vi": "môn học",
+      "def": "something you study, like art or maths",
+      "sent": "My favourite ___ at school is art.",
+      "sentA": "subject",
+      "coll": "a school ___",
+      "collA": "subject"
+    },
+    {
+      "w": "maths",
+      "vi": "môn toán",
+      "def": "the subject with numbers",
+      "sent": "2 + 2 = 4. I like ___.",
+      "sentA": "maths",
+      "coll": "a ___ teacher",
+      "collA": "maths"
+    },
+    {
+      "w": "art",
+      "vi": "môn mỹ thuật",
+      "def": "the subject with painting and drawing",
+      "sent": "I paint pictures in my ___ class.",
+      "sentA": "art",
+      "coll": "an ___ class",
+      "collA": "art"
+    },
+    {
+      "w": "language",
+      "vi": "ngôn ngữ",
+      "def": "words people speak, like English or Arabic",
+      "sent": "Arabic is a difficult ___.",
+      "sentA": "language",
+      "coll": "an English ___ school",
+      "collA": "language"
+    },
+    {
+      "w": "tennis",
+      "vi": "quần vợt",
+      "def": "a sport with a ball and two or four players",
+      "sent": "We play ___ on Saturdays.",
+      "sentA": "tennis",
+      "coll": "play ___",
+      "collA": "tennis"
+    },
+    {
+      "w": "weekend",
+      "vi": "cuối tuần",
+      "def": "Saturday and Sunday",
+      "sent": "I go to the cinema every ___.",
+      "sentA": "weekend",
+      "coll": "at the ___",
+      "collA": "weekend"
+    },
+    {
+      "w": "at home",
+      "vi": "ở nhà",
+      "def": "in your house or flat",
+      "sent": "Do you work ___? — Yes, two days a week.",
+      "sentA": "at home",
+      "coll": "work ___",
+      "collA": "at home"
+    },
+    {
+      "w": "Where do you live?",
+      "vi": "bạn sống ở đâu?",
+      "def": "a question about your home town or city",
+      "sent": "___ — I live in Auckland.",
+      "sentA": "Where do you live?",
+      "coll": "___ — In Hanoi.",
+      "collA": "Where do you live?"
+    }
+  ]
+}

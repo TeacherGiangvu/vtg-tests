@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_1A",
+  "title": "Vocabulary Quiz — Unit 1A: Countries and greetings",
+  "kicker": "Empower A1 · Unit 1B · Review",
+  "subtitle": "Countries, greetings and be from 1A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "the USA",
+      "vi": "nước Mỹ",
+      "def": "the country of New York and Washington",
+      "sent": "I’m from New York in ___.",
+      "sentA": "the USA",
+      "coll": "fly to ___ — New York, Los Angeles",
+      "collA": "the USA"
+    },
+    {
+      "w": "Brazil",
+      "vi": "Bra-xin",
+      "def": "a big country in South America; people speak Portuguese",
+      "sent": "Rio de Janeiro is in ___.",
+      "sentA": "Brazil",
+      "coll": "Rio de Janeiro, ___",
+      "collA": "Brazil"
+    },
+    {
+      "w": "the UK",
+      "vi": "Vương quốc Anh",
+      "def": "the country of London, Edinburgh and Cardiff",
+      "sent": "London is in ___.",
+      "sentA": "the UK",
+      "coll": "London, ___",
+      "collA": "the UK"
+    },
+    {
+      "w": "Turkey",
+      "vi": "Thổ Nhĩ Kỳ",
+      "def": "the country of Istanbul and Ankara",
+      "sent": "Istanbul is a big city in ___.",
+      "sentA": "Turkey",
+      "coll": "Istanbul, ___",
+      "collA": "Turkey"
+    },
+    {
+      "w": "Spain",
+      "vi": "Tây Ban Nha",
+      "def": "the country of Madrid and Barcelona",
+      "sent": "We’re from Madrid in ___.",
+      "sentA": "Spain",
+      "coll": "Madrid, ___",
+      "collA": "Spain"
+    },
+    {
+      "w": "Mexico",
+      "vi": "Mê-hi-cô",
+      "def": "the country south of the USA; its capital is Mexico City",
+      "sent": "Mexico City is in ___.",
+      "sentA": "Mexico",
+      "coll": "Mexico City, ___",
+      "collA": "Mexico"
+    },
+    {
+      "w": "Italy",
+      "vi": "nước Ý",
+      "def": "the country of Rome, pizza and pasta",
+      "sent": "Rome is in ___.",
+      "sentA": "Italy",
+      "coll": "Rome, ___",
+      "collA": "Italy"
+    },
+    {
+      "w": "China",
+      "vi": "Trung Quốc",
+      "def": "a very big country in Asia; its capital is Beijing",
+      "sent": "Beijing and Shanghai are in ___.",
+      "sentA": "China",
+      "coll": "Beijing, ___",
+      "collA": "China"
+    },
+    {
+      "w": "Japan",
+      "vi": "Nhật Bản",
+      "def": "the country of Tokyo and Osaka",
+      "sent": "Tokyo is in ___.",
+      "sentA": "Japan",
+      "coll": "Tokyo, ___",
+      "collA": "Japan"
+    },
+    {
+      "w": "Hello",
+      "vi": "xin chào",
+      "def": "what you say when you meet someone",
+      "sent": "On the phone, you answer: “___? Who’s this?”",
+      "sentA": "Hello",
+      "coll": "say ___ to a new student",
+      "collA": "Hello"
+    },
+    {
+      "w": "Hi",
+      "vi": "chào (thân mật)",
+      "def": "a short, friendly way to say hello",
+      "sent": "“Hello” is a bit formal. With a friend, say: “___, Tom!”",
+      "sentA": "Hi",
+      "coll": "say ___ to a friend",
+      "collA": "Hi"
+    },
+    {
+      "w": "Good morning",
+      "vi": "chào buổi sáng",
+      "def": "what you say when you meet someone before 12 o’clock",
+      "sent": "It’s 9 a.m. You meet your teacher: “___!”",
+      "sentA": "Good morning",
+      "coll": "___ at 8 a.m.",
+      "collA": "Good morning"
+    },
+    {
+      "w": "Nice to meet you",
+      "vi": "rất vui được gặp bạn",
+      "def": "what you say when you meet a person for the first time",
+      "sent": "This is Anna. — Hi, Anna. ___.",
+      "sentA": "Nice to meet you",
+      "coll": "Hello, I’m Tom. — Hi, Tom. ___.",
+      "collA": "Nice to meet you"
+    },
+    {
+      "w": "How are you?",
+      "vi": "bạn có khoẻ không?",
+      "def": "a question to ask if a person is OK",
+      "sent": "Hi, Anna. ___ — I’m fine, thanks.",
+      "sentA": "How are you?",
+      "coll": "___ — Fine, thanks.",
+      "collA": "How are you?"
+    },
+    {
+      "w": "I’m fine, thanks",
+      "vi": "tôi khoẻ, cảm ơn",
+      "def": "an answer when someone asks how you are",
+      "sent": "How are you? — ___. And you?",
+      "sentA": "I’m fine, thanks",
+      "coll": "How are you? — ___.",
+      "collA": "I’m fine, thanks"
+    },
+    {
+      "w": "Where are you from?",
+      "vi": "bạn đến từ đâu?",
+      "def": "a question about your country or city",
+      "sent": "___ — I’m from Japan.",
+      "sentA": "Where are you from?",
+      "coll": "___ — Spain.",
+      "collA": "Where are you from?"
+    },
+    {
+      "w": "Yes, I am",
+      "vi": "vâng, đúng vậy (trả lời câu hỏi Are you …?)",
+      "def": "a short yes answer to Are you …?",
+      "sent": "Are you from Italy? — ___. I’m from Rome.",
+      "sentA": "Yes, I am",
+      "coll": "Are you Anna? — ___.",
+      "collA": "Yes, I am"
+    },
+    {
+      "w": "No, I’m not",
+      "vi": "không, không phải (trả lời câu hỏi Are you …?)",
+      "def": "a short no answer to Are you …?",
+      "sent": "Are you from the UK? — ___. I’m from the USA.",
+      "sentA": "No, I’m not",
+      "coll": "Are you a teacher? — ___.",
+      "collA": "No, I’m not"
+    },
+    {
+      "w": "What’s your name?",
+      "vi": "bạn tên là gì?",
+      "def": "a question to find out what a person is called",
+      "sent": "___ — My name’s Sophia.",
+      "sentA": "What’s your name?",
+      "coll": "___ — I’m Tom.",
+      "collA": "What’s your name?"
+    },
+    {
+      "w": "country",
+      "vi": "đất nước, quốc gia",
+      "def": "a place with its own name and flag, like Japan or Brazil",
+      "sent": "Mexico is a big ___ with a lot of people.",
+      "sentA": "country",
+      "coll": "a big ___ like China",
+      "collA": "country"
+    }
+  ]
+}

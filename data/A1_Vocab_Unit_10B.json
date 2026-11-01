@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_10B",
+  "title": "Vocabulary Quiz — Unit 10B: Where are you?",
+  "kicker": "Empower A1 · Unit 10C · Review",
+  "subtitle": "Place phrases with in / on / at from 10B",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "in a café",
+      "vi": "trong quán cà phê",
+      "def": "where you are when you drink coffee with a friend out of the house",
+      "sent": "I’m drinking a cappuccino with Anna ___.",
+      "sentA": "in a café",
+      "coll": "have a coffee ___",
+      "collA": "in a café"
+    },
+    {
+      "w": "in the car",
+      "vi": "trong xe ô tô (của mình)",
+      "def": "inside your own car",
+      "sent": "I’m driving to work. I’m ___.",
+      "sentA": "in the car",
+      "coll": "listen to music ___",
+      "collA": "in the car"
+    },
+    {
+      "w": "in a taxi",
+      "vi": "trên taxi",
+      "def": "inside a car you pay a driver to take you in",
+      "sent": "I’m ___ — the driver is taking me to the hotel.",
+      "sentA": "in a taxi",
+      "coll": "go to the airport ___",
+      "collA": "in a taxi"
+    },
+    {
+      "w": "in a hotel",
+      "vi": "ở khách sạn",
+      "def": "staying in a room you pay for on a trip",
+      "sent": "We’re on holiday in Rome. We’re ___ near the station.",
+      "sentA": "in a hotel",
+      "coll": "stay ___",
+      "collA": "in a hotel"
+    },
+    {
+      "w": "in bed",
+      "vi": "trên giường (đang ngủ / nằm)",
+      "def": "lying down to sleep",
+      "sent": "It’s 11 p.m. and the children are ___.",
+      "sentA": "in bed",
+      "coll": "read a book ___",
+      "collA": "in bed"
+    },
+    {
+      "w": "in a restaurant",
+      "vi": "trong nhà hàng",
+      "def": "eating dinner out of the house, with a waiter",
+      "sent": "We’re having dinner ___ — the waiter is bringing the food.",
+      "sentA": "in a restaurant",
+      "coll": "eat ___",
+      "collA": "in a restaurant"
+    },
+    {
+      "w": "on a bus",
+      "vi": "trên xe buýt",
+      "def": "travelling on a big road vehicle for a lot of people",
+      "sent": "I’m ___ — I get off at the next stop.",
+      "sentA": "on a bus",
+      "coll": "sit ___",
+      "collA": "on a bus"
+    },
+    {
+      "w": "on a train",
+      "vi": "trên tàu hoả",
+      "def": "travelling on a vehicle on a railway",
+      "sent": "I’m ___ to Manchester. We’re at platform 6.",
+      "sentA": "on a train",
+      "coll": "travel ___",
+      "collA": "on a train"
+    },
+    {
+      "w": "on a plane",
+      "vi": "trên máy bay",
+      "def": "flying in the sky",
+      "sent": "I’m ___ to Tokyo. We’re in the sky now.",
+      "sentA": "on a plane",
+      "coll": "fly ___",
+      "collA": "on a plane"
+    },
+    {
+      "w": "on holiday",
+      "vi": "đi nghỉ, đi du lịch",
+      "def": "not working; travelling to have fun",
+      "sent": "I’m not at work this week — I’m ___ in Spain.",
+      "sentA": "on holiday",
+      "coll": "go ___",
+      "collA": "on holiday"
+    },
+    {
+      "w": "at home",
+      "vi": "ở nhà",
+      "def": "in your house or flat",
+      "sent": "I’m not at work today. I’m ___ in the living room.",
+      "sentA": "at home",
+      "coll": "stay ___",
+      "collA": "at home"
+    },
+    {
+      "w": "at work",
+      "vi": "ở chỗ làm",
+      "def": "at the place where you do your job",
+      "sent": "I’m ___ — I’m in a meeting in the office.",
+      "sentA": "at work",
+      "coll": "be ___ from 9 to 5",
+      "collA": "at work"
+    },
+    {
+      "w": "at school",
+      "vi": "ở trường",
+      "def": "at the place where children learn",
+      "sent": "The children are ___ — their lesson finishes at 3.",
+      "sentA": "at school",
+      "coll": "learn ___",
+      "collA": "at school"
+    },
+    {
+      "w": "at the airport",
+      "vi": "ở sân bay",
+      "def": "at the place where planes take off and land",
+      "sent": "My plane leaves in an hour. I’m ___ now.",
+      "sentA": "at the airport",
+      "coll": "wait ___",
+      "collA": "at the airport"
+    },
+    {
+      "w": "at the bus stop",
+      "vi": "ở trạm xe buýt",
+      "def": "the place on the street where you wait for a bus",
+      "sent": "I’m waiting for the number 12 ___.",
+      "sentA": "at the bus stop",
+      "coll": "wait ___",
+      "collA": "at the bus stop"
+    },
+    {
+      "w": "at the cinema",
+      "vi": "ở rạp chiếu phim",
+      "def": "at the place where you watch a film on a big screen",
+      "sent": "Shh! The film is starting. We’re ___.",
+      "sentA": "at the cinema",
+      "coll": "see a film ___",
+      "collA": "at the cinema"
+    },
+    {
+      "w": "at a party",
+      "vi": "ở bữa tiệc",
+      "def": "at an event with music, dancing and friends",
+      "sent": "It’s my friend’s birthday. I’m ___ and we’re dancing.",
+      "sentA": "at a party",
+      "coll": "dance ___",
+      "collA": "at a party"
+    },
+    {
+      "w": "at the station",
+      "vi": "ở nhà ga",
+      "def": "at the place where you get on a train",
+      "sent": "I’m ___ — my train leaves from platform 3.",
+      "sentA": "at the station",
+      "coll": "meet ___",
+      "collA": "at the station"
+    },
+    {
+      "w": "next door",
+      "vi": "nhà bên cạnh, phòng bên cạnh",
+      "def": "in the house or room next to this one",
+      "sent": "My neighbour lives ___ — in the house next to mine.",
+      "sentA": "next door",
+      "coll": "the room ___",
+      "collA": "next door"
+    },
+    {
+      "w": "sitting",
+      "vi": "đang ngồi",
+      "def": "on a chair now, not standing",
+      "sent": "He’s ___ on the sofa and watching TV.",
+      "sentA": "sitting",
+      "coll": "___ in a chair",
+      "collA": "sitting"
+    }
+  ]
+}

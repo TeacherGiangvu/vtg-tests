@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_1B",
+  "title": "Vocabulary Quiz — Unit 1B: Nationalities",
+  "kicker": "Empower A1 · Unit 1C · Review",
+  "subtitle": "Nationalities, he / she / they, this / these from 1B",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "American",
+      "vi": "người / thuộc Mỹ",
+      "def": "from the USA",
+      "sent": "He’s from New York. He’s ___.",
+      "sentA": "American",
+      "coll": "an ___ football player from the USA",
+      "collA": "American"
+    },
+    {
+      "w": "Chinese",
+      "vi": "người / thuộc Trung Quốc",
+      "def": "from China",
+      "sent": "She’s from Beijing. She’s ___.",
+      "sentA": "Chinese",
+      "coll": "___ food from Beijing",
+      "collA": "Chinese"
+    },
+    {
+      "w": "Mexican",
+      "vi": "người / thuộc Mê-hi-cô",
+      "def": "from Mexico",
+      "sent": "They’re from Mexico City. They’re ___.",
+      "sentA": "Mexican",
+      "coll": "a ___ football team",
+      "collA": "Mexican"
+    },
+    {
+      "w": "Italian",
+      "vi": "người / thuộc Ý",
+      "def": "from Italy",
+      "sent": "Matteo is from Rome. He’s ___.",
+      "sentA": "Italian",
+      "coll": "___ pizza from Rome",
+      "collA": "Italian"
+    },
+    {
+      "w": "Spanish",
+      "vi": "người / thuộc Tây Ban Nha",
+      "def": "from Spain",
+      "sent": "Lucia is from Madrid. She’s ___.",
+      "sentA": "Spanish",
+      "coll": "a ___ tennis player from Madrid",
+      "collA": "Spanish"
+    },
+    {
+      "w": "British",
+      "vi": "người / thuộc Anh",
+      "def": "from the UK",
+      "sent": "He’s from London. He’s ___.",
+      "sentA": "British",
+      "coll": "a ___ actor from London",
+      "collA": "British"
+    },
+    {
+      "w": "Japanese",
+      "vi": "người / thuộc Nhật",
+      "def": "from Japan",
+      "sent": "She’s from Tokyo. She’s ___.",
+      "sentA": "Japanese",
+      "coll": "a ___ car from Tokyo",
+      "collA": "Japanese"
+    },
+    {
+      "w": "Brazilian",
+      "vi": "người / thuộc Bra-xin",
+      "def": "from Brazil",
+      "sent": "Ana is from Rio. She’s ___.",
+      "sentA": "Brazilian",
+      "coll": "a ___ football player from Rio",
+      "collA": "Brazilian"
+    },
+    {
+      "w": "Turkish",
+      "vi": "người / thuộc Thổ Nhĩ Kỳ",
+      "def": "from Turkey",
+      "sent": "Mehmet is from Istanbul. He’s ___.",
+      "sentA": "Turkish",
+      "coll": "___ coffee from Istanbul",
+      "collA": "Turkish"
+    },
+    {
+      "w": "Australian",
+      "vi": "người / thuộc Úc",
+      "def": "from Australia",
+      "sent": "They’re from Sydney. They’re ___.",
+      "sentA": "Australian",
+      "coll": "an ___ swimmer from Sydney",
+      "collA": "Australian"
+    },
+    {
+      "w": "He’s",
+      "vi": "anh ấy là (he is)",
+      "def": "he is",
+      "sent": "This is Luis. ___ a teacher in Brazil.",
+      "sentA": "He’s",
+      "coll": "___ my brother.",
+      "collA": "He’s"
+    },
+    {
+      "w": "She’s",
+      "vi": "cô ấy là (she is)",
+      "def": "she is",
+      "sent": "This is Ana. ___ from Brazil.",
+      "sentA": "She’s",
+      "coll": "___ my sister.",
+      "collA": "She’s"
+    },
+    {
+      "w": "They’re",
+      "vi": "họ là (they are)",
+      "def": "they are",
+      "sent": "Lucia and Matteo? ___ my friends.",
+      "sentA": "They’re",
+      "coll": "___ from Japan.",
+      "collA": "They’re"
+    },
+    {
+      "w": "He isn’t",
+      "vi": "anh ấy không phải là",
+      "def": "he is not",
+      "sent": "Is Tom American? — No, ___ American. He’s British.",
+      "sentA": "he isn’t",
+      "coll": "___ Spanish.",
+      "collA": "He isn’t"
+    },
+    {
+      "w": "This is",
+      "vi": "đây là (một người / vật)",
+      "def": "words to show one person or thing",
+      "sent": "___ Ana. She’s my friend.",
+      "sentA": "This is",
+      "coll": "___ my teacher.",
+      "collA": "This is"
+    },
+    {
+      "w": "These are",
+      "vi": "đây là (nhiều người / vật)",
+      "def": "words to show two or more people or things",
+      "sent": "___ my friends Lucia and Matteo.",
+      "sentA": "These are",
+      "coll": "___ my sisters.",
+      "collA": "These are"
+    },
+    {
+      "w": "friend",
+      "vi": "bạn, bạn bè",
+      "def": "a person you like and know well",
+      "sent": "Lucia is my ___. We go to the cinema together.",
+      "sentA": "friend",
+      "coll": "my best ___",
+      "collA": "friend"
+    },
+    {
+      "w": "teacher",
+      "vi": "giáo viên",
+      "def": "a person whose job is to help students learn",
+      "sent": "Luis is a ___ in Brazil. He teaches English.",
+      "sentA": "teacher",
+      "coll": "an English ___",
+      "collA": "teacher"
+    },
+    {
+      "w": "Is she …?",
+      "vi": "cô ấy có phải là … không?",
+      "def": "a question about one woman",
+      "sent": "___ Japanese? — Yes, she is.",
+      "sentA": "Is she",
+      "coll": "___ from Spain?",
+      "collA": "Is she"
+    },
+    {
+      "w": "Yes, he is",
+      "vi": "vâng, đúng (trả lời Is he …?)",
+      "def": "a short yes answer about one man",
+      "sent": "Is he Italian? — ___. He’s from Rome.",
+      "sentA": "Yes, he is",
+      "coll": "Is he a teacher? — ___.",
+      "collA": "Yes, he is"
+    }
+  ]
+}

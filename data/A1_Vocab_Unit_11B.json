@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_11B",
+  "title": "Vocabulary Quiz — Unit 11B: Abilities",
+  "kicker": "Empower A1 · Unit 11C · Review",
+  "subtitle": "can / can’t, abilities and (very / quite) well from 11B",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "swim",
+      "vi": "bơi",
+      "def": "to move through water using your arms and legs",
+      "sent": "I can ___ — I go to the pool every week.",
+      "sentA": "swim",
+      "coll": "___ in the sea",
+      "collA": "swim"
+    },
+    {
+      "w": "cook",
+      "vi": "nấu ăn",
+      "def": "to make food hot and ready to eat",
+      "sent": "My dad can ___ very well — his pho is great.",
+      "sentA": "cook",
+      "coll": "___ dinner",
+      "collA": "cook"
+    },
+    {
+      "w": "paint",
+      "vi": "vẽ (bằng màu), sơn",
+      "def": "to make a picture with colours and a brush",
+      "sent": "She can ___ beautiful pictures of flowers.",
+      "sentA": "paint",
+      "coll": "___ a picture",
+      "collA": "paint"
+    },
+    {
+      "w": "sing",
+      "vi": "hát",
+      "def": "to make music with your voice",
+      "sent": "He can ___ very well — he’s in a band.",
+      "sentA": "sing",
+      "coll": "___ a song",
+      "collA": "sing"
+    },
+    {
+      "w": "dance",
+      "vi": "nhảy, khiêu vũ",
+      "def": "to move your body to music",
+      "sent": "Can you ___? — Yes, I go to salsa classes.",
+      "sentA": "dance",
+      "coll": "___ to music",
+      "collA": "dance"
+    },
+    {
+      "w": "drive a car",
+      "vi": "lái ô tô",
+      "def": "to make a car go and control it",
+      "sent": "She can ___ — she drives to work.",
+      "sentA": "drive a car",
+      "coll": "learn to ___",
+      "collA": "drive a car"
+    },
+    {
+      "w": "play volleyball",
+      "vi": "chơi bóng chuyền",
+      "def": "to play a team sport where you hit a ball over a high net",
+      "sent": "We ___ on the beach in summer.",
+      "sentA": "play volleyball",
+      "coll": "___ with a team",
+      "collA": "play volleyball"
+    },
+    {
+      "w": "play cards",
+      "vi": "chơi bài",
+      "def": "to play games with 52 small pictures (the king, the queen …)",
+      "sent": "My grandparents ___ every evening.",
+      "sentA": "play cards",
+      "coll": "___ with friends",
+      "collA": "play cards"
+    },
+    {
+      "w": "ride a horse",
+      "vi": "cưỡi ngựa",
+      "def": "to sit on a horse and make it go",
+      "sent": "On the farm, the children can ___.",
+      "sentA": "ride a horse",
+      "coll": "learn to ___",
+      "collA": "ride a horse"
+    },
+    {
+      "w": "ride a bike",
+      "vi": "đi xe đạp",
+      "def": "to sit on a bike and make it go",
+      "sent": "I can ___ — I go to school on my bike.",
+      "sentA": "ride a bike",
+      "coll": "___ to school",
+      "collA": "ride a bike"
+    },
+    {
+      "w": "run",
+      "vi": "chạy",
+      "def": "to move very fast on your legs",
+      "sent": "He can ___ 10 kilometres in an hour.",
+      "sentA": "run",
+      "coll": "___ in the park",
+      "collA": "run"
+    },
+    {
+      "w": "very well",
+      "vi": "rất giỏi",
+      "def": "really good at doing it (✓✓✓)",
+      "sent": "She can swim ___ — she wins every race.",
+      "sentA": "very well",
+      "coll": "sing ___",
+      "collA": "very well"
+    },
+    {
+      "w": "quite well",
+      "vi": "khá giỏi",
+      "def": "OK, not very good, not bad (✓)",
+      "sent": "I can cook ___ — my food is OK.",
+      "sentA": "quite well",
+      "coll": "dance ___",
+      "collA": "quite well"
+    },
+    {
+      "w": "not … at all",
+      "vi": "hoàn toàn không",
+      "def": "zero; not even a little (✗)",
+      "sent": "I can’t sing ___ — it’s terrible!",
+      "sentA": "at all",
+      "coll": "can’t swim ___",
+      "collA": "not … at all"
+    },
+    {
+      "w": "well",
+      "vi": "giỏi, tốt (trạng từ)",
+      "def": "in a good way",
+      "sent": "She can drive ___. She’s a careful driver.",
+      "sentA": "well",
+      "coll": "speak English ___",
+      "collA": "well"
+    },
+    {
+      "w": "can",
+      "vi": "có thể, biết (làm gì)",
+      "def": "used to say you are able to do something",
+      "sent": "I ___ ride a bike, but I can’t drive.",
+      "sentA": "can",
+      "coll": "I ___ swim",
+      "collA": "can"
+    },
+    {
+      "w": "can’t",
+      "vi": "không thể, không biết (làm gì)",
+      "def": "cannot; not able",
+      "sent": "I ___ swim — I don’t like water.",
+      "sentA": "can’t",
+      "coll": "I ___ dance",
+      "collA": "can’t"
+    },
+    {
+      "w": "Can you …?",
+      "vi": "bạn có biết … không?",
+      "def": "a question about what someone is able to do",
+      "sent": "___ ride a horse? — No, I can’t.",
+      "sentA": "Can you",
+      "coll": "___ cook?",
+      "collA": "Can you …?"
+    },
+    {
+      "w": "Yes, I can",
+      "vi": "có, tôi biết",
+      "def": "a short yes answer to Can you …?",
+      "sent": "Can you swim? — ___. I swim every day.",
+      "sentA": "Yes, I can",
+      "coll": "Can you sing? — ___.",
+      "collA": "Yes, I can"
+    },
+    {
+      "w": "No, I can’t",
+      "vi": "không, tôi không biết",
+      "def": "a short no answer to Can you …?",
+      "sent": "Can you drive? — ___. I don’t have a car.",
+      "sentA": "No, I can’t",
+      "coll": "Can you paint? — ___.",
+      "collA": "No, I can’t"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_12A",
+  "title": "Vocabulary Quiz — Unit 12A: Months and dates",
+  "kicker": "Empower A1 · Unit 12B · Review",
+  "subtitle": "Months, future time expressions and ordinal numbers from 12A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "January",
+      "vi": "tháng Một",
+      "def": "the first month of the year",
+      "sent": "The year starts on the first of ___.",
+      "sentA": "January",
+      "coll": "___ 1st, New Year’s Day",
+      "collA": "January"
+    },
+    {
+      "w": "February",
+      "vi": "tháng Hai",
+      "def": "the second month; it has 28 days",
+      "sent": "___ is the shortest month — 28 days.",
+      "sentA": "February",
+      "coll": "28 days in ___",
+      "collA": "February"
+    },
+    {
+      "w": "March",
+      "vi": "tháng Ba",
+      "def": "the third month of the year",
+      "sent": "Women’s Day is on the eighth of ___.",
+      "sentA": "March",
+      "coll": "8th ___, Women’s Day",
+      "collA": "March"
+    },
+    {
+      "w": "April",
+      "vi": "tháng Tư",
+      "def": "the fourth month of the year",
+      "sent": "The month after March is ___.",
+      "sentA": "April",
+      "coll": "___, after March",
+      "collA": "April"
+    },
+    {
+      "w": "May",
+      "vi": "tháng Năm",
+      "def": "the fifth month of the year",
+      "sent": "The month after April is ___.",
+      "sentA": "May",
+      "coll": "___, after April",
+      "collA": "May"
+    },
+    {
+      "w": "August",
+      "vi": "tháng Tám",
+      "def": "the eighth month of the year",
+      "sent": "The month before September is ___.",
+      "sentA": "August",
+      "coll": "___, before September",
+      "collA": "August"
+    },
+    {
+      "w": "October",
+      "vi": "tháng Mười",
+      "def": "the tenth month of the year",
+      "sent": "The month before November is ___.",
+      "sentA": "October",
+      "coll": "___, before November",
+      "collA": "October"
+    },
+    {
+      "w": "December",
+      "vi": "tháng Mười Hai",
+      "def": "the last month of the year",
+      "sent": "Christmas is on the 25th of ___.",
+      "sentA": "December",
+      "coll": "25th ___, Christmas Day",
+      "collA": "December"
+    },
+    {
+      "w": "tomorrow",
+      "vi": "ngày mai",
+      "def": "the day after today",
+      "sent": "Today is Monday, so ___ is Tuesday.",
+      "sentA": "tomorrow",
+      "coll": "see you ___",
+      "collA": "tomorrow"
+    },
+    {
+      "w": "this evening",
+      "vi": "tối nay",
+      "def": "today, after about 6 p.m.",
+      "sent": "I’m going to cook dinner ___ at 7 p.m.",
+      "sentA": "this evening",
+      "coll": "at 8 o’clock ___",
+      "collA": "this evening"
+    },
+    {
+      "w": "next month",
+      "vi": "tháng sau",
+      "def": "the month after this one",
+      "sent": "It’s June now, so ___ is July.",
+      "sentA": "next month",
+      "coll": "in July — ___",
+      "collA": "next month"
+    },
+    {
+      "w": "at the weekend",
+      "vi": "vào cuối tuần",
+      "def": "on Saturday and Sunday",
+      "sent": "I don’t work on Saturday and Sunday. I relax ___.",
+      "sentA": "at the weekend",
+      "coll": "go out ___",
+      "collA": "at the weekend"
+    },
+    {
+      "w": "in two weeks",
+      "vi": "hai tuần nữa",
+      "def": "fourteen days from now",
+      "sent": "Today is the 1st. My holiday starts on the 15th — ___.",
+      "sentA": "in two weeks",
+      "coll": "the exam is ___",
+      "collA": "in two weeks"
+    },
+    {
+      "w": "next Tuesday",
+      "vi": "thứ Ba tuần sau",
+      "def": "the Tuesday of next week",
+      "sent": "Not this Tuesday — ___, in seven days.",
+      "sentA": "next Tuesday",
+      "coll": "see you ___",
+      "collA": "next Tuesday"
+    },
+    {
+      "w": "first",
+      "vi": "thứ nhất (1st)",
+      "def": "number 1 in order",
+      "sent": "January is the ___ month of the year.",
+      "sentA": "first",
+      "coll": "the ___ day (1st)",
+      "collA": "first"
+    },
+    {
+      "w": "second",
+      "vi": "thứ hai (2nd)",
+      "def": "number 2 in order",
+      "sent": "February is the ___ month of the year.",
+      "sentA": "second",
+      "coll": "the ___ of May (2nd)",
+      "collA": "second"
+    },
+    {
+      "w": "third",
+      "vi": "thứ ba (3rd)",
+      "def": "number 3 in order",
+      "sent": "March is the ___ month of the year.",
+      "sentA": "third",
+      "coll": "the ___ of June (3rd)",
+      "collA": "third"
+    },
+    {
+      "w": "twelfth",
+      "vi": "thứ mười hai (12th)",
+      "def": "number 12 in order",
+      "sent": "December is the ___ month of the year.",
+      "sentA": "twelfth",
+      "coll": "the ___ of July (12th)",
+      "collA": "twelfth"
+    },
+    {
+      "w": "twentieth",
+      "vi": "thứ hai mươi (20th)",
+      "def": "number 20 in order",
+      "sent": "Teachers’ Day in Vietnam is on the ___ of November.",
+      "sentA": "twentieth",
+      "coll": "the ___ of March (20th)",
+      "collA": "twentieth"
+    },
+    {
+      "w": "thirty-first",
+      "vi": "thứ ba mươi mốt (31st)",
+      "def": "number 31 in order",
+      "sent": "The last day of December is the ___.",
+      "sentA": "thirty-first",
+      "coll": "the ___ of August (31st)",
+      "collA": "thirty-first"
+    }
+  ]
+}

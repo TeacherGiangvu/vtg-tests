@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_10A",
+  "title": "Vocabulary Quiz — Unit 10A: The home",
+  "kicker": "Empower A1 · Unit 10B · Review",
+  "subtitle": "The home, in / on and present continuous verbs from 10A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "bedroom",
+      "vi": "phòng ngủ",
+      "def": "the room where you sleep",
+      "sent": "There’s a desk and a bed in my ___.",
+      "sentA": "bedroom",
+      "coll": "a big ___ with a bed",
+      "collA": "bedroom"
+    },
+    {
+      "w": "bathroom",
+      "vi": "phòng tắm",
+      "def": "the room with a shower or a bath",
+      "sent": "The shower is in the ___.",
+      "sentA": "bathroom",
+      "coll": "wash in the ___",
+      "collA": "bathroom"
+    },
+    {
+      "w": "kitchen",
+      "vi": "nhà bếp",
+      "def": "the room where you cook",
+      "sent": "Put the cake in the ___, next to the cooker.",
+      "sentA": "kitchen",
+      "coll": "cook in the ___",
+      "collA": "kitchen"
+    },
+    {
+      "w": "living room",
+      "vi": "phòng khách",
+      "def": "the room with the sofa and the TV",
+      "sent": "We’re watching the match on TV in the ___.",
+      "sentA": "living room",
+      "coll": "sit in the ___",
+      "collA": "living room"
+    },
+    {
+      "w": "dining room",
+      "vi": "phòng ăn",
+      "def": "the room with a big table where you eat meals",
+      "sent": "We eat dinner at the big table in the ___.",
+      "sentA": "dining room",
+      "coll": "eat in the ___",
+      "collA": "dining room"
+    },
+    {
+      "w": "garden",
+      "vi": "khu vườn",
+      "def": "the place outside your house with grass and flowers",
+      "sent": "The children are playing outside in the ___.",
+      "sentA": "garden",
+      "coll": "flowers in the ___",
+      "collA": "garden"
+    },
+    {
+      "w": "door",
+      "vi": "cửa ra vào",
+      "def": "you open it to go into a room",
+      "sent": "Please close the ___ when you go out.",
+      "sentA": "door",
+      "coll": "open the ___",
+      "collA": "door"
+    },
+    {
+      "w": "window",
+      "vi": "cửa sổ",
+      "def": "glass in a wall; you look out of it",
+      "sent": "It’s hot. Can you open the ___?",
+      "sentA": "window",
+      "coll": "look out of the ___",
+      "collA": "window"
+    },
+    {
+      "w": "floor",
+      "vi": "sàn nhà",
+      "def": "the part of a room you walk on",
+      "sent": "The books are on the ___, not on the table.",
+      "sentA": "floor",
+      "coll": "sit on the ___",
+      "collA": "floor"
+    },
+    {
+      "w": "wall",
+      "vi": "bức tường",
+      "def": "the side of a room; you put pictures on it",
+      "sent": "There are pictures on the ___.",
+      "sentA": "wall",
+      "coll": "a picture on the ___",
+      "collA": "wall"
+    },
+    {
+      "w": "desk",
+      "vi": "bàn làm việc, bàn học",
+      "def": "a table where you work or study",
+      "sent": "There’s a computer on the ___ in my bedroom.",
+      "sentA": "desk",
+      "coll": "study at a ___",
+      "collA": "desk"
+    },
+    {
+      "w": "picture",
+      "vi": "bức tranh",
+      "def": "a painting or photo you put on a wall",
+      "sent": "There’s a beautiful ___ of the sea on the wall.",
+      "sentA": "picture",
+      "coll": "a ___ on the wall",
+      "collA": "picture"
+    },
+    {
+      "w": "match",
+      "vi": "trận đấu",
+      "def": "a game of football or tennis between two teams",
+      "sent": "We’re watching the football ___ on TV.",
+      "sentA": "match",
+      "coll": "a football ___",
+      "collA": "match"
+    },
+    {
+      "w": "watching",
+      "vi": "đang xem",
+      "def": "looking at something now (a film, TV, a match)",
+      "sent": "Be quiet! We’re ___ the match.",
+      "sentA": "watching",
+      "coll": "___ TV now",
+      "collA": "watching"
+    },
+    {
+      "w": "studying",
+      "vi": "đang học",
+      "def": "learning now, for example for an exam",
+      "sent": "I can’t go out. I’m ___ for my exam.",
+      "sentA": "studying",
+      "coll": "___ English now",
+      "collA": "studying"
+    },
+    {
+      "w": "cooking",
+      "vi": "đang nấu ăn",
+      "def": "making food hot now",
+      "sent": "I’m ___ your dinner — it’s ready in ten minutes.",
+      "sentA": "cooking",
+      "coll": "___ dinner now",
+      "collA": "cooking"
+    },
+    {
+      "w": "sitting",
+      "vi": "đang ngồi",
+      "def": "on a chair now, not standing",
+      "sent": "I’m ___ in the car outside the house.",
+      "sentA": "sitting",
+      "coll": "___ on the sofa",
+      "collA": "sitting"
+    },
+    {
+      "w": "talking",
+      "vi": "đang nói (chuyện)",
+      "def": "speaking now",
+      "sent": "Steve’s ___ too much — I can’t hear the TV!",
+      "sentA": "talking",
+      "coll": "___ on the phone",
+      "collA": "talking"
+    },
+    {
+      "w": "outside",
+      "vi": "bên ngoài",
+      "def": "not in the building",
+      "sent": "I’m in the car ___ the house. Come out!",
+      "sentA": "outside",
+      "coll": "wait ___",
+      "collA": "outside"
+    },
+    {
+      "w": "on the wall",
+      "vi": "trên tường",
+      "def": "on the side of a room",
+      "sent": "There’s a clock ___ in the kitchen.",
+      "sentA": "on the wall",
+      "coll": "a mirror ___",
+      "collA": "on the wall"
+    }
+  ]
+}

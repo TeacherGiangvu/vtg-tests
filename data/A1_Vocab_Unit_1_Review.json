@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_1_Review",
+  "title": "Vocabulary Quiz — Unit 1 review",
+  "kicker": "Empower A1 · Unit 2A · Review",
+  "subtitle": "Countries, nationalities and greetings (Unit 1)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "Good afternoon",
+      "vi": "chào buổi chiều",
+      "def": "what you say when you meet someone between 12 and 6 p.m.",
+      "sent": "It’s 3 p.m. — ___, Megan!",
+      "sentA": "Good afternoon",
+      "coll": "___ at 2 o’clock",
+      "collA": "Good afternoon"
+    },
+    {
+      "w": "Good evening",
+      "vi": "chào buổi tối",
+      "def": "what you say when you meet someone after 6 p.m.",
+      "sent": "It’s 8 p.m. — ___, everyone.",
+      "sentA": "Good evening",
+      "coll": "___ at 7 p.m.",
+      "collA": "Good evening"
+    },
+    {
+      "w": "Good morning",
+      "vi": "chào buổi sáng",
+      "def": "what you say when you meet someone before 12 o’clock",
+      "sent": "It’s 9 a.m. — ___, Sophia!",
+      "sentA": "Good morning",
+      "coll": "___ at 8 a.m.",
+      "collA": "Good morning"
+    },
+    {
+      "w": "How are you?",
+      "vi": "bạn có khoẻ không?",
+      "def": "a question to ask if a person is OK",
+      "sent": "Hello, David. ___ — I’m good, thanks.",
+      "sentA": "How are you?",
+      "coll": "___ — Fine, thanks.",
+      "collA": "How are you?"
+    },
+    {
+      "w": "I’m good",
+      "vi": "tôi ổn, tôi khoẻ",
+      "def": "an answer: I am OK",
+      "sent": "How are you? — ___, thanks.",
+      "sentA": "I’m good",
+      "coll": "How are you? — ___.",
+      "collA": "I’m good"
+    },
+    {
+      "w": "Nice to meet you",
+      "vi": "rất vui được gặp bạn",
+      "def": "what you say when you meet a person for the first time",
+      "sent": "This is Sophia. — Hello, Sophia. ___.",
+      "sentA": "Nice to meet you",
+      "coll": "Hi, I’m David. — ___ too.",
+      "collA": "Nice to meet you"
+    },
+    {
+      "w": "Thank you",
+      "vi": "cảm ơn",
+      "def": "what you say when someone helps you or gives you something",
+      "sent": "Here’s your coffee. — ___.",
+      "sentA": "Thank you",
+      "coll": "___ very much!",
+      "collA": "Thank you"
+    },
+    {
+      "w": "Brazil",
+      "vi": "Bra-xin",
+      "def": "a big country in South America",
+      "sent": "Rio de Janeiro is in ___.",
+      "sentA": "Brazil",
+      "coll": "Rio, ___",
+      "collA": "Brazil"
+    },
+    {
+      "w": "Mexico",
+      "vi": "Mê-hi-cô",
+      "def": "the country south of the USA",
+      "sent": "Mexico City is in ___.",
+      "sentA": "Mexico",
+      "coll": "Mexico City, ___",
+      "collA": "Mexico"
+    },
+    {
+      "w": "China",
+      "vi": "Trung Quốc",
+      "def": "a very big country in Asia; its capital is Beijing",
+      "sent": "Beijing is in ___.",
+      "sentA": "China",
+      "coll": "Beijing, ___",
+      "collA": "China"
+    },
+    {
+      "w": "Turkey",
+      "vi": "Thổ Nhĩ Kỳ",
+      "def": "the country of Istanbul",
+      "sent": "Istanbul is in ___.",
+      "sentA": "Turkey",
+      "coll": "Istanbul, ___",
+      "collA": "Turkey"
+    },
+    {
+      "w": "the UK",
+      "vi": "Vương quốc Anh",
+      "def": "the country of London",
+      "sent": "London is in ___.",
+      "sentA": "the UK",
+      "coll": "London, ___",
+      "collA": "the UK"
+    },
+    {
+      "w": "Canada",
+      "vi": "Ca-na-đa",
+      "def": "a big country north of the USA; Toronto is there",
+      "sent": "Sophia is from Toronto in ___.",
+      "sentA": "Canada",
+      "coll": "Toronto, ___",
+      "collA": "Canada"
+    },
+    {
+      "w": "American",
+      "vi": "người / thuộc Mỹ",
+      "def": "from the USA",
+      "sent": "He’s from New York. He’s ___.",
+      "sentA": "American",
+      "coll": "an ___ singer from the USA",
+      "collA": "American"
+    },
+    {
+      "w": "Italian",
+      "vi": "người / thuộc Ý",
+      "def": "from Italy",
+      "sent": "Matteo is from Rome. He’s ___.",
+      "sentA": "Italian",
+      "coll": "___ pizza",
+      "collA": "Italian"
+    },
+    {
+      "w": "Spanish",
+      "vi": "người / thuộc Tây Ban Nha",
+      "def": "from Spain",
+      "sent": "Lucia is from Madrid. She’s ___.",
+      "sentA": "Spanish",
+      "coll": "a ___ player from Madrid",
+      "collA": "Spanish"
+    },
+    {
+      "w": "Japanese",
+      "vi": "người / thuộc Nhật",
+      "def": "from Japan",
+      "sent": "She’s from Tokyo. She’s ___.",
+      "sentA": "Japanese",
+      "coll": "a ___ car",
+      "collA": "Japanese"
+    },
+    {
+      "w": "British",
+      "vi": "người / thuộc Anh",
+      "def": "from the UK",
+      "sent": "He’s from London. He’s ___.",
+      "sentA": "British",
+      "coll": "a ___ actor",
+      "collA": "British"
+    },
+    {
+      "w": "Brazilian",
+      "vi": "người / thuộc Bra-xin",
+      "def": "from Brazil",
+      "sent": "Ana is from Rio. She’s ___.",
+      "sentA": "Brazilian",
+      "coll": "a ___ football player",
+      "collA": "Brazilian"
+    },
+    {
+      "w": "office",
+      "vi": "văn phòng",
+      "def": "a room or building where people work at desks",
+      "sent": "Sophia is in an ___ with Megan. They work there.",
+      "sentA": "office",
+      "coll": "work in an ___",
+      "collA": "office"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_2_Review",
+  "title": "Vocabulary Quiz — Unit 2 review",
+  "kicker": "Empower A1 · Unit 3A · Review",
+  "subtitle": "Places, adjectives, objects and personal information (Unit 2)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "city",
+      "vi": "thành phố",
+      "def": "a very big town",
+      "sent": "Hanoi is a big ___.",
+      "sentA": "city",
+      "coll": "a big ___",
+      "collA": "city"
+    },
+    {
+      "w": "village",
+      "vi": "làng",
+      "def": "a very small place with a few houses",
+      "sent": "My grandparents live in a small ___.",
+      "sentA": "village",
+      "coll": "a quiet ___",
+      "collA": "village"
+    },
+    {
+      "w": "interesting",
+      "vi": "thú vị",
+      "def": "you want to know more about it",
+      "sent": "The opposite of “boring” is ___.",
+      "sentA": "interesting",
+      "coll": "an ___ city",
+      "collA": "interesting"
+    },
+    {
+      "w": "boring",
+      "vi": "chán",
+      "def": "not interesting",
+      "sent": "The opposite of “interesting” is ___.",
+      "sentA": "boring",
+      "coll": "a ___ lesson",
+      "collA": "boring"
+    },
+    {
+      "w": "difficult",
+      "vi": "khó",
+      "def": "not easy",
+      "sent": "The opposite of “easy” is ___.",
+      "sentA": "difficult",
+      "coll": "a ___ exam",
+      "collA": "difficult"
+    },
+    {
+      "w": "beautiful",
+      "vi": "đẹp",
+      "def": "very nice to look at",
+      "sent": "Venice is a ___ city.",
+      "sentA": "beautiful",
+      "coll": "a ___ beach",
+      "collA": "beautiful"
+    },
+    {
+      "w": "funny",
+      "vi": "buồn cười, hài hước",
+      "def": "makes you laugh",
+      "sent": "My brother is very ___.",
+      "sentA": "funny",
+      "coll": "a ___ film",
+      "collA": "funny"
+    },
+    {
+      "w": "new",
+      "vi": "mới",
+      "def": "not old",
+      "sent": "The opposite of “old” is ___.",
+      "sentA": "new",
+      "coll": "a ___ car",
+      "collA": "new"
+    },
+    {
+      "w": "umbrella",
+      "vi": "cái ô",
+      "def": "you hold it over your head when it rains",
+      "sent": "It’s raining. Do you have an ___?",
+      "sentA": "umbrella",
+      "coll": "open your ___",
+      "collA": "umbrella"
+    },
+    {
+      "w": "key",
+      "vi": "chìa khoá",
+      "def": "you use it to open a door",
+      "sent": "Where’s my ___? I can’t open the door.",
+      "sentA": "key",
+      "coll": "a door ___",
+      "collA": "key"
+    },
+    {
+      "w": "ticket",
+      "vi": "vé",
+      "def": "a paper you need for a train or a plane",
+      "sent": "Here’s my train ___.",
+      "sentA": "ticket",
+      "coll": "a plane ___",
+      "collA": "ticket"
+    },
+    {
+      "w": "watch",
+      "vi": "đồng hồ đeo tay",
+      "def": "a small clock you wear on your arm",
+      "sent": "I don’t have a ___. What’s the time?",
+      "sentA": "watch",
+      "coll": "a ___ on my arm",
+      "collA": "watch"
+    },
+    {
+      "w": "knives",
+      "vi": "những con dao",
+      "def": "more than one knife",
+      "sent": "We need four ___ for dinner.",
+      "sentA": "knives",
+      "coll": "forks and ___",
+      "collA": "knives"
+    },
+    {
+      "w": "newspaper",
+      "vi": "tờ báo",
+      "def": "printed pages with the news",
+      "sent": "I read the ___ every morning.",
+      "sentA": "newspaper",
+      "coll": "a daily ___",
+      "collA": "newspaper"
+    },
+    {
+      "w": "first name",
+      "vi": "tên (tên gọi)",
+      "def": "the name your friends call you, like Sophia",
+      "sent": "My ___ is Sophia and my surname is Taylor.",
+      "sentA": "first name",
+      "coll": "your ___ and surname",
+      "collA": "first name"
+    },
+    {
+      "w": "surname",
+      "vi": "họ",
+      "def": "your family name, like Taylor",
+      "sent": "What’s your ___? — It’s Robinson.",
+      "sentA": "surname",
+      "coll": "write your ___",
+      "collA": "surname"
+    },
+    {
+      "w": "address",
+      "vi": "địa chỉ",
+      "def": "the number and street where you live",
+      "sent": "What’s your ___? — It’s 7 King Street.",
+      "sentA": "address",
+      "coll": "your home ___",
+      "collA": "address"
+    },
+    {
+      "w": "phone number",
+      "vi": "số điện thoại",
+      "def": "the numbers you use to call someone",
+      "sent": "What’s your ___? — It’s 0124 352738.",
+      "sentA": "phone number",
+      "coll": "my mobile ___",
+      "collA": "phone number"
+    },
+    {
+      "w": "email address",
+      "vi": "địa chỉ email",
+      "def": "the name you use to get emails, with @",
+      "sent": "My ___ is chrisrobinson@powermail.com.",
+      "sentA": "email address",
+      "coll": "your ___ with @",
+      "collA": "email address"
+    },
+    {
+      "w": "spell",
+      "vi": "đánh vần",
+      "def": "to say the letters of a word one by one",
+      "sent": "How do you ___ your surname? — T-A-Y-L-O-R.",
+      "sentA": "spell",
+      "coll": "___ your name",
+      "collA": "spell"
+    }
+  ]
+}

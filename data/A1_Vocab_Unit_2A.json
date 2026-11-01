@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_2A",
+  "title": "Vocabulary Quiz — Unit 2A: Places and adjectives",
+  "kicker": "Empower A1 · Unit 2B · Review",
+  "subtitle": "city / town / village and common adjectives from 2A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "city",
+      "vi": "thành phố",
+      "def": "a very big town, like Hanoi or London",
+      "sent": "London is a big ___ with millions of people.",
+      "sentA": "city",
+      "coll": "a big ___ like Tokyo",
+      "collA": "city"
+    },
+    {
+      "w": "town",
+      "vi": "thị trấn",
+      "def": "a place with houses and shops, smaller than a city",
+      "sent": "It’s a small ___ near Naples.",
+      "sentA": "town",
+      "coll": "a small ___ near the sea",
+      "collA": "town"
+    },
+    {
+      "w": "village",
+      "vi": "làng",
+      "def": "a very small place in the country with a few houses",
+      "sent": "My grandparents live in a small ___ with 200 people.",
+      "sentA": "village",
+      "coll": "a quiet ___ in the mountains",
+      "collA": "village"
+    },
+    {
+      "w": "small",
+      "vi": "nhỏ",
+      "def": "not big",
+      "sent": "The opposite of “big” is ___.",
+      "sentA": "small",
+      "coll": "a ___ town",
+      "collA": "small"
+    },
+    {
+      "w": "big",
+      "vi": "to, lớn",
+      "def": "not small",
+      "sent": "The opposite of “small” is ___.",
+      "sentA": "big",
+      "coll": "a ___ city",
+      "collA": "big"
+    },
+    {
+      "w": "old",
+      "vi": "cũ, cổ, già",
+      "def": "not new; from a long time ago",
+      "sent": "The opposite of “new” is ___.",
+      "sentA": "old",
+      "coll": "an ___ house",
+      "collA": "old"
+    },
+    {
+      "w": "new",
+      "vi": "mới",
+      "def": "not old; just made or bought",
+      "sent": "The opposite of “old” is ___.",
+      "sentA": "new",
+      "coll": "a ___ phone",
+      "collA": "new"
+    },
+    {
+      "w": "good",
+      "vi": "tốt, hay",
+      "def": "nice; not bad",
+      "sent": "The opposite of “bad” is ___.",
+      "sentA": "good",
+      "coll": "a ___ idea",
+      "collA": "good"
+    },
+    {
+      "w": "bad",
+      "vi": "tệ, xấu, dở",
+      "def": "not good",
+      "sent": "The opposite of “good” is ___.",
+      "sentA": "bad",
+      "coll": "a ___ day",
+      "collA": "bad"
+    },
+    {
+      "w": "happy",
+      "vi": "vui, hạnh phúc",
+      "def": "feeling good; smiling",
+      "sent": "The opposite of “sad” is ___.",
+      "sentA": "happy",
+      "coll": "a ___ smile",
+      "collA": "happy"
+    },
+    {
+      "w": "sad",
+      "vi": "buồn",
+      "def": "not happy",
+      "sent": "The opposite of “happy” is ___.",
+      "sentA": "sad",
+      "coll": "a ___ film",
+      "collA": "sad"
+    },
+    {
+      "w": "interesting",
+      "vi": "thú vị",
+      "def": "you want to know more about it",
+      "sent": "The opposite of “boring” is ___.",
+      "sentA": "interesting",
+      "coll": "an ___ city",
+      "collA": "interesting"
+    },
+    {
+      "w": "boring",
+      "vi": "chán, tẻ nhạt",
+      "def": "not interesting",
+      "sent": "The opposite of “interesting” is ___.",
+      "sentA": "boring",
+      "coll": "a ___ lesson",
+      "collA": "boring"
+    },
+    {
+      "w": "easy",
+      "vi": "dễ",
+      "def": "not difficult",
+      "sent": "The opposite of “difficult” is ___.",
+      "sentA": "easy",
+      "coll": "an ___ question",
+      "collA": "easy"
+    },
+    {
+      "w": "difficult",
+      "vi": "khó",
+      "def": "not easy",
+      "sent": "The opposite of “easy” is ___.",
+      "sentA": "difficult",
+      "coll": "a ___ exam",
+      "collA": "difficult"
+    },
+    {
+      "w": "right",
+      "vi": "đúng",
+      "def": "correct; not wrong",
+      "sent": "The opposite of “wrong” is ___.",
+      "sentA": "right",
+      "coll": "the ___ answer",
+      "collA": "right"
+    },
+    {
+      "w": "wrong",
+      "vi": "sai",
+      "def": "not correct",
+      "sent": "The opposite of “right” is ___.",
+      "sentA": "wrong",
+      "coll": "the ___ answer",
+      "collA": "wrong"
+    },
+    {
+      "w": "beautiful",
+      "vi": "đẹp",
+      "def": "very nice to look at",
+      "sent": "Venice is a ___ city.",
+      "sentA": "beautiful",
+      "coll": "a ___ beach",
+      "collA": "beautiful"
+    },
+    {
+      "w": "funny",
+      "vi": "buồn cười, hài hước",
+      "def": "makes you laugh",
+      "sent": "My brother is very ___ — he tells jokes.",
+      "sentA": "funny",
+      "coll": "a ___ film",
+      "collA": "funny"
+    },
+    {
+      "w": "flat",
+      "vi": "căn hộ",
+      "def": "rooms to live in, on one floor of a big building",
+      "sent": "I live in a ___ on the fifth floor.",
+      "sentA": "flat",
+      "coll": "a small ___ in the city",
+      "collA": "flat"
+    }
+  ]
+}

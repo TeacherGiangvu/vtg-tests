@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_5B",
+  "title": "Vocabulary Quiz — Unit 5B: Hotels",
+  "kicker": "Empower A1 · Unit 5C · Review",
+  "subtitle": "Hotel words and there isn’t / Is there …? from 5B",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "room",
+      "vi": "phòng",
+      "def": "a part of a building with walls and a door",
+      "sent": "My hotel ___ has a big bed.",
+      "sentA": "room",
+      "coll": "a hotel ___",
+      "collA": "room"
+    },
+    {
+      "w": "bed",
+      "vi": "cái giường",
+      "def": "a thing you sleep on",
+      "sent": "There’s a big ___ in the room.",
+      "sentA": "bed",
+      "coll": "a double ___",
+      "collA": "bed"
+    },
+    {
+      "w": "bath",
+      "vi": "bồn tắm",
+      "def": "a long container you fill with water and sit in to wash",
+      "sent": "There isn’t a ___, only a shower.",
+      "sentA": "bath",
+      "coll": "a hot ___",
+      "collA": "bath"
+    },
+    {
+      "w": "shower",
+      "vi": "vòi sen",
+      "def": "water comes down on you and you wash",
+      "sent": "There isn’t a bath, but there’s a ___.",
+      "sentA": "shower",
+      "coll": "have a ___",
+      "collA": "shower"
+    },
+    {
+      "w": "TV",
+      "vi": "ti vi",
+      "def": "a machine with a screen for programmes",
+      "sent": "There aren’t any ___ in the rooms.",
+      "sentA": "TVs",
+      "coll": "watch ___",
+      "collA": "TV"
+    },
+    {
+      "w": "wi-fi",
+      "vi": "wifi",
+      "def": "the internet with no cable",
+      "sent": "Is there ___ in the room? I need the internet.",
+      "sentA": "wi-fi",
+      "coll": "free ___",
+      "collA": "wi-fi"
+    },
+    {
+      "w": "pillow",
+      "vi": "cái gối",
+      "def": "a soft thing for your head in bed",
+      "sent": "Can I have another ___?",
+      "sentA": "pillow",
+      "coll": "a soft ___",
+      "collA": "pillow"
+    },
+    {
+      "w": "blanket",
+      "vi": "cái chăn",
+      "def": "a warm cover for your bed",
+      "sent": "There aren’t any ___ and it’s cold!",
+      "sentA": "blankets",
+      "coll": "a warm ___",
+      "collA": "blanket"
+    },
+    {
+      "w": "towel",
+      "vi": "khăn tắm",
+      "def": "a cloth to dry your body",
+      "sent": "I need a ___ after my shower.",
+      "sentA": "towel",
+      "coll": "a beach ___",
+      "collA": "towel"
+    },
+    {
+      "w": "car park",
+      "vi": "bãi đỗ xe",
+      "def": "a place where you leave your car",
+      "sent": "Is there a ___ here? — Yes, behind the hotel.",
+      "sentA": "car park",
+      "coll": "a free ___",
+      "collA": "car park"
+    },
+    {
+      "w": "hostel",
+      "vi": "nhà nghỉ giá rẻ (hostel)",
+      "def": "a cheap place to stay, often with beds in one big room",
+      "sent": "A ___ is cheap. Rooms usually only have beds.",
+      "sentA": "hostel",
+      "coll": "a youth ___",
+      "collA": "hostel"
+    },
+    {
+      "w": "hotel",
+      "vi": "khách sạn",
+      "def": "a place to stay with private rooms, a TV and a bathroom",
+      "sent": "A ___ room usually has a TV and a shower.",
+      "sentA": "hotel",
+      "coll": "a five-star ___",
+      "collA": "hotel"
+    },
+    {
+      "w": "cave",
+      "vi": "hang động",
+      "def": "a big hole in a mountain or under the ground",
+      "sent": "The Cave Hostel is in a ___ in Cappadocia.",
+      "sentA": "cave",
+      "coll": "sleep in a ___",
+      "collA": "cave"
+    },
+    {
+      "w": "receptionist",
+      "vi": "lễ tân",
+      "def": "a person at the hotel desk who helps guests",
+      "sent": "The ___ gives George the key to his room.",
+      "sentA": "receptionist",
+      "coll": "the hotel ___",
+      "collA": "receptionist"
+    },
+    {
+      "w": "guest",
+      "vi": "khách (ở khách sạn)",
+      "def": "a person who stays at a hotel",
+      "sent": "The hotel has 20 rooms for ___.",
+      "sentA": "guests",
+      "coll": "a hotel ___",
+      "collA": "guest"
+    },
+    {
+      "w": "review",
+      "vi": "bài nhận xét, đánh giá",
+      "def": "what a person writes about a hotel or a film",
+      "sent": "I read a ___ of the hostel online. It says it’s great.",
+      "sentA": "review",
+      "coll": "a good ___",
+      "collA": "review"
+    },
+    {
+      "w": "any",
+      "vi": "nào (dùng trong câu phủ định / câu hỏi số nhiều)",
+      "def": "used in questions and negatives with plural nouns",
+      "sent": "Are there ___ cafés near here?",
+      "sentA": "any",
+      "coll": "There aren’t ___ TVs.",
+      "collA": "any"
+    },
+    {
+      "w": "near here",
+      "vi": "gần đây",
+      "def": "not far from this place",
+      "sent": "Is there a supermarket ___? — Yes, in the next street.",
+      "sentA": "near here",
+      "coll": "a café ___",
+      "collA": "near here"
+    },
+    {
+      "w": "Is there …?",
+      "vi": "có … không? (số ít)",
+      "def": "a question about one thing in a place",
+      "sent": "___ a car park here? — Yes, there is.",
+      "sentA": "Is there",
+      "coll": "___ a TV?",
+      "collA": "Is there"
+    },
+    {
+      "w": "There isn’t",
+      "vi": "không có (số ít)",
+      "def": "not one; there is not",
+      "sent": "___ a restaurant in the hostel.",
+      "sentA": "There isn’t",
+      "coll": "___ a bath.",
+      "collA": "There isn’t"
+    }
+  ]
+}

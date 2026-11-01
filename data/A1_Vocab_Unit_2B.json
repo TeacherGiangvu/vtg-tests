@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_2B",
+  "title": "Vocabulary Quiz — Unit 2B: Objects and numbers",
+  "kicker": "Empower A1 · Unit 2C · Review",
+  "subtitle": "Common objects and numbers 1–90 from 2B",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "newspaper",
+      "vi": "tờ báo",
+      "def": "big printed pages with the news of the day",
+      "sent": "I read the ___ every morning.",
+      "sentA": "newspaper",
+      "coll": "a daily ___",
+      "collA": "newspaper"
+    },
+    {
+      "w": "phone",
+      "vi": "điện thoại",
+      "def": "you use it to call people and send messages",
+      "sent": "Can I use your ___? I want to call my mum.",
+      "sentA": "phone",
+      "coll": "a mobile ___",
+      "collA": "phone"
+    },
+    {
+      "w": "book",
+      "vi": "quyển sách",
+      "def": "pages with a story or information to read",
+      "sent": "I have a ___ in my bag — it’s a good story.",
+      "sentA": "book",
+      "coll": "read a ___",
+      "collA": "book"
+    },
+    {
+      "w": "umbrella",
+      "vi": "cái ô, cái dù",
+      "def": "you hold it over your head when it rains",
+      "sent": "It’s raining. Do you have an ___?",
+      "sentA": "umbrella",
+      "coll": "open your ___ in the rain",
+      "collA": "umbrella"
+    },
+    {
+      "w": "bottle of water",
+      "vi": "chai nước",
+      "def": "water in a plastic or glass container",
+      "sent": "I’m thirsty. I have a ___ in my bag.",
+      "sentA": "bottle of water",
+      "coll": "a ___ for the trip",
+      "collA": "bottle of water"
+    },
+    {
+      "w": "key",
+      "vi": "chìa khoá",
+      "def": "you use it to open a door",
+      "sent": "I can’t open the door. Where’s my ___?",
+      "sentA": "key",
+      "coll": "a door ___",
+      "collA": "key"
+    },
+    {
+      "w": "computer",
+      "vi": "máy tính",
+      "def": "a machine for work, the internet and email",
+      "sent": "I work on my ___ all day.",
+      "sentA": "computer",
+      "coll": "a ___ at the office",
+      "collA": "computer"
+    },
+    {
+      "w": "knife",
+      "vi": "con dao",
+      "def": "you use it to cut food",
+      "sent": "Can I have a ___? I want to cut the bread.",
+      "sentA": "knife",
+      "coll": "a sharp ___",
+      "collA": "knife"
+    },
+    {
+      "w": "ticket",
+      "vi": "vé",
+      "def": "a piece of paper you need for a train, plane or cinema",
+      "sent": "Here’s my plane ___. I go to London today.",
+      "sentA": "ticket",
+      "coll": "a train ___",
+      "collA": "ticket"
+    },
+    {
+      "w": "watch",
+      "vi": "đồng hồ đeo tay",
+      "def": "a small clock you wear on your arm",
+      "sent": "What’s the time? — I don’t know. I don’t have a ___.",
+      "sentA": "watch",
+      "coll": "a new ___ on my arm",
+      "collA": "watch"
+    },
+    {
+      "w": "bag",
+      "vi": "cái túi",
+      "def": "you carry your things in it",
+      "sent": "What’s in your ___? — A book and my keys.",
+      "sentA": "bag",
+      "coll": "a school ___",
+      "collA": "bag"
+    },
+    {
+      "w": "thirteen",
+      "vi": "mười ba (13)",
+      "def": "the number 13",
+      "sent": "Ten + three = ___.",
+      "sentA": "thirteen",
+      "coll": "___ students (13)",
+      "collA": "thirteen"
+    },
+    {
+      "w": "thirty",
+      "vi": "ba mươi (30)",
+      "def": "the number 30",
+      "sent": "Ten + twenty = ___.",
+      "sentA": "thirty",
+      "coll": "___ minutes (30)",
+      "collA": "thirty"
+    },
+    {
+      "w": "fifteen",
+      "vi": "mười lăm (15)",
+      "def": "the number 15",
+      "sent": "Ten + five = ___.",
+      "sentA": "fifteen",
+      "coll": "___ euros (15)",
+      "collA": "fifteen"
+    },
+    {
+      "w": "fifty",
+      "vi": "năm mươi (50)",
+      "def": "the number 50",
+      "sent": "Twenty-five + twenty-five = ___.",
+      "sentA": "fifty",
+      "coll": "___ people (50)",
+      "collA": "fifty"
+    },
+    {
+      "w": "twelve",
+      "vi": "mười hai (12)",
+      "def": "the number 12",
+      "sent": "Six + six = ___.",
+      "sentA": "twelve",
+      "coll": "___ months in a year",
+      "collA": "twelve"
+    },
+    {
+      "w": "nineteen",
+      "vi": "mười chín (19)",
+      "def": "the number 19",
+      "sent": "Ten + nine = ___.",
+      "sentA": "nineteen",
+      "coll": "___ years old (19)",
+      "collA": "nineteen"
+    },
+    {
+      "w": "ninety",
+      "vi": "chín mươi (90)",
+      "def": "the number 90",
+      "sent": "Forty-five + forty-five = ___.",
+      "sentA": "ninety",
+      "coll": "___ minutes in a football game",
+      "collA": "ninety"
+    },
+    {
+      "w": "seventy",
+      "vi": "bảy mươi (70)",
+      "def": "the number 70",
+      "sent": "Thirty-five + thirty-five = ___.",
+      "sentA": "seventy",
+      "coll": "___ kilos (70)",
+      "collA": "seventy"
+    },
+    {
+      "w": "eighty",
+      "vi": "tám mươi (80)",
+      "def": "the number 80",
+      "sent": "Forty + forty = ___.",
+      "sentA": "eighty",
+      "coll": "___ years old (80)",
+      "collA": "eighty"
+    }
+  ]
+}

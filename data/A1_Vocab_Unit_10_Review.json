@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_10_Review",
+  "title": "Vocabulary Quiz — Unit 10 review",
+  "kicker": "Empower A1 · Unit 11A · Review",
+  "subtitle": "The home, in / on and place phrases (Unit 10)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "bedroom",
+      "vi": "phòng ngủ",
+      "def": "the room where you sleep",
+      "sent": "My bed is in the ___.",
+      "sentA": "bedroom",
+      "coll": "a big ___ with a bed",
+      "collA": "bedroom"
+    },
+    {
+      "w": "bathroom",
+      "vi": "phòng tắm",
+      "def": "the room with a shower or a bath",
+      "sent": "The shower is in the ___.",
+      "sentA": "bathroom",
+      "coll": "wash in the ___",
+      "collA": "bathroom"
+    },
+    {
+      "w": "kitchen",
+      "vi": "nhà bếp",
+      "def": "the room where you cook",
+      "sent": "Mum is cooking dinner in the ___.",
+      "sentA": "kitchen",
+      "coll": "cook in the ___",
+      "collA": "kitchen"
+    },
+    {
+      "w": "living room",
+      "vi": "phòng khách",
+      "def": "the room with the sofa and the TV",
+      "sent": "We watch TV on the sofa in the ___.",
+      "sentA": "living room",
+      "coll": "sit in the ___",
+      "collA": "living room"
+    },
+    {
+      "w": "dining room",
+      "vi": "phòng ăn",
+      "def": "the room with a big table where you eat meals",
+      "sent": "We eat dinner at the big table in the ___.",
+      "sentA": "dining room",
+      "coll": "eat in the ___",
+      "collA": "dining room"
+    },
+    {
+      "w": "garden",
+      "vi": "khu vườn",
+      "def": "the place outside your house with grass and flowers",
+      "sent": "The children are playing outside in the ___.",
+      "sentA": "garden",
+      "coll": "flowers in the ___",
+      "collA": "garden"
+    },
+    {
+      "w": "door",
+      "vi": "cửa ra vào",
+      "def": "you open it to go into a room",
+      "sent": "Please close the ___ when you go out.",
+      "sentA": "door",
+      "coll": "open the ___",
+      "collA": "door"
+    },
+    {
+      "w": "window",
+      "vi": "cửa sổ",
+      "def": "glass in a wall; you look out of it",
+      "sent": "It’s hot. Can you open the ___?",
+      "sentA": "window",
+      "coll": "look out of the ___",
+      "collA": "window"
+    },
+    {
+      "w": "floor",
+      "vi": "sàn nhà",
+      "def": "the part of a room you walk on",
+      "sent": "There’s a red carpet on the ___.",
+      "sentA": "floor",
+      "coll": "sit on the ___",
+      "collA": "floor"
+    },
+    {
+      "w": "wall",
+      "vi": "bức tường",
+      "def": "the side of a room; you put pictures on it",
+      "sent": "There’s a picture on the ___.",
+      "sentA": "wall",
+      "coll": "a picture on the ___",
+      "collA": "wall"
+    },
+    {
+      "w": "in bed",
+      "vi": "trên giường (đang ngủ)",
+      "def": "lying down to sleep",
+      "sent": "It’s 11 p.m. — the children are ___.",
+      "sentA": "in bed",
+      "coll": "read ___",
+      "collA": "in bed"
+    },
+    {
+      "w": "in a taxi",
+      "vi": "trên taxi",
+      "def": "inside a car you pay a driver to take you in",
+      "sent": "I’m ___ — the driver is taking me to the hotel.",
+      "sentA": "in a taxi",
+      "coll": "go to the airport ___",
+      "collA": "in a taxi"
+    },
+    {
+      "w": "on a train",
+      "vi": "trên tàu hoả",
+      "def": "travelling on a vehicle on a railway",
+      "sent": "I’m ___ to Manchester.",
+      "sentA": "on a train",
+      "coll": "travel ___",
+      "collA": "on a train"
+    },
+    {
+      "w": "on a plane",
+      "vi": "trên máy bay",
+      "def": "flying in the sky",
+      "sent": "We’re ___ to Tokyo — in the sky now.",
+      "sentA": "on a plane",
+      "coll": "fly ___",
+      "collA": "on a plane"
+    },
+    {
+      "w": "on holiday",
+      "vi": "đi nghỉ",
+      "def": "not working; travelling to have fun",
+      "sent": "I’m not at work — I’m ___ in Spain.",
+      "sentA": "on holiday",
+      "coll": "go ___",
+      "collA": "on holiday"
+    },
+    {
+      "w": "at work",
+      "vi": "ở chỗ làm",
+      "def": "at the place where you do your job",
+      "sent": "I’m ___ — I’m in a meeting.",
+      "sentA": "at work",
+      "coll": "be ___ from 9 to 5",
+      "collA": "at work"
+    },
+    {
+      "w": "at the airport",
+      "vi": "ở sân bay",
+      "def": "where planes take off and land",
+      "sent": "My plane leaves in an hour. I’m ___ now.",
+      "sentA": "at the airport",
+      "coll": "wait ___",
+      "collA": "at the airport"
+    },
+    {
+      "w": "at the bus stop",
+      "vi": "ở trạm xe buýt",
+      "def": "where you wait for a bus",
+      "sent": "I’m waiting for the number 12 ___.",
+      "sentA": "at the bus stop",
+      "coll": "wait ___",
+      "collA": "at the bus stop"
+    },
+    {
+      "w": "at a party",
+      "vi": "ở bữa tiệc",
+      "def": "at an event with music and friends",
+      "sent": "It’s my friend’s birthday. I’m ___.",
+      "sentA": "at a party",
+      "coll": "dance ___",
+      "collA": "at a party"
+    },
+    {
+      "w": "in a café",
+      "vi": "trong quán cà phê",
+      "def": "where you drink coffee out of the house",
+      "sent": "I’m having a cappuccino ___.",
+      "sentA": "in a café",
+      "coll": "meet ___",
+      "collA": "in a café"
+    }
+  ]
+}

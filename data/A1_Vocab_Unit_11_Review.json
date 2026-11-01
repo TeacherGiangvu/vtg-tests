@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_11_Review",
+  "title": "Vocabulary Quiz — Unit 11 review",
+  "kicker": "Empower A1 · Unit 12A · Review",
+  "subtitle": "Life events, years and abilities (Unit 11)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "was born",
+      "vi": "đã được sinh ra",
+      "def": "past of be born",
+      "sent": "She ___ in 1998.",
+      "sentA": "was born",
+      "coll": "I ___ in 2001",
+      "collA": "was born"
+    },
+    {
+      "w": "grew up",
+      "vi": "đã lớn lên",
+      "def": "past of grow up",
+      "sent": "He ___ in a small village.",
+      "sentA": "grew up",
+      "coll": "___ in the country",
+      "collA": "grew up"
+    },
+    {
+      "w": "go to school",
+      "vi": "đi học (ở trường)",
+      "def": "to be a student at a school",
+      "sent": "Children ___ at six in Vietnam.",
+      "sentA": "go to school",
+      "coll": "___ every day",
+      "collA": "go to school"
+    },
+    {
+      "w": "finish university",
+      "vi": "tốt nghiệp đại học",
+      "def": "to complete your studies at university",
+      "sent": "When you ___, you can find a job.",
+      "sentA": "finish university",
+      "coll": "___ at 22",
+      "collA": "finish university"
+    },
+    {
+      "w": "get married",
+      "vi": "kết hôn",
+      "def": "to become husband and wife",
+      "sent": "They want to ___ next summer.",
+      "sentA": "get married",
+      "coll": "___ in a church",
+      "collA": "get married"
+    },
+    {
+      "w": "have a baby",
+      "vi": "sinh con",
+      "def": "to become a mother or father of a new child",
+      "sent": "My sister is going to ___ in May.",
+      "sentA": "have a baby",
+      "coll": "___ — a girl",
+      "collA": "have a baby"
+    },
+    {
+      "w": "stop working",
+      "vi": "nghỉ hưu, thôi làm việc",
+      "def": "to finish your job, for example at 60",
+      "sent": "My grandfather wants to ___ at 60.",
+      "sentA": "stop working",
+      "coll": "___ when you are old",
+      "collA": "stop working"
+    },
+    {
+      "w": "died",
+      "vi": "đã qua đời",
+      "def": "past of die",
+      "sent": "My grandmother ___ in 2015.",
+      "sentA": "died",
+      "coll": "___ at 90",
+      "collA": "died"
+    },
+    {
+      "w": "twenty fifteen",
+      "vi": "năm 2015",
+      "def": "the year 2015",
+      "sent": "2015 = ___",
+      "sentA": "twenty fifteen",
+      "coll": "in ___ (2015)",
+      "collA": "twenty fifteen"
+    },
+    {
+      "w": "nineteen ninety-eight",
+      "vi": "năm 1998",
+      "def": "the year 1998",
+      "sent": "1998 = ___",
+      "sentA": "nineteen ninety-eight",
+      "coll": "born in ___ (1998)",
+      "collA": "nineteen ninety-eight"
+    },
+    {
+      "w": "swim",
+      "vi": "bơi",
+      "def": "to move through water using your arms and legs",
+      "sent": "I can ___ — I go to the pool every week.",
+      "sentA": "swim",
+      "coll": "___ in the sea",
+      "collA": "swim"
+    },
+    {
+      "w": "cook",
+      "vi": "nấu ăn",
+      "def": "to make food ready to eat",
+      "sent": "My dad can ___ very well.",
+      "sentA": "cook",
+      "coll": "___ dinner",
+      "collA": "cook"
+    },
+    {
+      "w": "sing",
+      "vi": "hát",
+      "def": "to make music with your voice",
+      "sent": "He can ___ very well — he’s in a band.",
+      "sentA": "sing",
+      "coll": "___ a song",
+      "collA": "sing"
+    },
+    {
+      "w": "dance",
+      "vi": "nhảy",
+      "def": "to move your body to music",
+      "sent": "Can you ___? — Yes, I go to salsa classes.",
+      "sentA": "dance",
+      "coll": "___ to music",
+      "collA": "dance"
+    },
+    {
+      "w": "drive a car",
+      "vi": "lái ô tô",
+      "def": "to make a car go",
+      "sent": "She can ___ — she drives to work.",
+      "sentA": "drive a car",
+      "coll": "learn to ___",
+      "collA": "drive a car"
+    },
+    {
+      "w": "ride a bike",
+      "vi": "đi xe đạp",
+      "def": "to sit on a bike and make it go",
+      "sent": "I can ___ — I go to school on my bike.",
+      "sentA": "ride a bike",
+      "coll": "___ to school",
+      "collA": "ride a bike"
+    },
+    {
+      "w": "play cards",
+      "vi": "chơi bài",
+      "def": "to play games with 52 small picture cards",
+      "sent": "My grandparents ___ every evening.",
+      "sentA": "play cards",
+      "coll": "___ with friends",
+      "collA": "play cards"
+    },
+    {
+      "w": "very well",
+      "vi": "rất giỏi",
+      "def": "really good at it (✓✓✓)",
+      "sent": "She can swim ___ — she wins every race.",
+      "sentA": "very well",
+      "coll": "sing ___",
+      "collA": "very well"
+    },
+    {
+      "w": "quite well",
+      "vi": "khá giỏi",
+      "def": "OK; not very good, not bad (✓)",
+      "sent": "I can cook ___ — my food is OK.",
+      "sentA": "quite well",
+      "coll": "dance ___",
+      "collA": "quite well"
+    },
+    {
+      "w": "not … at all",
+      "vi": "hoàn toàn không",
+      "def": "zero; not even a little (✗)",
+      "sent": "I can’t sing ___ — it’s terrible!",
+      "sentA": "at all",
+      "coll": "can’t swim ___",
+      "collA": "not … at all"
+    }
+  ]
+}

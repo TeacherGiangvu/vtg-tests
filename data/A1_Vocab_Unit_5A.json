@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_5A",
+  "title": "Vocabulary Quiz — Unit 5A: Places in a town",
+  "kicker": "Empower A1 · Unit 5B · Review",
+  "subtitle": "Places, there is / there are, a few / a lot of from 5A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "bank",
+      "vi": "ngân hàng",
+      "def": "a place where you keep your money",
+      "sent": "I need some money. Is there a ___ near here?",
+      "sentA": "bank",
+      "coll": "a ___ in Old Street",
+      "collA": "bank"
+    },
+    {
+      "w": "beach",
+      "vi": "bãi biển",
+      "def": "the sand next to the sea",
+      "sent": "We swim and sit on the ___.",
+      "sentA": "beach",
+      "coll": "a sandy ___",
+      "collA": "beach"
+    },
+    {
+      "w": "café",
+      "vi": "quán cà phê",
+      "def": "a small place for coffee and cakes",
+      "sent": "There’s a nice Italian ___ in New Street.",
+      "sentA": "café",
+      "coll": "a ___ with good cakes",
+      "collA": "café"
+    },
+    {
+      "w": "cinema",
+      "vi": "rạp chiếu phim",
+      "def": "a place where you watch films",
+      "sent": "Let’s go to the ___ — there’s a new film.",
+      "sentA": "cinema",
+      "coll": "a ___ ticket",
+      "collA": "cinema"
+    },
+    {
+      "w": "hospital",
+      "vi": "bệnh viện",
+      "def": "a place where doctors help sick people",
+      "sent": "She’s a doctor in a big ___.",
+      "sentA": "hospital",
+      "coll": "a ___ doctor",
+      "collA": "hospital"
+    },
+    {
+      "w": "hotel",
+      "vi": "khách sạn",
+      "def": "a building where you pay to sleep",
+      "sent": "There are a few ___ in Timbuktu.",
+      "sentA": "hotels",
+      "coll": "a five-star ___",
+      "collA": "hotel"
+    },
+    {
+      "w": "museum",
+      "vi": "bảo tàng",
+      "def": "a building with old and interesting things",
+      "sent": "We visit the city ___ on Sunday.",
+      "sentA": "museum",
+      "coll": "a history ___",
+      "collA": "museum"
+    },
+    {
+      "w": "park",
+      "vi": "công viên",
+      "def": "a big green place with trees in a town",
+      "sent": "We walk in the ___ near the lake.",
+      "sentA": "park",
+      "coll": "play in the ___",
+      "collA": "park"
+    },
+    {
+      "w": "restaurant",
+      "vi": "nhà hàng",
+      "def": "a place where you pay for a meal",
+      "sent": "There’s a new Chinese ___ in Old Street.",
+      "sentA": "restaurant",
+      "coll": "book a ___",
+      "collA": "restaurant"
+    },
+    {
+      "w": "school",
+      "vi": "trường học",
+      "def": "a place where children learn",
+      "sent": "My daughter goes to ___ every day.",
+      "sentA": "school",
+      "coll": "a primary ___",
+      "collA": "school"
+    },
+    {
+      "w": "shop",
+      "vi": "cửa hàng",
+      "def": "a place where you buy things",
+      "sent": "There are a few ___ in New Street.",
+      "sentA": "shops",
+      "coll": "a food ___",
+      "collA": "shop"
+    },
+    {
+      "w": "station",
+      "vi": "nhà ga",
+      "def": "a place where trains stop",
+      "sent": "The café is near the ___.",
+      "sentA": "station",
+      "coll": "a train ___",
+      "collA": "station"
+    },
+    {
+      "w": "supermarket",
+      "vi": "siêu thị",
+      "def": "a very big food shop",
+      "sent": "I buy food at the ___.",
+      "sentA": "supermarket",
+      "coll": "a big ___",
+      "collA": "supermarket"
+    },
+    {
+      "w": "swimming pool",
+      "vi": "bể bơi",
+      "def": "a place with water where people swim",
+      "sent": "There’s a ___ at the hotel.",
+      "sentA": "swimming pool",
+      "coll": "swim in the ___",
+      "collA": "swimming pool"
+    },
+    {
+      "w": "market",
+      "vi": "chợ",
+      "def": "a place outside where people sell food and things",
+      "sent": "There’s a large ___ in Timbuktu.",
+      "sentA": "market",
+      "coll": "a food ___",
+      "collA": "market"
+    },
+    {
+      "w": "petrol station",
+      "vi": "trạm xăng",
+      "def": "a place where you buy petrol for your car",
+      "sent": "There’s only one ___ — we can get petrol there.",
+      "sentA": "petrol station",
+      "coll": "stop at a ___",
+      "collA": "petrol station"
+    },
+    {
+      "w": "a few",
+      "vi": "một vài, một ít",
+      "def": "a small number, like three or four",
+      "sent": "There are ___ hotels in Timbuktu — not many.",
+      "sentA": "a few",
+      "coll": "___ shops",
+      "collA": "a few"
+    },
+    {
+      "w": "a lot of",
+      "vi": "nhiều",
+      "def": "a big number",
+      "sent": "There are ___ shops in Harbin.",
+      "sentA": "a lot of",
+      "coll": "___ people",
+      "collA": "a lot of"
+    },
+    {
+      "w": "desert",
+      "vi": "sa mạc",
+      "def": "a very hot, dry place with sand",
+      "sent": "Timbuktu is in a ___. It’s very hot.",
+      "sentA": "desert",
+      "coll": "the hot ___",
+      "collA": "desert"
+    },
+    {
+      "w": "tourist",
+      "vi": "khách du lịch",
+      "def": "a person who visits a place on holiday",
+      "sent": "A lot of ___ come to Harbin in winter.",
+      "sentA": "tourists",
+      "coll": "a ___ from Japan",
+      "collA": "tourist"
+    }
+  ]
+}

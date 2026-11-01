@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_3B",
+  "title": "Vocabulary Quiz — Unit 3B: Meals and times",
+  "kicker": "Empower A1 · Unit 3C · Review",
+  "subtitle": "Food 2, meals, times and adverbs of frequency from 3B",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "apple",
+      "vi": "quả táo",
+      "def": "a round red or green fruit",
+      "sent": "I eat an ___ every day.",
+      "sentA": "apple",
+      "coll": "a red ___",
+      "collA": "apple"
+    },
+    {
+      "w": "biscuit",
+      "vi": "bánh quy",
+      "def": "a small dry sweet cake",
+      "sent": "I have a cup of tea and a ___.",
+      "sentA": "biscuit",
+      "coll": "a chocolate ___",
+      "collA": "biscuit"
+    },
+    {
+      "w": "cheese",
+      "vi": "phô mai",
+      "def": "yellow or white food made from milk",
+      "sent": "I sometimes have bread and ___.",
+      "sentA": "cheese",
+      "coll": "a ___ sandwich",
+      "collA": "cheese"
+    },
+    {
+      "w": "sandwich",
+      "vi": "bánh mì kẹp",
+      "def": "two pieces of bread with food inside",
+      "sent": "I have a ___ for lunch at work.",
+      "sentA": "sandwich",
+      "coll": "a cheese ___",
+      "collA": "sandwich"
+    },
+    {
+      "w": "tomato",
+      "vi": "cà chua",
+      "def": "a soft red fruit you use in salads",
+      "sent": "There’s a ___ in my salad.",
+      "sentA": "tomato",
+      "coll": "___ soup",
+      "collA": "tomato"
+    },
+    {
+      "w": "banana",
+      "vi": "quả chuối",
+      "def": "a long yellow fruit",
+      "sent": "Monkeys like ___.",
+      "sentA": "bananas",
+      "coll": "a yellow ___",
+      "collA": "banana"
+    },
+    {
+      "w": "cake",
+      "vi": "bánh ngọt",
+      "def": "a sweet food for birthdays",
+      "sent": "Happy birthday! Here’s your ___.",
+      "sentA": "cake",
+      "coll": "a birthday ___",
+      "collA": "cake"
+    },
+    {
+      "w": "ice cream",
+      "vi": "kem",
+      "def": "a very cold sweet food",
+      "sent": "It’s hot! Let’s have an ___.",
+      "sentA": "ice cream",
+      "coll": "chocolate ___",
+      "collA": "ice cream"
+    },
+    {
+      "w": "potato",
+      "vi": "khoai tây",
+      "def": "a vegetable that grows in the ground; chips are made from it",
+      "sent": "I have meat and a ___ for dinner.",
+      "sentA": "potato",
+      "coll": "a baked ___",
+      "collA": "potato"
+    },
+    {
+      "w": "butter",
+      "vi": "bơ (động vật)",
+      "def": "yellow food from milk that you put on bread",
+      "sent": "I have bread and ___ for breakfast.",
+      "sentA": "butter",
+      "coll": "bread and ___",
+      "collA": "butter"
+    },
+    {
+      "w": "pizza",
+      "vi": "bánh pizza",
+      "def": "Italian food: flat bread with cheese and tomato on top",
+      "sent": "I sometimes have ___ for dinner.",
+      "sentA": "pizza",
+      "coll": "a cheese ___",
+      "collA": "pizza"
+    },
+    {
+      "w": "breakfast",
+      "vi": "bữa sáng",
+      "def": "the first meal of the day",
+      "sent": "I have ___ at 7:30.",
+      "sentA": "breakfast",
+      "coll": "have ___ at seven",
+      "collA": "breakfast"
+    },
+    {
+      "w": "lunch",
+      "vi": "bữa trưa",
+      "def": "the meal in the middle of the day",
+      "sent": "We have ___ at 12:30.",
+      "sentA": "lunch",
+      "coll": "have ___ at noon",
+      "collA": "lunch"
+    },
+    {
+      "w": "dinner",
+      "vi": "bữa tối",
+      "def": "the meal in the evening",
+      "sent": "People never have ___ early in Spain.",
+      "sentA": "dinner",
+      "coll": "have ___ at 8 p.m.",
+      "collA": "dinner"
+    },
+    {
+      "w": "always",
+      "vi": "luôn luôn",
+      "def": "every time (100%)",
+      "sent": "Every day, at every meal, I drink water. I ___ drink water.",
+      "sentA": "always",
+      "coll": "___ on time",
+      "collA": "always"
+    },
+    {
+      "w": "usually",
+      "vi": "thường thường",
+      "def": "most times",
+      "sent": "Most days I ___ have rice for lunch, but on Fridays I have pizza.",
+      "sentA": "usually",
+      "coll": "___ at home",
+      "collA": "usually"
+    },
+    {
+      "w": "sometimes",
+      "vi": "thỉnh thoảng",
+      "def": "some times, not always",
+      "sent": "I ___ eat cake — maybe once a week.",
+      "sentA": "sometimes",
+      "coll": "___ late",
+      "collA": "sometimes"
+    },
+    {
+      "w": "never",
+      "vi": "không bao giờ",
+      "def": "not at any time (0%)",
+      "sent": "I’m a vegetarian. I ___ eat meat.",
+      "sentA": "never",
+      "coll": "___ eat meat",
+      "collA": "never"
+    },
+    {
+      "w": "half past",
+      "vi": "rưỡi (… giờ 30)",
+      "def": "30 minutes after the hour",
+      "sent": "It’s 4:30 — it’s ___ four.",
+      "sentA": "half past",
+      "coll": "___ seven (7:30)",
+      "collA": "half past"
+    },
+    {
+      "w": "quarter to",
+      "vi": "kém mười lăm",
+      "def": "15 minutes before the hour",
+      "sent": "It’s 4:45 — it’s a ___ five.",
+      "sentA": "quarter to",
+      "coll": "a ___ six (5:45)",
+      "collA": "quarter to"
+    }
+  ]
+}

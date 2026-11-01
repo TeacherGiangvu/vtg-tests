@@ -1,0 +1,190 @@
+{
+  "level": "A1",
+  "topic": "Unit_11A",
+  "title": "Vocabulary Quiz — Unit 11A: Life events",
+  "kicker": "Empower A1 · Unit 11B · Review",
+  "subtitle": "Life events, past forms and years from 11A",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "be born",
+      "vi": "được sinh ra",
+      "def": "to start your life",
+      "sent": "When were you ___? — In 1998.",
+      "sentA": "born",
+      "coll": "___ in Hanoi",
+      "collA": "be born"
+    },
+    {
+      "w": "grow up",
+      "vi": "lớn lên",
+      "def": "to change from a child into an adult",
+      "sent": "I want to ___ near the sea, like my parents.",
+      "sentA": "grow up",
+      "coll": "___ in a small village",
+      "collA": "grow up"
+    },
+    {
+      "w": "go to school",
+      "vi": "đi học (ở trường)",
+      "def": "to be a student at a school",
+      "sent": "Children ___ at six in Vietnam.",
+      "sentA": "go to school",
+      "coll": "___ every day",
+      "collA": "go to school"
+    },
+    {
+      "w": "finish school",
+      "vi": "học xong phổ thông",
+      "def": "to stop being a school student, at about 18",
+      "sent": "After I ___, I want to go to university.",
+      "sentA": "finish school",
+      "coll": "___ at 18",
+      "collA": "finish school"
+    },
+    {
+      "w": "go to university",
+      "vi": "vào đại học",
+      "def": "to start studying at a university",
+      "sent": "Next year I want to ___ and study maths.",
+      "sentA": "go to university",
+      "coll": "___ in Hanoi",
+      "collA": "go to university"
+    },
+    {
+      "w": "finish university",
+      "vi": "tốt nghiệp đại học",
+      "def": "to complete your studies at university",
+      "sent": "When you ___, you can find a job.",
+      "sentA": "finish university",
+      "coll": "___ at 22",
+      "collA": "finish university"
+    },
+    {
+      "w": "get married",
+      "vi": "kết hôn",
+      "def": "to become husband and wife",
+      "sent": "They want to ___ next summer.",
+      "sentA": "get married",
+      "coll": "___ in a church",
+      "collA": "get married"
+    },
+    {
+      "w": "have a baby",
+      "vi": "sinh con",
+      "def": "to become a mother or father of a new child",
+      "sent": "My sister is going to ___ in May.",
+      "sentA": "have a baby",
+      "coll": "___ — a little girl",
+      "collA": "have a baby"
+    },
+    {
+      "w": "stop working",
+      "vi": "nghỉ hưu, thôi làm việc",
+      "def": "to finish your job, for example at 60",
+      "sent": "My grandfather wants to ___ at 60.",
+      "sentA": "stop working",
+      "coll": "___ when you are old",
+      "collA": "stop working"
+    },
+    {
+      "w": "die",
+      "vi": "qua đời, chết",
+      "def": "to stop living",
+      "sent": "Plants ___ with no water.",
+      "sentA": "die",
+      "coll": "___ at 90",
+      "collA": "die"
+    },
+    {
+      "w": "was born",
+      "vi": "đã được sinh ra",
+      "def": "past of be born",
+      "sent": "She ___ in 1998 in Ho Chi Minh City.",
+      "sentA": "was born",
+      "coll": "I ___ in 2001",
+      "collA": "was born"
+    },
+    {
+      "w": "grew up",
+      "vi": "đã lớn lên",
+      "def": "past of grow up",
+      "sent": "He ___ in a small village and then moved to the city.",
+      "sentA": "grew up",
+      "coll": "___ in the country",
+      "collA": "grew up"
+    },
+    {
+      "w": "got married",
+      "vi": "đã kết hôn",
+      "def": "past of get married",
+      "sent": "My parents ___ in 1990.",
+      "sentA": "got married",
+      "coll": "___ last year",
+      "collA": "got married"
+    },
+    {
+      "w": "had a baby",
+      "vi": "đã sinh con",
+      "def": "past of have a baby",
+      "sent": "They ___ last month — a little boy!",
+      "sentA": "had a baby",
+      "coll": "___ in 2020",
+      "collA": "had a baby"
+    },
+    {
+      "w": "died",
+      "vi": "đã qua đời",
+      "def": "past of die",
+      "sent": "My grandmother ___ in 2015.",
+      "sentA": "died",
+      "coll": "___ at 90",
+      "collA": "died"
+    },
+    {
+      "w": "finished school",
+      "vi": "đã học xong phổ thông",
+      "def": "past of finish school",
+      "sent": "I ___ in 2016 and then I went to university.",
+      "sentA": "finished school",
+      "coll": "___ at 18",
+      "collA": "finished school"
+    },
+    {
+      "w": "nineteen thirty-seven",
+      "vi": "năm 1937",
+      "def": "the year 1937",
+      "sent": "1937 = ___",
+      "sentA": "nineteen thirty-seven",
+      "coll": "born in ___ (1937)",
+      "collA": "nineteen thirty-seven"
+    },
+    {
+      "w": "two thousand and one",
+      "vi": "năm 2001",
+      "def": "the year 2001",
+      "sent": "2001 = ___",
+      "sentA": "two thousand and one",
+      "coll": "in ___ (2001)",
+      "collA": "two thousand and one"
+    },
+    {
+      "w": "twenty fifteen",
+      "vi": "năm 2015",
+      "def": "the year 2015",
+      "sent": "2015 = ___",
+      "sentA": "twenty fifteen",
+      "coll": "in ___ (2015)",
+      "collA": "twenty fifteen"
+    },
+    {
+      "w": "nineteen oh five",
+      "vi": "năm 1905",
+      "def": "the year 1905",
+      "sent": "1905 = ___",
+      "sentA": "nineteen oh five",
+      "coll": "in ___ (1905)",
+      "collA": "nineteen oh five"
+    }
+  ]
+}
