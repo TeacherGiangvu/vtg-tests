@@ -1,0 +1,30 @@
+{
+  "level": "A1",
+  "topic": "Unit_7_Words",
+  "title": "Vocabulary Quiz — Unit 7 review: objects, clothes and shopping",
+  "kicker": "Empower A1 · Unit 8A · Review",
+  "subtitle": "Common objects, clothes, colours and shopping phrases (Unit 7)",
+  "seconds": 10,
+  "words": [
+    {"w": "lamp", "vi": "cái đèn (bàn, đứng)", "def": "a thing that gives light in a room", "sent": "It’s dark here. Can you turn on the ___ on the desk?", "sentA": "lamp", "coll": "a desk ___", "collA": "lamp"},
+    {"w": "clock", "vi": "đồng hồ (treo tường, để bàn)", "def": "a thing on the wall that shows the time", "sent": "Look at the ___ on the wall — it’s ten o’clock.", "sentA": "clock", "coll": "a kitchen ___", "collA": "clock"},
+    {"w": "chair", "vi": "cái ghế", "def": "a thing you sit on, with four legs and a back", "sent": "Please sit on this ___.", "sentA": "chair", "coll": "a table and four ___s", "collA": "chair"},
+    {"w": "plant", "vi": "cây cảnh", "def": "a green living thing in a pot", "sent": "There’s a green ___ next to the window.", "sentA": "plant", "coll": "water the ___", "collA": "plant"},
+    {"w": "suitcase", "vi": "va li", "def": "a big bag you take on a trip for your clothes", "sent": "I’m going on holiday. My clothes are in my ___.", "sentA": "suitcase", "coll": "pack your ___", "collA": "suitcase"},
+    {"w": "guitar", "vi": "đàn ghi-ta", "def": "a music instrument with six strings", "sent": "He plays the ___ in a band.", "sentA": "guitar", "coll": "play the ___", "collA": "guitar"},
+    {"w": "this", "vi": "cái này (một vật, ở gần)", "def": "one thing near me", "sent": "I like ___ lamp here — it’s near me.", "sentA": "this", "coll": "___ cup (here, one)", "collA": "this"},
+    {"w": "that", "vi": "cái kia (một vật, ở xa)", "def": "one thing not near me", "sent": "Who’s ___ man over there?", "sentA": "that", "coll": "___ car (over there, one)", "collA": "that"},
+    {"w": "these", "vi": "những cái này (ở gần)", "def": "two or more things near me", "sent": "How much are ___ cups here?", "sentA": "these", "coll": "___ flowers (here, two or more)", "collA": "these"},
+    {"w": "those", "vi": "những cái kia (ở xa)", "def": "two or more things not near me", "sent": "Look at ___ plates over there — they’re beautiful.", "sentA": "those", "coll": "___ shoes (over there, two or more)", "collA": "those"},
+    {"w": "jacket", "vi": "áo khoác ngắn", "def": "a short coat you wear over a shirt", "sent": "Tom Ford wears a white shirt and a dark grey ___.", "sentA": "jacket", "coll": "a leather ___", "collA": "jacket"},
+    {"w": "skirt", "vi": "chân váy", "def": "a woman’s piece of clothing that hangs from the waist", "sent": "Carolina Herrera usually wears a black ___.", "sentA": "skirt", "coll": "a short ___", "collA": "skirt"},
+    {"w": "trousers", "vi": "quần dài", "def": "clothes for your legs, one part for each leg", "sent": "He’s wearing black ___ and a white shirt.", "sentA": "trousers", "coll": "a pair of ___", "collA": "trousers"},
+    {"w": "dress", "vi": "váy liền", "def": "a piece of clothing for a woman, top and skirt in one", "sent": "Michelle usually wears a red ___.", "sentA": "dress", "coll": "a party ___", "collA": "dress"},
+    {"w": "dark", "vi": "đậm (màu)", "def": "nearer to black, not light", "sent": "Tom Ford’s jacket is nearly black — it’s ___ grey.", "sentA": "dark", "coll": "___ blue, nearly black", "collA": "dark"},
+    {"w": "Can I help you?", "vi": "tôi có thể giúp gì cho bạn?", "def": "what a shop assistant says to a customer", "sent": "Shop assistant: “___” — Customer: “Yes, how much are these cups?”", "sentA": "Can I help you?", "coll": "Hello, ___", "collA": "Can I help you?"},
+    {"w": "How much is it?", "vi": "cái này bao nhiêu tiền?", "def": "a question about the price of one thing", "sent": "I like this lamp. ___ — It’s £15.", "sentA": "How much is it?", "coll": "Excuse me, ___", "collA": "How much is it?"},
+    {"w": "I’d like", "vi": "tôi muốn (lịch sự)", "def": "a polite way to say I want", "sent": "___ two of these cups, please.", "sentA": "I’d like", "coll": "___ the large bowl, please", "collA": "I’d like"},
+    {"w": "Here you are", "vi": "đây ạ (khi đưa cho ai cái gì)", "def": "what you say when you give someone something", "sent": "That’s ten pounds, please. — ___.", "sentA": "Here you are", "coll": "___ — ten pounds", "collA": "Here you are"},
+    {"w": "receipt", "vi": "hoá đơn, biên lai", "def": "a small paper from the shop that shows what you paid", "sent": "Thank you. And here’s your ___.", "sentA": "receipt", "coll": "keep the ___", "collA": "receipt"}
+  ]
+}

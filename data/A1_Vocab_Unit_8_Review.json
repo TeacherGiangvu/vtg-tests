@@ -1,0 +1,244 @@
+{
+  "level": "A1",
+  "topic": "Unit_8_Review",
+  "title": "Vocabulary Quiz — Empower A1 Unit 8",
+  "kicker": "Empower A1 · Unit 9A · Review",
+  "subtitle": "Unit 8 review",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "go shopping",
+      "vi": "đi mua sắm",
+      "def": "to go to the shops to buy things",
+      "sent": "On Saturday I ___ with my mum and bought new shoes.",
+      "sentA": "went shopping",
+      "coll": "go ___ at the market",
+      "collA": "shopping"
+    },
+    {
+      "w": "go to a café",
+      "vi": "đi đến quán cà phê",
+      "def": "to visit a place where you can drink coffee and tea",
+      "sent": "After work, we ___ and talked for an hour.",
+      "sentA": "went to a café",
+      "coll": "meet friends in a ___ for coffee",
+      "collA": "café"
+    },
+    {
+      "w": "go to a party",
+      "vi": "đi dự tiệc",
+      "def": "to visit a place where people eat, dance and have fun together",
+      "sent": "It was my friend's birthday, so we ___ on Friday night.",
+      "sentA": "went to a party",
+      "coll": "a birthday ___",
+      "collA": "party"
+    },
+    {
+      "w": "go to the cinema",
+      "vi": "đi xem phim ở rạp",
+      "def": "to go to a place to see a film on a big screen",
+      "sent": "We saw a new film because we ___ last night.",
+      "sentA": "went to the cinema",
+      "coll": "buy a ticket for the ___",
+      "collA": "cinema"
+    },
+    {
+      "w": "have a coffee",
+      "vi": "uống một tách cà phê",
+      "def": "to drink a cup of coffee",
+      "sent": "I met my friend and we ___ this morning.",
+      "sentA": "had a coffee",
+      "coll": "have a cup of ___",
+      "collA": "coffee"
+    },
+    {
+      "w": "have a drink",
+      "vi": "uống một thứ gì đó (đồ uống)",
+      "def": "to drink water, juice or tea",
+      "sent": "I was thirsty, so I ___ of orange juice.",
+      "sentA": "had a drink",
+      "coll": "a soft ___ (cola, lemonade)",
+      "collA": "drink"
+    },
+    {
+      "w": "have a shower",
+      "vi": "tắm vòi sen",
+      "def": "to wash your body under running water",
+      "sent": "I was hot after football, so I ___.",
+      "sentA": "had a shower",
+      "coll": "have a hot ___",
+      "collA": "shower"
+    },
+    {
+      "w": "have pizza",
+      "vi": "ăn pizza",
+      "def": "to eat a round Italian food with cheese and tomato",
+      "sent": "We ___ for dinner with lots of cheese.",
+      "sentA": "had pizza",
+      "coll": "have ___ with cheese and tomato",
+      "collA": "pizza"
+    },
+    {
+      "w": "listen to music",
+      "vi": "nghe nhạc",
+      "def": "to hear songs",
+      "sent": "Yesterday she ___ on her phone on the bus.",
+      "sentA": "listened to music",
+      "coll": "listen to ___ with headphones",
+      "collA": "music"
+    },
+    {
+      "w": "listen to the radio",
+      "vi": "nghe đài",
+      "def": "to hear news or songs from a small machine",
+      "sent": "In the car, my dad ___ to hear the news.",
+      "sentA": "listened to the radio",
+      "coll": "turn on the ___ to hear the news",
+      "collA": "radio"
+    },
+    {
+      "w": "play a video game",
+      "vi": "chơi trò chơi điện tử",
+      "def": "to play a game on a computer or a phone",
+      "sent": "My son ___ on his computer for two hours.",
+      "sentA": "played a video game",
+      "coll": "play a ___ game on your phone",
+      "collA": "video"
+    },
+    {
+      "w": "play football",
+      "vi": "chơi bóng đá",
+      "def": "to play a team sport with a ball and two goals",
+      "sent": "The boys ___ in the park on Sunday.",
+      "sentA": "played football",
+      "coll": "a ___ match",
+      "collA": "football"
+    },
+    {
+      "w": "play the guitar",
+      "vi": "chơi đàn ghi-ta",
+      "def": "to make music with an instrument that has six strings",
+      "sent": "He ___ and sang a song for us.",
+      "sentA": "played the guitar",
+      "coll": "play the ___ in a band",
+      "collA": "guitar"
+    },
+    {
+      "w": "read a book",
+      "vi": "đọc sách",
+      "def": "to look at the words in a story or a text book",
+      "sent": "I ___ before bed last night.",
+      "sentA": "read a book",
+      "coll": "read a ___ in the library",
+      "collA": "book"
+    },
+    {
+      "w": "read a magazine",
+      "vi": "đọc tạp chí",
+      "def": "to read a thin book with pictures and stories about fashion or sport",
+      "sent": "At the hairdresser's, she ___ about fashion.",
+      "sentA": "read a magazine",
+      "coll": "a fashion ___",
+      "collA": "magazine"
+    },
+    {
+      "w": "read the newspaper",
+      "vi": "đọc báo",
+      "def": "to read the news on paper",
+      "sent": "My grandfather ___ to read the news this morning.",
+      "sentA": "read the newspaper",
+      "coll": "buy a daily ___ at the shop",
+      "collA": "newspaper"
+    },
+    {
+      "w": "watch a film",
+      "vi": "xem phim",
+      "def": "to look at a story on TV or a screen",
+      "sent": "We ___ at home on TV last night.",
+      "sentA": "watched a film",
+      "coll": "watch a ___ on Netflix",
+      "collA": "film"
+    },
+    {
+      "w": "yesterday",
+      "vi": "hôm qua",
+      "def": "the day before today",
+      "sent": "Today is Thursday. ___ was Wednesday.",
+      "sentA": "Yesterday",
+      "coll": "see you tomorrow; I saw you ___",
+      "collA": "yesterday"
+    },
+    {
+      "w": "last night",
+      "vi": "tối qua, đêm qua",
+      "def": "the evening or night before today",
+      "sent": "I went to bed late ___ because I watched a film.",
+      "sentA": "last night",
+      "coll": "yesterday evening = ___",
+      "collA": "last night"
+    },
+    {
+      "w": "last week",
+      "vi": "tuần trước",
+      "def": "the week before this week",
+      "sent": "Today is 20 October. On 13 October I visited my aunt ___.",
+      "sentA": "last week",
+      "coll": "this week, next week and ___",
+      "collA": "last week"
+    },
+    {
+      "w": "last weekend",
+      "vi": "cuối tuần trước",
+      "def": "Saturday and Sunday of the week before this one",
+      "sent": "On Saturday and Sunday ___ we went to the beach.",
+      "sentA": "last weekend",
+      "coll": "this weekend, next weekend, ___",
+      "collA": "last weekend"
+    },
+    {
+      "w": "last month",
+      "vi": "tháng trước",
+      "def": "the month before this month",
+      "sent": "It's November now. I moved to a new flat in October, ___.",
+      "sentA": "last month",
+      "coll": "this month and ___",
+      "collA": "last month"
+    },
+    {
+      "w": "this morning",
+      "vi": "sáng nay",
+      "def": "the early part of today",
+      "sent": "It's 2 p.m. I had breakfast at 7 a.m. ___.",
+      "sentA": "this morning",
+      "coll": "___ I got up at six.",
+      "collA": "this morning"
+    },
+    {
+      "w": "this afternoon",
+      "vi": "chiều nay",
+      "def": "the part of today after 12 o'clock",
+      "sent": "It's 6 p.m. We had a meeting at 3 p.m. ___.",
+      "sentA": "this afternoon",
+      "coll": "___ I played football at four.",
+      "collA": "this afternoon"
+    },
+    {
+      "w": "at the weekend",
+      "vi": "vào cuối tuần",
+      "def": "on Saturday and Sunday",
+      "sent": "I don't work on Saturday or Sunday. I relax ___.",
+      "sentA": "at the weekend",
+      "coll": "have fun ___",
+      "collA": "at the weekend"
+    },
+    {
+      "w": "two years ago",
+      "vi": "hai năm trước",
+      "def": "a time in the past: 24 months before now",
+      "sent": "I started English in 2024, so I started ___ (it's 2026).",
+      "sentA": "two years ago",
+      "coll": "a month ___",
+      "collA": "ago"
+    }
+  ]
+}
