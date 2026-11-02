@@ -1,0 +1,40 @@
+{
+  "level": "IELTS",
+  "topic": "6_0_Unit_1_Writing",
+  "title": "Vocabulary Quiz — Unit 1 Writing: Charts, percent and comparisons",
+  "kicker": "IELTS 6.0 · Unit 1 · Review",
+  "subtitle": "Words from Lesson 4 (Writing Task 1) + percent / percentage and comparisons",
+  "seconds": 10,
+  "words": [
+    {"w": "pie chart", "vi": "biểu đồ tròn", "def": "a circle divided into parts to show how a total is shared", "sent": "The ___ shows the languages people speak at home in Winchester.", "sentA": "pie chart", "coll": "a ___ chart divided into four parts", "collA": "pie"},
+    {"w": "bar chart", "vi": "biểu đồ cột", "def": "a graphic with bars of different heights to compare amounts", "sent": "The ___ shows integration problems for three age groups.", "sentA": "bar chart", "coll": "the tallest bar in the ___ chart", "collA": "bar"},
+    {"w": "line graph", "vi": "biểu đồ đường", "def": "a graphic with a line that shows changes over time", "sent": "The ___ shows the number of visitors to Townsville over four years.", "sentA": "line graph", "coll": "the line in the ___", "collA": "graph"},
+    {"w": "table", "vi": "bảng số liệu", "def": "numbers arranged in rows and columns", "sent": "The ___ shows the number of students at Broadlands Language School.", "sentA": "table", "coll": "the rows and columns of a ___", "collA": "table"},
+    {"w": "diagram", "vi": "sơ đồ, hình vẽ minh hoạ", "def": "a simple drawing that shows how something works", "sent": "The ___ shows a machine for producing electricity from waves.", "sentA": "diagram", "coll": "label the parts of a ___", "collA": "diagram"},
+    {"w": "summarise", "vi": "tóm tắt", "def": "to give the main points in a short form", "sent": "___ the information by selecting and reporting the main features.", "sentA": "Summarise", "coll": "___ the main features", "collA": "summarise"},
+    {"w": "overview", "vi": "phần tổng quan", "def": "a short description of the main idea of all the information", "sent": "The last paragraph gives a general ___ of all the information.", "sentA": "overview", "coll": "write a general ___", "collA": "overview"},
+    {"w": "figures", "vi": "số liệu", "def": "numbers, especially official ones", "sent": "Include ___ from the chart in your summary.", "sentA": "figures", "coll": "the latest ___ show …", "collA": "figures"},
+    {"w": "compare", "vi": "so sánh", "def": "to look at how two or more things are similar or different", "sent": "You must also ___ some of the information.", "sentA": "compare", "coll": "___ the age groups", "collA": "compare"},
+    {"w": "difficulties", "vi": "những khó khăn", "def": "problems; things that are hard to deal with", "sent": "The chart shows the ___ people have when they move to a new country.", "sentA": "difficulties", "coll": "have ___ with the language", "collA": "difficulties"},
+    {"w": "move to", "vi": "chuyển đến (sống ở)", "def": "to go and live in a different place", "sent": "Many people have problems when they ___ a new country.", "sentA": "move to", "coll": "___ to another city", "collA": "move"},
+    {"w": "vary according to", "vi": "thay đổi tuỳ theo", "def": "to be different depending on something", "sent": "The chart shows how the problems ___ age.", "sentA": "vary according to", "coll": "vary ___ to age", "collA": "according"},
+    {"w": "age group", "vi": "nhóm tuổi", "def": "the people who are between two ages, e.g. 18 to 34", "sent": "The greatest problem for the youngest ___ is making friends.", "sentA": "age group", "coll": "the 35–54 age ___", "collA": "group"},
+    {"w": "accommodation", "vi": "chỗ ở", "def": "a place to live or stay", "sent": "Only 22 percent of older people have trouble finding ___.", "sentA": "accommodation", "coll": "find cheap ___", "collA": "accommodation"},
+    {"w": "problematic", "vi": "gây khó khăn, có vấn đề", "def": "full of problems; difficult to deal with", "sent": "The older age group find learning the local language the most ___.", "sentA": "problematic", "coll": "the most ___ area", "collA": "problematic"},
+    {"w": "in contrast", "vi": "ngược lại, trái lại", "def": "used to show that something is very different from what you just said", "sent": "___, fewer people have difficulties with education.", "sentA": "In contrast", "coll": "in ___ to the young", "collA": "contrast"},
+    {"w": "compared with", "vi": "so với", "def": "used when you are looking at how two things are different", "sent": "37 percent have this problem, ___ 32 percent of the younger group.", "sentA": "compared with", "coll": "___ with last year", "collA": "compared"},
+    {"w": "finances", "vi": "tài chính, chuyện tiền bạc", "def": "the money a person has and how they manage it", "sent": "The second biggest problem is sorting out ___.", "sentA": "finances", "coll": "organise your ___", "collA": "finances"},
+    {"w": "healthcare", "vi": "chăm sóc y tế", "def": "the service of looking after people's health", "sent": "The biggest problem for the middle age group is sorting out ___.", "sentA": "healthcare", "coll": "free public ___", "collA": "healthcare"},
+    {"w": "to some extent", "vi": "ở một mức độ nào đó", "def": "partly, but not completely", "sent": "In general, all people experience problems ___.", "sentA": "to some extent", "coll": "to some ___", "collA": "extent"}
+  ],
+  "grammar": [
+    {"q": "A problem experienced by 46 ___ of young people.", "options": ["percent", "percents", "percentage"], "answer": 0, "note": "percent sau một con số, không có -s"},
+    {"q": "The ___ of older people with this problem is much lower.", "options": ["percent", "percentage", "percents"], "answer": 1, "note": "the percentage — không đi với con số cụ thể"},
+    {"q": "By 1995, the numbers had fallen to ___ two percent.", "options": ["a", "the", "—"], "answer": 2, "note": "không dùng a trước percent"},
+    {"q": "Many people find making friends ___ than finding a job.", "options": ["more hard", "harder", "hardest"], "answer": 1, "note": "tính từ 1 âm tiết + -er"},
+    {"q": "Local people are often ___ than you expect.", "options": ["more friendlier", "friendlier", "friendliest"], "answer": 1, "note": "-y → -ier, không thêm more"},
+    {"q": "Learning the language is the ___ thing for newcomers.", "options": ["most important", "importantest", "more important"], "answer": 0, "note": "tính từ dài: the most"},
+    {"q": "The ___ percentage appeared in 1991.", "options": ["most highest", "highest", "more high"], "answer": 1, "note": "the + -est, không thêm most"},
+    {"q": "Workers' salaries got ___ in 2001.", "options": ["worser", "worse", "more bad"], "answer": 1, "note": "bad – worse – worst"}
+  ]
+}
