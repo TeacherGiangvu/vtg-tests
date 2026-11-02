@@ -1,0 +1,190 @@
+{
+  "level": "IELTS",
+  "topic": "6_0_Unit_1_Vocab_Extension",
+  "title": "Vocabulary Quiz — Unit 1 Vocabulary Extension: Starting somewhere new",
+  "kicker": "IELTS 6.0 · Unit 1 · Review",
+  "subtitle": "Words from the Vocabulary Extension Unit 1 list (handed out in Lesson 1)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "adapt to a new culture",
+      "vi": "thích nghi với một nền văn hoá mới",
+      "def": "to change your way of life to fit in with the customs of a new place",
+      "sent": "When I moved to Sydney, it took me about six months to ___.",
+      "sentA": "adapt to a new culture",
+      "coll": "___ to a new culture",
+      "collA": "adapt"
+    },
+    {
+      "w": "become a member",
+      "vi": "trở thành thành viên",
+      "def": "to join a club or organisation",
+      "sent": "I loved the singing group, so I decided to ___ last year.",
+      "sentA": "become a member",
+      "coll": "___ a member of the club",
+      "collA": "become"
+    },
+    {
+      "w": "capital city",
+      "vi": "thủ đô",
+      "def": "the most important city in a country, where the government is",
+      "sent": "I come from Hanoi, which is the ___ of Vietnam.",
+      "sentA": "capital city",
+      "coll": "the ___ city of a country",
+      "collA": "capital"
+    },
+    {
+      "w": "club event",
+      "vi": "sự kiện của câu lạc bộ",
+      "def": "a party, competition or activity organised by a club",
+      "sent": "Our English club has a ___ every second Thursday, usually a party or a quiz.",
+      "sentA": "club event",
+      "coll": "go to a club ___",
+      "collA": "event"
+    },
+    {
+      "w": "commercial district",
+      "vi": "khu thương mại",
+      "def": "a part of a city with a lot of businesses and offices",
+      "sent": "My office is in the ___, where there are banks and shops everywhere.",
+      "sentA": "commercial district",
+      "coll": "the ___ district of the city",
+      "collA": "commercial"
+    },
+    {
+      "w": "cosmopolitan atmosphere",
+      "vi": "không khí quốc tế, đa văn hoá",
+      "def": "the feeling of a place with people and things from many countries",
+      "sent": "I like living in Ho Chi Minh City because it has a ___ with people from all over the world.",
+      "sentA": "cosmopolitan atmosphere",
+      "coll": "a cosmopolitan ___",
+      "collA": "atmosphere"
+    },
+    {
+      "w": "from diverse backgrounds",
+      "vi": "đến từ nhiều hoàn cảnh, xuất thân khác nhau",
+      "def": "very different from each other, for example in education or money",
+      "sent": "The students in my class come ___, so we learn a lot from each other.",
+      "sentA": "from diverse backgrounds",
+      "coll": "people from ___ backgrounds",
+      "collA": "diverse"
+    },
+    {
+      "w": "in the city centre",
+      "vi": "ở trung tâm thành phố",
+      "def": "in the middle part of a city, where there are a lot of shops",
+      "sent": "I live ___, so I can walk to the shops and cafés.",
+      "sentA": "in the city centre",
+      "coll": "live in the city ___",
+      "collA": "centre"
+    },
+    {
+      "w": "in the suburbs",
+      "vi": "ở vùng ngoại ô",
+      "def": "in an area at the edge of a city where many workers live",
+      "sent": "My family lives ___, about forty minutes by bus from my office.",
+      "sentA": "in the suburbs",
+      "coll": "live in the ___",
+      "collA": "suburbs"
+    },
+    {
+      "w": "industrial city",
+      "vi": "thành phố công nghiệp",
+      "def": "a city with a lot of factories",
+      "sent": "Hai Phong is an ___ with a big port and many factories.",
+      "sentA": "industrial city",
+      "coll": "an ___ city",
+      "collA": "industrial"
+    },
+    {
+      "w": "integrate into the community",
+      "vi": "hoà nhập vào cộng đồng",
+      "def": "to mix with a group of people and join in with their customs",
+      "sent": "Joining a sports club helped me ___ when I first moved here.",
+      "sentA": "integrate into the community",
+      "coll": "___ into the community",
+      "collA": "integrate"
+    },
+    {
+      "w": "live on the outskirts",
+      "vi": "sống ở vùng rìa thành phố",
+      "def": "to have your home at the edge of a town or city",
+      "sent": "Houses are cheaper if you ___ of the city.",
+      "sentA": "live on the outskirts",
+      "coll": "live on the ___ of the city",
+      "collA": "outskirts"
+    },
+    {
+      "w": "local culture",
+      "vi": "văn hoá địa phương",
+      "def": "the customs, beliefs and way of life of one area",
+      "sent": "When I travel, I like to learn about the ___ — the food, the music and the festivals.",
+      "sentA": "local culture",
+      "coll": "learn about the ___ culture",
+      "collA": "local"
+    },
+    {
+      "w": "multicultural society",
+      "vi": "xã hội đa văn hoá",
+      "def": "a society with people of many different customs and beliefs",
+      "sent": "Australia is a ___ — people there come from more than 200 countries.",
+      "sentA": "multicultural society",
+      "coll": "a ___ society",
+      "collA": "multicultural"
+    },
+    {
+      "w": "on the coast",
+      "vi": "ở vùng ven biển",
+      "def": "in an area near the sea",
+      "sent": "My home town, Nha Trang, is ___, so I go swimming a lot.",
+      "sentA": "on the coast",
+      "coll": "a town on the ___",
+      "collA": "coast"
+    },
+    {
+      "w": "overcome one's culture shock",
+      "vi": "vượt qua cú sốc văn hoá",
+      "def": "to become comfortable in a culture that is very different from yours",
+      "sent": "It took her two months to ___ and start enjoying life abroad.",
+      "sentA": "overcome her culture shock",
+      "coll": "___ your culture shock",
+      "collA": "overcome"
+    },
+    {
+      "w": "small village",
+      "vi": "làng nhỏ",
+      "def": "a very small town in the countryside",
+      "sent": "I grew up in a ___ in the mountains — there were only about fifty families.",
+      "sentA": "small village",
+      "coll": "a small ___ in the countryside",
+      "collA": "village"
+    },
+    {
+      "w": "to experience something new",
+      "vi": "trải nghiệm điều gì đó mới",
+      "def": "to do or feel something for the first time",
+      "sent": "I enjoy travelling because I want ___ every time I go abroad.",
+      "sentA": "to experience something new",
+      "coll": "experience something ___",
+      "collA": "new"
+    },
+    {
+      "w": "long tradition",
+      "vi": "truyền thống lâu đời",
+      "def": "something people have done for a very long time",
+      "sent": "Making banh chung at Tet is a ___ in my family.",
+      "sentA": "long tradition",
+      "coll": "a long ___",
+      "collA": "tradition"
+    },
+    {
+      "w": "youth club",
+      "vi": "câu lạc bộ thanh niên",
+      "def": "a place where young people meet and do social activities",
+      "sent": "When I was a teenager, I played table tennis at the local ___ every weekend.",
+      "sentA": "youth club",
+      "coll": "a ___ club for teenagers",
+      "collA": "youth"
+    }
+  ]
+}
