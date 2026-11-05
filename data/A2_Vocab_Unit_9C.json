@@ -1,0 +1,190 @@
+{
+  "level": "A2",
+  "topic": "Unit_9C",
+  "title": "Vocabulary Quiz — Unit 9C: Shopping and thank-you emails",
+  "kicker": "Empower A2 · Unit 9C–9D · Review",
+  "subtitle": "Buying clothes, presents and emails",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "size",
+      "vi": "cỡ, kích cỡ",
+      "def": "how big or small clothes or shoes are",
+      "sent": "What ___ are you? Are you a large or a medium?",
+      "sentA": "size",
+      "coll": "a large ___",
+      "collA": "size"
+    },
+    {
+      "w": "fitting room",
+      "vi": "phòng thử đồ",
+      "def": "a small room in a shop where you try on clothes",
+      "sent": "Where is the ___? I want to try these jeans on.",
+      "sentA": "fitting room",
+      "coll": "use the ___",
+      "collA": "fitting room"
+    },
+    {
+      "w": "try on",
+      "vi": "mặc thử",
+      "def": "to put on clothes to see if they fit you",
+      "sent": "Can I ___ these trousers, please?",
+      "sentA": "try on",
+      "coll": "___ a jacket",
+      "collA": "try on"
+    },
+    {
+      "w": "receipt",
+      "vi": "hóa đơn, biên lai",
+      "def": "a piece of paper that shows what you bought and how much you paid",
+      "sent": "Keep the ___ in case you want to take the shoes back.",
+      "sentA": "receipt",
+      "coll": "a shop ___",
+      "collA": "receipt"
+    },
+    {
+      "w": "sunglasses",
+      "vi": "kính râm",
+      "def": "dark glasses that you wear when the sun is bright",
+      "sent": "I wear ___ when it’s sunny.",
+      "sentA": "sunglasses",
+      "coll": "a pair of ___",
+      "collA": "sunglasses"
+    },
+    {
+      "w": "credit card",
+      "vi": "thẻ tín dụng",
+      "def": "a plastic card that you use to pay and pay later",
+      "sent": "Can I pay by ___?",
+      "sentA": "credit card",
+      "coll": "pay by ___",
+      "collA": "credit card"
+    },
+    {
+      "w": "cash",
+      "vi": "tiền mặt",
+      "def": "money in coins and notes",
+      "sent": "This shop only takes ___, not cards.",
+      "sentA": "cash",
+      "coll": "pay in ___",
+      "collA": "cash"
+    },
+    {
+      "w": "price",
+      "vi": "giá",
+      "def": "how much something costs",
+      "sent": "There’s no ___ on these shoes. How much are they?",
+      "sentA": "price",
+      "coll": "a low ___",
+      "collA": "price"
+    },
+    {
+      "w": "casual",
+      "vi": "giản dị, thoải mái",
+      "def": "not formal; comfortable to wear",
+      "sent": "I don’t wear a suit at weekends — I wear ___ clothes.",
+      "sentA": "casual",
+      "coll": "___ clothes",
+      "collA": "casual"
+    },
+    {
+      "w": "jacket",
+      "vi": "áo khoác ngắn",
+      "def": "a short coat",
+      "sent": "It’s cold. Take your ___.",
+      "sentA": "jacket",
+      "coll": "a leather ___",
+      "collA": "jacket"
+    },
+    {
+      "w": "present",
+      "vi": "món quà",
+      "def": "something that you give to someone, for example on their birthday",
+      "sent": "I bought her a ___ for her birthday.",
+      "sentA": "present",
+      "coll": "a birthday ___",
+      "collA": "present"
+    },
+    {
+      "w": "birthday",
+      "vi": "sinh nhật",
+      "def": "the day each year when you celebrate being born",
+      "sent": "It’s my ___ today. I’m thirty!",
+      "sentA": "birthday",
+      "coll": "a ___ party",
+      "collA": "birthday"
+    },
+    {
+      "w": "chocolates",
+      "vi": "sô-cô-la (hộp)",
+      "def": "sweet brown food that is often given as a present",
+      "sent": "He gave her a box of ___.",
+      "sentA": "chocolates",
+      "coll": "a box of ___",
+      "collA": "chocolates"
+    },
+    {
+      "w": "flowers",
+      "vi": "hoa",
+      "def": "colourful plants that you give as a present",
+      "sent": "He gave his mother red and yellow ___.",
+      "sentA": "flowers",
+      "coll": "a bunch of ___",
+      "collA": "flowers"
+    },
+    {
+      "w": "ticket",
+      "vi": "vé",
+      "def": "a piece of paper that lets you go into a cinema or on a train",
+      "sent": "Thank you for the cinema ___s!",
+      "sentA": "ticket",
+      "coll": "buy a ___",
+      "collA": "ticket"
+    },
+    {
+      "w": "formal",
+      "vi": "trang trọng",
+      "def": "used in serious situations, with people you don’t know well",
+      "sent": "I use ___ words in a letter to my boss.",
+      "sentA": "formal",
+      "coll": "a ___ email",
+      "collA": "formal"
+    },
+    {
+      "w": "informal",
+      "vi": "thân mật",
+      "def": "friendly and relaxed; used with people you know well",
+      "sent": "I write ‘Hi Molly’ in an ___ email to a friend.",
+      "sentA": "informal",
+      "coll": "an ___ email",
+      "collA": "informal"
+    },
+    {
+      "w": "regards",
+      "vi": "lời chào cuối thư",
+      "def": "a polite word at the end of a formal email",
+      "sent": "I end my email with ‘Best ___’.",
+      "sentA": "regards",
+      "coll": "best ___",
+      "collA": "regards"
+    },
+    {
+      "w": "delicious",
+      "vi": "ngon",
+      "def": "tasting very good",
+      "sent": "The chocolates are ___! Thank you.",
+      "sentA": "delicious",
+      "coll": "a ___ meal",
+      "collA": "delicious"
+    },
+    {
+      "w": "thank",
+      "vi": "cảm ơn",
+      "def": "to say that you are grateful to someone",
+      "sent": "I want to ___ you for the lovely present.",
+      "sentA": "thank",
+      "coll": "___ you very much",
+      "collA": "thank"
+    }
+  ]
+}
