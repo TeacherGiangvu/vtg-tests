@@ -1,0 +1,190 @@
+{
+  "level": "A2",
+  "topic": "Unit_10A",
+  "title": "Vocabulary Quiz — Unit 10A: Technology",
+  "kicker": "Empower A2 · Unit 10A · Review",
+  "subtitle": "Phones, computers and IT collocations",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "earbuds",
+      "vi": "tai nghe nhét tai",
+      "def": "small headphones that you put inside your ears",
+      "sent": "I keep my ___ in my pocket when I go running.",
+      "sentA": "earbuds",
+      "coll": "wireless ___",
+      "collA": "earbuds"
+    },
+    {
+      "w": "headphones",
+      "vi": "tai nghe chụp tai",
+      "def": "a device that you wear over your ears to listen to music",
+      "sent": "These ___ cover my ears, so I don’t hear the noise.",
+      "sentA": "headphones",
+      "coll": "over-ear ___",
+      "collA": "headphones"
+    },
+    {
+      "w": "landline",
+      "vi": "điện thoại bàn",
+      "def": "a phone connected to a wire in the house",
+      "sent": "We don’t use our ___ — we only use mobile phones.",
+      "sentA": "landline",
+      "coll": "give up the ___",
+      "collA": "landline"
+    },
+    {
+      "w": "smartphone",
+      "vi": "điện thoại thông minh",
+      "def": "a mobile phone that you use to go online and take photos",
+      "sent": "I check my emails on my ___.",
+      "sentA": "smartphone",
+      "coll": "a new ___",
+      "collA": "smartphone"
+    },
+    {
+      "w": "laptop",
+      "vi": "máy tính xách tay",
+      "def": "a small computer that you can carry and use on your knees",
+      "sent": "I take my ___ on the train and work on the way.",
+      "sentA": "laptop",
+      "coll": "a light ___",
+      "collA": "laptop"
+    },
+    {
+      "w": "tablet",
+      "vi": "máy tính bảng",
+      "def": "a flat computer with a big touch screen",
+      "sent": "My son watches films on my ___ in the car.",
+      "sentA": "tablet",
+      "coll": "a ___ computer",
+      "collA": "tablet"
+    },
+    {
+      "w": "charge",
+      "vi": "sạc",
+      "def": "to put electricity into a battery",
+      "sent": "My phone is dead. I need to ___ it.",
+      "sentA": "charge",
+      "coll": "___ a phone",
+      "collA": "charge"
+    },
+    {
+      "w": "download",
+      "vi": "tải xuống",
+      "def": "to copy a file from the Internet to your computer",
+      "sent": "I’m going to ___ the document and print it.",
+      "sentA": "download",
+      "coll": "___ a file",
+      "collA": "download"
+    },
+    {
+      "w": "click on",
+      "vi": "nhấp vào",
+      "def": "to press a button on a link with the mouse",
+      "sent": "To open the page, ___ the link.",
+      "sentA": "click on",
+      "coll": "___ a link",
+      "collA": "click on"
+    },
+    {
+      "w": "visit",
+      "vi": "truy cập, ghé thăm",
+      "def": "to go to a place or a website",
+      "sent": "I ___ this website every day to read the news.",
+      "sentA": "visit",
+      "coll": "___ a website",
+      "collA": "visit"
+    },
+    {
+      "w": "log into",
+      "vi": "đăng nhập vào",
+      "def": "to enter your name and password to start using a website",
+      "sent": "I need my password to ___ my email.",
+      "sentA": "log into",
+      "coll": "___ a computer",
+      "collA": "log into"
+    },
+    {
+      "w": "save",
+      "vi": "lưu",
+      "def": "to keep a file on your computer so that you don’t lose it",
+      "sent": "Don’t forget to ___ your work before you close the file.",
+      "sentA": "save",
+      "coll": "___ a document",
+      "collA": "save"
+    },
+    {
+      "w": "website",
+      "vi": "trang web",
+      "def": "a place on the Internet with information about something",
+      "sent": "The school has a ___ with all the class times.",
+      "sentA": "website",
+      "coll": "visit a ___",
+      "collA": "website"
+    },
+    {
+      "w": "link",
+      "vi": "đường dẫn, liên kết",
+      "def": "a word or picture that you click on to go to another page",
+      "sent": "Click on the ___ and the page will open.",
+      "sentA": "link",
+      "coll": "click on a ___",
+      "collA": "link"
+    },
+    {
+      "w": "file",
+      "vi": "tệp, tập tin",
+      "def": "a document or picture that you keep on a computer",
+      "sent": "I saved the photo as a ___ on my laptop.",
+      "sentA": "file",
+      "coll": "download a ___",
+      "collA": "file"
+    },
+    {
+      "w": "document",
+      "vi": "tài liệu",
+      "def": "a piece of writing, for example a letter or a report, on a computer",
+      "sent": "I wrote a long ___ for work and saved it.",
+      "sentA": "document",
+      "coll": "save a ___",
+      "collA": "document"
+    },
+    {
+      "w": "online",
+      "vi": "trực tuyến",
+      "def": "connected to the Internet",
+      "sent": "I do my shopping ___ now. It’s easier.",
+      "sentA": "online",
+      "coll": "go ___",
+      "collA": "online"
+    },
+    {
+      "w": "emergency",
+      "vi": "tình huống khẩn cấp",
+      "def": "a sudden dangerous situation in which you need help quickly",
+      "sent": "Call 999 if there is an ___.",
+      "sentA": "emergency",
+      "coll": "in an ___",
+      "collA": "emergency"
+    },
+    {
+      "w": "comfortable",
+      "vi": "thoải mái, dễ chịu",
+      "def": "pleasant to wear or sit in; not hurting you",
+      "sent": "These shoes are very ___. I can walk all day.",
+      "sentA": "comfortable",
+      "coll": "a ___ chair",
+      "collA": "comfortable"
+    },
+    {
+      "w": "population",
+      "vi": "dân số",
+      "def": "the number of people who live in a place",
+      "sent": "China has the biggest ___ in the world.",
+      "sentA": "population",
+      "coll": "a large ___",
+      "collA": "population"
+    }
+  ]
+}
