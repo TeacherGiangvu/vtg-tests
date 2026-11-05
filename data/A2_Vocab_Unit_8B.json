@@ -1,0 +1,30 @@
+{
+  "level": "A2",
+  "topic": "Unit_8B",
+  "title": "Vocabulary Quiz — Unit 8B: The body and appearance",
+  "kicker": "Empower A2 · Unit 8B · Review",
+  "subtitle": "Parts of the body, hair and appearance, and getting fit",
+  "seconds": 10,
+  "words": [
+    {"w": "head", "vi": "đầu", "def": "the part of the body above your neck, with your eyes, nose and mouth", "sent": "He wears a hat on his ___ when it is cold.", "sentA": "head", "coll": "shake your ___", "collA": "head"},
+    {"w": "back", "vi": "lưng", "def": "the part of the body behind you, from your neck to your legs", "sent": "I sit all day at work, so my ___ hurts.", "sentA": "back", "coll": "a bad ___", "collA": "back"},
+    {"w": "neck", "vi": "cổ", "def": "the part of the body between your head and your shoulders", "sent": "She wears a long scarf round her ___.", "sentA": "neck", "coll": "a long ___", "collA": "neck"},
+    {"w": "stomach", "vi": "dạ dày, bụng", "def": "the part of the body where your food goes after you eat", "sent": "I ate too much cake and now my ___ hurts.", "sentA": "stomach", "coll": "a ___ ache", "collA": "stomach"},
+    {"w": "arm", "vi": "cánh tay", "def": "the part of the body from your shoulder to your hand", "sent": "He fell off his bike and hurt his ___.", "sentA": "arm", "coll": "break your ___", "collA": "arm"},
+    {"w": "hand", "vi": "bàn tay", "def": "the part of the body at the end of your arm, with five fingers", "sent": "Wash your ___ before you eat.", "sentA": "hand", "coll": "shake ___s", "collA": "hand"},
+    {"w": "finger", "vi": "ngón tay", "def": "one of the five long parts at the end of your hand", "sent": "She wears a gold ring on her ___.", "sentA": "finger", "coll": "ten ___s", "collA": "finger"},
+    {"w": "leg", "vi": "chân (từ hông đến bàn chân)", "def": "the long part of the body that you walk and run on", "sent": "After the long walk, my ___s were very tired.", "sentA": "leg", "coll": "strong ___s", "collA": "leg"},
+    {"w": "foot", "vi": "bàn chân", "def": "the part of the body at the end of your leg that you stand on", "sent": "My left ___ hurts when I walk in these new shoes.", "sentA": "foot", "coll": "on ___", "collA": "foot"},
+    {"w": "toe", "vi": "ngón chân", "def": "one of the five small parts at the end of your foot", "sent": "She wasn’t wearing socks, and her ___s were cold.", "sentA": "toe", "coll": "touch your ___s", "collA": "toe"},
+    {"w": "curly", "vi": "xoăn", "def": "not straight; in small circles", "sent": "She’s got short, ___ dark hair.", "sentA": "curly", "coll": "___ hair", "collA": "curly"},
+    {"w": "straight", "vi": "thẳng", "def": "with no curls or bends", "sent": "He’s got long, ___ dark hair.", "sentA": "straight", "coll": "___ hair", "collA": "straight"},
+    {"w": "fair", "vi": "vàng nhạt (tóc), sáng màu", "def": "a light yellow colour, for hair", "sent": "The little girl has long, ___ hair.", "sentA": "fair", "coll": "___ hair", "collA": "fair"},
+    {"w": "thin", "vi": "gầy, mảnh", "def": "not fat; with little flesh on the body", "sent": "He’s very tall and ___.", "sentA": "thin", "coll": "tall and ___", "collA": "thin"},
+    {"w": "pretty", "vi": "xinh xắn", "def": "nice to look at (usually for a girl or a woman)", "sent": "What a ___ girl! She’s got lovely eyes.", "sentA": "pretty", "coll": "a ___ face", "collA": "pretty"},
+    {"w": "attractive", "vi": "hấp dẫn, ưa nhìn", "def": "interesting and nice to look at", "sent": "She’s a very ___ woman. People always look at her.", "sentA": "attractive", "coll": "a very ___ person", "collA": "attractive"},
+    {"w": "good-looking", "vi": "ưa nhìn, đẹp trai/đẹp gái", "def": "with a nice face; nice to look at", "sent": "He’s very ___ and looks great in photos.", "sentA": "good-looking", "coll": "a ___ man", "collA": "good-looking"},
+    {"w": "muscle", "vi": "cơ bắp", "def": "a part of the body under the skin that makes you move", "sent": "When we exercise intensely, we use more ___s.", "sentA": "muscle", "coll": "strong ___s", "collA": "muscle"},
+    {"w": "warm up", "vi": "khởi động", "def": "to do some light exercise before hard exercise", "sent": "First you ___ for a few minutes, then you run fast.", "sentA": "warm up", "coll": "___ before exercise", "collA": "warm up"},
+    {"w": "get fit", "vi": "trở nên khỏe mạnh, cân đối", "def": "to become healthy and strong after a lot of exercise", "sent": "I want to ___ before the summer, so I’m going to the gym.", "sentA": "get fit", "coll": "___ in five minutes", "collA": "get fit"}
+  ]
+}

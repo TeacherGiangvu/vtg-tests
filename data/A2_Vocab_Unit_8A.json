@@ -1,0 +1,30 @@
+{
+  "level": "A2",
+  "topic": "Unit_8A",
+  "title": "Vocabulary Quiz — Unit 8A: Sport and exercise",
+  "kicker": "Empower A2 · Unit 8A · Review",
+  "subtitle": "Sports and activities, athletes, and how well you can do things",
+  "seconds": 10,
+  "words": [
+    {"w": "badminton", "vi": "cầu lông", "def": "a game where two people hit a light shuttlecock over a net with rackets", "sent": "We play ___ in the sports centre on Tuesdays.", "sentA": "badminton", "coll": "play ___", "collA": "badminton"},
+    {"w": "yoga", "vi": "yoga", "def": "exercise for the body and mind with slow positions", "sent": "Stella does ___ every week with her friends.", "sentA": "yoga", "coll": "do ___", "collA": "yoga"},
+    {"w": "ice-skate", "vi": "trượt băng", "def": "to move on ice in special boots", "sent": "In winter we ___ on the frozen lake.", "sentA": "ice-skate", "coll": "learn to ___", "collA": "ice-skate"},
+    {"w": "ski", "vi": "trượt tuyết", "def": "to move on snow with long, thin boards on your feet", "sent": "He can ___ very well. He learned when he was five.", "sentA": "ski", "coll": "go to the mountains to ___", "collA": "ski"},
+    {"w": "golf", "vi": "gôn", "def": "a game where you hit a small ball into holes with a long stick", "sent": "My father plays ___ every Sunday morning.", "sentA": "golf", "coll": "play ___", "collA": "golf"},
+    {"w": "tennis", "vi": "quần vợt", "def": "a game where two or four players hit a ball over a net", "sent": "She plays ___ with her brother at the weekend.", "sentA": "tennis", "coll": "a ___ racket", "collA": "tennis"},
+    {"w": "rugby", "vi": "bóng bầu dục", "def": "a team game where you carry or kick an oval ball", "sent": "Fifteen players are in each ___ team.", "sentA": "rugby", "coll": "play ___", "collA": "rugby"},
+    {"w": "volleyball", "vi": "bóng chuyền", "def": "a team game where you hit a ball over a high net with your hands", "sent": "We played ___ on the beach last summer.", "sentA": "volleyball", "coll": "play ___", "collA": "volleyball"},
+    {"w": "judo", "vi": "võ judo", "def": "a sport from Japan where two people try to throw each other to the ground", "sent": "You wear special white clothes for ___.", "sentA": "judo", "coll": "do ___", "collA": "judo"},
+    {"w": "fishing", "vi": "câu cá", "def": "catching fish from a river, a lake or the sea", "sent": "My grandfather goes ___ every Saturday. He loves the river.", "sentA": "fishing", "coll": "go ___", "collA": "fishing"},
+    {"w": "sailing", "vi": "đi thuyền buồm", "def": "travelling on the water in a boat with a big sail", "sent": "They go ___ in the summer holidays.", "sentA": "sailing", "coll": "go ___", "collA": "sailing"},
+    {"w": "snowboarding", "vi": "trượt ván tuyết", "def": "sliding down snow on one wide board", "sent": "I want to go ___ in the mountains this winter.", "sentA": "snowboarding", "coll": "go ___", "collA": "snowboarding"},
+    {"w": "athlete", "vi": "vận động viên", "def": "a person who is very good at sport and does it as a job", "sent": "Jonnie is a famous ___. He runs very fast.", "sentA": "athlete", "coll": "a famous ___", "collA": "athlete"},
+    {"w": "medal", "vi": "huy chương", "def": "a small metal prize that you get when you win a competition", "sent": "She won a gold ___ at the Games.", "sentA": "medal", "coll": "win a gold ___", "collA": "medal"},
+    {"w": "disabled", "vi": "khuyết tật", "def": "not able to use a part of the body in the usual way", "sent": "Some ___ athletes can’t walk, but they play sport at a very high level.", "sentA": "disabled", "coll": "a ___ athlete", "collA": "disabled"},
+    {"w": "marathon", "vi": "ma-ra-tông (cuộc chạy 42 km)", "def": "a very long running race of about 42 kilometres", "sent": "He trained for six months before he ran the ___.", "sentA": "marathon", "coll": "run a ___", "collA": "marathon"},
+    {"w": "practise", "vi": "luyện tập", "def": "to do something again and again to get better at it", "sent": "I ___ the guitar for half an hour every evening.", "sentA": "practise", "coll": "___ every day", "collA": "practise"},
+    {"w": "exercise", "vi": "tập thể dục; sự vận động", "def": "physical activity that keeps your body healthy", "sent": "You need more ___. You sit in front of the computer all day.", "sentA": "exercise", "coll": "do some ___", "collA": "exercise"},
+    {"w": "quite well", "vi": "khá tốt", "def": "good, but not very good", "sent": "I can swim ___, but I’m not very fast.", "sentA": "quite well", "coll": "can ski ___", "collA": "quite well"},
+    {"w": "at all", "vi": "chút nào, hoàn toàn (dùng với can’t)", "def": "used to make a negative sentence stronger", "sent": "I can’t ski ___. I have never tried.", "sentA": "at all", "coll": "can’t swim ___", "collA": "at all"}
+  ]
+}
