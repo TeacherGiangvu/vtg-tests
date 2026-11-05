@@ -1,0 +1,190 @@
+{
+  "level": "A2",
+  "topic": "Unit_8C",
+  "title": "Vocabulary Quiz — Unit 8C: Health and feelings",
+  "kicker": "Empower A2 · Unit 8C–8D · Review",
+  "subtitle": "Health problems, feelings, however and adverbs",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "headache",
+      "vi": "đau đầu",
+      "def": "a pain in your head",
+      "sent": "I’ve got a ___. I need to lie down.",
+      "sentA": "headache",
+      "coll": "a bad ___",
+      "collA": "headache"
+    },
+    {
+      "w": "toothache",
+      "vi": "đau răng",
+      "def": "a pain in your tooth",
+      "sent": "I can’t eat ice cream because I’ve got ___.",
+      "sentA": "toothache",
+      "coll": "have ___",
+      "collA": "toothache"
+    },
+    {
+      "w": "stomach ache",
+      "vi": "đau bụng",
+      "def": "a pain in your stomach",
+      "sent": "He ate too much and now he’s got a ___.",
+      "sentA": "stomach ache",
+      "coll": "have a ___",
+      "collA": "stomach ache"
+    },
+    {
+      "w": "temperature",
+      "vi": "sốt, nhiệt độ cơ thể",
+      "def": "when your body is too hot because you are ill",
+      "sent": "She’s got a high ___, so she’s staying in bed.",
+      "sentA": "temperature",
+      "coll": "have a ___",
+      "collA": "temperature"
+    },
+    {
+      "w": "cold",
+      "vi": "cảm lạnh",
+      "def": "a common illness with a runny nose and a cough",
+      "sent": "I’ve got a ___, so I’m using a lot of tissues.",
+      "sentA": "cold",
+      "coll": "catch a ___",
+      "collA": "cold"
+    },
+    {
+      "w": "ill",
+      "vi": "ốm, bệnh",
+      "def": "not well; with a health problem",
+      "sent": "My grandfather is very ___. He is in hospital.",
+      "sentA": "ill",
+      "coll": "be seriously ___",
+      "collA": "ill"
+    },
+    {
+      "w": "sick",
+      "vi": "buồn nôn, ốm",
+      "def": "feeling that you may vomit",
+      "sent": "I think I’m going to vomit. I feel ___.",
+      "sentA": "sick",
+      "coll": "take a ___ day",
+      "collA": "sick"
+    },
+    {
+      "w": "awful",
+      "vi": "tồi tệ, kinh khủng",
+      "def": "very bad",
+      "sent": "The food was ___. I couldn’t eat it.",
+      "sentA": "awful",
+      "coll": "an ___ day",
+      "collA": "awful"
+    },
+    {
+      "w": "hurt",
+      "vi": "đau, làm đau",
+      "def": "if a part of your body ___s, you feel pain there",
+      "sent": "My feet ___ after the long walk.",
+      "sentA": "hurt",
+      "coll": "my back ___s",
+      "collA": "hurt"
+    },
+    {
+      "w": "tired",
+      "vi": "mệt",
+      "def": "feeling that you need to rest or sleep",
+      "sent": "I’m very ___ after a long day at work.",
+      "sentA": "tired",
+      "coll": "too ___ to walk",
+      "collA": "tired"
+    },
+    {
+      "w": "hungry",
+      "vi": "đói",
+      "def": "wanting to eat",
+      "sent": "I didn’t have lunch, so I’m very ___.",
+      "sentA": "hungry",
+      "coll": "go ___",
+      "collA": "hungry"
+    },
+    {
+      "w": "matter",
+      "vi": "vấn đề, điều không ổn",
+      "def": "a problem; what is wrong",
+      "sent": "You look sad. What’s the ___?",
+      "sentA": "matter",
+      "coll": "What’s the ___?",
+      "collA": "matter"
+    },
+    {
+      "w": "unfit",
+      "vi": "không khỏe mạnh, thể lực yếu",
+      "def": "not strong or healthy because you don’t do much exercise",
+      "sent": "I was very ___, so I got tired after five minutes.",
+      "sentA": "unfit",
+      "coll": "quite ___",
+      "collA": "unfit"
+    },
+    {
+      "w": "improve",
+      "vi": "cải thiện, tiến bộ",
+      "def": "to get better",
+      "sent": "My English is ___ every week.",
+      "sentA": "improving",
+      "coll": "___ quickly",
+      "collA": "improve"
+    },
+    {
+      "w": "hike",
+      "vi": "cuộc đi bộ đường dài",
+      "def": "a long walk in the countryside or mountains",
+      "sent": "We went on a ___ in the mountains last weekend.",
+      "sentA": "hike",
+      "coll": "go on a ___",
+      "collA": "hike"
+    },
+    {
+      "w": "however",
+      "vi": "tuy nhiên",
+      "def": "used to add a surprising idea after a sentence",
+      "sent": "I was tired. ___, I went to the gym.",
+      "sentA": "However",
+      "coll": "___, + comma",
+      "collA": "However"
+    },
+    {
+      "w": "slowly",
+      "vi": "chậm, từ từ",
+      "def": "not fast",
+      "sent": "Please speak more ___. I don’t understand.",
+      "sentA": "slowly",
+      "coll": "walk ___",
+      "collA": "slowly"
+    },
+    {
+      "w": "quickly",
+      "vi": "nhanh, mau",
+      "def": "in a short time; fast",
+      "sent": "He did the homework very ___.",
+      "sentA": "quickly",
+      "coll": "improve ___",
+      "collA": "quickly"
+    },
+    {
+      "w": "badly",
+      "vi": "tệ, dở",
+      "def": "not well",
+      "sent": "She plays tennis ___, but she loves it.",
+      "sentA": "badly",
+      "coll": "play ___",
+      "collA": "badly"
+    },
+    {
+      "w": "blog",
+      "vi": "trang nhật ký trực tuyến",
+      "def": "a website where a person writes about their life or interests",
+      "sent": "She writes a ___ about her free time and shares photos.",
+      "sentA": "blog",
+      "coll": "a company ___",
+      "collA": "blog"
+    }
+  ]
+}
