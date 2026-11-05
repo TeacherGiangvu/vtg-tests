@@ -1,0 +1,190 @@
+{
+  "level": "A2",
+  "topic": "Unit_10B",
+  "title": "Vocabulary Quiz — Unit 10B: Languages and numbers",
+  "kicker": "Empower A2 · Unit 10B · Review",
+  "subtitle": "Languages, superlatives and high numbers",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "language",
+      "vi": "ngôn ngữ",
+      "def": "the words that people in a country use to speak and write",
+      "sent": "Italian is a beautiful ___.",
+      "sentA": "language",
+      "coll": "a foreign ___",
+      "collA": "language"
+    },
+    {
+      "w": "beautiful",
+      "vi": "đẹp",
+      "def": "very nice to look at or to hear",
+      "sent": "I think Italian is the most ___ language in the world.",
+      "sentA": "beautiful",
+      "coll": "a ___ voice",
+      "collA": "beautiful"
+    },
+    {
+      "w": "musical",
+      "vi": "có tính nhạc",
+      "def": "with a nice sound, like music",
+      "sent": "Italian is a very ___ language.",
+      "sentA": "musical",
+      "coll": "a ___ instrument",
+      "collA": "musical"
+    },
+    {
+      "w": "difficult",
+      "vi": "khó",
+      "def": "not easy; hard to do or understand",
+      "sent": "Japanese is very ___ for English speakers.",
+      "sentA": "difficult",
+      "coll": "a ___ question",
+      "collA": "difficult"
+    },
+    {
+      "w": "easy",
+      "vi": "dễ",
+      "def": "not difficult; you can do it without problems",
+      "sent": "I think Spanish is the ___ language to learn.",
+      "sentA": "easy",
+      "coll": "an ___ exercise",
+      "collA": "easy"
+    },
+    {
+      "w": "useful",
+      "vi": "hữu ích",
+      "def": "good for doing something; helping you",
+      "sent": "A dictionary is very ___ when you study English.",
+      "sentA": "useful",
+      "coll": "a ___ tip",
+      "collA": "useful"
+    },
+    {
+      "w": "popular",
+      "vi": "phổ biến, được ưa chuộng",
+      "def": "liked by many people",
+      "sent": "Mandarin is the most ___ language in the world.",
+      "sentA": "popular",
+      "coll": "a ___ song",
+      "collA": "popular"
+    },
+    {
+      "w": "population",
+      "vi": "dân số",
+      "def": "the number of people who live in a place",
+      "sent": "China has the biggest ___ in the world.",
+      "sentA": "population",
+      "coll": "a large ___",
+      "collA": "population"
+    },
+    {
+      "w": "spelling",
+      "vi": "cách đánh vần",
+      "def": "the way you write the letters of a word",
+      "sent": "I always check my ___ in a dictionary.",
+      "sentA": "spelling",
+      "coll": "a ___ mistake",
+      "collA": "spelling"
+    },
+    {
+      "w": "alphabet",
+      "vi": "bảng chữ cái",
+      "def": "all the letters of a language",
+      "sent": "Khmer has the longest ___ — it has 74 letters.",
+      "sentA": "alphabet",
+      "coll": "learn the ___",
+      "collA": "alphabet"
+    },
+    {
+      "w": "dictionary",
+      "vi": "từ điển",
+      "def": "a book or website that explains what words mean",
+      "sent": "I use an online ___ to look up new words.",
+      "sentA": "dictionary",
+      "coll": "an English ___",
+      "collA": "dictionary"
+    },
+    {
+      "w": "blog",
+      "vi": "trang nhật ký trực tuyến",
+      "def": "a website where a person writes about their life or interests",
+      "sent": "She reads a ___ about languages every day.",
+      "sentA": "blog",
+      "coll": "read a ___",
+      "collA": "blog"
+    },
+    {
+      "w": "fact",
+      "vi": "sự thật, thông tin",
+      "def": "something that is true",
+      "sent": "Here is an interesting ___ about languages.",
+      "sentA": "fact",
+      "coll": "an interesting ___",
+      "collA": "fact"
+    },
+    {
+      "w": "indigenous",
+      "vi": "bản địa",
+      "def": "first from a place; the people who lived there first",
+      "sent": "Quechua is an ___ language of South America.",
+      "sentA": "indigenous",
+      "coll": "an ___ language",
+      "collA": "indigenous"
+    },
+    {
+      "w": "million",
+      "vi": "triệu",
+      "def": "the number 1,000,000",
+      "sent": "About nine hundred ___ people speak Mandarin.",
+      "sentA": "million",
+      "coll": "two ___ people",
+      "collA": "million"
+    },
+    {
+      "w": "thousand",
+      "vi": "nghìn",
+      "def": "the number 1,000",
+      "sent": "The dictionary has six hundred ___ words.",
+      "sentA": "thousand",
+      "coll": "two ___ euros",
+      "collA": "thousand"
+    },
+    {
+      "w": "hundred",
+      "vi": "trăm",
+      "def": "the number 100",
+      "sent": "One ___ and twenty is 120.",
+      "sentA": "hundred",
+      "coll": "three ___ people",
+      "collA": "hundred"
+    },
+    {
+      "w": "fast",
+      "vi": "nhanh",
+      "def": "moving or doing something quickly",
+      "sent": "Fran Capo is the ___est talker in the world.",
+      "sentA": "fast",
+      "coll": "a ___ car",
+      "collA": "fast"
+    },
+    {
+      "w": "heavy",
+      "vi": "nặng",
+      "def": "weighing a lot",
+      "sent": "The dictionary is very ___ — it weighs 62 kilograms.",
+      "sentA": "heavy",
+      "coll": "a ___ bag",
+      "collA": "heavy"
+    },
+    {
+      "w": "worst",
+      "vi": "tệ nhất",
+      "def": "the most bad",
+      "sent": "This is the ___ film I have ever seen.",
+      "sentA": "worst",
+      "coll": "the ___ day",
+      "collA": "worst"
+    }
+  ]
+}
