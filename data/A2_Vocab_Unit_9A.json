@@ -1,0 +1,190 @@
+{
+  "level": "A2",
+  "topic": "Unit_9A",
+  "title": "Vocabulary Quiz — Unit 9A: Shopping and prices",
+  "kicker": "Empower A2 · Unit 9A · Review",
+  "subtitle": "Shops, the shopping centre and money",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "chemist",
+      "vi": "hiệu thuốc",
+      "def": "a shop where you buy medicine",
+      "sent": "I’m going to the ___ to buy some aspirin.",
+      "sentA": "chemist",
+      "coll": "a local ___",
+      "collA": "chemist"
+    },
+    {
+      "w": "bookshop",
+      "vi": "hiệu sách",
+      "def": "a shop that sells books",
+      "sent": "I bought two novels in the ___.",
+      "sentA": "bookshop",
+      "coll": "a big ___",
+      "collA": "bookshop"
+    },
+    {
+      "w": "department store",
+      "vi": "cửa hàng bách hóa",
+      "def": "a big shop with many different things on different floors",
+      "sent": "You can buy clothes, shoes and furniture in a ___.",
+      "sentA": "department store",
+      "coll": "a big ___",
+      "collA": "department store"
+    },
+    {
+      "w": "clothes shop",
+      "vi": "cửa hàng quần áo",
+      "def": "a shop that sells things to wear",
+      "sent": "My son needs new jeans, so we’re going to a ___.",
+      "sentA": "clothes shop",
+      "coll": "go to a ___",
+      "collA": "clothes shop"
+    },
+    {
+      "w": "fast food restaurant",
+      "vi": "quán đồ ăn nhanh",
+      "def": "a place where you can quickly get a burger and chips",
+      "sent": "We had a burger at the ___ before the film.",
+      "sentA": "fast food restaurant",
+      "coll": "eat at a ___",
+      "collA": "fast food restaurant"
+    },
+    {
+      "w": "café",
+      "vi": "quán cà phê",
+      "def": "a place where you drink coffee and eat cakes",
+      "sent": "Let’s sit in the ___ and have a coffee.",
+      "sentA": "café",
+      "coll": "meet in a ___",
+      "collA": "café"
+    },
+    {
+      "w": "bus stop",
+      "vi": "trạm xe buýt",
+      "def": "a place where buses stop and people wait",
+      "sent": "I’m waiting at the ___ for the number 5.",
+      "sentA": "bus stop",
+      "coll": "wait at the ___",
+      "collA": "bus stop"
+    },
+    {
+      "w": "entrance",
+      "vi": "lối vào",
+      "def": "the way into a building",
+      "sent": "Let’s meet at the main ___ of the shopping centre.",
+      "sentA": "entrance",
+      "coll": "the main ___",
+      "collA": "entrance"
+    },
+    {
+      "w": "car park",
+      "vi": "bãi đỗ xe",
+      "def": "a place where you leave your car",
+      "sent": "I left my car in the ___ next to the shopping centre.",
+      "sentA": "car park",
+      "coll": "a free ___",
+      "collA": "car park"
+    },
+    {
+      "w": "information desk",
+      "vi": "quầy thông tin",
+      "def": "a place where you can ask questions in a big building",
+      "sent": "Ask at the ___ if you can’t find the shop.",
+      "sentA": "information desk",
+      "coll": "ask at the ___",
+      "collA": "information desk"
+    },
+    {
+      "w": "stairs",
+      "vi": "cầu thang",
+      "def": "steps that go up and down inside a building",
+      "sent": "The lift isn’t working, so we’re taking the ___.",
+      "sentA": "stairs",
+      "coll": "go up the ___",
+      "collA": "stairs"
+    },
+    {
+      "w": "cash machine",
+      "vi": "máy rút tiền (ATM)",
+      "def": "a machine where you take money out of your bank account",
+      "sent": "I need some money. Is there a ___ near here?",
+      "sentA": "cash machine",
+      "coll": "use a ___",
+      "collA": "cash machine"
+    },
+    {
+      "w": "furniture",
+      "vi": "đồ nội thất",
+      "def": "things like tables, chairs and sofas",
+      "sent": "We’re buying new ___ for the living room.",
+      "sentA": "furniture",
+      "coll": "a piece of ___",
+      "collA": "furniture"
+    },
+    {
+      "w": "medicine",
+      "vi": "thuốc",
+      "def": "something you take when you are ill",
+      "sent": "I’ve got a headache. I need some ___.",
+      "sentA": "medicine",
+      "coll": "take ___",
+      "collA": "medicine"
+    },
+    {
+      "w": "cash",
+      "vi": "tiền mặt",
+      "def": "money in coins and notes, not by card",
+      "sent": "Do you take cards or only ___?",
+      "sentA": "cash",
+      "coll": "pay in ___",
+      "collA": "cash"
+    },
+    {
+      "w": "pound",
+      "vi": "bảng Anh",
+      "def": "the money used in the UK",
+      "sent": "In London the T-shirt costs ten ___s.",
+      "sentA": "pound",
+      "coll": "British ___s",
+      "collA": "pound"
+    },
+    {
+      "w": "euro",
+      "vi": "đồng euro",
+      "def": "the money used in many countries in Europe",
+      "sent": "In Paris I paid in ___s.",
+      "sentA": "euro",
+      "coll": "___s in France",
+      "collA": "euro"
+    },
+    {
+      "w": "dollar",
+      "vi": "đô la",
+      "def": "the money used in the USA",
+      "sent": "In New York the coffee costs three ___s.",
+      "sentA": "dollar",
+      "coll": "American ___s",
+      "collA": "dollar"
+    },
+    {
+      "w": "cent",
+      "vi": "xu (1/100 đô la)",
+      "def": "a small coin; one hundredth of a dollar or euro",
+      "sent": "A dollar is one hundred ___s.",
+      "sentA": "cent",
+      "coll": "fifty ___s",
+      "collA": "cent"
+    },
+    {
+      "w": "ticket",
+      "vi": "vé",
+      "def": "a piece of paper that lets you go into a cinema or on a train",
+      "sent": "I just bought our ___s for the film.",
+      "sentA": "ticket",
+      "coll": "buy a ___",
+      "collA": "ticket"
+    }
+  ]
+}
