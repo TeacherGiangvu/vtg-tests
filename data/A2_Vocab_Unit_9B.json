@@ -1,0 +1,190 @@
+{
+  "level": "A2",
+  "topic": "Unit_9B",
+  "title": "Vocabulary Quiz — Unit 9B: Clothes",
+  "kicker": "Empower A2 · Unit 9B · Review",
+  "subtitle": "Clothes and jewellery",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "skirt",
+      "vi": "váy ngắn, chân váy",
+      "def": "a piece of clothing for women that hangs from the waist and has no legs",
+      "sent": "She’s wearing a short red ___ and a white top.",
+      "sentA": "skirt",
+      "coll": "a short ___",
+      "collA": "skirt"
+    },
+    {
+      "w": "necklace",
+      "vi": "vòng cổ",
+      "def": "jewellery that you wear round your neck",
+      "sent": "She wore a gold ___ round her neck.",
+      "sentA": "necklace",
+      "coll": "a pearl ___",
+      "collA": "necklace"
+    },
+    {
+      "w": "T-shirt",
+      "vi": "áo phông",
+      "def": "a soft shirt with short sleeves and no buttons",
+      "sent": "It’s hot today, so I’m wearing a ___ and shorts.",
+      "sentA": "T-shirt",
+      "coll": "a cotton ___",
+      "collA": "T-shirt"
+    },
+    {
+      "w": "shorts",
+      "vi": "quần soóc",
+      "def": "short trousers that end above the knee",
+      "sent": "In summer I wear ___ and a T-shirt.",
+      "sentA": "shorts",
+      "coll": "tennis ___",
+      "collA": "shorts"
+    },
+    {
+      "w": "trainers",
+      "vi": "giày thể thao",
+      "def": "soft shoes that you wear for sport or every day",
+      "sent": "I run every morning, so I need new ___.",
+      "sentA": "trainers",
+      "coll": "running ___",
+      "collA": "trainers"
+    },
+    {
+      "w": "jewellery",
+      "vi": "đồ trang sức",
+      "def": "things like rings and necklaces that you wear for decoration",
+      "sent": "She never wears ___ — no rings, no necklaces.",
+      "sentA": "jewellery",
+      "coll": "expensive ___",
+      "collA": "jewellery"
+    },
+    {
+      "w": "watch",
+      "vi": "đồng hồ đeo tay",
+      "def": "a small clock that you wear on your wrist",
+      "sent": "I look at my ___ to check the time.",
+      "sentA": "watch",
+      "coll": "a gold ___",
+      "collA": "watch"
+    },
+    {
+      "w": "ring",
+      "vi": "nhẫn",
+      "def": "a circle of gold or silver that you wear on your finger",
+      "sent": "He gave her a ___ and asked her to marry him.",
+      "sentA": "ring",
+      "coll": "a wedding ___",
+      "collA": "ring"
+    },
+    {
+      "w": "socks",
+      "vi": "tất, vớ",
+      "def": "soft clothes that you wear on your feet inside your shoes",
+      "sent": "My feet are cold. I need warm ___.",
+      "sentA": "socks",
+      "coll": "odd ___",
+      "collA": "socks"
+    },
+    {
+      "w": "scarf",
+      "vi": "khăn quàng cổ",
+      "def": "a long piece of cloth that you wear round your neck to keep warm",
+      "sent": "It’s cold. Put on your hat and ___.",
+      "sentA": "scarf",
+      "coll": "a woollen ___",
+      "collA": "scarf"
+    },
+    {
+      "w": "shoes",
+      "vi": "giày",
+      "def": "things that you wear on your feet when you go outside",
+      "sent": "Take off your ___ before you come into the house.",
+      "sentA": "shoes",
+      "coll": "school ___",
+      "collA": "shoes"
+    },
+    {
+      "w": "boots",
+      "vi": "ủng, bốt",
+      "def": "strong shoes that cover your ankles",
+      "sent": "It’s snowing, so I’m wearing my winter ___.",
+      "sentA": "boots",
+      "coll": "ankle ___",
+      "collA": "boots"
+    },
+    {
+      "w": "trousers",
+      "vi": "quần dài",
+      "def": "a piece of clothing with two legs that covers you from the waist to the feet",
+      "sent": "He’s wearing black ___ and a white shirt.",
+      "sentA": "trousers",
+      "coll": "smart ___",
+      "collA": "trousers"
+    },
+    {
+      "w": "shirt",
+      "vi": "áo sơ mi",
+      "def": "a piece of clothing with a collar and buttons for the top of the body",
+      "sent": "He always wears a white ___ and a tie to work.",
+      "sentA": "shirt",
+      "coll": "a white ___",
+      "collA": "shirt"
+    },
+    {
+      "w": "dress",
+      "vi": "váy liền",
+      "def": "a piece of clothing for women that covers the body and part of the legs",
+      "sent": "She’s wearing a long green ___ to the party.",
+      "sentA": "dress",
+      "coll": "a long ___",
+      "collA": "dress"
+    },
+    {
+      "w": "earrings",
+      "vi": "khuyên tai",
+      "def": "jewellery that you wear on your ears",
+      "sent": "She’s wearing small silver ___ in her ears.",
+      "sentA": "earrings",
+      "coll": "silver ___",
+      "collA": "earrings"
+    },
+    {
+      "w": "jeans",
+      "vi": "quần bò",
+      "def": "strong blue trousers that many people wear every day",
+      "sent": "My son needs new ___ for school.",
+      "sentA": "jeans",
+      "coll": "dark blue ___",
+      "collA": "jeans"
+    },
+    {
+      "w": "jumper",
+      "vi": "áo len",
+      "def": "a warm piece of clothing made of wool that you wear on the top half of your body",
+      "sent": "It’s cold. I’m wearing a warm ___ over my shirt.",
+      "sentA": "jumper",
+      "coll": "a woollen ___",
+      "collA": "jumper"
+    },
+    {
+      "w": "gloves",
+      "vi": "găng tay",
+      "def": "things that you wear on your hands to keep them warm",
+      "sent": "It’s freezing! Where are my ___?",
+      "sentA": "gloves",
+      "coll": "leather ___",
+      "collA": "gloves"
+    },
+    {
+      "w": "raincoat",
+      "vi": "áo mưa",
+      "def": "a coat that keeps you dry when it rains",
+      "sent": "Take your ___ — it’s going to rain.",
+      "sentA": "raincoat",
+      "coll": "a long ___",
+      "collA": "raincoat"
+    }
+  ]
+}
