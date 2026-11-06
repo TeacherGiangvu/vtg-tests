@@ -1,0 +1,190 @@
+{
+ "level": "A2",
+ "topic": "Unit_11B",
+ "title": "Vocabulary Quiz — Unit 11B: Music and places to hear it",
+ "kicker": "Empower A2 · Unit 11B · Review",
+ "subtitle": "Kinds of music, people who play music and places to hear it",
+ "seconds": 10,
+ "words": [
+  {
+   "w": "classical music",
+   "vi": "nhạc cổ điển",
+   "def": "music from the past, played by an orchestra, for example by Mozart",
+   "sent": "Mozart wrote ___ music for orchestras.",
+   "sentA": "classical",
+   "coll": "a ___ concert",
+   "collA": "classical"
+  },
+  {
+   "w": "jazz",
+   "vi": "nhạc jazz",
+   "def": "music with a strong beat where musicians often make up the tune as they play",
+   "sent": "The saxophone player in the club was playing ___.",
+   "sentA": "jazz",
+   "coll": "a ___ club",
+   "collA": "jazz"
+  },
+  {
+   "w": "opera",
+   "vi": "nhạc kịch opera",
+   "def": "a play in which the actors sing all the words, with an orchestra",
+   "sent": "Alana went to the ___ with her dad at the National Concert Hall.",
+   "sentA": "opera",
+   "coll": "see an ___",
+   "collA": "opera"
+  },
+  {
+   "w": "rock",
+   "vi": "nhạc rock",
+   "def": "loud music played with electric guitars and drums",
+   "sent": "The band had electric guitars and drums and played very loud ___ music.",
+   "sentA": "rock",
+   "coll": "___ and roll",
+   "collA": "rock"
+  },
+  {
+   "w": "pop",
+   "vi": "nhạc pop",
+   "def": "popular modern music with a simple tune, often on the radio",
+   "sent": "She’s a very famous ___ singer — her songs are always on the radio.",
+   "sentA": "pop",
+   "coll": "a ___ hit",
+   "collA": "pop"
+  },
+  {
+   "w": "folk",
+   "vi": "nhạc dân gian",
+   "def": "traditional music of a country or an area, often played on guitars and violins",
+   "sent": "In Óbuda you can listen to Hungarian ___ music while you eat.",
+   "sentA": "folk",
+   "coll": "traditional ___ music",
+   "collA": "folk"
+  },
+  {
+   "w": "dance music",
+   "vi": "nhạc nhảy",
+   "def": "fast music with a strong beat that people dance to in a club",
+   "sent": "People danced all night to fast ___ music in the club.",
+   "sentA": "dance",
+   "coll": "a ___ floor",
+   "collA": "dance"
+  },
+  {
+   "w": "world music",
+   "vi": "nhạc thế giới",
+   "def": "music from many different countries and cultures",
+   "sent": "The festival has pop, jazz and ___ music from many countries.",
+   "sentA": "world",
+   "coll": "___ music from Africa and Asia",
+   "collA": "world"
+  },
+  {
+   "w": "live music",
+   "vi": "nhạc sống",
+   "def": "music played by musicians in front of you, not a recording",
+   "sent": "They serve food and often have ___ music in the evenings.",
+   "sentA": "live",
+   "coll": "listen to ___ music",
+   "collA": "live"
+  },
+  {
+   "w": "orchestra",
+   "vi": "dàn nhạc giao hưởng",
+   "def": "a big group of musicians who play classical music together",
+   "sent": "Top ___ from all over the world play at the National Concert Hall.",
+   "sentA": "orchestras",
+   "coll": "a symphony ___",
+   "collA": "orchestra"
+  },
+  {
+   "w": "musician",
+   "vi": "nhạc công",
+   "def": "a person who plays a musical instrument, often as a job",
+   "sent": "The ___ played the guitar in the street.",
+   "sentA": "musician",
+   "coll": "a street ___",
+   "collA": "musician"
+  },
+  {
+   "w": "band",
+   "vi": "ban nhạc",
+   "def": "a small group of people who play rock or pop music together",
+   "sent": "They had a really good ___ at Szimpla Kert last week.",
+   "sentA": "band",
+   "coll": "a rock ___",
+   "collA": "band"
+  },
+  {
+   "w": "DJ",
+   "vi": "DJ",
+   "def": "a person who plays recorded music at a club or on the radio",
+   "sent": "The ___ played records all night at the club.",
+   "sentA": "DJ",
+   "coll": "a club ___",
+   "collA": "DJ"
+  },
+  {
+   "w": "singer",
+   "vi": "ca sĩ",
+   "def": "a person who sings songs",
+   "sent": "The ___ has an amazing voice.",
+   "sentA": "singer",
+   "coll": "an opera ___",
+   "collA": "singer"
+  },
+  {
+   "w": "rock star",
+   "vi": "ngôi sao nhạc rock",
+   "def": "a famous singer or musician in a rock band",
+   "sent": "You can see your favourite ___ close up at the Sziget Festival.",
+   "sentA": "rock star",
+   "coll": "become a ___",
+   "collA": "rock star"
+  },
+  {
+   "w": "concert hall",
+   "vi": "phòng hòa nhạc",
+   "def": "a large building where you go to hear an orchestra",
+   "sent": "The National Concert Hall has a theatre and a museum as well as a ___.",
+   "sentA": "concert hall",
+   "coll": "a famous ___ in Budapest",
+   "collA": "concert hall"
+  },
+  {
+   "w": "club",
+   "vi": "câu lạc bộ, hộp đêm",
+   "def": "a place where you go to dance, listen to music and meet people at night",
+   "sent": "We danced in a ___ until two in the morning.",
+   "sentA": "club",
+   "coll": "a night ___",
+   "collA": "club"
+  },
+  {
+   "w": "music venue",
+   "vi": "địa điểm biểu diễn nhạc",
+   "def": "a place where concerts and live music happen",
+   "sent": "The A38 Ship is a famous ___ in Budapest.",
+   "sentA": "music venue",
+   "coll": "a popular ___",
+   "collA": "music venue"
+  },
+  {
+   "w": "theatre",
+   "vi": "nhà hát",
+   "def": "a building where you go to see plays",
+   "sent": "We saw the play Macbeth at the City ___.",
+   "sentA": "theatre",
+   "coll": "a night at the ___",
+   "collA": "theatre"
+  },
+  {
+   "w": "festival",
+   "vi": "lễ hội âm nhạc",
+   "def": "an event, often outdoors, with many bands or singers over a few days",
+   "sent": "Every August the Sziget ___ takes place on an island in the river.",
+   "sentA": "festival",
+   "coll": "a music ___",
+   "collA": "festival"
+  }
+ ]
+}
