@@ -1,0 +1,190 @@
+{
+  "level": "A2",
+  "topic": "Unit_10C",
+  "title": "Vocabulary Quiz — Unit 10C: Asking for help and online posts",
+  "kicker": "Empower A2 · Unit 10C–10D · Review",
+  "subtitle": "Technology, instructions, texts and discussion boards",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "help",
+      "vi": "giúp đỡ",
+      "def": "to do something for someone so that things are easier",
+      "sent": "Could you ___ me with my tablet?",
+      "sentA": "help",
+      "coll": "ask for ___",
+      "collA": "help"
+    },
+    {
+      "w": "explain",
+      "vi": "giải thích",
+      "def": "to say something so that someone understands it",
+      "sent": "Would you mind ___ this word to me?",
+      "sentA": "explaining",
+      "coll": "___ the rule",
+      "collA": "explain"
+    },
+    {
+      "w": "instructions",
+      "vi": "hướng dẫn",
+      "def": "words that tell you how to do something",
+      "sent": "Read the ___ before you use the machine.",
+      "sentA": "instructions",
+      "coll": "follow the ___",
+      "collA": "instructions"
+    },
+    {
+      "w": "tablet",
+      "vi": "máy tính bảng",
+      "def": "a flat computer with a big touch screen",
+      "sent": "Annie can’t get into her email on her ___.",
+      "sentA": "tablet",
+      "coll": "a new ___",
+      "collA": "tablet"
+    },
+    {
+      "w": "screen",
+      "vi": "màn hình",
+      "def": "the flat part of a phone or computer where you see things",
+      "sent": "A new ___ opens when you touch the button.",
+      "sentA": "screen",
+      "coll": "a touch ___",
+      "collA": "screen"
+    },
+    {
+      "w": "button",
+      "vi": "nút bấm",
+      "def": "a small part that you press to make a machine work",
+      "sent": "Touch this ___ here and wait.",
+      "sentA": "button",
+      "coll": "press a ___",
+      "collA": "button"
+    },
+    {
+      "w": "mouse",
+      "vi": "con chuột (máy tính)",
+      "def": "a small device you move to control a computer",
+      "sent": "My new ___ isn’t working. Can you help me?",
+      "sentA": "mouse",
+      "coll": "double click the ___",
+      "collA": "mouse"
+    },
+    {
+      "w": "meeting",
+      "vi": "cuộc họp",
+      "def": "an event when people come together to talk about work",
+      "sent": "Dan can’t come to lunch. He’s in a ___.",
+      "sentA": "meeting",
+      "coll": "go to a ___",
+      "collA": "meeting"
+    },
+    {
+      "w": "problem",
+      "vi": "vấn đề",
+      "def": "something difficult that you need to solve",
+      "sent": "I have a ___ with my phone. It doesn’t work.",
+      "sentA": "problem",
+      "coll": "have a ___",
+      "collA": "problem"
+    },
+    {
+      "w": "message",
+      "vi": "tin nhắn",
+      "def": "a short piece of writing that you send to someone",
+      "sent": "I got a text ___ from my sister.",
+      "sentA": "message",
+      "coll": "send a ___",
+      "collA": "message"
+    },
+    {
+      "w": "post",
+      "vi": "bài đăng",
+      "def": "something that you write online for other people to read",
+      "sent": "I read her ___ about phones on the discussion board.",
+      "sentA": "post",
+      "coll": "write a ___",
+      "collA": "post"
+    },
+    {
+      "w": "annoying",
+      "vi": "gây bực mình",
+      "def": "making you a little angry",
+      "sent": "It’s very ___ when people look at their phones at dinner.",
+      "sentA": "annoying",
+      "coll": "an ___ habit",
+      "collA": "annoying"
+    },
+    {
+      "w": "rude",
+      "vi": "thô lỗ, bất lịch sự",
+      "def": "not polite",
+      "sent": "It’s ___ not to look at someone when they’re talking.",
+      "sentA": "rude",
+      "coll": "a ___ person",
+      "collA": "rude"
+    },
+    {
+      "w": "agree",
+      "vi": "đồng ý",
+      "def": "to have the same opinion as someone",
+      "sent": "I ___ with you. It’s really annoying.",
+      "sentA": "agree",
+      "coll": "I completely ___",
+      "collA": "agree"
+    },
+    {
+      "w": "disagree",
+      "vi": "không đồng ý",
+      "def": "to have a different opinion",
+      "sent": "I ___ with Genji. I don’t mind phones at dinner.",
+      "sentA": "disagree",
+      "coll": "___ with Genji",
+      "collA": "disagree"
+    },
+    {
+      "w": "laugh",
+      "vi": "cười",
+      "def": "to make a noise when something is funny",
+      "sent": "My friends send funny texts, so we ___ a lot.",
+      "sentA": "laugh",
+      "coll": "___ out loud",
+      "collA": "laugh"
+    },
+    {
+      "w": "photo",
+      "vi": "ảnh",
+      "def": "a picture that you take with a camera or a phone",
+      "sent": "He took a ___ of his meal in Italy.",
+      "sentA": "photo",
+      "coll": "take a ___",
+      "collA": "photo"
+    },
+    {
+      "w": "conversation",
+      "vi": "cuộc trò chuyện",
+      "def": "a talk between two or more people",
+      "sent": "They had a long ___ about the film.",
+      "sentA": "conversation",
+      "coll": "have a ___",
+      "collA": "conversation"
+    },
+    {
+      "w": "travel",
+      "vi": "đi du lịch",
+      "def": "to go from one place to another, often a long way",
+      "sent": "I send texts to my family when I ___ for work.",
+      "sentA": "travel",
+      "coll": "___ by train",
+      "collA": "travel"
+    },
+    {
+      "w": "prefer",
+      "vi": "thích hơn",
+      "def": "to like one thing more than another",
+      "sent": "I ___ to talk on the phone. It’s friendlier.",
+      "sentA": "prefer",
+      "coll": "___ tea to coffee",
+      "collA": "prefer"
+    }
+  ]
+}

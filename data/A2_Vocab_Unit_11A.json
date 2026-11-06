@@ -1,0 +1,190 @@
+{
+ "level": "A2",
+ "topic": "Unit_11A",
+ "title": "Vocabulary Quiz — Unit 11A: Present perfect and irregular past participles",
+ "kicker": "Empower A2 · Unit 11A · Review",
+ "subtitle": "Irregular past participles, ever / never and film words",
+ "seconds": 10,
+ "words": [
+  {
+   "w": "broken",
+   "vi": "bị vỡ, bị hỏng (quá khứ phân từ của break)",
+   "def": "the past participle of break: not in one piece or not working",
+   "sent": "Oh no! I have ___ my phone.",
+   "sentA": "broken",
+   "coll": "a ___ window",
+   "collA": "broken"
+  },
+  {
+   "w": "caught",
+   "vi": "bắt được, bị (quá khứ phân từ của catch)",
+   "def": "the past participle of catch: to get something that is moving, or to get an illness",
+   "sent": "I’ve ___ a cold, so I can’t go out.",
+   "sentA": "caught",
+   "coll": "have ___ a fish",
+   "collA": "caught"
+  },
+  {
+   "w": "written",
+   "vi": "viết (quá khứ phân từ của write)",
+   "def": "the past participle of write: to put words on paper or a screen",
+   "sent": "She has ___ three books about her life.",
+   "sentA": "written",
+   "coll": "have ___ an email",
+   "collA": "written"
+  },
+  {
+   "w": "eaten",
+   "vi": "ăn (quá khứ phân từ của eat)",
+   "def": "the past participle of eat: to put food in your mouth and swallow it",
+   "sent": "Have you ever ___ octopus?",
+   "sentA": "eaten",
+   "coll": "never ___ sushi",
+   "collA": "eaten"
+  },
+  {
+   "w": "bought",
+   "vi": "mua (quá khứ phân từ của buy)",
+   "def": "the past participle of buy: to get something when you give money for it",
+   "sent": "He has ___ a new flat in the city centre.",
+   "sentA": "bought",
+   "coll": "have ___ a ticket",
+   "collA": "bought"
+  },
+  {
+   "w": "heard",
+   "vi": "nghe thấy (quá khứ phân từ của hear)",
+   "def": "the past participle of hear: to know a sound with your ears",
+   "sent": "I’ve never ___ of that band.",
+   "sentA": "heard",
+   "coll": "have ___ the news",
+   "collA": "heard"
+  },
+  {
+   "w": "flown",
+   "vi": "bay (quá khứ phân từ của fly)",
+   "def": "the past participle of fly: to travel in a plane or through the air",
+   "sent": "Have you ever ___ in a helicopter?",
+   "sentA": "flown",
+   "coll": "have ___ to Paris",
+   "collA": "flown"
+  },
+  {
+   "w": "forgotten",
+   "vi": "quên (quá khứ phân từ của forget)",
+   "def": "the past participle of forget: not remembering something",
+   "sent": "Oh, sorry! I’ve ___ your name.",
+   "sentA": "forgotten",
+   "coll": "have ___ the password",
+   "collA": "forgotten"
+  },
+  {
+   "w": "fallen",
+   "vi": "ngã, rơi (quá khứ phân từ của fall)",
+   "def": "the past participle of fall: to go down quickly to the ground by accident",
+   "sent": "She has ___ down the stairs and hurt her leg.",
+   "sentA": "fallen",
+   "coll": "have ___ asleep",
+   "collA": "fallen"
+  },
+  {
+   "w": "grown",
+   "vi": "trồng, lớn lên (quá khứ phân từ của grow)",
+   "def": "the past participle of grow: to put a plant in the ground and look after it",
+   "sent": "Have you ever ___ vegetables in your garden?",
+   "sentA": "grown",
+   "coll": "have ___ tomatoes",
+   "collA": "grown"
+  },
+  {
+   "w": "seen",
+   "vi": "xem, nhìn thấy (quá khứ phân từ của see)",
+   "def": "the past participle of see: to look at something with your eyes",
+   "sent": "I’ve ___ that film four times. I love it!",
+   "sentA": "seen",
+   "coll": "never ___ a ghost",
+   "collA": "seen"
+  },
+  {
+   "w": "been",
+   "vi": "đã từng đến (quá khứ phân từ của be)",
+   "def": "the past participle of be: to have gone to a place and come back",
+   "sent": "I haven’t ___ to the USA, but I’d like to go.",
+   "sentA": "been",
+   "coll": "have ___ to France",
+   "collA": "been"
+  },
+  {
+   "w": "had",
+   "vi": "có, đã ăn/uống (quá khứ phân từ của have)",
+   "def": "the past participle of have: to eat, drink or own something",
+   "sent": "I haven’t ___ any coffee today.",
+   "sentA": "had",
+   "coll": "have ___ a good time",
+   "collA": "had"
+  },
+  {
+   "w": "ever",
+   "vi": "bao giờ, từng",
+   "def": "at any time in your life",
+   "sent": "Have you ___ met a famous person?",
+   "sentA": "ever",
+   "coll": "the best film I have ___ seen",
+   "collA": "ever"
+  },
+  {
+   "w": "never",
+   "vi": "chưa bao giờ",
+   "def": "at no time in your life",
+   "sent": "I’ve ___ seen a film with Rose Byrne.",
+   "sentA": "never",
+   "coll": "have ___ been there",
+   "collA": "never"
+  },
+  {
+   "w": "director",
+   "vi": "đạo diễn",
+   "def": "the person who tells the actors what to do in a film",
+   "sent": "Sofia Coppola is a famous film ___.",
+   "sentA": "director",
+   "coll": "a film ___",
+   "collA": "director"
+  },
+  {
+   "w": "actor",
+   "vi": "diễn viên",
+   "def": "a person whose job is to play a part in a film or a play",
+   "sent": "Margot Robbie is a very popular ___.",
+   "sentA": "actor",
+   "coll": "a famous ___",
+   "collA": "actor"
+  },
+  {
+   "w": "award",
+   "vi": "giải thưởng",
+   "def": "a prize that you win for doing something very well",
+   "sent": "She has won an ___ for her new film.",
+   "sentA": "award",
+   "coll": "win an ___",
+   "collA": "award"
+  },
+  {
+   "w": "soap opera",
+   "vi": "phim truyền hình dài tập",
+   "def": "a TV programme with many parts that tells the story of people’s lives",
+   "sent": "Mia has acted in two ___ on TV.",
+   "sentA": "soap operas",
+   "coll": "watch a ___",
+   "collA": "soap opera"
+  },
+  {
+   "w": "common",
+   "vi": "chung (have something in common)",
+   "def": "shared with other people",
+   "sent": "The three actors have a lot in ___.",
+   "sentA": "common",
+   "coll": "have a lot in ___",
+   "collA": "common"
+  }
+ ]
+}
