@@ -1,0 +1,190 @@
+{
+ "level": "A2",
+ "topic": "Unit_12A",
+ "title": "Vocabulary Quiz — Unit 12A: Geography",
+ "kicker": "Empower A2 · Unit 12A · Review",
+ "subtitle": "Places in the world and the countryside",
+ "seconds": 10,
+ "words": [
+  {
+   "w": "island",
+   "vi": "hòn đảo",
+   "def": "a piece of land with water all around it",
+   "sent": "Summer work in a small hotel on the Åland ___ in Finland.",
+   "sentA": "island",
+   "coll": "a small ___",
+   "collA": "island"
+  },
+  {
+   "w": "mountain",
+   "vi": "ngọn núi",
+   "def": "a very high hill, often with snow at the top",
+   "sent": "Close to amazing scenery: rainforest, ___ and glaciers.",
+   "sentA": "mountains",
+   "coll": "climb a ___",
+   "collA": "mountain"
+  },
+  {
+   "w": "forest",
+   "vi": "khu rừng",
+   "def": "a large area with many trees",
+   "sent": "The Taiga ___ in Russia and Canada is the biggest in the world.",
+   "sentA": "forest",
+   "coll": "a pine ___",
+   "collA": "forest"
+  },
+  {
+   "w": "waterfall",
+   "vi": "thác nước",
+   "def": "water that falls from a high place over rocks",
+   "sent": "We walked to the top of the ___ and looked down at the water.",
+   "sentA": "waterfall",
+   "coll": "a high ___",
+   "collA": "waterfall"
+  },
+  {
+   "w": "beach",
+   "vi": "bãi biển",
+   "def": "an area of sand or stones next to the sea",
+   "sent": "Chloe wants to go to the ___ every day.",
+   "sentA": "beach",
+   "coll": "a sandy ___",
+   "collA": "beach"
+  },
+  {
+   "w": "desert",
+   "vi": "sa mạc",
+   "def": "a very dry area with a lot of sand and almost no rain",
+   "sent": "It is very hot and dry in the ___, and there are no rivers.",
+   "sentA": "desert",
+   "coll": "the Sahara ___",
+   "collA": "desert"
+  },
+  {
+   "w": "lake",
+   "vi": "cái hồ",
+   "def": "a large area of water with land all around it",
+   "sent": "We went swimming in the ___ in the mountains.",
+   "sentA": "lake",
+   "coll": "a quiet ___ with still water",
+   "collA": "lake"
+  },
+  {
+   "w": "glacier",
+   "vi": "sông băng",
+   "def": "a very large mass of ice that moves slowly down a mountain",
+   "sent": "In Antarctica you can see a huge ___ of ice.",
+   "sentA": "glacier",
+   "coll": "a huge ___",
+   "collA": "glacier"
+  },
+  {
+   "w": "rainforest",
+   "vi": "rừng mưa nhiệt đới",
+   "def": "a hot, wet forest with very thick trees and a lot of rain",
+   "sent": "The Amazon is the biggest ___ in the world.",
+   "sentA": "rainforest",
+   "coll": "a tropical ___",
+   "collA": "rainforest"
+  },
+  {
+   "w": "river",
+   "vi": "con sông",
+   "def": "a long line of water that flows to the sea",
+   "sent": "The Nile is the longest ___ in Africa.",
+   "sentA": "river",
+   "coll": "a ___ that flows to the sea",
+   "collA": "river"
+  },
+  {
+   "w": "coast",
+   "vi": "bờ biển",
+   "def": "the land next to the sea",
+   "sent": "We have a holiday house on the ___, near the sea.",
+   "sentA": "coast",
+   "coll": "the east ___",
+   "collA": "coast"
+  },
+  {
+   "w": "jungle",
+   "vi": "rừng nhiệt đới rậm",
+   "def": "a hot, wet place with very thick trees and plants",
+   "sent": "Behind the house there is a ___ with lots of very green trees.",
+   "sentA": "jungle",
+   "coll": "a thick ___",
+   "collA": "jungle"
+  },
+  {
+   "w": "hill",
+   "vi": "ngọn đồi",
+   "def": "a high area of land, lower than a mountain",
+   "sent": "You can walk to the top of the ___ and see the whole village.",
+   "sentA": "hill",
+   "coll": "walk up a ___",
+   "collA": "hill"
+  },
+  {
+   "w": "countryside",
+   "vi": "miền quê",
+   "def": "land outside towns and cities, with fields, woods and hills",
+   "sent": "We live outside the city in the ___, and it is very quiet.",
+   "sentA": "countryside",
+   "coll": "live in the ___",
+   "collA": "countryside"
+  },
+  {
+   "w": "woods",
+   "vi": "khu rừng nhỏ",
+   "def": "a small area with many trees, smaller than a forest",
+   "sent": "We go for walks in the ___ behind our house.",
+   "sentA": "woods",
+   "coll": "a small ___ behind the house",
+   "collA": "woods"
+  },
+  {
+   "w": "fields",
+   "vi": "những cánh đồng",
+   "def": "areas of land where farmers grow plants or keep animals",
+   "sent": "There are ___ all around the house and in the distance a small wood.",
+   "sentA": "fields",
+   "coll": "green ___",
+   "collA": "fields"
+  },
+  {
+   "w": "accommodation",
+   "vi": "chỗ ở",
+   "def": "the place where you live or sleep",
+   "sent": "You get free food and ___ in exchange for a few hours of work.",
+   "sentA": "accommodation",
+   "coll": "free ___",
+   "collA": "accommodation"
+  },
+  {
+   "w": "local",
+   "vi": "địa phương",
+   "def": "from or in the area near you",
+   "sent": "Eat ___ food and try to learn the language of the people.",
+   "sentA": "local",
+   "coll": "a ___ newspaper",
+   "collA": "local"
+  },
+  {
+   "w": "scenery",
+   "vi": "phong cảnh",
+   "def": "the beautiful views of the countryside",
+   "sent": "The job is close to amazing ___: rainforest, mountains and glaciers.",
+   "sentA": "scenery",
+   "coll": "beautiful ___",
+   "collA": "scenery"
+  },
+  {
+   "w": "kayaking",
+   "vi": "chèo thuyền kayak",
+   "def": "an activity in a small narrow boat that you move with a paddle",
+   "sent": "The job is great for people who love cycling and ___.",
+   "sentA": "kayaking",
+   "coll": "go ___",
+   "collA": "kayaking"
+  }
+ ]
+}
