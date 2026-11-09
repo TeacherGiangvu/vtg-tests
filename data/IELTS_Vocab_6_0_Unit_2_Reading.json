@@ -1,0 +1,190 @@
+{
+  "level": "IELTS",
+  "topic": "6_0_Unit_2_Reading",
+  "title": "Vocabulary Quiz — Unit 2 Reading: Organic food: why?",
+  "kicker": "IELTS 6.0 · Unit 2 · Review",
+  "subtitle": "Words from the Lesson 1 passage and Starting off",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "approach",
+      "vi": "cách tiếp cận, phương pháp",
+      "def": "a way of doing something",
+      "sent": "Governments are promoting organic farming. But is this the right ___?",
+      "sentA": "approach",
+      "coll": "a new ___ to farming",
+      "collA": "approach"
+    },
+    {
+      "w": "artificial",
+      "vi": "nhân tạo",
+      "def": "not natural, but made by people",
+      "sent": "Organic methods avoid the use of pesticides and other ___ products.",
+      "sentA": "artificial",
+      "coll": "___ fertiliser",
+      "collA": "artificial"
+    },
+    {
+      "w": "conventional",
+      "vi": "truyền thống, thông thường",
+      "def": "the usual way, used for a long time",
+      "sent": "Unlike ___ farming, the organic approach uses natural fertilisers.",
+      "sentA": "conventional",
+      "coll": "___ farming methods",
+      "collA": "conventional"
+    },
+    {
+      "w": "emit",
+      "vi": "thải ra",
+      "def": "to send out gas, heat or light into the air",
+      "sent": "Transporting food by car ___ a lot of carbon dioxide.",
+      "sentA": "emits",
+      "coll": "___ carbon dioxide",
+      "collA": "emit"
+    },
+    {
+      "w": "reject",
+      "vi": "bác bỏ",
+      "def": "to refuse to accept or agree with something",
+      "sent": "Studies into organic farming worldwide continue to ___ this claim.",
+      "sentA": "reject",
+      "coll": "___ a claim",
+      "collA": "reject"
+    },
+    {
+      "w": "trend",
+      "vi": "xu hướng",
+      "def": "a general development or change in a situation",
+      "sent": "Fear of science has created the organic ___.",
+      "sentA": "trend",
+      "coll": "a growing ___",
+      "collA": "trend"
+    },
+    {
+      "w": "luxury",
+      "vi": "thứ xa xỉ",
+      "def": "something expensive that you enjoy but do not need",
+      "sent": "Organic farming is an expensive ___ for shoppers in Europe.",
+      "sentA": "luxury",
+      "coll": "an expensive ___",
+      "collA": "luxury"
+    },
+    {
+      "w": "crop yields",
+      "vi": "sản lượng cây trồng",
+      "def": "the amount of grain, fruit or vegetables that is grown",
+      "sent": "In rural Africa, land is so starved and ___ so low.",
+      "sentA": "crop yields",
+      "coll": "crop ___",
+      "collA": "yields"
+    },
+    {
+      "w": "gain access to",
+      "vi": "tiếp cận được",
+      "def": "to get the chance to have or use something",
+      "sent": "We should help these countries ___ the most advanced farming techniques.",
+      "sentA": "gain access to",
+      "coll": "gain ___ to clean water",
+      "collA": "access"
+    },
+    {
+      "w": "ultimately",
+      "vi": "rốt cuộc, suy cho cùng",
+      "def": "used to stress the most important fact in a situation",
+      "sent": "___, the organic movement is an expensive luxury.",
+      "sentA": "Ultimately",
+      "coll": "___, it is your choice",
+      "collA": "ultimately"
+    },
+    {
+      "w": "avoid",
+      "vi": "tránh (không dùng)",
+      "def": "to choose not to use or have something",
+      "sent": "Organic farming methods ___ the use of pesticides.",
+      "sentA": "avoid",
+      "coll": "___ junk food",
+      "collA": "avoid"
+    },
+    {
+      "w": "create",
+      "vi": "tạo ra",
+      "def": "to make something happen or exist",
+      "sent": "Toasting bread ___ carcinogens.",
+      "sentA": "creates",
+      "coll": "___ a problem",
+      "collA": "create"
+    },
+    {
+      "w": "nutrition",
+      "vi": "dinh dưỡng",
+      "def": "the food you eat and how it affects your health",
+      "sent": "Good ___ is important for children's health.",
+      "sentA": "nutrition",
+      "coll": "a ___ expert",
+      "collA": "nutrition"
+    },
+    {
+      "w": "weather conditions",
+      "vi": "điều kiện thời tiết",
+      "def": "the type of weather that a place has",
+      "sent": "The ___ during growth affect how healthy the food is.",
+      "sentA": "weather conditions",
+      "coll": "weather ___",
+      "collA": "conditions"
+    },
+    {
+      "w": "farming techniques",
+      "vi": "kỹ thuật canh tác",
+      "def": "methods used for working on farms",
+      "sent": "Poor countries need the most advanced ___.",
+      "sentA": "farming techniques",
+      "coll": "modern farming ___",
+      "collA": "techniques"
+    },
+    {
+      "w": "greenhouse gases",
+      "vi": "khí nhà kính",
+      "def": "gases which cause the Earth to become warmer",
+      "sent": "Transporting food by car produces ___.",
+      "sentA": "greenhouse gases",
+      "coll": "reduce ___ gases",
+      "collA": "greenhouse"
+    },
+    {
+      "w": "pesticide",
+      "vi": "thuốc trừ sâu",
+      "def": "a chemical used to kill insects that damage crops",
+      "sent": "Photo 2 shows a tractor spraying ___ on a field.",
+      "sentA": "pesticide",
+      "coll": "___ use",
+      "collA": "pesticide"
+    },
+    {
+      "w": "natural fertiliser",
+      "vi": "phân bón tự nhiên",
+      "def": "something natural, like manure, put on soil to help plants grow",
+      "sent": "Organic vegetables are grown using ___ and soil.",
+      "sentA": "natural fertiliser",
+      "coll": "natural ___",
+      "collA": "fertiliser"
+    },
+    {
+      "w": "crop rotation",
+      "vi": "luân canh cây trồng",
+      "def": "growing different crops in the same field each year",
+      "sent": "Techniques such as ___ improve soil quality.",
+      "sentA": "crop rotation",
+      "coll": "crop ___",
+      "collA": "rotation"
+    },
+    {
+      "w": "genetic engineering",
+      "vi": "kỹ thuật biến đổi gen",
+      "def": "changing the genes of a plant or animal in a laboratory",
+      "sent": "GM crops are produced by ___.",
+      "sentA": "genetic engineering",
+      "coll": "genetic ___",
+      "collA": "engineering"
+    }
+  ]
+}

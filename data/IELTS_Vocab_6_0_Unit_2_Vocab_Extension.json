@@ -1,0 +1,190 @@
+{
+  "level": "IELTS",
+  "topic": "6_0_Unit_2_Vocab_Extension",
+  "title": "Vocabulary Quiz — Unit 2 Vocabulary Extension: It’s good for you!",
+  "kicker": "IELTS 6.0 · Unit 2 · Review",
+  "subtitle": "Words from the Vocabulary Extension Unit 2 list (handed out in Lesson 5)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "allergic to",
+      "vi": "dị ứng với",
+      "def": "if you are ___ a food, it can make you ill",
+      "sent": "I can’t eat peanuts because I’m ___ them.",
+      "sentA": "allergic to",
+      "coll": "be ___ to wheat",
+      "collA": "allergic"
+    },
+    {
+      "w": "be good for your health",
+      "vi": "tốt cho sức khoẻ",
+      "def": "if something does this, it makes you more healthy",
+      "sent": "Eating fruit and vegetables every day will ___.",
+      "sentA": "be good for your health",
+      "coll": "be good for your ___",
+      "collA": "health"
+    },
+    {
+      "w": "brand",
+      "vi": "nhãn hiệu, thương hiệu",
+      "def": "a product that is made by a particular company",
+      "sent": "My favourite ___ of trainers is Nike.",
+      "sentA": "brand",
+      "coll": "a famous ___",
+      "collA": "brand"
+    },
+    {
+      "w": "deliver goods",
+      "vi": "giao hàng",
+      "def": "to take goods to people’s houses or to the place they need to go",
+      "sent": "The supermarket will ___ to your house for free if you spend over fifty dollars.",
+      "sentA": "deliver goods",
+      "coll": "___ goods to customers",
+      "collA": "deliver"
+    },
+    {
+      "w": "fatty food",
+      "vi": "đồ ăn nhiều chất béo",
+      "def": "food that contains a lot of fat",
+      "sent": "My doctor told me to eat less ___, like chips and burgers.",
+      "sentA": "fatty food",
+      "coll": "avoid ___ food",
+      "collA": "fatty"
+    },
+    {
+      "w": "follow a recipe",
+      "vi": "làm theo công thức nấu ăn",
+      "def": "to use a list of instructions to prepare and cook a particular dish",
+      "sent": "I’m not a good cook, but I can ___ if it is easy.",
+      "sentA": "follow a recipe",
+      "coll": "___ a recipe",
+      "collA": "follow"
+    },
+    {
+      "w": "fresh produce",
+      "vi": "nông sản tươi",
+      "def": "food that has not been frozen, put in cans, etc.",
+      "sent": "I buy my ___ at the market every Saturday morning.",
+      "sentA": "fresh produce",
+      "coll": "buy ___ produce",
+      "collA": "fresh"
+    },
+    {
+      "w": "get a good deal",
+      "vi": "mua được giá tốt",
+      "def": "to manage to buy something for a price that is not very expensive",
+      "sent": "I managed to ___ on this laptop — it was half price.",
+      "sentA": "get a good deal",
+      "coll": "get a good ___",
+      "collA": "deal"
+    },
+    {
+      "w": "go on a diet",
+      "vi": "ăn kiêng",
+      "def": "to eat less in order to become thinner",
+      "sent": "After the holiday I need to ___ because I put on weight.",
+      "sentA": "go on a diet",
+      "coll": "go on a ___",
+      "collA": "diet"
+    },
+    {
+      "w": "home cooking",
+      "vi": "nấu ăn tại nhà",
+      "def": "food that has been prepared and cooked at home",
+      "sent": "I prefer ___ to restaurant food — it is healthier and cheaper.",
+      "sentA": "home cooking",
+      "coll": "enjoy ___ cooking",
+      "collA": "home"
+    },
+    {
+      "w": "ingredients",
+      "vi": "nguyên liệu",
+      "def": "the foods that are used to make a particular dish",
+      "sent": "To make this soup you only need five simple ___.",
+      "sentA": "ingredients",
+      "coll": "fresh ___",
+      "collA": "ingredients"
+    },
+    {
+      "w": "main meal of the day",
+      "vi": "bữa chính trong ngày",
+      "def": "the meal at which you eat the most food",
+      "sent": "In my family, dinner is the ___.",
+      "sentA": "main meal of the day",
+      "coll": "the main ___ of the day",
+      "collA": "meal"
+    },
+    {
+      "w": "on offer",
+      "vi": "đang khuyến mãi",
+      "def": "available to buy at a cheaper price than usual",
+      "sent": "Rice is ___ this week, so I bought five kilos.",
+      "sentA": "on offer",
+      "coll": "on ___",
+      "collA": "offer"
+    },
+    {
+      "w": "on the shelves",
+      "vi": "có bán, có trên kệ",
+      "def": "if a shop has a product here, it is available to buy there",
+      "sent": "That brand of tea is never ___ in our local shop.",
+      "sentA": "on the shelves",
+      "coll": "on the ___",
+      "collA": "shelves"
+    },
+    {
+      "w": "order a meal",
+      "vi": "gọi món",
+      "def": "to tell a waiter what you want to eat in a restaurant",
+      "sent": "When the waiter came, we ___ — I chose fish and rice.",
+      "sentA": "order a meal",
+      "coll": "___ a meal",
+      "collA": "order"
+    },
+    {
+      "w": "on the menu",
+      "vi": "có trong thực đơn",
+      "def": "available to eat in a restaurant or café",
+      "sent": "Sorry, madam, beef noodle soup is not ___ today.",
+      "sentA": "on the menu",
+      "coll": "on the ___",
+      "collA": "menu"
+    },
+    {
+      "w": "ready-made meals",
+      "vi": "đồ ăn làm sẵn",
+      "def": "meals that have been prepared and cooked before you buy them, so you only need to heat them",
+      "sent": "I’m too busy to cook, so I often buy ___ from the supermarket.",
+      "sentA": "ready-made meals",
+      "coll": "buy ___ meals",
+      "collA": "ready-made"
+    },
+    {
+      "w": "retailer",
+      "vi": "nhà bán lẻ",
+      "def": "someone who sells products to the public",
+      "sent": "The online ___ sells clothes and shoes from many brands.",
+      "sentA": "retailer",
+      "coll": "an online ___",
+      "collA": "retailer"
+    },
+    {
+      "w": "two for the price of one",
+      "vi": "mua một tặng một",
+      "def": "you can have two of them for the usual price of one",
+      "sent": "The café has ___ on coffee today, so I got two for me and my friend.",
+      "sentA": "two for the price of one",
+      "coll": "two for the price of ___",
+      "collA": "one"
+    },
+    {
+      "w": "value for money",
+      "vi": "đáng đồng tiền",
+      "def": "the thing you buy is worth what you paid for it",
+      "sent": "It isn’t the cheapest place, but it is great ___.",
+      "sentA": "value for money",
+      "coll": "great ___ for money",
+      "collA": "value"
+    }
+  ]
+}
