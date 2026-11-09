@@ -1,0 +1,190 @@
+{
+ "level": "A2",
+ "topic": "Unit_11C",
+ "title": "Vocabulary Quiz — Unit 11C–11D: Opinions about films",
+ "kicker": "Empower A2 · Unit 11C–11D · Review",
+ "subtitle": "Words for talking about films, actors and what you think of them",
+ "seconds": 10,
+ "words": [
+  {
+   "w": "review",
+   "vi": "bài đánh giá",
+   "def": "a short text in which you say what you think about a film, a book or a restaurant",
+   "sent": "Ashley wrote a very positive ___ of the film Roma.",
+   "sentA": "review",
+   "coll": "write a film ___",
+   "collA": "review"
+  },
+  {
+   "w": "recommend",
+   "vi": "giới thiệu, khuyên dùng",
+   "def": "to tell someone that something is good and that they should try it",
+   "sent": "I can ___ this film, but only watch it if you enjoy sad films!",
+   "sentA": "recommend",
+   "coll": "I can ___ this film",
+   "collA": "recommend"
+  },
+  {
+   "w": "disappointed",
+   "vi": "thất vọng",
+   "def": "unhappy because something was not as good as you hoped",
+   "sent": "I watched it on Netflix, but I was ___.",
+   "sentA": "disappointed",
+   "coll": "feel ___",
+   "collA": "disappointed"
+  },
+  {
+   "w": "boring",
+   "vi": "chán, nhàm chán",
+   "def": "not interesting; it makes you want to do something else",
+   "sent": "I found the story a bit ___.",
+   "sentA": "boring",
+   "coll": "a ___ film",
+   "collA": "boring"
+  },
+  {
+   "w": "exciting",
+   "vi": "thú vị, hồi hộp",
+   "def": "full of action, so you want to know what happens next",
+   "sent": "All the characters just do ordinary things and nothing ___ happens.",
+   "sentA": "exciting",
+   "coll": "an ___ story",
+   "collA": "exciting"
+  },
+  {
+   "w": "interesting",
+   "vi": "hay, thú vị",
+   "def": "something you want to know more about; it keeps your attention",
+   "sent": "I thought it was a very ___ film, but it was also very sad.",
+   "sentA": "interesting",
+   "coll": "an ___ idea",
+   "collA": "interesting"
+  },
+  {
+   "w": "sad",
+   "vi": "buồn",
+   "def": "unhappy; a film that makes you want to cry is ___",
+   "sent": "It’s a ___ film and the ending made me cry.",
+   "sentA": "sad",
+   "coll": "a ___ ending",
+   "collA": "sad"
+  },
+  {
+   "w": "terrible",
+   "vi": "tệ, kinh khủng",
+   "def": "very, very bad",
+   "sent": "Don’t go to see it. It’s ___!",
+   "sentA": "terrible",
+   "coll": "a ___ film",
+   "collA": "terrible"
+  },
+  {
+   "w": "ordinary",
+   "vi": "bình thường",
+   "def": "not special or unusual; normal",
+   "sent": "All the characters just do ___ things.",
+   "sentA": "ordinary",
+   "coll": "an ___ day",
+   "collA": "ordinary"
+  },
+  {
+   "w": "ending",
+   "vi": "đoạn kết",
+   "def": "the last part of a film or a story",
+   "sent": "It’s a sad film and the ___ made me cry.",
+   "sentA": "ending",
+   "coll": "a happy ___",
+   "collA": "ending"
+  },
+  {
+   "w": "story",
+   "vi": "câu chuyện, cốt truyện",
+   "def": "what happens in a film or a book",
+   "sent": "The acting was good, but I found the ___ a bit boring.",
+   "sentA": "story",
+   "coll": "a love ___",
+   "collA": "story"
+  },
+  {
+   "w": "acting",
+   "vi": "diễn xuất",
+   "def": "the work of actors who play people in a film or play",
+   "sent": "The ___ was very good, especially the actors who play the maid and the mother.",
+   "sentA": "acting",
+   "coll": "good ___",
+   "collA": "acting"
+  },
+  {
+   "w": "role",
+   "vi": "vai diễn",
+   "def": "the part of a person in a film that an actor plays",
+   "sent": "She plays the ___ of a maid who works for a middle-class family.",
+   "sentA": "role",
+   "coll": "the main ___",
+   "collA": "role"
+  },
+  {
+   "w": "character",
+   "vi": "nhân vật",
+   "def": "a person in a film or a book",
+   "sent": "All the ___ in the film just do ordinary things.",
+   "sentA": "characters",
+   "coll": "the main ___",
+   "collA": "character"
+  },
+  {
+   "w": "director",
+   "vi": "đạo diễn",
+   "def": "the person who tells the actors what to do when a film is made",
+   "sent": "The film is by the Mexican ___ Alfonso Cuarón.",
+   "sentA": "director",
+   "coll": "a film ___",
+   "collA": "director"
+  },
+  {
+   "w": "special effects",
+   "vi": "kỹ xảo điện ảnh",
+   "def": "things in a film that look real but are made with computers",
+   "sent": "John thinks the ___ in the film were good.",
+   "sentA": "special effects",
+   "coll": "great ___",
+   "collA": "special effects"
+  },
+  {
+   "w": "cinema",
+   "vi": "rạp chiếu phim",
+   "def": "a building where you go to watch films on a big screen",
+   "sent": "I saw Roma at the ___ last year.",
+   "sentA": "cinema",
+   "coll": "go to the ___",
+   "collA": "cinema"
+  },
+  {
+   "w": "enjoy",
+   "vi": "thích, thưởng thức",
+   "def": "to like doing or watching something and have a good time",
+   "sent": "Did you ___ it? — Yes, it was a good concert.",
+   "sentA": "enjoy",
+   "coll": "___ the film",
+   "collA": "enjoy"
+  },
+  {
+   "w": "maid",
+   "vi": "người giúp việc",
+   "def": "a woman whose job is to clean and cook in someone’s house",
+   "sent": "She plays the role of a ___ who works for a middle-class family.",
+   "sentA": "maid",
+   "coll": "a hotel ___",
+   "collA": "maid"
+  },
+  {
+   "w": "black and white",
+   "vi": "đen trắng",
+   "def": "with no colours, only black, grey and white",
+   "sent": "It’s a sad film and it’s in ___.",
+   "sentA": "black and white",
+   "coll": "a ___ photo",
+   "collA": "black and white"
+  }
+ ]
+}
