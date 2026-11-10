@@ -1,0 +1,272 @@
+{
+  "level": "IELTS",
+  "topic": "6_0_Unit_2_Writing",
+  "title": "Vocabulary Quiz — Unit 2 Writing: Task 2 essay and quantity words",
+  "kicker": "IELTS 6.0 · Unit 2 · Review",
+  "subtitle": "Linking words and essay words from Lesson 4 (Writing Task 2) + countable / uncountable nouns",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "over time",
+      "vi": "theo thời gian, dần dần",
+      "def": "as time passes, from the past until now",
+      "sent": "___, a wide range of food products has become available in shops.",
+      "sentA": "Over time",
+      "coll": "things change ___ time",
+      "collA": "over"
+    },
+    {
+      "w": "as a result",
+      "vi": "kết quả là, do đó",
+      "def": "words that show something happened because of something else",
+      "sent": "There are many ways to produce food. ___, there are many different attitudes towards it.",
+      "sentA": "As a result",
+      "coll": "as a ___ of this",
+      "collA": "result"
+    },
+    {
+      "w": "in particular",
+      "vi": "đặc biệt là",
+      "def": "words you use to talk about one special case",
+      "sent": "Most people shop to suit their lifestyle. ___, single people may buy frozen food.",
+      "sentA": "In particular",
+      "coll": "in ___, single people",
+      "collA": "particular"
+    },
+    {
+      "w": "on the other hand",
+      "vi": "mặt khác, ngược lại",
+      "def": "words that introduce a different or opposite idea",
+      "sent": "Some people choose food by price. ___, others care more about quality.",
+      "sentA": "On the other hand",
+      "coll": "on one hand … on the ___ hand",
+      "collA": "other"
+    },
+    {
+      "w": "in addition",
+      "vi": "ngoài ra, thêm vào đó",
+      "def": "words that add one more point",
+      "sent": "Some people choose organic food. ___, they worry about how animals are treated.",
+      "sentA": "In addition",
+      "coll": "in ___ to this",
+      "collA": "addition"
+    },
+    {
+      "w": "in fact",
+      "vi": "thực ra, thật vậy",
+      "def": "words that introduce more exact or surprising information",
+      "sent": "Cost is not an issue for them. ___, very few consumers talk about it.",
+      "sentA": "In fact",
+      "coll": "in ___, very few people talk about it",
+      "collA": "fact"
+    },
+    {
+      "w": "in conclusion",
+      "vi": "tóm lại, kết luận",
+      "def": "words you use at the start of the last paragraph",
+      "sent": "___, it seems that cost is only one of a number of factors.",
+      "sentA": "In conclusion",
+      "coll": "in ___, cost is one factor",
+      "collA": "conclusion"
+    },
+    {
+      "w": "although",
+      "vi": "mặc dù",
+      "def": "a word that links two ideas that seem different",
+      "sent": "___ some people look at price before quality, others have little interest in it.",
+      "sentA": "Although",
+      "coll": "___ it is cheap, I don't buy it",
+      "collA": "Although"
+    },
+    {
+      "w": "attitude",
+      "vi": "thái độ, quan điểm",
+      "def": "what you think or feel about something",
+      "sent": "There are many different ___ towards food.",
+      "sentA": "attitudes",
+      "coll": "a positive ___",
+      "collA": "attitude"
+    },
+    {
+      "w": "aspect",
+      "vi": "khía cạnh",
+      "def": "one part of a subject or a situation",
+      "sent": "People consider a range of ___ that include quality and taste.",
+      "sentA": "aspects",
+      "coll": "an important ___ of life",
+      "collA": "aspect"
+    },
+    {
+      "w": "consumer",
+      "vi": "người tiêu dùng",
+      "def": "a person who buys things",
+      "sent": "Very few ___ talk about the cost.",
+      "sentA": "consumers",
+      "coll": "food ___",
+      "collA": "consumers"
+    },
+    {
+      "w": "factor",
+      "vi": "yếu tố",
+      "def": "one of the things that has an effect on a result",
+      "sent": "Cost is only one of a number of ___ that people take into account.",
+      "sentA": "factors",
+      "coll": "a key ___",
+      "collA": "factor"
+    },
+    {
+      "w": "importance",
+      "vi": "tầm quan trọng",
+      "def": "how much something matters",
+      "sent": "A great deal of ___ is placed on the freshness of food.",
+      "sentA": "importance",
+      "coll": "great ___",
+      "collA": "importance"
+    },
+    {
+      "w": "issue",
+      "vi": "vấn đề",
+      "def": "a subject that people talk about",
+      "sent": "So cost is not an ___.",
+      "sentA": "issue",
+      "coll": "an important ___",
+      "collA": "issue"
+    },
+    {
+      "w": "influence",
+      "vi": "ảnh hưởng đến",
+      "def": "to change what someone thinks or does",
+      "sent": "What ___ people when they buy food?",
+      "sentA": "influences",
+      "coll": "___ people's choices",
+      "collA": "influence"
+    },
+    {
+      "w": "paragraph",
+      "vi": "đoạn văn",
+      "def": "a part of an essay that starts on a new line",
+      "sent": "An essay should be written in ___, not in bullet points.",
+      "sentA": "paragraphs",
+      "coll": "the first ___",
+      "collA": "paragraph"
+    },
+    {
+      "w": "a wide range of",
+      "vi": "nhiều loại, đa dạng",
+      "def": "many different kinds of something",
+      "sent": "A ___ food products has become available in shops.",
+      "sentA": "wide range of",
+      "coll": "a wide ___ of ideas",
+      "collA": "range"
+    },
+    {
+      "w": "a great deal of",
+      "vi": "rất nhiều (với danh từ không đếm được)",
+      "def": "a lot of — used with words you cannot count",
+      "sent": "In my country, ___ importance is placed on fresh food.",
+      "sentA": "a great deal of",
+      "coll": "a great ___ of research",
+      "collA": "deal"
+    },
+    {
+      "w": "a considerable amount of",
+      "vi": "một lượng đáng kể",
+      "def": "quite a lot of — used with words you cannot count",
+      "sent": "Others will spend ___ money on food.",
+      "sentA": "a considerable amount of",
+      "coll": "a considerable ___ of money",
+      "collA": "amount"
+    },
+    {
+      "w": "plenty of",
+      "vi": "nhiều, dồi dào",
+      "def": "more than enough of something",
+      "sent": "There are ___ ways that food can be produced and sold.",
+      "sentA": "plenty of",
+      "coll": "___ of time",
+      "collA": "plenty"
+    }
+  ],
+  "grammar": [
+    {
+      "q": "There is a great deal of ___ about healthy food on the Internet.",
+      "options": [
+        "information",
+        "informations",
+        "an information"
+      ],
+      "answer": 0,
+      "note": "information không đếm được: không có -s, không có an"
+    },
+    {
+      "q": "Can you give me some ___ on how to stay fit?",
+      "options": [
+        "advices",
+        "advice",
+        "an advice"
+      ],
+      "answer": 1,
+      "note": "advice không đếm được: không có -s, không có an"
+    },
+    {
+      "q": "A large ___ of people eat fast food every day.",
+      "options": [
+        "amount",
+        "deal",
+        "number"
+      ],
+      "answer": 2,
+      "note": "a large number of + danh từ đếm được số nhiều"
+    },
+    {
+      "q": "I have very ___ time to cook when I get home.",
+      "options": [
+        "few",
+        "many",
+        "little"
+      ],
+      "answer": 2,
+      "note": "little + danh từ không đếm được (time)"
+    },
+    {
+      "q": "Technology brings ___ advantages to our lives.",
+      "options": [
+        "much",
+        "many",
+        "a little"
+      ],
+      "answer": 1,
+      "note": "many + danh từ đếm được số nhiều"
+    },
+    {
+      "q": "Only a ___ consumers read the labels on food.",
+      "options": [
+        "little",
+        "much",
+        "few"
+      ],
+      "answer": 2,
+      "note": "a few + danh từ đếm được số nhiều"
+    },
+    {
+      "q": "Over time, a wide range of products ___ become available.",
+      "options": [
+        "have",
+        "has",
+        "had"
+      ],
+      "answer": 1,
+      "note": "a range of … — động từ chia theo range (số ít) + present perfect"
+    },
+    {
+      "q": "___ cost is important, many people put quality first.",
+      "options": [
+        "As a result",
+        "Although",
+        "In addition"
+      ],
+      "answer": 1,
+      "note": "although nối hai ý đối lập trong một câu"
+    }
+  ]
+}
