@@ -1,0 +1,30 @@
+{
+  "level": "IELTS",
+  "topic": "6_0_Unit_3_Vocab_Extension",
+  "title": "Vocabulary Quiz — Unit 3 Vocabulary Extension: University life",
+  "kicker": "IELTS 6.0 · Unit 3 · Vocabulary Extension",
+  "subtitle": "Words and phrases about study and university",
+  "seconds": 10,
+  "words": [
+    {"w": "apply to an institution", "vi": "nộp đơn vào một trường/tổ chức", "def": "to ask officially to join a college or university", "sent": "Students who want a place must ___ to a university before the deadline.", "sentA": "apply to an institution", "coll": "___ to an institution", "collA": "apply"},
+    {"w": "bibliography", "vi": "danh mục tài liệu tham khảo", "def": "a list of the books and articles you used for a piece of work", "sent": "Put every book you used in the ___ at the end of your essay.", "sentA": "bibliography", "coll": "a ___ of books", "collA": "bibliography"},
+    {"w": "coursework", "vi": "bài làm trong khoá học (không phải thi cuối kỳ)", "def": "work students do during a course, not in the final exam", "sent": "Thirty per cent of my final mark comes from ___.", "sentA": "coursework", "coll": "hand in your ___", "collA": "coursework"},
+    {"w": "department", "vi": "khoa, bộ môn", "def": "a part of a college where one subject is taught", "sent": "She works in the English ___ at the university.", "sentA": "department", "coll": "the history ___", "collA": "department"},
+    {"w": "dissertation", "vi": "luận văn", "def": "a long piece of writing that you do as part of a course", "sent": "He is writing a 10,000-word ___ about climate change.", "sentA": "dissertation", "coll": "write a ___", "collA": "dissertation"},
+    {"w": "do research", "vi": "làm nghiên cứu", "def": "to study a subject to find out new information about it", "sent": "Many students ___ in the library before they write an essay.", "sentA": "do research", "coll": "___ research", "collA": "do"},
+    {"w": "fellow students", "vi": "bạn học cùng", "def": "people who study at the same place as you", "sent": "I often study with my ___ in the evening.", "sentA": "fellow students", "coll": "my ___ students", "collA": "fellow"},
+    {"w": "gap year", "vi": "năm nghỉ giữa phổ thông và đại học", "def": "a year between school and university that you spend travelling or working", "sent": "After school she took a ___ and travelled around Asia.", "sentA": "gap year", "coll": "a ___ year", "collA": "gap"},
+    {"w": "get the right grades", "vi": "đạt điểm cần thiết", "def": "to get the marks you need in an exam", "sent": "You must ___ in your exams to get into this university.", "sentA": "get the right grades", "coll": "get the right ___", "collA": "grades"},
+    {"w": "get a good degree", "vi": "tốt nghiệp với bằng loại tốt", "def": "to get a high mark in the qualification at the end of university", "sent": "He studied hard to ___ and find a good job.", "sentA": "get a good degree", "coll": "get a good ___", "collA": "degree"},
+    {"w": "give up", "vi": "bỏ (môn học, khoá học)", "def": "to stop doing a course before you finish it", "sent": "She decided to ___ French because it was too difficult.", "sentA": "give up", "coll": "___ up a course", "collA": "give"},
+    {"w": "lecture hall", "vi": "giảng đường", "def": "a large room where students sit and listen to lectures", "sent": "More than two hundred students sat in the ___.", "sentA": "lecture hall", "coll": "a large ___ hall", "collA": "lecture"},
+    {"w": "plagiarise", "vi": "đạo văn", "def": "to use someone else's words or ideas as if they were your own", "sent": "If you ___ another writer's work, you may fail the course.", "sentA": "plagiarise", "coll": "do not ___", "collA": "plagiarise"},
+    {"w": "postgraduate", "vi": "học viên sau đại học", "def": "a student who already has a degree and studies for a higher one", "sent": "A ___ is studying for a master's degree.", "sentA": "postgraduate", "coll": "a ___ student", "collA": "postgraduate"},
+    {"w": "quote", "vi": "trích dẫn", "def": "to use the exact words of a writer to support what you say", "sent": "In your essay you should ___ your sources.", "sentA": "quote", "coll": "___ a source", "collA": "quote"},
+    {"w": "receive funding", "vi": "nhận kinh phí tài trợ", "def": "to be given money for a particular purpose", "sent": "The research team will ___ from the government.", "sentA": "receive funding", "coll": "receive ___", "collA": "funding"},
+    {"w": "syllabus", "vi": "đề cương môn học", "def": "a plan that shows the subjects or books in a course", "sent": "The ___ lists all the books we must read this year.", "sentA": "syllabus", "coll": "the course ___", "collA": "syllabus"},
+    {"w": "teaching staff", "vi": "đội ngũ giảng viên", "def": "the people who are employed to teach in a school or university", "sent": "The ___ at this college are very friendly.", "sentA": "teaching staff", "coll": "the teaching ___", "collA": "staff"},
+    {"w": "tuition fees", "vi": "học phí", "def": "the money students pay to be taught at a university", "sent": "Many students borrow money to pay their ___.", "sentA": "tuition fees", "coll": "pay ___ fees", "collA": "tuition"},
+    {"w": "undergraduate", "vi": "sinh viên đại học (chưa tốt nghiệp)", "def": "a student who is studying for a first university degree", "sent": "An ___ usually studies for three or four years.", "sentA": "undergraduate", "coll": "an ___ student", "collA": "undergraduate"}
+  ]
+}
