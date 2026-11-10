@@ -1,0 +1,190 @@
+{
+  "level": "IELTS",
+  "topic": "6_0_Unit_3_Listening",
+  "title": "Vocabulary Quiz — Unit 3 Listening: A student tutorial",
+  "kicker": "IELTS 6.0 · Unit 3 · Review",
+  "subtitle": "Study words and useful phrases from Lesson 1 (Listening Section 3)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "assignment",
+      "vi": "bài tập lớn, nhiệm vụ được giao",
+      "def": "a piece of work that a teacher gives you to do",
+      "sent": "Amanda has come to discuss her mid-term ___ with her tutor.",
+      "sentA": "assignment",
+      "coll": "hand in an ___",
+      "collA": "assignment"
+    },
+    {
+      "w": "self-assessment",
+      "vi": "tự đánh giá",
+      "def": "a judgement that you make about how well you have done something",
+      "sent": "Students do some ___ of their own pronunciation skills.",
+      "sentA": "self-assessment",
+      "coll": "do a ___",
+      "collA": "self-assessment"
+    },
+    {
+      "w": "weakness",
+      "vi": "điểm yếu",
+      "def": "a part of you or your work that is not good",
+      "sent": "Students record themselves and see where their ___ lie.",
+      "sentA": "weaknesses",
+      "coll": "strengths and ___",
+      "collA": "weaknesses"
+    },
+    {
+      "w": "peer evaluation",
+      "vi": "đánh giá chéo giữa bạn học",
+      "def": "judging how good a classmate's work is",
+      "sent": "You could also do some ___: do classmates agree with your self-assessment?",
+      "sentA": "peer evaluation",
+      "coll": "peer ___",
+      "collA": "evaluation"
+    },
+    {
+      "w": "extract",
+      "vi": "đoạn trích",
+      "def": "a short part of a book or a lecture that you choose to use",
+      "sent": "Amanda wants to choose a short ___ and ask students to read it aloud.",
+      "sentA": "extract",
+      "coll": "a short ___ from a book",
+      "collA": "extract"
+    },
+    {
+      "w": "authentic",
+      "vi": "thật, chân thực",
+      "def": "real, not made or written for teaching",
+      "sent": "Using a lecture means students listen to ___ spoken language.",
+      "sentA": "authentic",
+      "coll": "___ language",
+      "collA": "authentic"
+    },
+    {
+      "w": "feature",
+      "vi": "đặc điểm",
+      "def": "an important or typical part of something",
+      "sent": "What ___ of the extract do I need to think about?",
+      "sentA": "features",
+      "coll": "a key ___",
+      "collA": "feature"
+    },
+    {
+      "w": "structure",
+      "vi": "cấu trúc",
+      "def": "the way that the parts of something are arranged",
+      "sent": "Amanda needs a clear, well-___ passage.",
+      "sentA": "structured",
+      "coll": "the ___ of an essay",
+      "collA": "structure"
+    },
+    {
+      "w": "finding",
+      "vi": "kết quả nghiên cứu",
+      "def": "a piece of information that a study has discovered",
+      "sent": "It will be interesting to look at your ___ afterwards.",
+      "sentA": "findings",
+      "coll": "research ___",
+      "collA": "findings"
+    },
+    {
+      "w": "base something on",
+      "vi": "dựa trên",
+      "def": "to use something as the starting point for your work",
+      "sent": "I thought I could ___ my study on pronunciation.",
+      "sentA": "base",
+      "coll": "be ___ on facts",
+      "collA": "based"
+    },
+    {
+      "w": "listen back",
+      "vi": "nghe lại (bản ghi âm)",
+      "def": "to listen to a recording of yourself again",
+      "sent": "They record themselves, then ___ and see where their weaknesses lie.",
+      "sentA": "listen back",
+      "coll": "record yourself and ___",
+      "collA": "listen back"
+    },
+    {
+      "w": "look up",
+      "vi": "tra cứu, tìm (thông tin)",
+      "def": "to search for something and find it",
+      "sent": "Why don't you ___ one of my lectures on the website?",
+      "sentA": "look up",
+      "coll": "___ a word in a dictionary",
+      "collA": "look up"
+    },
+    {
+      "w": "suitable",
+      "vi": "phù hợp",
+      "def": "right for a particular purpose",
+      "sent": "Find a ___ extract in one of my lectures.",
+      "sentA": "suitable",
+      "coll": "a ___ time",
+      "collA": "suitable"
+    },
+    {
+      "w": "go down well",
+      "vi": "được đón nhận tốt",
+      "def": "to be liked by the people who see or hear it",
+      "sent": "The lecture on gestures and signs certainly ___ well.",
+      "sentA": "went down",
+      "coll": "go ___ well",
+      "collA": "down"
+    },
+    {
+      "w": "closely linked",
+      "vi": "liên quan chặt chẽ",
+      "def": "strongly connected with something",
+      "sent": "The topic is more ___ to the whole area of pronunciation.",
+      "sentA": "closely linked",
+      "coll": "be closely ___ to",
+      "collA": "linked"
+    },
+    {
+      "w": "book in advance",
+      "vi": "đặt trước",
+      "def": "to reserve something before the day you need it",
+      "sent": "You just need to ___ the recorders in advance.",
+      "sentA": "book",
+      "coll": "___ in advance",
+      "collA": "book"
+    },
+    {
+      "w": "unreliable",
+      "vi": "không đáng tin cậy",
+      "def": "not able to be trusted to work well every time",
+      "sent": "Technology can be ___ at times.",
+      "sentA": "unreliable",
+      "coll": "an ___ machine",
+      "collA": "unreliable"
+    },
+    {
+      "w": "tutor",
+      "vi": "giáo viên hướng dẫn, gia sư",
+      "def": "a teacher who works with one student or a small group",
+      "sent": "Amanda talks to her course ___ about her assignment.",
+      "sentA": "tutor",
+      "coll": "a course ___",
+      "collA": "tutor"
+    },
+    {
+      "w": "equipment",
+      "vi": "thiết bị",
+      "def": "the tools and machines you need for a job",
+      "sent": "Do we have the ___ for the recording?",
+      "sentA": "equipment",
+      "coll": "two pieces of ___",
+      "collA": "equipment"
+    },
+    {
+      "w": "digital recorder",
+      "vi": "máy ghi âm kỹ thuật số",
+      "def": "a machine that records sound",
+      "sent": "The department also has a ___ that you can borrow.",
+      "sentA": "digital recorder",
+      "coll": "a ___ recorder",
+      "collA": "digital"
+    }
+  ]
+}
