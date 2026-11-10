@@ -1,0 +1,30 @@
+{
+  "level": "IELTS",
+  "topic": "6_0_Unit_2_Listening",
+  "title": "Vocabulary Quiz — Unit 2 Listening: A welcome talk",
+  "kicker": "IELTS 6.0 · Unit 2 · Review",
+  "subtitle": "Useful phrases and words from Lesson 2 (Listening Section 2 and word formation)",
+  "seconds": 10,
+  "words": [
+    {"w": "a balanced diet", "vi": "chế độ ăn cân bằng", "def": "eating the right amounts of different kinds of food", "sent": "The key to good health is eating what we call 'a ___'.", "sentA": "balanced diet", "coll": "a balanced ___", "collA": "diet"},
+    {"w": "keep fit", "vi": "giữ dáng, giữ sức khoẻ", "def": "to stay healthy and strong, especially by doing exercise", "sent": "You have to do a little exercise and ___ as well.", "sentA": "keep fit", "coll": "___ fit by going to the gym", "collA": "keep"},
+    {"w": "grab something quick", "vi": "ăn vội cái gì đó cho nhanh", "def": "to get some food fast because you have no time", "sent": "When you feel hungry, it's often too easy to ___ because you're tired or busy.", "sentA": "grab something quick", "coll": "grab something ___ to eat", "collA": "quick"},
+    {"w": "live on", "vi": "sống nhờ vào, chỉ ăn (một loại thức ăn)", "def": "to eat only or mainly one kind of food", "sent": "Cooking a healthy meal takes longer, so many people ___ sandwiches and fast food.", "sentA": "live on", "coll": "live ___ fast food", "collA": "on"},
+    {"w": "fall into a trap", "vi": "rơi vào bẫy (làm điều xấu mà không nhận ra)", "def": "to start doing something bad without noticing it", "sent": "Please — don't ___ this unhealthy trap.", "sentA": "fall into", "coll": "fall into a ___", "collA": "trap"},
+    {"w": "be generally active", "vi": "năng vận động trong cuộc sống hằng ngày", "def": "to move around a lot during your normal day", "sent": "Being ___ is much healthier than doing lots of exercise just occasionally.", "sentA": "generally active", "coll": "be ___ active", "collA": "generally"},
+    {"w": "lie awake", "vi": "nằm trằn trọc, không ngủ được", "def": "to be in bed but not able to sleep", "sent": "If you do enough exercise, you won't ___ at night worrying about the next day.", "sentA": "lie awake", "coll": "lie ___ at night", "collA": "awake"},
+    {"w": "take a break", "vi": "nghỉ giải lao", "def": "to stop working for a short time", "sent": "It's quite OK to ___ any time that you're not busy.", "sentA": "take a break", "coll": "take a ___", "collA": "break"},
+    {"w": "a careless mistake", "vi": "lỗi do bất cẩn", "def": "a mistake you make because you do not pay attention", "sent": "If you work for too long without a break, you could make a ___.", "sentA": "careless mistake", "coll": "make a careless ___", "collA": "mistake"},
+    {"w": "shift work", "vi": "làm việc theo ca", "def": "work at different times of the day and night", "sent": "Many of you will be doing ___, so you might like the 24-hour swimming pool.", "sentA": "shift work", "coll": "do ___ work", "collA": "shift"},
+    {"w": "hygiene", "vi": "vệ sinh", "def": "keeping things clean so that people do not get ill", "sent": "Another important issue is ___: germs can live for a long time.", "sentA": "hygiene", "coll": "good personal ___", "collA": "hygiene"},
+    {"w": "point out", "vi": "chỉ ra, lưu ý rằng", "def": "to tell someone a fact", "sent": "I want to ___ that it's quite OK to take a break.", "sentA": "point out", "coll": "point something ___", "collA": "out"},
+    {"w": "for one thing", "vi": "trước hết, thứ nhất (đưa ra một lý do)", "def": "words you use to give one reason for something", "sent": "Many people don't eat well. ___, they don't eat enough fruit and vegetables.", "sentA": "For one thing", "coll": "for one ___", "collA": "thing"},
+    {"w": "healthily", "vi": "một cách lành mạnh", "def": "in a way that is good for your health", "sent": "People who eat ___ often feel better.", "sentA": "healthily", "coll": "eat ___", "collA": "healthily"},
+    {"w": "harmful", "vi": "có hại", "def": "causing damage or hurting someone", "sent": "Some chemicals in cleaning products can be ___ to your skin.", "sentA": "harmful", "coll": "___ to people's health", "collA": "harmful"},
+    {"w": "inconvenient", "vi": "bất tiện", "def": "not easy or not comfortable for you", "sent": "The pool is far away, so going there after work is very ___.", "sentA": "inconvenient", "coll": "an ___ time", "collA": "inconvenient"},
+    {"w": "wealthy", "vi": "giàu có", "def": "having a lot of money", "sent": "A ___ family can pay for private lessons.", "sentA": "wealthy", "coll": "very ___ people", "collA": "wealthy"},
+    {"w": "dramatically", "vi": "một cách đột ngột, mạnh mẽ", "def": "in a way that is sudden and very big", "sent": "The number of fast-food shops has increased ___ in ten years.", "sentA": "dramatically", "coll": "change ___", "collA": "dramatically"},
+    {"w": "roundabout", "vi": "bùng binh, vòng xuyến", "def": "a circle where roads meet and cars go around", "sent": "Go straight ahead until you reach the ___, then take the second turning on the left.", "sentA": "roundabout", "coll": "turn left at the ___", "collA": "roundabout"},
+    {"w": "beyond", "vi": "xa hơn, ở phía bên kia của", "def": "on the far side of something", "sent": "The pool entrance is at the end of the road, just ___ the line of trees.", "sentA": "beyond", "coll": "go ___ the turning", "collA": "beyond"}
+  ]
+}
