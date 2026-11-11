@@ -1,0 +1,190 @@
+{
+  "level": "IELTS",
+  "topic": "Intonation_L2_City_Transport",
+  "title": "Vocabulary Quiz — Intonation Lesson 2: City and Transport",
+  "kicker": "IELTS Speaking · Intonation · Review",
+  "subtitle": "Words from the Lesson 2 vocabulary list (city and transport)",
+  "seconds": 10,
+  "words": [
+    {
+      "w": "environment",
+      "vi": "môi trường",
+      "def": "the natural world: air, water and land",
+      "sent": "Cars and factories are bad for the ___.",
+      "sentA": "environment",
+      "coll": "protect the ___",
+      "collA": "environment"
+    },
+    {
+      "w": "pollution",
+      "vi": "ô nhiễm",
+      "def": "dirty air, water or land caused by waste",
+      "sent": "___ is a serious problem in big cities.",
+      "sentA": "pollution",
+      "coll": "air ___",
+      "collA": "pollution"
+    },
+    {
+      "w": "population",
+      "vi": "dân số",
+      "def": "the number of people who live in a place",
+      "sent": "The ___ of Hanoi is over eight million.",
+      "sentA": "population",
+      "coll": "a growing ___",
+      "collA": "population"
+    },
+    {
+      "w": "traffic jam",
+      "vi": "tắc đường",
+      "def": "a long line of cars that cannot move",
+      "sent": "I was late because of a ___.",
+      "sentA": "traffic jam",
+      "coll": "stuck in a ___ jam",
+      "collA": "traffic"
+    },
+    {
+      "w": "rush hour",
+      "vi": "giờ cao điểm",
+      "def": "the time when roads and buses are busiest",
+      "sent": "The buses are full in the ___.",
+      "sentA": "rush hour",
+      "coll": "in the ___ hour",
+      "collA": "rush"
+    },
+    {
+      "w": "public transport",
+      "vi": "phương tiện công cộng",
+      "def": "buses, trains and metro that everyone can use",
+      "sent": "___ is cheap and convenient in this city.",
+      "sentA": "Public transport",
+      "coll": "use ___ transport",
+      "collA": "public"
+    },
+    {
+      "w": "convenient",
+      "vi": "thuận tiện",
+      "def": "easy to use and saving time",
+      "sent": "The metro is very ___ — it stops near my house.",
+      "sentA": "convenient",
+      "coll": "a ___ location",
+      "collA": "convenient"
+    },
+    {
+      "w": "available",
+      "vi": "có sẵn",
+      "def": "that you can get or use",
+      "sent": "Free wifi is ___ in most cafés.",
+      "sentA": "available",
+      "coll": "readily ___",
+      "collA": "available"
+    },
+    {
+      "w": "facilities",
+      "vi": "cơ sở vật chất, tiện ích",
+      "def": "buildings, equipment and services for a purpose",
+      "sent": "The park has good ___, like toilets and a playground.",
+      "sentA": "facilities",
+      "coll": "sports ___",
+      "collA": "facilities"
+    },
+    {
+      "w": "entertainment",
+      "vi": "giải trí",
+      "def": "films, music, shows and other things people enjoy",
+      "sent": "There is a lot of ___ in the city centre.",
+      "sentA": "entertainment",
+      "coll": "a form of ___",
+      "collA": "entertainment"
+    },
+    {
+      "w": "community",
+      "vi": "cộng đồng",
+      "def": "the people who live in the same area",
+      "sent": "A new park can bring the ___ together.",
+      "sentA": "community",
+      "coll": "the local ___",
+      "collA": "community"
+    },
+    {
+      "w": "residents",
+      "vi": "cư dân",
+      "def": "people who live in a particular place",
+      "sent": "Local ___ love the new park.",
+      "sentA": "residents",
+      "coll": "local ___",
+      "collA": "residents"
+    },
+    {
+      "w": "pedestrian",
+      "vi": "người đi bộ",
+      "def": "a person who walks, not drives",
+      "sent": "___ need safe pavements and crossings.",
+      "sentA": "Pedestrians",
+      "coll": "a ___ crossing",
+      "collA": "pedestrian"
+    },
+    {
+      "w": "expensive",
+      "vi": "đắt đỏ",
+      "def": "costing a lot of money",
+      "sent": "Housing in the city centre is very ___.",
+      "sentA": "expensive",
+      "coll": "very ___",
+      "collA": "expensive"
+    },
+    {
+      "w": "affordable",
+      "vi": "giá phải chăng",
+      "def": "not too expensive for most people",
+      "sent": "We need more ___ homes for young people.",
+      "sentA": "affordable",
+      "coll": "___ housing",
+      "collA": "affordable"
+    },
+    {
+      "w": "afford",
+      "vi": "đủ khả năng chi trả",
+      "def": "to have enough money to pay for something",
+      "sent": "I can’t ___ a new car.",
+      "sentA": "afford",
+      "coll": "can’t ___ it",
+      "collA": "afford"
+    },
+    {
+      "w": "cost of living",
+      "vi": "chi phí sinh hoạt",
+      "def": "how much you pay for housing, food and other things",
+      "sent": "The ___ is rising every year.",
+      "sentA": "cost of living",
+      "coll": "the ___ of living",
+      "collA": "cost"
+    },
+    {
+      "w": "commute",
+      "vi": "đi làm hằng ngày",
+      "def": "the regular trip between home and work or school",
+      "sent": "My ___ takes an hour by bus.",
+      "sentA": "commute",
+      "coll": "a long ___",
+      "collA": "commute"
+    },
+    {
+      "w": "journey",
+      "vi": "chuyến đi, quãng đường",
+      "def": "a trip from one place to another",
+      "sent": "It is a short ___ from my house to the university.",
+      "sentA": "journey",
+      "coll": "a long ___",
+      "collA": "journey"
+    },
+    {
+      "w": "overcrowded",
+      "vi": "quá đông",
+      "def": "with too many people",
+      "sent": "The buses are ___ in the morning.",
+      "sentA": "overcrowded",
+      "coll": "an ___ bus",
+      "collA": "overcrowded"
+    }
+  ]
+}
