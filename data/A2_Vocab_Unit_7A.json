@@ -1,0 +1,32 @@
+{
+  "level": "A2",
+  "topic": "Unit_7A",
+  "title": "Vocabulary Quiz — Unit 7A: Transport and trips",
+  "kicker": "Empower A2 · Unit 7A · Review",
+  "subtitle": "Kinds of transport, train and bus collocations, and words from the travel blog",
+  "seconds": 10,
+  "words": [
+    {"w": "cruise ship", "vi": "tàu du lịch (tàu biển lớn chở khách đi chơi)", "def": "a very big ship that takes people on holiday at sea", "sent": "They spent two weeks on a ___ and visited six cities by the sea.", "sentA": "cruise ship", "coll": "go on a ___ holiday", "collA": "cruise ship"},
+    {"w": "train", "vi": "tàu hỏa", "def": "a long vehicle that runs on a railway", "sent": "I usually go to work by ___. The station is near my house.", "sentA": "train", "coll": "a ___ station", "collA": "train"},
+    {"w": "bus", "vi": "xe buýt", "def": "a big vehicle that takes people around a town and stops often", "sent": "The number 32 ___ stops outside my school.", "sentA": "bus", "coll": "a ___ stop", "collA": "bus"},
+    {"w": "plane", "vi": "máy bay", "def": "a vehicle with wings that flies in the sky", "sent": "We flew from Hà Nội to Đà Nẵng. The ___ was full.", "sentA": "plane", "coll": "get on the ___ at the airport", "collA": "plane"},
+    {"w": "speedboat", "vi": "xuồng máy cao tốc", "def": "a small boat with an engine that goes very fast", "sent": "The ferry didn't arrive, so we went to the island on a ___.", "sentA": "speedboat", "coll": "a fast ___ ride", "collA": "speedboat"},
+    {"w": "ferry", "vi": "phà, tàu chở khách qua sông/biển", "def": "a boat that carries people and cars across water", "sent": "We waited two hours, but the ___ didn't arrive.", "sentA": "ferry", "coll": "take the ___ to the island", "collA": "ferry"},
+    {"w": "helicopter", "vi": "trực thăng", "def": "an aircraft with long turning blades on top and no wings", "sent": "The ___ went straight up into the sky from the roof.", "sentA": "helicopter", "coll": "a ___ flight over the city", "collA": "helicopter"},
+    {"w": "scooter", "vi": "xe tay ga", "def": "a small motorbike with small wheels", "sent": "Kayla and her friend rented two Vespas — a Vespa is a kind of ___.", "sentA": "scooter", "coll": "ride a ___", "collA": "scooter"},
+    {"w": "tram", "vi": "xe điện (chạy trên đường ray trong phố)", "def": "an electric vehicle that runs on metal lines in the streets of a city", "sent": "In Melbourne you can take a ___ through the city centre.", "sentA": "tram", "coll": "a ___ line", "collA": "tram"},
+    {"w": "coach", "vi": "xe khách (đường dài)", "def": "a big, comfortable bus for long journeys between cities", "sent": "We took the night ___ from Hà Nội to Sa Pa. It was cheaper than the train.", "sentA": "coach", "coll": "a ___ trip to another city", "collA": "coach"},
+    {"w": "take the train", "vi": "đi tàu hỏa (dùng tàu làm phương tiện)", "def": "to travel somewhere by train", "sent": "Every morning Tom ___ to work. He doesn't drive.", "sentA": "takes the train", "coll": "I usually ___ to the city", "collA": "take the train"},
+    {"w": "get on", "vi": "lên (xe, tàu)", "def": "to go into a bus, train or plane", "sent": "The doors opened and we ___ the train.", "sentA": "got on", "coll": "___ the bus at the first stop", "collA": "get on"},
+    {"w": "get off", "vi": "xuống (xe, tàu)", "def": "to leave a bus, train or plane", "sent": "You need to ___ the bus at the next stop for the museum.", "sentA": "get off", "coll": "___ the train at Central Station", "collA": "get off"},
+    {"w": "change trains", "vi": "đổi tàu, chuyển tàu", "def": "to leave one train and get on another to continue your journey", "sent": "There isn't a direct train, so you have to ___ in Huế.", "sentA": "change trains", "coll": "___ at the next station", "collA": "change trains"},
+    {"w": "catch", "vi": "bắt kịp (chuyến xe, tàu)", "def": "to get on a bus or train in time before it leaves", "sent": "I ran to the station and ___ the 8:05 train just in time.", "sentA": "caught", "coll": "___ the last bus home", "collA": "catch"},
+    {"w": "miss", "vi": "lỡ, nhỡ (chuyến xe, tàu)", "def": "to arrive too late, so the bus or train leaves without you", "sent": "I got up late and ___ the bus, so I was late for school.", "sentA": "missed", "coll": "___ the train by two minutes", "collA": "miss"},
+    {"w": "selfie stick", "vi": "gậy tự sướng", "def": "a long stick that holds your phone so you can take a photo of yourself", "sent": "Ethan bought a cheap ___, but it broke on the first day.", "sentA": "selfie stick", "coll": "take a photo with a ___", "collA": "selfie stick"},
+    {"w": "rent", "vi": "thuê (trả tiền để dùng một thời gian)", "def": "to pay money to use something that belongs to another person for a short time", "sent": "Kayla and her friend ___ two Vespas and rode around the city.", "sentA": "rented", "coll": "___ a car for a week", "collA": "rent"},
+    {"w": "spend", "vi": "tiêu (tiền)", "def": "to use money to buy or pay for things", "sent": "Ethan didn't want to ___ a lot of money, so he got a cheap one.", "sentA": "spend", "coll": "___ a lot of money", "collA": "spend"},
+    {"w": "cheap", "vi": "rẻ", "def": "not costing much money", "sent": "It's not a good idea to buy something ___. It often breaks quickly.", "sentA": "cheap", "coll": "a ___ ticket", "collA": "cheap"},
+    {"w": "stranger", "vi": "người lạ", "def": "a person that you do not know", "sent": "A ___ in the restaurant helped Carly and paid for their meals.", "sentA": "stranger", "coll": "talk to a ___", "collA": "stranger"},
+    {"w": "menu", "vi": "thực đơn", "def": "a list of the food you can order in a restaurant", "sent": "We didn't speak Spanish, so we didn't understand the words on the ___.", "sentA": "menu", "coll": "read the ___ in a restaurant", "collA": "menu"}
+  ]
+}
