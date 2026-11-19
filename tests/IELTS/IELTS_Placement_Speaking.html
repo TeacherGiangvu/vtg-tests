@@ -256,6 +256,12 @@ function buildItems(lv){
 var student={},level=null,items=[],idx=-1,stream=null,rec=null,chunks=[],phase="",phaseStart=0,clockStart=0,loop=null,recs=[],mime="",actx=null,analyser=null;
 var attempt=Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7);
 
+/* ---------- Trang chung Placement: điền sẵn họ tên / SĐT, báo đã nộp ---------- */
+var PK="vtgPlacement";
+function pkRead(){try{return JSON.parse(localStorage.getItem(PK)||"{}")||{};}catch(e){return {};}}
+(function(){var s=pkRead();if(s.name)$("in-name").value=s.name;if(s.phone)$("in-phone").value=s.phone;})();
+function placementDone(){try{var o=pkRead();o.done=o.done||{};o.done.speaking=new Date().toISOString();localStorage.setItem(PK,JSON.stringify(o));}catch(e){}}
+
 /* ---------- 1. Đăng nhập ---------- */
 $("btn-start").onclick=function(){
   var n=$("in-name"),p=$("in-phone"),name=n.value.trim(),phone=p.value.trim(),msg="";
@@ -401,7 +407,7 @@ function renderUp(){
   $("sp-list").innerHTML=h;
   var box=$("sp-send"),all=ok===recs.length;
   if(uploading){box.className="send pending";box.textContent="Đang gửi "+ok+"/"+recs.length+" bản ghi…";}
-  else if(all){box.className="send done";box.innerHTML="<b>Đã gửi đủ "+recs.length+" bản ghi cho giáo viên.</b> Em đã hoàn thành bài Speaking. Trung tâm sẽ liên hệ em để báo kết quả.";$("sp-done-h").textContent="Đã xong bài Speaking";$("sp-foot").textContent="Em có thể đóng trang.";$("btn-spretry").classList.add("hidden");}
+  else if(all){placementDone();box.className="send done";box.innerHTML="<b>Đã gửi đủ "+recs.length+" bản ghi cho giáo viên.</b> Em đã hoàn thành bài Speaking. Trung tâm sẽ liên hệ em để báo kết quả.";$("sp-done-h").textContent="Đã xong bài Speaking";$("sp-foot").textContent="Em có thể đóng trang.";$("btn-spretry").classList.add("hidden");}
   else{box.className="send fail";box.innerHTML="<b>Có "+(recs.length-ok)+" bản ghi chưa gửi được.</b> Giữ nguyên trang này và bấm <b>Gửi lại</b>. Nếu vẫn lỗi, tải các file về và gửi cho trung tâm qua Zalo.";$("btn-spretry").classList.remove("hidden");}
 }
 function upload(){

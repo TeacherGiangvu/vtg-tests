@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>VTG Placement Test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBFAF6; --card:#FFFFFF; --soft:#F5F2E9; --ink:#1B1B19; --grey:#3E3E39; --line:#B5AD98;
+  --green:#1F3D31; --green-d:#142A21; --on-green:#FFFFFF; --terra:#B04E26; --terra-bg:#FDF3E3;
+  --ok:#1E6B48; --ok-bg:#E6F5EC; --bad:#A12A2A; --bad-bg:#FCEAEA;
+  color-scheme:light; --serif:'Source Serif 4',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{background:#FBFAF6}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;
+  padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--terra);text-transform:uppercase;margin-bottom:6px}
+h1{font-family:var(--serif);font-size:clamp(26px,5.5vw,34px);line-height:1.15;color:var(--green);margin:0 0 6px}
+h2{font-family:var(--serif);font-size:21px;color:var(--green);margin:0 0 4px}
+.sub{color:var(--grey);font-size:14px;font-style:italic}
+.card{background:var(--card);border-radius:14px;padding:24px;border:1px solid var(--line);box-shadow:0 2px 12px rgba(31,61,49,.08);margin-bottom:18px}
+.btn{font:600 15px var(--sans);border:none;border-radius:9px;padding:12px 24px;cursor:pointer;background:var(--terra);color:#fff}
+.btn:hover{background:#923f1e}
+.btn.link{background:none;color:var(--green);padding:6px 0;text-decoration:underline;font-weight:500;font-size:14px}
+.btn:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--terra);outline-offset:2px}
+.list{margin:0 0 20px;padding:0;list-style:none}
+.list li{position:relative;padding-left:24px;margin-bottom:9px}
+.list li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--terra)}
+.formbox{background:var(--soft);border-radius:11px;padding:18px 18px 6px;margin-bottom:20px;border-left:4px solid var(--terra)}
+.field{margin-bottom:14px}.field label{display:block;font-size:13px;font-weight:600;color:var(--green);margin-bottom:5px}
+input{width:100%;font:16px var(--sans);color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:9px;padding:11px 13px}
+input.err{border-color:var(--bad);background:var(--bad-bg)}
+.ferr{color:var(--bad);font-size:13px;min-height:18px;margin:-6px 0 8px}
+.hidden{display:none!important}
+.who{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.prog{font-size:14px;color:var(--grey);margin:4px 0 16px}
+.prog b{color:var(--green)}
+.skills{display:flex;flex-direction:column;gap:12px}
+.skill{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:12px;padding:14px 16px}
+.skill:hover{border-color:var(--green);background:var(--soft)}
+.skill .num{flex:none;width:38px;height:38px;border-radius:50%;background:var(--terra-bg);color:var(--terra);font:700 16px var(--sans);display:flex;align-items:center;justify-content:center}
+.skill .txt{flex:1;min-width:0}
+.skill .txt b{display:block;font-family:var(--serif);font-size:19px;color:var(--green)}
+.skill .txt span{font-size:13.5px;color:var(--grey)}
+.skill .st{flex:none;font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:99px;background:var(--soft);color:var(--grey);white-space:nowrap}
+.skill.done{border-color:var(--ok);background:var(--ok-bg)}
+.skill.done .num{background:var(--ok);color:#fff}
+.skill.done .st{background:var(--ok);color:#fff}
+.note{background:var(--terra-bg);border-left:4px solid var(--terra);border-radius:9px;padding:12px 15px;font-size:14px;margin-top:16px}
+.alldone{background:var(--ok-bg);border-left:4px solid var(--ok);border-radius:9px;padding:12px 15px;font-size:14.5px;margin-bottom:14px}
+@media (max-width:480px){.skill{flex-wrap:wrap;gap:6px 12px}.skill .txt{flex:1 1 calc(100% - 52px)}.skill .st{margin-left:50px}}
+</style>
+</head><body>
+<div class="wrap">
+  <header style="margin-bottom:16px">
+    <div class="kicker">VTG English Center</div>
+    <h1>Placement Test</h1>
+    <div class="sub">Bài kiểm tra đầu vào 4 kỹ năng: Nghe, Đọc, Viết, Nói</div>
+  </header>
+
+  <section id="s-login" class="card">
+    <ul class="list">
+      <li>Bài kiểm tra gồm 4 phần. Em làm lần lượt từng phần, mỗi phần mở trong một tab mới. Tổng thời gian khoảng 3 tiếng, có thể nghỉ giữa các phần.</li>
+      <li>Em chỉ cần nhập họ tên và số điện thoại <b>một lần</b> ở đây. Các phần thi sẽ tự điền sẵn.</li>
+      <li>Nên làm trên máy tính, dùng Chrome hoặc Safari, có tai nghe và micro.</li>
+    </ul>
+    <div class="formbox">
+      <div class="field"><label for="in-name">Họ và tên</label><input type="text" id="in-name" autocomplete="name" placeholder="Nguyễn Văn A"></div>
+      <div class="field"><label for="in-phone">Số điện thoại</label><input type="tel" id="in-phone" autocomplete="tel" placeholder="09xxxxxxxx"></div>
+      <div class="ferr" id="in-err"></div>
+    </div>
+    <button class="btn" id="btn-go" type="button">Vào bài kiểm tra</button>
+  </section>
+
+  <section id="s-hub" class="card hidden">
+    <div class="who"><h2 id="hi"></h2><button class="btn link" id="btn-switch" type="button">Không phải em? Đổi người làm bài</button></div>
+    <div class="alldone hidden" id="alldone"><b>Em đã hoàn thành cả 4 phần.</b> Cảm ơn em! Trung tâm sẽ liên hệ qua số điện thoại em đã nhập để báo kết quả và tư vấn lớp phù hợp.</div>
+    <p class="prog" id="prog"></p>
+    <div class="skills" id="skills"></div>
+    <div class="note">Mỗi phần chỉ làm <b>một lần</b>. Làm xong một phần, em quay lại tab này để chọn phần tiếp theo. Phần nào đã nộp sẽ có dấu <b>Đã nộp</b>.</div>
+  </section>
+</div>
+
+<script>
+"use strict";
+var K="vtgPlacement";
+var SKILLS=[
+  {key:"listening",name:"Listening",vi:"Nghe",href:"../../ielts_placement_listening.html",info:"40 câu · khoảng 40 phút"},
+  {key:"reading",name:"Reading",vi:"Đọc",href:"../../ielts_placement_reading.html",info:"40 câu · 60 phút"},
+  {key:"writing",name:"Writing",vi:"Viết",href:"../../ielts_placement_writing.html",info:"Task 1 và Task 2 · 60 phút"},
+  {key:"speaking",name:"Speaking",vi:"Nói",href:"IELTS_Placement_Speaking.html",info:"Ghi âm trực tiếp · khoảng 10 phút · chọn đề dễ hoặc đề chuẩn"}
+];
+var $=function(i){return document.getElementById(i)};
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function rd(){try{return JSON.parse(localStorage.getItem(K)||"{}")||{};}catch(e){return {};}}
+function wr(o){try{localStorage.setItem(K,JSON.stringify(o));return true;}catch(e){return false;}}
+var mem={};   // dự phòng khi trình duyệt chặn localStorage
+function cur(){var s=rd();return s.name?s:mem;}
+
+function render(){
+  var s=cur();
+  if(!s.name){$("s-login").classList.remove("hidden");$("s-hub").classList.add("hidden");return;}
+  $("s-login").classList.add("hidden");$("s-hub").classList.remove("hidden");
+  $("hi").textContent="Chào "+s.name;
+  var done=s.done||{},n=0,h="";
+  SKILLS.forEach(function(k,i){
+    var ok=!!done[k.key];if(ok)n++;
+    h+='<a class="skill'+(ok?" done":"")+'" href="'+k.href+'" target="_blank" rel="noopener" data-k="'+k.key+'">'+
+       '<span class="num">'+(ok?"✓":i+1)+'</span><span class="txt"><b>'+k.name+' · '+k.vi+'</b><span>'+k.info+'</span></span>'+
+       '<span class="st">'+(ok?"Đã nộp":"Làm bài")+'</span></a>';
+  });
+  $("skills").innerHTML=h;
+  $("prog").innerHTML="Đã nộp <b>"+n+"/4</b> phần.";
+  $("alldone").classList.toggle("hidden",n<4);
+}
+
+$("btn-go").onclick=function(){
+  var n=$("in-name"),p=$("in-phone"),name=n.value.trim().replace(/\s+/g," "),phone=p.value.trim(),msg="";
+  var okPhone=phone.replace(/\D/g,"").length>=9;
+  n.classList.toggle("err",!name);p.classList.toggle("err",!okPhone);
+  if(!name)msg="Vui lòng nhập họ và tên.";else if(!okPhone)msg="Vui lòng nhập số điện thoại hợp lệ.";
+  $("in-err").textContent=msg;if(msg)return;
+  var old=rd(),same=old.name===name&&old.phone===phone;
+  var o={name:name,phone:phone,done:same?(old.done||{}):{}};
+  if(!wr(o))mem=o;
+  render();window.scrollTo({top:0});
+};
+$("btn-switch").onclick=function(){
+  if(!confirm("Đổi sang người làm bài khác? Tên, số điện thoại và dấu Đã nộp trên máy này sẽ được xoá (bài đã nộp vẫn được lưu ở trung tâm)."))return;
+  try{localStorage.removeItem(K);}catch(e){}
+  mem={};$("in-name").value="";$("in-phone").value="";render();
+};
+window.addEventListener("storage",function(e){if(e.key===K)render();});
+window.addEventListener("focus",render);
+document.addEventListener("visibilitychange",function(){if(!document.hidden)render();});
+render();
+</script>
+</body></html>

@@ -294,6 +294,7 @@ function sendResult(payload){
 function doSubmit(){
   if(state.submitted) return;
   state.submitted = true;
+  if(window.vtgPlacementDone)window.vtgPlacementDone('writing');
   clearInterval(timerHandle);
   document.getElementById('wc1').textContent = wordCount(state.texts[1]);
   document.getElementById('wc2').textContent = wordCount(state.texts[2]);
@@ -330,6 +331,15 @@ document.getElementById('stStart').onclick = ()=>{
 };
 
 switchTask(1);
+</script>
+<script>
+/* VTG Placement: dien san ho ten / SDT tu trang chung, bao da nop bai */
+(function(){var K="vtgPlacement";
+function rd(){try{return JSON.parse(localStorage.getItem(K)||"{}")||{};}catch(e){return {};}}
+var s=rd(),n=document.getElementById("stName"),p=document.getElementById("stPhone");
+if(s.name&&n&&!n.value)n.value=s.name;if(s.phone&&p&&!p.value)p.value=s.phone;
+window.vtgPlacementDone=function(skill){try{var o=rd();o.done=o.done||{};o.done[skill]=new Date().toISOString();localStorage.setItem(K,JSON.stringify(o));}catch(e){}};
+})();
 </script>
 </body>
 </html>
