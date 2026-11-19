@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>VTG Placement Test: Speaking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Light-only look (iOS Safari). One centred column. VTG brand: forest green, terracotta, warm paper. */
+:root{
+  --bg:#FBFAF6; --card:#FFFFFF; --soft:#F5F2E9; --ink:#1B1B19; --grey:#3E3E39; --line:#B5AD98;
+  --green:#1F3D31; --green-d:#142A21; --on-green:#FFFFFF; --terra:#B04E26; --terra-bg:#FDF3E3;
+  --ok:#1E6B48; --ok-bg:#E6F5EC; --bad:#A12A2A; --bad-bg:#FCEAEA;
+  color-scheme:light; --serif:'Source Serif 4',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{background:#FBFAF6}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;
+  padding-block:20px 70px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--terra);text-transform:uppercase;margin-bottom:6px}
+h1{font-family:var(--serif);font-size:clamp(24px,5vw,31px);line-height:1.15;color:var(--green);margin:0 0 6px;text-wrap:balance}
+h2{font-family:var(--serif);font-size:21px;color:var(--green);margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--grey);font-size:14px;font-style:italic}
+.card{background:var(--card);border-radius:14px;padding:24px;border:1px solid var(--line);box-shadow:0 2px 12px rgba(31,61,49,.08);margin-bottom:18px;min-width:0}
+.btn{font:600 15px var(--sans);border:none;border-radius:9px;padding:12px 24px;cursor:pointer;background:var(--green);color:var(--on-green)}
+.btn:hover{background:var(--green-d)} .btn.terra{background:var(--terra);color:#fff} .btn.ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btn.sm{padding:7px 14px;font-size:13px} .btn:focus-visible,input:focus-visible,.lvl:focus-visible{outline:3px solid var(--terra);outline-offset:2px}
+.list{margin:0 0 20px;padding:0;list-style:none}
+.list li{position:relative;padding-left:24px;margin-bottom:9px}
+.list li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--terra)}
+.field{margin-bottom:14px}.field label{display:block;font-size:13px;font-weight:600;color:var(--green);margin-bottom:5px}
+input[type=text],input[type=tel]{width:100%;font:16px var(--sans);color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:9px;padding:11px 13px}
+input.err{border-color:var(--bad);background:var(--bad-bg)}
+.ferr{color:var(--bad);font-size:13px;min-height:18px;margin:-6px 0 8px}
+.formbox{background:var(--soft);border-radius:11px;padding:18px 18px 6px;margin-bottom:20px;border-left:4px solid var(--terra)}
+.subbar{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:22px}
+.hidden{display:none!important}
+
+/* level choice */
+.levels{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0 18px}
+@media (max-width:560px){.levels{grid-template-columns:1fr}}
+.lvl{text-align:left;font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:12px;padding:16px 18px;cursor:pointer;min-width:0}
+.lvl:hover{border-color:var(--green);background:var(--soft)}
+.lvl .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:99px;margin-bottom:8px}
+.lvl.easy .tag{background:var(--ok-bg);color:var(--ok)} .lvl.std .tag{background:var(--terra-bg);color:var(--terra)}
+.lvl b{display:block;font-family:var(--serif);font-size:20px;color:var(--green);margin-bottom:4px}
+.lvl span.d{display:block;font-size:14px;color:var(--grey)}
+.lvl ul{margin:10px 0 0 18px;padding:0;font-size:13.5px;color:var(--grey)}
+.lvl[aria-pressed=true]{background:var(--green);border-color:var(--green);color:var(--on-green)}
+.lvl[aria-pressed=true] b,.lvl[aria-pressed=true] span.d,.lvl[aria-pressed=true] ul{color:var(--on-green)}
+.warnbox{background:var(--terra-bg);border-left:4px solid var(--terra);border-radius:9px;padding:12px 15px;margin-bottom:14px;font-size:14px}
+
+/* speaking */
+.tw{overflow-x:auto}
+table.struct{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0 16px}
+.struct th{background:var(--green);color:var(--on-green);text-align:left;padding:8px 10px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+.struct td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.meter{height:10px;background:var(--soft);border:1px solid var(--line);border-radius:99px;overflow:hidden;margin:8px 0}
+.meter i{display:block;height:100%;width:0;background:var(--ok);transition:width .08s}
+.mic{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.clock{font:700 15px var(--sans);font-variant-numeric:tabular-nums;padding:8px 12px;border-radius:9px;background:var(--soft);color:var(--green);border:1.5px solid var(--line)}
+.sphead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.dots{display:flex;gap:6px;flex-wrap:wrap}.dots i{width:22px;height:8px;border-radius:99px;background:var(--line)}.dots i.done{background:var(--ok)}.dots i.cur{background:var(--terra)}
+.qbox{background:var(--soft);border-radius:12px;padding:20px;margin:6px 0 16px;border:1px solid var(--line)}
+.qbox .id{font-weight:700;color:var(--terra);font-size:13px;letter-spacing:.06em}
+.qbox .qq{font-family:var(--serif);font-size:clamp(19px,4.5vw,24px);line-height:1.35;margin:6px 0 0;color:var(--ink)}
+.qbox ul{margin:10px 0 0 18px;padding:0}.qbox li{margin-bottom:4px}
+.phase{display:flex;align-items:center;gap:14px;border-radius:12px;padding:14px 16px;border:2px solid var(--line);background:var(--card)}
+.phase .big2{font:700 34px var(--sans);font-variant-numeric:tabular-nums;min-width:74px}
+.phase.prep{border-color:var(--terra)} .phase.prep .big2{color:var(--terra)}
+.phase.rec{border-color:var(--bad);background:var(--bad-bg)} .phase.rec .big2{color:var(--bad)}
+.rdot{width:14px;height:14px;border-radius:50%;background:var(--bad);display:inline-block;margin-right:6px}
+@media (prefers-reduced-motion:no-preference){.phase.rec .rdot{animation:bl 1s infinite}@keyframes bl{50%{opacity:.25}}}
+.errbox{background:var(--bad-bg);border-left:4px solid var(--bad);border-radius:9px;padding:12px 15px;margin:10px 0}
+.send{border-radius:10px;padding:13px 15px;margin:10px 0;font-size:14px}
+.send.pending{background:var(--soft);border-left:4px solid var(--grey)}.send.done{background:var(--ok-bg);border-left:4px solid var(--ok)}.send.fail{background:var(--bad-bg);border-left:4px solid var(--bad)}
+.reclist{margin:10px 0 0;padding:0;list-style:none;font-size:14px}.reclist li{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:6px 0;border-bottom:1px solid var(--line)}
+
+/* anti-copy */
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+input,textarea{-webkit-user-select:text;user-select:text}
+@media print{body{display:none!important}}
+</style>
+</head><body>
+<div class="wrap">
+  <header style="margin-bottom:16px">
+    <div class="kicker">VTG English Center · Placement Test</div>
+    <h1>Speaking Test</h1>
+    <div class="sub">Bài kiểm tra đầu vào kỹ năng Nói</div>
+  </header>
+
+  <!-- 1. ĐĂNG NHẬP -->
+  <section id="s-start" class="card">
+    <ul class="list">
+      <li>Bài nói gồm 3 phần: Part 1 (trả lời câu hỏi ngắn), Part 2 (nói về một chủ đề), Part 3 (thảo luận). Tổng khoảng 8 đến 10 phút.</li>
+      <li>Bài được <b>ghi âm trực tiếp</b> trên trang này và gửi cho giáo viên chấm.</li>
+      <li>Em cần ngồi nơi yên tĩnh, cho phép trình duyệt dùng micro, và <b>không đóng trang</b> cho đến khi bài gửi xong. Nên dùng Chrome hoặc Safari, không mở trong Zalo hay Facebook.</li>
+    </ul>
+    <div class="formbox">
+      <div class="field"><label for="in-name">Họ và tên</label><input type="text" id="in-name" autocomplete="name" placeholder="Nguyễn Văn A"></div>
+      <div class="field"><label for="in-phone">Số điện thoại</label><input type="tel" id="in-phone" autocomplete="tel" placeholder="09xxxxxxxx"></div>
+      <div class="ferr" id="in-err"></div>
+    </div>
+    <button class="btn terra" id="btn-start" type="button">Tiếp tục</button>
+  </section>
+
+  <!-- 2. CHỌN ĐỀ -->
+  <section id="s-level" class="card hidden">
+    <h2>Bài thi có 2 đề</h2>
+    <p class="sub" id="hello"></p>
+    <p style="margin:12px 0 0">Em chọn <b>một</b> đề phù hợp với trình độ hiện tại của mình. Câu hỏi chỉ hiện ra sau khi em chọn đề và bấm bắt đầu.</p>
+    <div class="levels">
+      <button type="button" class="lvl easy" id="pick-easy" aria-pressed="false">
+        <span class="tag">Đề dễ</span>
+        <b>Trình độ B1 trở xuống</b>
+        <span class="d">Dành cho em mới học hoặc đã học tiếng Anh cơ bản (A1, A2, B1).</span>
+        <ul><li>Câu hỏi ngắn về bản thân, đời sống hằng ngày</li><li>Part 2 nói khoảng 1 phút</li><li>Part 3: 2 câu hỏi đơn giản</li></ul>
+      </button>
+      <button type="button" class="lvl std" id="pick-std" aria-pressed="false">
+        <span class="tag">Đề chuẩn</span>
+        <b>Trình độ B1 trở lên</b>
+        <span class="d">Dành cho em đã giao tiếp khá, muốn học B2 hoặc luyện thi IELTS.</span>
+        <ul><li>Câu hỏi theo dạng đề IELTS Speaking thật</li><li>Part 2 nói 1 đến 2 phút</li><li>Part 3: 3 câu hỏi thảo luận</li></ul>
+      </button>
+    </div>
+    <div class="warnbox">Không chắc trình độ của mình? Hãy chọn <b>Đề dễ</b>. Đã chọn đề và bắt đầu thì không đổi được.</div>
+    <button class="btn terra" id="btn-level" type="button" disabled>Chọn đề này</button>
+  </section>
+
+  <!-- 3. THỬ MICRO + XEM CẤU TRÚC -->
+  <section id="s-mic" class="card hidden">
+    <h2 id="mic-title">Chuẩn bị</h2>
+    <p class="sub">Đọc kỹ cách làm bài, sau đó thử micro.</p>
+    <div class="tw"><table class="struct"><thead><tr><th>Phần</th><th>Chuẩn bị</th><th>Nói</th></tr></thead><tbody id="struct-body"></tbody></table></div>
+    <ul class="list">
+      <li>Câu hỏi hiện ra, đếm ngược thời gian chuẩn bị rồi <b>micro tự bật</b>. Em không cần bấm gì để bắt đầu nói.</li>
+      <li>Mỗi câu chỉ ghi âm một lần, <b>không ghi lại</b>. Nói xong sớm thì bấm <b>Xong câu này</b>.</li>
+      <li>Nếu không biết trả lời, em vẫn cố nói những gì mình có thể, kể cả câu ngắn.</li>
+    </ul>
+    <p style="font-weight:600;margin-bottom:6px">Kiểm tra micro</p>
+    <div class="mic"><button class="btn ghost sm" id="btn-mic" type="button">Bật micro để thử</button><span class="sub" id="mic-msg">Bấm, cho phép trình duyệt dùng micro, rồi nói thử một câu.</span></div>
+    <div class="meter" aria-hidden="true"><i id="meter"></i></div>
+    <div id="mic-err" class="errbox hidden"></div>
+    <div style="margin-top:16px"><button class="btn terra" id="btn-ready" type="button" disabled>Bắt đầu làm bài</button></div>
+  </section>
+
+  <!-- 4. LÀM BÀI -->
+  <section class="card hidden" id="s-run">
+    <div class="sphead"><span class="clock" id="sp-clock" title="Tổng thời gian đã trôi qua">00:00</span><span id="sp-part" class="kicker" style="margin:0"></span><div class="dots" id="sp-dots"></div></div>
+    <div class="qbox" id="sp-q"></div>
+    <div class="phase prep" id="sp-phase"><div class="big2" id="sp-t">10</div><div><b id="sp-pl">Đọc câu hỏi và chuẩn bị</b><div class="sub" id="sp-ps"></div></div></div>
+    <div class="meter" aria-hidden="true"><i id="meter2"></i></div>
+    <div class="subbar" style="margin-top:8px"><span class="sub" id="sp-hint"></span><button class="btn" id="btn-next" type="button" disabled>Xong câu này</button></div>
+  </section>
+
+  <!-- 5. GỬI BÀI -->
+  <section class="card hidden" id="s-done">
+    <h2 id="sp-done-h">Đang gửi bài Speaking</h2>
+    <div class="send pending" id="sp-send">Đang gửi các bản ghi âm cho giáo viên…</div>
+    <ul class="reclist" id="sp-list"></ul>
+    <div class="subbar"><span class="sub" id="sp-foot">Em đừng đóng trang cho đến khi tất cả bản ghi được gửi xong.</span>
+      <button class="btn terra hidden" id="btn-spretry" type="button">Gửi lại các bản chưa gửi</button></div>
+  </section>
+</div>
+
+<script>
+"use strict";
+var ENDPOINT="https://script.google.com/macros/s/AKfycby57HegnnckxSVtfJwqULkn4atHPG4G_YMSb5S9GyaSOCyxQLR6kpl1LqJTQi3woSF8/exec";
+var $=function(i){return document.getElementById(i)};
+function fmt(s){s=Math.max(0,s);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+/* ================= NGÂN HÀNG CÂU HỎI (IELTS Speaking forecast) =================
+   Mỗi lượt thi lấy ngẫu nhiên: Part 1 = 1 câu mở đầu + 2 chủ đề x 2 câu;
+   Part 2 = 1 thẻ đề; Part 3 = câu hỏi đi kèm thẻ đề đó (đề dễ 2 câu, đề chuẩn 3 câu). */
+var OPENING="Are you a student or do you work now?";
+var BANK={
+ easy:{
+  label:"Đề dễ (B1 trở xuống)",
+  timing:{p1:{prep:10,min:5,max:25,target:"khoảng 20 giây"},p2:{prep:60,min:30,max:90,target:"khoảng 1 phút"},p3:{prep:15,min:8,max:30,target:"khoảng 20 đến 30 giây"},p3n:2},
+  p1:[
+   {t:"Your home",q:["Do you live in a house or an apartment?","Do you like the area that you live in?","What is your favourite room in your home? Why?","Do you know any of your neighbours?"]},
+   {t:"Food",q:["What is your favourite food?","When do you usually eat dinner?","Do you often have dinner with your family or friends?","Is there any food you don't like?"]},
+   {t:"Travelling",q:["Do you like travelling?","Do you prefer travelling alone or with other people?","Which country would you like to travel to in the future?","Do you often travel by plane?"]},
+   {t:"Shoes",q:["How often do you buy shoes?","What is your favourite type of shoes?","Have you ever bought shoes online?"]},
+   {t:"Computers",q:["What do you often use a computer or a tablet for?","How often do you use a computer?","Who taught you how to use a computer?"]},
+   {t:"Keys",q:["Have you ever lost your keys?","Do you always bring a lot of keys with you?"]},
+   {t:"Street markets",q:["Do you like going to street markets?","What do people usually buy at street markets?"]},
+   {t:"Collecting things",q:["Do you collect things?","Are there any things you keep from your childhood?"]},
+   {t:"Secondary school",q:["What was your favourite subject at secondary school?","Do you remember your first day at secondary school?"]}
+  ],
+  p2:[
+   {title:"Describe a place you'd like to visit in your free time.",pts:["where it is","how you know about it","what you would do there","and explain why you would like to visit it"],
+    p3:["Why do you think people usually travel?","Some people don't like to travel abroad. Why?","Why do some people prefer to travel in their own country rather than going abroad?"]},
+   {title:"Describe a time when you saved money to buy something you wanted.",pts:["what you wanted to buy","why you wanted it","how you saved the money","and how you felt when you bought it"],
+    p3:["Is it easier to spend money or save money?","What kind of things do people usually save money for?","Should parents teach their children to spend money freely or to save money?"]},
+   {title:"Describe a new skill you learned when you were a child.",pts:["what the skill was","who taught you","how you learned it","and how you felt about learning it"],
+    p3:["What skills should children learn before they go to school?","Do you think it is easier for children to learn new skills than for adults?","Can a child learn skills from another child?"]},
+   {title:"Describe a person you know who really likes taking photos.",pts:["who this person is","how you know him or her","what kind of photos he or she takes","and explain why he or she likes taking photos"],
+    p3:["What kind of photos do people often take?","Why are some people keen on taking photos?","Why do tourists like taking photos while they are travelling?"]},
+   {title:"Describe a quiet place that you would love to go to.",pts:["where it is","how you know about it","what you would do there","and explain why you would love to go there"],
+    p3:["Why do people like going to quiet places?","What kinds of places are usually quiet?","Do young people prefer quiet places or lively places?"]},
+   {title:"Describe a gift you'd like to buy for your friend.",pts:["what the gift is","who your friend is","why you want to buy this gift","and how you think your friend would feel"],
+    p3:["Why do people give gifts?","Do you like giving gifts?","What gifts are popular in your country?","Is it hard to choose a gift?"]}
+  ]},
+ std:{
+  label:"Đề chuẩn (B1 trở lên)",
+  timing:{p1:{prep:5,min:8,max:30,target:"khoảng 20 đến 30 giây"},p2:{prep:60,min:60,max:120,target:"từ 1 đến 2 phút"},p3:{prep:10,min:15,max:45,target:"khoảng 30 đến 45 giây"},p3n:3},
+  p1:[
+   {t:"The area you live in",q:["What are some changes in the area recently?","Do you think you will continue to live there for a long time? Why or why not?","What things make your home pleasant to live in? Why?"]},
+   {t:"Food",q:["Has your favourite food changed since you were a child?","In your country, is it very important to eat with other people?","Do you eat different foods at different times of the year?"]},
+   {t:"Travelling",q:["When you see a beautiful view, do you like to take a photo of it?","Do you prefer to look at mountain views or ocean views?","What do you usually do during a long journey?"]},
+   {t:"Collecting things",q:["Why do people like collecting?","Would you keep old things for a long time? Why?","What are the benefits of collecting?"]},
+   {t:"Computers",q:["How would your life be different if there were no computers?","Do you sometimes find computers or tablets difficult to use? Why or why not?"]},
+   {t:"Writing",q:["Do you prefer to write by hand or write using a computer?","Do you think computers might one day replace handwriting?"]},
+   {t:"Recycling",q:["Do you think recycling is important?","How do you feel when you see rubbish in the streets?","Why have people's attitudes towards recycling changed over the last several years?"]},
+   {t:"Politeness",q:["How do people in your country show politeness?","Do you think being polite is very important?","What rules of politeness have changed in your country in the last 10 or 20 years?"]},
+   {t:"Street markets",q:["What is the difference between street markets and supermarkets?","Do you prefer shopping in a shopping mall or at a street market?"]}
+  ],
+  p2:[
+   {title:"Describe a person you know who successfully achieved something difficult.",pts:["who this person is","what he or she achieved","why it was difficult","and explain how you feel about this person"],
+    p3:["Why do some people succeed while others give up?","Is determination important for success?","Should parents teach children not to give up easily?","Can failure help people become successful?","What motivates people to achieve difficult goals?","Do successful people always work harder than others?","What qualities do people need to succeed in difficult tasks?","Does money equal success?"]},
+   {title:"Describe a place where you don't like the music they play.",pts:["where the place is","what kind of music they play","how often you go there","and explain why you don't like the music"],
+    p3:["Do you think music is important in public places?","Why do some people like listening to music while studying or working?","Do young people and older people have different tastes in music?","Is it a good idea for shops to play music?","Can music affect people's behaviour?","Do you think people listen to too much music nowadays?"]},
+   {title:"Describe a piece of advertisement which is about a famous person.",pts:["who the famous person is","what product or service it advertises","where you saw it","and explain what you think of this advertisement"],
+    p3:["Why do companies use celebrities in advertisements?","Do celebrity advertisements influence consumers?","Are advertisements more creative nowadays?","What makes an advertisement effective?","Do children get influenced by advertisements easily?","Should there be stricter control of advertising?"]},
+   {title:"Describe an occasion when the electricity suddenly went off.",pts:["when and where it happened","what you were doing at that time","how long it lasted","and explain how you felt about it"],
+    p3:["How did people manage to live without electricity in the ancient world?","Why do power cuts sometimes happen?","How does a power cut affect people's daily lives?","Do you think people nowadays depend too much on electricity?","What should people do to prepare for unexpected power cuts?","Which is better, electric cars or petrol cars?"]},
+   {title:"Describe a city you've been to and want to visit again.",pts:["which city it is","when you went there","what you did there","and explain why you want to visit it again"],
+    p3:["Is it good for elderly people to live in large cities?","Is it possible that all of the population will move to cities?","What changes usually take place in cities and towns?","Are modern cities more interesting for tourists than historical ones?","Are cities that tourists like to visit also good places to live?","Do you agree or disagree that cities lose their individual character as they grow in size?"]},
+   {title:"Describe an experience that you were proud of.",pts:["what the experience was","when it happened","what you did","and explain why you were proud of it"],
+    p3:["What kinds of achievements make people feel proud?","Do young people feel proud of the same things as older people?","Is it important for parents to praise their children?","Why do some people find it difficult to accept praise?","Is it better to be proud of yourself or to receive recognition from others?","Can being too proud of yourself have negative effects?"]}
+  ]}
+};
+
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function buildItems(lv){
+  var b=BANK[lv],T=b.timing,a=[];
+  var p1=function(id,q){a.push({id:id,part:"Part 1 – Interview",q:q,prep:T.p1.prep,min:T.p1.min,max:T.p1.max,target:T.p1.target});};
+  p1("P1-1",OPENING);
+  shuffle(b.p1).slice(0,2).forEach(function(tp,ti){
+    shuffle(tp.q).slice(0,2).forEach(function(q,qi){p1("P1-"+(2+ti*2+qi),q);});
+  });
+  var card=shuffle(b.p2)[0];
+  a.push({id:"P2",part:"Part 2 – Long turn",q:card.title,cue:card,prep:T.p2.prep,min:T.p2.min,max:T.p2.max,target:T.p2.target});
+  shuffle(card.p3).slice(0,T.p3n).forEach(function(q,i){a.push({id:"P3-"+(i+1),part:"Part 3 – Discussion",q:q,prep:T.p3.prep,min:T.p3.min,max:T.p3.max,target:T.p3.target});});
+  return a;
+}
+
+/* ================= TRẠNG THÁI ================= */
+var student={},level=null,items=[],idx=-1,stream=null,rec=null,chunks=[],phase="",phaseStart=0,clockStart=0,loop=null,recs=[],mime="",actx=null,analyser=null;
+var attempt=Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7);
+
+/* ---------- 1. Đăng nhập ---------- */
+$("btn-start").onclick=function(){
+  var n=$("in-name"),p=$("in-phone"),name=n.value.trim(),phone=p.value.trim(),msg="";
+  n.classList.toggle("err",!name);
+  var okPhone=phone.replace(/\D/g,"").length>=9;
+  p.classList.toggle("err",!okPhone);
+  if(!name)msg="Vui lòng nhập họ và tên.";else if(!okPhone)msg="Vui lòng nhập số điện thoại hợp lệ.";
+  $("in-err").textContent=msg;if(msg)return;
+  student={name:name,phone:phone};
+  $("hello").textContent="Chào "+name+".";
+  $("s-start").classList.add("hidden");$("s-level").classList.remove("hidden");window.scrollTo({top:0});
+};
+
+/* ---------- 2. Chọn đề ---------- */
+function pick(lv){level=lv;$("pick-easy").setAttribute("aria-pressed",lv==="easy");$("pick-std").setAttribute("aria-pressed",lv==="std");$("btn-level").disabled=false;
+  $("btn-level").textContent=lv==="easy"?"Chọn Đề dễ":"Chọn Đề chuẩn";}
+$("pick-easy").onclick=function(){pick("easy")};$("pick-std").onclick=function(){pick("std")};
+$("btn-level").onclick=function(){
+  if(!level)return;
+  var T=BANK[level].timing;
+  $("mic-title").textContent=BANK[level].label;
+  $("struct-body").innerHTML=
+    "<tr><td>Part 1 · Interview (5 câu)</td><td>"+T.p1.prep+" giây mỗi câu</td><td>"+T.p1.target+" mỗi câu</td></tr>"+
+    "<tr><td>Part 2 · Long turn (1 thẻ đề)</td><td>1 phút</td><td>"+T.p2.target+" (tối đa "+(T.p2.max%60?Math.floor(T.p2.max/60)+" phút "+T.p2.max%60+" giây":T.p2.max/60+" phút")+")</td></tr>"+
+    "<tr><td>Part 3 · Discussion ("+T.p3n+" câu)</td><td>"+T.p3.prep+" giây mỗi câu</td><td>"+T.p3.target+" mỗi câu</td></tr>";
+  $("s-level").classList.add("hidden");$("s-mic").classList.remove("hidden");window.scrollTo({top:0});
+};
+
+/* ---------- 3. Micro ---------- */
+function micErr(e){
+  var b=$("mic-err");b.classList.remove("hidden");var n=(e&&e.name)||"";
+  b.innerHTML=(n==="NotAllowedError"||n==="SecurityError")
+   ?"<b>Trình duyệt chưa cho dùng micro.</b> Bấm biểu tượng ổ khoá cạnh địa chỉ trang, chọn cho phép Micro rồi bấm lại. Nếu em mở bài trong Zalo hoặc Facebook, hãy mở bằng Chrome hoặc Safari."
+   :"<b>Không bật được micro.</b> Kiểm tra micro, đóng các ứng dụng khác đang dùng micro rồi thử lại. ("+esc(n||"lỗi không rõ")+")";
+}
+function meterLoop(){
+  if(!analyser)return;
+  var d=new Uint8Array(analyser.fftSize);analyser.getByteTimeDomainData(d);
+  var m=0;for(var i=0;i<d.length;i++){m=Math.max(m,Math.abs(d[i]-128));}
+  var w=Math.min(100,Math.round(m/60*100));$("meter").style.width=w+"%";$("meter2").style.width=w+"%";
+  requestAnimationFrame(meterLoop);
+}
+$("btn-mic").onclick=function(){
+  if(!navigator.mediaDevices||!window.MediaRecorder){micErr({name:"Unsupported"});return;}
+  navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true}}).then(function(st){
+    stream=st;$("mic-err").classList.add("hidden");
+    $("mic-msg").textContent="Micro hoạt động nếu thanh bên dưới nhảy khi em nói.";$("btn-mic").textContent="Micro đã bật ✓";
+    try{actx=new (window.AudioContext||window.webkitAudioContext)();var src=actx.createMediaStreamSource(st);analyser=actx.createAnalyser();analyser.fftSize=512;src.connect(analyser);meterLoop();}catch(e){}
+    mime="";["audio/webm;codecs=opus","audio/webm","audio/mp4","audio/ogg;codecs=opus"].forEach(function(m){if(!mime&&MediaRecorder.isTypeSupported(m))mime=m;});
+    $("btn-ready").disabled=false;
+  }).catch(micErr);
+};
+
+/* ---------- 4. Làm bài ---------- */
+$("btn-ready").onclick=function(){
+  if(!level||!stream||items.length)return;
+  items=buildItems(level);idx=-1;clockStart=Date.now();
+  $("s-mic").classList.add("hidden");$("s-run").classList.remove("hidden");window.scrollTo({top:0});
+  clearInterval(loop);loop=setInterval(tick,200);next();
+};
+function dots(){var h="";items.forEach(function(x,i){h+='<i class="'+(i<idx?"done":i===idx?"cur":"")+'"></i>';});return h;}
+function next(){
+  idx++;if(idx>=items.length){finish();return;}
+  var it=items[idx];
+  $("sp-part").textContent=it.part;$("sp-dots").innerHTML=dots();
+  var h='<div class="id">'+it.part.split(" –")[0]+' · Câu '+(idx+1)+'/'+items.length+'</div><p class="qq">'+esc(it.q)+'</p>';
+  if(it.cue){h+='<p style="margin:10px 0 0;font-weight:600">You should say:</p><ul>'+it.cue.pts.map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+'</ul>';}
+  $("sp-q").innerHTML=h;
+  phase="prep";phaseStart=Date.now();$("btn-next").disabled=true;
+  $("sp-hint").textContent="Micro sẽ tự bật khi hết giờ chuẩn bị.";paint();
+}
+function paint(){
+  var it=items[idx],ph=$("sp-phase"),e=(Date.now()-phaseStart)/1000;
+  if(phase==="prep"){
+    ph.className="phase prep";$("sp-t").textContent=Math.max(0,Math.ceil(it.prep-e));
+    $("sp-pl").textContent="Đọc câu hỏi và chuẩn bị";$("sp-ps").textContent="Sau đó micro tự ghi âm. Cần nói "+it.target+".";
+  }else if(phase==="rec"){
+    ph.className="phase rec";$("sp-t").textContent=fmt(Math.floor(e));
+    $("sp-pl").innerHTML='<span class="rdot"></span>Đang ghi âm. Hãy nói ngay';
+    $("sp-ps").textContent="Cần nói "+it.target+". Tự dừng sau "+fmt(it.max)+".";
+    var ok=e>=it.min;$("btn-next").disabled=!ok;
+    $("sp-hint").textContent=ok?"":"Nút Xong câu này mở sau "+Math.ceil(it.min-e)+" giây.";
+  }
+}
+function tick(){
+  $("sp-clock").textContent=fmt(Math.floor((Date.now()-clockStart)/1000));
+  if(idx<0||idx>=items.length)return;
+  var it=items[idx],e=(Date.now()-phaseStart)/1000;
+  if(phase==="prep"&&e>=it.prep){recStart();return;}
+  if(phase==="rec"&&e>=it.max){recStop();return;}
+  paint();
+}
+function recStart(){
+  phase="rec";phaseStart=Date.now();chunks=[];
+  try{
+    rec=new MediaRecorder(stream,mime?{mimeType:mime,audioBitsPerSecond:32000}:{audioBitsPerSecond:32000});
+    rec.ondataavailable=function(ev){if(ev.data&&ev.data.size)chunks.push(ev.data);};
+    rec.start(1000);
+  }catch(e){rec=null;}
+  paint();
+}
+function recStop(){
+  if(phase!=="rec")return;
+  phase="saving";$("btn-next").disabled=true;
+  var it=items[idx],secs=Math.round((Date.now()-phaseStart)/1000);
+  var fin=function(){
+    var blob=new Blob(chunks,{type:(rec&&rec.mimeType)||mime||"audio/webm"});
+    recs.push({id:it.id,part:it.part,question:it.cue?it.q+" | You should say: "+it.cue.pts.join("; "):it.q,seconds:secs,blob:blob});
+    next();
+  };
+  if(rec&&rec.state!=="inactive"){rec.onstop=fin;try{rec.stop();}catch(e){fin();}}else fin();
+}
+$("btn-next").onclick=recStop;
+function finish(){
+  clearInterval(loop);
+  $("s-run").classList.add("hidden");$("s-done").classList.remove("hidden");
+  if(stream){stream.getTracks().forEach(function(t){t.stop();});}
+  analyser=null;window.scrollTo({top:0});upload();
+}
+
+/* ---------- 5. Gửi từng bản ghi (có xác nhận từ máy chủ) ---------- */
+function blobB64(b){return new Promise(function(res,rej){var f=new FileReader();f.onload=function(){res(String(f.result).split(",")[1]||"");};f.onerror=rej;f.readAsDataURL(b);});}
+function postJSON(p){
+  if(!ENDPOINT)return Promise.resolve({state:"fail",msg:"chưa cấu hình nơi nhận"});
+  return fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(p)})
+   .then(function(r){return r.text();})
+   .then(function(t){var j;try{j=JSON.parse(t);}catch(e){return {state:"unknown"};}return j&&j.ok?{state:"ok"}:{state:"fail",msg:(j&&j.error)||"lỗi từ máy chủ"};})
+   .catch(function(){return {state:"unknown"};});
+}
+var upState=[],uploading=false;
+function extOf(t){return /mp4/.test(t)?"m4a":/ogg/.test(t)?"ogg":"webm";}
+function renderUp(){
+  var ok=0,h="";
+  recs.forEach(function(r,i){
+    var s=upState[i],txt;
+    if(!s)txt="đang chờ";else if(s==="sending")txt="đang gửi…";
+    else if(s.state==="ok"){txt="<b>đã gửi</b>";ok++;}
+    else if(s.state==="unknown")txt="chưa xác nhận được";else txt="lỗi ("+esc(s.msg)+")";
+    var dl="";
+    if(s&&s!=="sending"&&s.state!=="ok"){dl=' <a href="'+URL.createObjectURL(r.blob)+'" download="'+student.name.replace(/[^\w]+/g,"_")+"_"+r.id+"."+extOf(r.blob.type)+'">Tải về</a>';}
+    h+="<li><b>"+r.id+"</b> · "+r.part+" · "+r.seconds+" giây · "+txt+dl+"</li>";
+  });
+  $("sp-list").innerHTML=h;
+  var box=$("sp-send"),all=ok===recs.length;
+  if(uploading){box.className="send pending";box.textContent="Đang gửi "+ok+"/"+recs.length+" bản ghi…";}
+  else if(all){box.className="send done";box.innerHTML="<b>Đã gửi đủ "+recs.length+" bản ghi cho giáo viên.</b> Em đã hoàn thành bài Speaking. Trung tâm sẽ liên hệ em để báo kết quả.";$("sp-done-h").textContent="Đã xong bài Speaking";$("sp-foot").textContent="Em có thể đóng trang.";$("btn-spretry").classList.add("hidden");}
+  else{box.className="send fail";box.innerHTML="<b>Có "+(recs.length-ok)+" bản ghi chưa gửi được.</b> Giữ nguyên trang này và bấm <b>Gửi lại</b>. Nếu vẫn lỗi, tải các file về và gửi cho trung tâm qua Zalo.";$("btn-spretry").classList.remove("hidden");}
+}
+function upload(){
+  if(uploading)return;uploading=true;
+  var queue=[];recs.forEach(function(r,i){if(!(upState[i]&&upState[i].state==="ok"))queue.push(i);});
+  var step=function(){
+    if(!queue.length){uploading=false;renderUp();return;}
+    var i=queue.shift(),r=recs[i];upState[i]="sending";renderUp();
+    blobB64(r.blob).then(function(b64){
+      return postJSON({formType:"placement_speaking",attemptId:attempt,name:student.name,phone:student.phone,
+        level:level,test:BANK[level].label,submittedAt:new Date().toISOString(),index:i+1,count:recs.length,
+        rec:{id:r.id,part:r.part,question:r.question,seconds:r.seconds,mime:r.blob.type,ext:extOf(r.blob.type),audio:b64}});
+    }).then(function(s){upState[i]=s;renderUp();step();});
+  };
+  renderUp();step();
+}
+$("btn-spretry").onclick=upload;
+window.addEventListener("beforeunload",function(e){
+  var running=items.length&&idx<items.length;
+  var pending=recs.length&&!(upState.length===recs.length&&upState.every(function(s){return s&&s.state==="ok";}));
+  if(running||pending){e.preventDefault();e.returnValue="";}
+});
+
+/* ---------- Chống sao chép ---------- */
+(function(){
+  var inField=function(t){return t&&(t.tagName==="INPUT"||t.tagName==="TEXTAREA");};
+  ["copy","cut","dragstart"].forEach(function(ev){document.addEventListener(ev,function(e){if(!inField(e.target))e.preventDefault();});});
+  document.addEventListener("contextmenu",function(e){e.preventDefault();});
+  document.addEventListener("selectstart",function(e){if(!inField(e.target))e.preventDefault();});
+  document.addEventListener("keydown",function(e){
+    var k=(e.key||"").toLowerCase(),m=e.ctrlKey||e.metaKey;
+    if(k==="f12"||(m&&e.shiftKey&&["i","j","c"].indexOf(k)>-1)||(m&&["u","s","p"].indexOf(k)>-1)||(m&&["c","x","a"].indexOf(k)>-1&&!inField(e.target)))e.preventDefault();
+  });
+})();
+</script>
+</body></html>
