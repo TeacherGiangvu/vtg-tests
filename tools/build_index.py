@@ -72,7 +72,7 @@ def main():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>VTG English Center: Tests</title>
+<title>VTG English: Tests</title>
 <style>
   body {{ background:#ffffff; color:#1f2937; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; margin:0; padding:24px 16px; }}
   main {{ max-width:720px; margin:0 auto; }}
@@ -87,7 +87,7 @@ def main():
 </head>
 <body>
 <main>
-  <h1>VTG English Center</h1>
+  <h1>VTG English</h1>
   <p class="sub">Choose your test</p>
 {chr(10).join(sections)}
 </main>

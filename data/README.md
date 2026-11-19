@@ -7,9 +7,9 @@ One JSON file per test, named like the output: `A2_Progress_Test_03.json` builds
   "level": "A2",
   "title": "VTG · A2 Progress Test 3",
   "heading": "A2 Progress Test 3",
-  "kicker": "VTG English Center · Cambridge English Empower",
+  "kicker": "VTG English · Cambridge English Empower",
   "quiz_name": "A2 Progress Test 3 (Empower)",
-  "footer": "VTG English Center · Cambridge English Empower A2 Progress Test 3 · © UCLES 2016",
+  "footer": "VTG English · Cambridge English Empower A2 Progress Test 3 · © UCLES 2016",
   "minutes": 30,
   "audio": "audio/A2_Progress_Test_03.mp3",
   "parts": [
@@ -28,7 +28,7 @@ One JSON file per test, named like the output: `A2_Progress_Test_03.json` builds
 }
 ```
 
-- Required: `level`, `title`, `parts`. Optional (with defaults): `heading` (title without "VTG ·"), `kicker` ("VTG English Center"), `quiz_name` (heading; the name shown in the Google Sheet), `footer`, `minutes` (30), `audio`, `endpoint` (default Sheet endpoint; `""` turns sending off).
+- Required: `level`, `title`, `parts`. Optional (with defaults): `heading` (title without "VTG ·"), `kicker` ("VTG English"), `quiz_name` (heading; the name shown in the Google Sheet), `footer`, `minutes` (30), `audio`, `endpoint` (default Sheet endpoint; `""` turns sending off).
 - Part: `id`, `label`, `name`, `rubric`, `kind` (`mcq` or `input`); optional `nav` (short top-bar label), `audio: true`, `layout` (`col` or `row`), `passage` (`{title, html}`).
 - MCQ question: `no`, `opts` (2–7, letters A–G), `correct` (letter), optional `text` (use `<span class='gap'></span>` for the blank). Input question: `no`, `text`, `pattern`, `correct`, optional `accept` (other spellings also marked correct, e.g. `["sports center"]`; the correction table still shows `correct`).
 - Question numbers must run 1, 2, 3... across all parts. The builder checks this, the answer letters, duplicate options and the audio file, and builds nothing if there is a problem.

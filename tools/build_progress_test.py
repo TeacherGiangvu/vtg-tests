@@ -146,8 +146,8 @@ def build(cfg, out_path):
     values = {
         "TITLE": html.escape(title),
         "HEADING": html.escape(heading),
-        "KICKER": html.escape(cfg.get("kicker", "VTG English Center")),
-        "FOOTER": html.escape(cfg.get("footer", f"VTG English Center · {heading}")),
+        "KICKER": html.escape(cfg.get("kicker", "VTG English")),
+        "FOOTER": html.escape(cfg.get("footer", f"VTG English · {heading}")),
         "MINUTES": str(minutes),
         "TOTAL_Q": str(total_q),
         "NUM_PARTS": str(len(parts)),

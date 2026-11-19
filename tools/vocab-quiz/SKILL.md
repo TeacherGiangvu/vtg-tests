@@ -1,11 +1,11 @@
 ---
 name: vtg-vocab-quiz
-description: Tạo bài test từ vựng tiếng Anh tương tác (file HTML) theo brand VTG English Center cho học sinh của Giang, có đếm ngược thời gian mỗi câu, 5 dạng câu hỏi xoay vòng, bảng tổng kết và tự gửi kết quả về Google Sheets. PHẢI dùng skill này BẤT CỨ KHI NÀO người dùng yêu cầu tạo quiz/bài test/bài kiểm tra từ vựng, "làm quiz cho list từ này", "tạo bài luyện từ vựng", "test từ vựng cho học sinh", hoặc đưa một danh sách từ vựng (từ bài Reading, Listening, giáo trình, file Word, ảnh chụp sách) và muốn biến nó thành bài luyện tập tương tác — kể cả khi họ không nhắc tới chữ "HTML" hay "VTG".
+description: Tạo bài test từ vựng tiếng Anh tương tác (file HTML) theo brand VTG English cho học sinh của Giang, có đếm ngược thời gian mỗi câu, 5 dạng câu hỏi xoay vòng, bảng tổng kết và tự gửi kết quả về Google Sheets. PHẢI dùng skill này BẤT CỨ KHI NÀO người dùng yêu cầu tạo quiz/bài test/bài kiểm tra từ vựng, "làm quiz cho list từ này", "tạo bài luyện từ vựng", "test từ vựng cho học sinh", hoặc đưa một danh sách từ vựng (từ bài Reading, Listening, giáo trình, file Word, ảnh chụp sách) và muốn biến nó thành bài luyện tập tương tác — kể cả khi họ không nhắc tới chữ "HTML" hay "VTG".
 ---
 
 # VTG Vocabulary Quiz Builder
 
-Biến một danh sách từ vựng bất kỳ thành file HTML quiz tương tác, chạy offline trên trình duyệt, gửi kết quả về Google Sheets của giáo viên.
+Biến một danh sách từ vựng bất kỳ thành file HTML quiz tương tác, chạy offline trên trình duyệt, gửi kết quả về Google Sheets của thầy.
 
 ## Quy trình
 

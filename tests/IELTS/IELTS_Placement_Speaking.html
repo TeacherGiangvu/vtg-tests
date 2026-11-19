@@ -89,7 +89,7 @@ input,textarea{-webkit-user-select:text;user-select:text}
 </head><body>
 <div class="wrap">
   <header style="margin-bottom:16px">
-    <div class="kicker">VTG English Center · Placement Test</div>
+    <div class="kicker">VTG English · Placement Test</div>
     <h1>Speaking Test</h1>
     <div class="sub">Bài kiểm tra đầu vào kỹ năng Nói</div>
   </header>
@@ -98,7 +98,7 @@ input,textarea{-webkit-user-select:text;user-select:text}
   <section id="s-start" class="card">
     <ul class="list">
       <li>Bài nói gồm 3 phần: Part 1 (trả lời câu hỏi ngắn), Part 2 (nói về một chủ đề), Part 3 (thảo luận). Tổng khoảng 8 đến 10 phút.</li>
-      <li>Bài được <b>ghi âm trực tiếp</b> trên trang này và gửi cho giáo viên chấm.</li>
+      <li>Bài được <b>ghi âm trực tiếp</b> trên trang này và gửi cho thầy chấm.</li>
       <li>Em cần ngồi nơi yên tĩnh, cho phép trình duyệt dùng micro, và <b>không đóng trang</b> cho đến khi bài gửi xong. Nên dùng Chrome hoặc Safari, không mở trong Zalo hay Facebook.</li>
     </ul>
     <div class="formbox">
@@ -161,7 +161,7 @@ input,textarea{-webkit-user-select:text;user-select:text}
   <!-- 5. GỬI BÀI -->
   <section class="card hidden" id="s-done">
     <h2 id="sp-done-h">Đang gửi bài Speaking</h2>
-    <div class="send pending" id="sp-send">Đang gửi các bản ghi âm cho giáo viên…</div>
+    <div class="send pending" id="sp-send">Đang gửi các bản ghi âm cho thầy…</div>
     <ul class="reclist" id="sp-list"></ul>
     <div class="subbar"><span class="sub" id="sp-foot">Em đừng đóng trang cho đến khi tất cả bản ghi được gửi xong.</span>
       <button class="btn terra hidden" id="btn-spretry" type="button">Gửi lại các bản chưa gửi</button></div>
@@ -408,8 +408,8 @@ function renderUp(){
   $("sp-list").innerHTML=h;
   var box=$("sp-send"),all=ok===recs.length;
   if(uploading){box.className="send pending";box.textContent="Đang gửi "+ok+"/"+recs.length+" bản ghi…";}
-  else if(all){placementDone();box.className="send done";box.innerHTML="<b>Đã gửi đủ "+recs.length+" bản ghi cho giáo viên.</b> Em đã hoàn thành bài Speaking. Trung tâm sẽ liên hệ em để báo kết quả.";$("sp-done-h").textContent="Đã xong bài Speaking";if(pkRead().name){$("sp-foot").innerHTML='<a class="btn" style="text-decoration:none;display:inline-block" href="IELTS_Placement.html">← Về trang Placement để làm phần tiếp theo</a>';}else{$("sp-foot").textContent="Em có thể đóng trang.";}$("btn-spretry").classList.add("hidden");}
-  else{box.className="send fail";box.innerHTML="<b>Có "+(recs.length-ok)+" bản ghi chưa gửi được.</b> Giữ nguyên trang này và bấm <b>Gửi lại</b>. Nếu vẫn lỗi, tải các file về và gửi cho trung tâm qua Zalo.";$("btn-spretry").classList.remove("hidden");}
+  else if(all){placementDone();box.className="send done";box.innerHTML="<b>Đã gửi đủ "+recs.length+" bản ghi cho thầy.</b> Em đã hoàn thành bài Speaking. Thầy sẽ liên hệ em để báo kết quả.";$("sp-done-h").textContent="Đã xong bài Speaking";if(pkRead().name){$("sp-foot").innerHTML='<a class="btn" style="text-decoration:none;display:inline-block" href="IELTS_Placement.html">← Về trang Placement để làm phần tiếp theo</a>';}else{$("sp-foot").textContent="Em có thể đóng trang.";}$("btn-spretry").classList.add("hidden");}
+  else{box.className="send fail";box.innerHTML="<b>Có "+(recs.length-ok)+" bản ghi chưa gửi được.</b> Giữ nguyên trang này và bấm <b>Gửi lại</b>. Nếu vẫn lỗi, tải các file về và gửi cho thầy qua Zalo.";$("btn-spretry").classList.remove("hidden");}
 }
 function upload(){
   if(uploading)return;uploading=true;

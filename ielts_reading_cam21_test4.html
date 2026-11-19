@@ -602,7 +602,7 @@ function sendResult(payload){
   const backup = document.getElementById('backupBox');
   if(!ENDPOINT){
     box.className='sendbox fail';
-    box.innerHTML='<b>Chưa cấu hình nơi nhận kết quả.</b> Bấm "Sao chép kết quả" và gửi cho giáo viên.';
+    box.innerHTML='<b>Chưa cấu hình nơi nhận kết quả.</b> Bấm "Sao chép kết quả" và gửi cho thầy.';
     document.getElementById('backupText').value = JSON.stringify(payload,null,2);
     backup.style.display='block';
     return;

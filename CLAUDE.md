@@ -1,6 +1,6 @@
 # VTG tests repo
 
-Public GitHub Pages repo of interactive tests for VTG English Center (pre-A1 to B2 and IELTS). Owner: Giang. Reply in English.
+Public GitHub Pages repo of interactive tests for VTG English (pre-A1 to B2 and IELTS). Owner: Giang. Reply in English.
 
 ## Layout
 - Existing files at the repo root (e.g. `VTG_A1_Progress_Test_6.html`) are already shared with students. NEVER rename, move or delete them: the links would break.

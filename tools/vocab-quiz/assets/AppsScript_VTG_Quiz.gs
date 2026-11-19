@@ -1,5 +1,5 @@
 /**
- * VTG English Center — Bộ nhận kết quả Quiz từ vựng
+ * VTG English — Bộ nhận kết quả Quiz từ vựng
  * Dán toàn bộ file này vào Apps Script của Google Sheet, rồi Deploy làm Web App.
  * Hướng dẫn chi tiết xem file Huong_Dan_Cai_Dat.md
  */

@@ -202,7 +202,7 @@
   /* --- chặn in / lưu PDF --- */
   @media print{
     body>*{display:none !important;}
-    body::after{content:"Bài kiểm tra của VTG English Center không được phép in hoặc lưu PDF.";
+    body::after{content:"Bài kiểm tra của VTG English không được phép in hoặc lưu PDF.";
       display:block;font-family:sans-serif;font-size:18px;padding:40px;}
   }
 
@@ -248,7 +248,7 @@ Em hãy mở lại file bằng <b>Safari</b> hoặc <b>Chrome</b> và bật Java
 <div class="wrap">
 
   <header>
-    <div class="kicker">VTG English Center · Cambridge English Empower</div>
+    <div class="kicker">VTG English · Cambridge English Empower</div>
     <h1>A1 Final Test — Reading & Grammar</h1>
     <div class="sub" id="sub-line">Bài kiểm tra tiến độ — 55 câu — 60 phút</div>
   </header>
@@ -319,7 +319,7 @@ Em hãy mở lại file bằng <b>Safari</b> hoặc <b>Chrome</b> và bật Java
       <button class="btn ghost" id="btn-again">Làm lại từ đầu</button>
     </div>
 
-    <footer>VTG English Center · Cambridge English Empower A1 End of Course Test · © UCLES 2016</footer>
+    <footer>VTG English · Cambridge English Empower A1 End of Course Test · © UCLES 2016</footer>
   </div>
 
 </div>
@@ -523,7 +523,7 @@ function finish(auto){
       if((q.kind || p.kind) === "write"){
         const ta = $("w" + q.no); if(ta) ta.disabled = true;
         details.push({no:q.no, part:p.label, partName:p.name, question: plain(q.text || p.rubric),
-          chosen: writes[q.no] || "(không trả lời)", correct: "(giáo viên chấm)", ok: null});
+          chosen: writes[q.no] || "(không trả lời)", correct: "(thầy chấm)", ok: null});
         return;
       }
       const given = answers[q.no];

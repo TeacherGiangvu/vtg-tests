@@ -58,7 +58,7 @@ input.err{border-color:var(--bad);background:var(--bad-bg)}
 </head><body>
 <div class="wrap">
   <header style="margin-bottom:16px">
-    <div class="kicker">VTG English Center</div>
+    <div class="kicker">VTG English</div>
     <h1>Placement Test</h1>
     <div class="sub">Bài kiểm tra đầu vào 4 kỹ năng: Nghe, Đọc, Viết, Nói</div>
   </header>
@@ -79,7 +79,7 @@ input.err{border-color:var(--bad);background:var(--bad-bg)}
 
   <section id="s-hub" class="card hidden">
     <div class="who"><h2 id="hi"></h2><button class="btn link" id="btn-switch" type="button">Không phải em? Đổi người làm bài</button></div>
-    <div class="alldone hidden" id="alldone"><b>Em đã hoàn thành cả 4 phần.</b> Cảm ơn em! Trung tâm sẽ liên hệ qua số điện thoại em đã nhập để báo kết quả và tư vấn lớp phù hợp.</div>
+    <div class="alldone hidden" id="alldone"><b>Em đã hoàn thành cả 4 phần.</b> Cảm ơn em! Thầy sẽ liên hệ qua số điện thoại em đã nhập để báo kết quả và tư vấn lớp phù hợp.</div>
     <p class="prog" id="prog"></p>
     <div class="skills" id="skills"></div>
     <div class="note">Mỗi phần chỉ làm <b>một lần</b>. Nộp xong một phần, em bấm nút <b>Về trang Placement</b> để chọn phần tiếp theo. Phần nào đã nộp sẽ có dấu <b>Đã nộp</b>.</div>
@@ -131,7 +131,7 @@ $("btn-go").onclick=function(){
   render();window.scrollTo({top:0});
 };
 $("btn-switch").onclick=function(){
-  if(!confirm("Đổi sang người làm bài khác? Tên, số điện thoại và dấu Đã nộp trên máy này sẽ được xoá (bài đã nộp vẫn được lưu ở trung tâm)."))return;
+  if(!confirm("Đổi sang người làm bài khác? Tên, số điện thoại và dấu Đã nộp trên máy này sẽ được xoá (bài đã nộp thầy vẫn nhận được)."))return;
   try{localStorage.removeItem(K);}catch(e){}
   mem={};$("in-name").value="";$("in-phone").value="";render();
 };

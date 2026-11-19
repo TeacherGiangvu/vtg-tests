@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VTG English Center — Placement Test</title>
+<title>VTG English — Placement Test</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap');
 
@@ -461,7 +461,7 @@
 
 <div class="container">
   <div class="header">
-    <div class="brand">VTG English Center</div>
+    <div class="brand">VTG English</div>
     <h1>Placement Test</h1>
     <div class="sub">Cambridge English Empower — 40 câu · 30 phút</div>
   </div>
@@ -477,7 +477,7 @@
     <div class="intro-card">
       <h2>Chào mừng bạn đến bài kiểm tra xếp lớp!</h2>
       <p>Bài test gồm <strong>40 câu trắc nghiệm</strong>, thời gian <strong>30 phút</strong>.<br>
-      Kết quả sẽ được gửi về cho giáo viên sau khi bạn nộp bài.</p>
+      Kết quả sẽ được gửi về cho thầy sau khi bạn nộp bài.</p>
 
       <div class="form-group">
         <label for="sName">Họ và tên</label>
@@ -898,7 +898,7 @@ function finishTest() {
       document.getElementById('sendStatus').className = 'send-status fail';
     });
   } else {
-    document.getElementById('sendStatus').textContent = 'Chưa kết nối Google Sheets. Hãy sao chép kết quả gửi giáo viên.';
+    document.getElementById('sendStatus').textContent = 'Chưa kết nối Google Sheets. Hãy sao chép kết quả gửi thầy.';
     document.getElementById('sendStatus').className = 'send-status';
   }
 }

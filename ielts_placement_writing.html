@@ -135,7 +135,7 @@ table.satisfy td:first-child,table.satisfy th:first-child{text-align:left;}
   <div class="scorecard">
     <h2>Đã nộp bài</h2>
     <p style="color:var(--muted);font-size:13.5px;">Task 1: <b id="wc1">0</b> từ · Task 2: <b id="wc2">0</b> từ</p>
-    <p style="font-size:13px;color:var(--muted);">Bài viết không tự chấm điểm — giáo viên sẽ chấm trực tiếp trên bản gửi về.</p>
+    <p style="font-size:13px;color:var(--muted);">Bài viết không tự chấm điểm — thầy sẽ chấm trực tiếp trên bản gửi về.</p>
     <div class="sendbox" id="sendStatus"></div>
     <div class="backupbox" id="backupBox">
       <textarea id="backupText" readonly></textarea>
@@ -274,7 +274,7 @@ function sendResult(payload){
   const backup = document.getElementById('backupBox');
   if(!ENDPOINT){
     box.className='sendbox fail';
-    box.innerHTML='<b>Chưa cấu hình nơi nhận kết quả.</b> Bấm "Sao chép bài viết" và gửi cho giáo viên.';
+    box.innerHTML='<b>Chưa cấu hình nơi nhận kết quả.</b> Bấm "Sao chép bài viết" và gửi cho thầy.';
     document.getElementById('backupText').value = JSON.stringify(payload,null,2);
     backup.style.display='block';
     return;
@@ -283,7 +283,7 @@ function sendResult(payload){
   box.textContent='Đang gửi bài viết…';
   backup.style.display='none';
   fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)})
-    .then(()=>{ box.className='sendbox done'; box.textContent='Đã gửi bài viết cho giáo viên.'; })
+    .then(()=>{ box.className='sendbox done'; box.textContent='Đã gửi bài viết cho thầy.'; })
     .catch(()=>{
       box.className='sendbox fail';
       box.innerHTML='<b>Gửi không thành công</b> (có thể do mất mạng). Bấm "Thử gửi lại" hoặc "Sao chép bài viết".';
