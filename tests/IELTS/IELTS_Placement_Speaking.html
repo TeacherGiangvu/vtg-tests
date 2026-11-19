@@ -154,6 +154,8 @@ input,textarea{-webkit-user-select:text;user-select:text}
     <div class="sphead"><span class="clock" id="sp-clock" title="Tổng thời gian đã trôi qua">00:00</span><span id="sp-part" class="kicker" style="margin:0"></span><div class="dots" id="sp-dots"></div></div>
     <div class="qbox" id="sp-q"></div>
     <div class="phase prep" id="sp-phase"><div class="big2" id="sp-t">10</div><div><b id="sp-pl">Đọc câu hỏi và chuẩn bị</b><div class="sub" id="sp-ps"></div></div></div>
+    <div class="errbox hidden" id="sp-silent"><b>Không thu được tiếng của em ở câu này.</b> Có thể micro bị tắt, bị đổi sang thiết bị khác hoặc em nói quá nhỏ. Kiểm tra micro (thanh bên dưới phải nhảy khi em nói), rồi bấm nút để ghi lại câu này. Câu này chỉ được ghi lại một lần.
+      <div style="margin-top:10px"><button class="btn terra" id="btn-redo" type="button">Ghi lại câu này</button></div></div>
     <div class="meter" aria-hidden="true"><i id="meter2"></i></div>
     <div class="subbar" style="margin-top:8px"><span class="sub" id="sp-hint"></span><button class="btn" id="btn-next" type="button" disabled>Xong câu này</button></div>
   </section>
@@ -298,19 +300,46 @@ function micErr(e){
    ?"<b>Trình duyệt chưa cho dùng micro.</b> Bấm biểu tượng ổ khoá cạnh địa chỉ trang, chọn cho phép Micro rồi bấm lại. Nếu em mở bài trong Zalo hoặc Facebook, hãy mở bằng Chrome hoặc Safari."
    :"<b>Không bật được micro.</b> Kiểm tra micro, đóng các ứng dụng khác đang dùng micro rồi thử lại. ("+esc(n||"lỗi không rõ")+")";
 }
-function meterLoop(){
+/* Mức âm lượng: đo bằng setInterval (không phụ thuộc requestAnimationFrame), lưu đỉnh của câu đang ghi. */
+var curLevel=0,clipPeak=0,src=null,meterTimer=null,retried={};
+var SILENT=6;   // đỉnh dưới mức này (thang 0-128) = không thu được tiếng
+function measure(){
   if(!analyser)return;
   var d=new Uint8Array(analyser.fftSize);analyser.getByteTimeDomainData(d);
   var m=0;for(var i=0;i<d.length;i++){m=Math.max(m,Math.abs(d[i]-128));}
+  curLevel=m;if(phase==="rec")clipPeak=Math.max(clipPeak,m);
   var w=Math.min(100,Math.round(m/60*100));$("meter").style.width=w+"%";$("meter2").style.width=w+"%";
-  requestAnimationFrame(meterLoop);
+}
+function attach(st){   // nối luồng micro mới vào bộ đo
+  try{
+    if(!actx)actx=new (window.AudioContext||window.webkitAudioContext)();
+    if(actx.state==="suspended")actx.resume();
+    if(src){try{src.disconnect();}catch(e){}}
+    src=actx.createMediaStreamSource(st);
+    if(!analyser){analyser=actx.createAnalyser();analyser.fftSize=512;}
+    src.connect(analyser);
+    if(!meterTimer)meterTimer=setInterval(measure,60);
+  }catch(e){}
+}
+var AUDIO={audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}};
+function liveStream(){
+  var t=stream&&stream.getAudioTracks()[0];
+  return !!(t&&t.readyState==="live"&&!t.muted&&t.enabled);
+}
+/* Mỗi câu xin lại luồng micro mới (không hỏi lại quyền) để tránh micro "đứng" sau vài câu. */
+function freshStream(){
+  return navigator.mediaDevices.getUserMedia(AUDIO).then(function(st){
+    var old=stream;stream=st;attach(st);
+    if(old&&old!==st){old.getTracks().forEach(function(t){t.stop();});}
+    return st;
+  }).catch(function(e){ if(liveStream())return stream; throw e; });
 }
 $("btn-mic").onclick=function(){
   if(!navigator.mediaDevices||!window.MediaRecorder){micErr({name:"Unsupported"});return;}
-  navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true}}).then(function(st){
+  navigator.mediaDevices.getUserMedia(AUDIO).then(function(st){
     stream=st;$("mic-err").classList.add("hidden");
     $("mic-msg").textContent="Micro hoạt động nếu thanh bên dưới nhảy khi em nói.";$("btn-mic").textContent="Micro đã bật ✓";
-    try{actx=new (window.AudioContext||window.webkitAudioContext)();var src=actx.createMediaStreamSource(st);analyser=actx.createAnalyser();analyser.fftSize=512;src.connect(analyser);meterLoop();}catch(e){}
+    attach(st);
     mime="";["audio/webm;codecs=opus","audio/webm","audio/mp4","audio/ogg;codecs=opus"].forEach(function(m){if(!mime&&MediaRecorder.isTypeSupported(m))mime=m;});
     $("btn-ready").disabled=false;
   }).catch(micErr);
@@ -319,6 +348,7 @@ $("btn-mic").onclick=function(){
 /* ---------- 4. Làm bài ---------- */
 $("btn-ready").onclick=function(){
   if(!level||!stream||items.length)return;
+  if(actx&&actx.state==="suspended")actx.resume();
   items=buildItems(level);idx=-1;clockStart=Date.now();
   $("s-mic").classList.add("hidden");$("s-run").classList.remove("hidden");window.scrollTo({top:0});
   clearInterval(loop);loop=setInterval(tick,200);next();
@@ -344,7 +374,8 @@ function paint(){
     $("sp-pl").innerHTML='<span class="rdot"></span>Đang ghi âm. Hãy nói ngay';
     $("sp-ps").textContent="Cần nói "+it.target+". Tự dừng sau "+fmt(it.max)+".";
     var ok=e>=it.min;$("btn-next").disabled=!ok;
-    $("sp-hint").textContent=ok?"":"Nút Xong câu này mở sau "+Math.ceil(it.min-e)+" giây.";
+    var quiet=meterOK()&&e>=5&&clipPeak<SILENT;
+    $("sp-hint").innerHTML=quiet?'<b style="color:var(--bad)">Micro chưa nghe thấy tiếng em. Hãy nói to hơn hoặc kiểm tra micro.</b>':(ok?"":"Nút Xong câu này mở sau "+Math.ceil(it.min-e)+" giây.");
   }
 }
 function tick(){
@@ -355,29 +386,48 @@ function tick(){
   if(phase==="rec"&&e>=it.max){recStop();return;}
   paint();
 }
+function meterOK(){return !!(analyser&&actx&&actx.state==="running");}
 function recStart(){
-  phase="rec";phaseStart=Date.now();chunks=[];
-  try{
-    rec=new MediaRecorder(stream,mime?{mimeType:mime,audioBitsPerSecond:32000}:{audioBitsPerSecond:32000});
-    rec.ondataavailable=function(ev){if(ev.data&&ev.data.size)chunks.push(ev.data);};
-    rec.start(1000);
-  }catch(e){rec=null;}
+  phase="rec";phaseStart=Date.now();chunks=[];clipPeak=0;rec=null;
+  var myIdx=idx;
+  var begin=function(){
+    if(phase!=="rec"||idx!==myIdx)return;
+    try{
+      rec=new MediaRecorder(stream,mime?{mimeType:mime,audioBitsPerSecond:32000}:{audioBitsPerSecond:32000});
+      rec.ondataavailable=function(ev){if(ev.data&&ev.data.size)chunks.push(ev.data);};
+      rec.start(1000);
+    }catch(e){rec=null;}
+  };
+  freshStream().then(begin,function(){begin();});
   paint();
 }
 function recStop(){
   if(phase!=="rec")return;
   phase="saving";$("btn-next").disabled=true;
   var it=items[idx],secs=Math.round((Date.now()-phaseStart)/1000);
+  var peak=meterOK()?clipPeak:-1;
   var fin=function(){
     var blob=new Blob(chunks,{type:(rec&&rec.mimeType)||mime||"audio/webm"});
-    recs.push({id:it.id,part:it.part,question:it.cue?it.q+" | You should say: "+it.cue.pts.join("; "):it.q,seconds:secs,blob:blob});
+    var silent=peak>=0&&peak<SILENT;
+    if(silent&&!retried[it.id]){showSilent(it);return;}   // micro không thu được tiếng: cho ghi lại 1 lần
+    recs.push({id:it.id,part:it.part,question:it.cue?it.q+" | You should say: "+it.cue.pts.join("; "):it.q,seconds:secs,blob:blob,peak:peak});
     next();
   };
   if(rec&&rec.state!=="inactive"){rec.onstop=fin;try{rec.stop();}catch(e){fin();}}else fin();
 }
+function showSilent(it){
+  phase="silent";
+  $("sp-silent").classList.remove("hidden");$("sp-phase").classList.add("hidden");$("btn-next").classList.add("hidden");
+  $("sp-hint").textContent="";
+}
+$("btn-redo").onclick=function(){
+  var it=items[idx];retried[it.id]=true;
+  $("sp-silent").classList.add("hidden");$("sp-phase").classList.remove("hidden");$("btn-next").classList.remove("hidden");
+  freshStream().catch(function(){}).then(function(){phase="prep";phaseStart=Date.now()-(it.prep-3)*1000;paint();});   // đếm ngược 3 giây rồi ghi lại
+};
 $("btn-next").onclick=recStop;
 function finish(){
-  clearInterval(loop);
+  clearInterval(loop);clearInterval(meterTimer);
   $("s-run").classList.add("hidden");$("s-done").classList.remove("hidden");
   if(stream){stream.getTracks().forEach(function(t){t.stop();});}
   analyser=null;window.scrollTo({top:0});upload();
@@ -420,6 +470,7 @@ function upload(){
     blobB64(r.blob).then(function(b64){
       return postJSON({formType:"placement_speaking",attemptId:attempt,name:student.name,phone:student.phone,
         level:level,test:BANK[level].label,submittedAt:new Date().toISOString(),index:i+1,count:recs.length,
+        tech:"âm lượng "+(r.peak<0?"?":r.peak)+"/128 · "+(r.blob.size/1024).toFixed(0)+"KB · "+navigator.userAgent.slice(0,160),
         rec:{id:r.id,part:r.part,question:r.question,seconds:r.seconds,mime:r.blob.type,ext:extOf(r.blob.type),audio:b64}});
     }).then(function(s){upState[i]=s;renderUp();step();});
   };
