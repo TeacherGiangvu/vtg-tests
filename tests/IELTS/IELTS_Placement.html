@@ -65,7 +65,7 @@ input.err{border-color:var(--bad);background:var(--bad-bg)}
 
   <section id="s-login" class="card">
     <ul class="list">
-      <li>Bài kiểm tra gồm 4 phần. Em làm lần lượt từng phần, mỗi phần mở trong một tab mới. Tổng thời gian khoảng 3 tiếng, có thể nghỉ giữa các phần.</li>
+      <li>Bài kiểm tra gồm 4 phần. Em làm lần lượt từng phần. Tổng thời gian khoảng 3 tiếng, có thể nghỉ giữa các phần.</li>
       <li>Em chỉ cần nhập họ tên và số điện thoại <b>một lần</b> ở đây. Các phần thi sẽ tự điền sẵn.</li>
       <li>Nên làm trên máy tính, dùng Chrome hoặc Safari, có tai nghe và micro.</li>
     </ul>
@@ -82,7 +82,7 @@ input.err{border-color:var(--bad);background:var(--bad-bg)}
     <div class="alldone hidden" id="alldone"><b>Em đã hoàn thành cả 4 phần.</b> Cảm ơn em! Trung tâm sẽ liên hệ qua số điện thoại em đã nhập để báo kết quả và tư vấn lớp phù hợp.</div>
     <p class="prog" id="prog"></p>
     <div class="skills" id="skills"></div>
-    <div class="note">Mỗi phần chỉ làm <b>một lần</b>. Làm xong một phần, em quay lại tab này để chọn phần tiếp theo. Phần nào đã nộp sẽ có dấu <b>Đã nộp</b>.</div>
+    <div class="note">Mỗi phần chỉ làm <b>một lần</b>. Nộp xong một phần, em bấm nút <b>Về trang Placement</b> để chọn phần tiếp theo. Phần nào đã nộp sẽ có dấu <b>Đã nộp</b>.</div>
   </section>
 </div>
 
@@ -110,7 +110,7 @@ function render(){
   var done=s.done||{},n=0,h="";
   SKILLS.forEach(function(k,i){
     var ok=!!done[k.key];if(ok)n++;
-    h+='<a class="skill'+(ok?" done":"")+'" href="'+k.href+'" target="_blank" rel="noopener" data-k="'+k.key+'">'+
+    h+='<a class="skill'+(ok?" done":"")+'" href="'+k.href+'" data-k="'+k.key+'">'+
        '<span class="num">'+(ok?"✓":i+1)+'</span><span class="txt"><b>'+k.name+' · '+k.vi+'</b><span>'+k.info+'</span></span>'+
        '<span class="st">'+(ok?"Đã nộp":"Làm bài")+'</span></a>';
   });

@@ -481,12 +481,24 @@ buildNavigator();
 switchPart(1);
 </script>
 <script>
-/* VTG Placement: dien san ho ten / SDT tu trang chung, bao da nop bai */
+/* VTG Placement: mo tu trang chung thi an o nhap ten / SDT, bao da nop bai */
 (function(){var K="vtgPlacement";
 function rd(){try{return JSON.parse(localStorage.getItem(K)||"{}")||{};}catch(e){return {};}}
 var s=rd(),n=document.getElementById("stName"),p=document.getElementById("stPhone");
-if(s.name&&n&&!n.value)n.value=s.name;if(s.phone&&p&&!p.value)p.value=s.phone;
-window.vtgPlacementDone=function(skill){try{var o=rd();o.done=o.done||{};o.done[skill]=new Date().toISOString();localStorage.setItem(K,JSON.stringify(o));}catch(e){}};
+if(s.name&&s.phone&&n&&p){
+  n.value=s.name;p.value=s.phone;
+  var hide=[n,p];[n,p].forEach(function(x){var l=x.previousElementSibling;if(l&&l.tagName==="LABEL")hide.push(l);});
+  hide.forEach(function(x){x.style.display="none";});
+  var note=document.querySelector(".startcard .cover-note");
+  if(note)note.innerHTML=note.innerHTML.replace(/Nhập họ tên và số điện thoại trước khi bắt đầu\.\s*/,"");
+  var hi=document.createElement("div");
+  hi.style.cssText="background:#FAF8F3;border:1px solid #DBD1B9;border-radius:6px;padding:12px 14px;text-align:left;font-family:Inter,sans-serif;font-size:14px;color:#1B2A22";
+  hi.innerHTML="Thí sinh: <b></b><br><span style=\"color:#57624F\"></span><br><a href=\"#\" style=\"color:#C1633D;font-size:13px\">Không phải em? Sửa thông tin</a>";
+  hi.querySelector("b").textContent=s.name;hi.querySelector("span").textContent="SĐT: "+s.phone;
+  hi.querySelector("a").onclick=function(e){e.preventDefault();hide.forEach(function(x){x.style.display="";});hi.remove();};
+  n.parentNode.insertBefore(hi,hide[2]||n);
+}
+window.vtgPlacementDone=function(skill){try{var o=rd();o.done=o.done||{};o.done[skill]=new Date().toISOString();localStorage.setItem(K,JSON.stringify(o));}catch(e){}if(rd().name&&!document.getElementById("vtgBackHub")){var a=document.createElement("a");a.id="vtgBackHub";a.href="tests/IELTS/IELTS_Placement.html";a.textContent="← Về trang Placement để làm phần tiếp theo";a.style.cssText="position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:9999;background:#2C4A3E;color:#fff;padding:12px 18px;border-radius:8px;font:600 14px Inter,sans-serif;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25);max-width:92vw;text-align:center";document.body.appendChild(a);}};
 })();
 </script>
 </body>
