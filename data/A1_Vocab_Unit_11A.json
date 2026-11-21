@@ -186,5 +186,72 @@
       "coll": "in ___ (1905)",
       "collA": "nineteen oh five"
     }
+  ],
+  "translate_seconds": 25,
+  "translate": [
+    {
+      "vi": "Tôi sinh năm 1998.",
+      "en": [
+        "I was born in 1998.",
+        "I was born in nineteen ninety-eight."
+      ],
+      "word": "was born"
+    },
+    {
+      "vi": "Cô ấy lớn lên ở Hà Nội.",
+      "en": [
+        "She grew up in Hanoi.",
+        "She grew up in Ha Noi."
+      ],
+      "word": "grew up"
+    },
+    {
+      "vi": "Bố mẹ tôi kết hôn năm 1990.",
+      "en": [
+        "My parents got married in 1990.",
+        "My parents got married in nineteen ninety."
+      ],
+      "word": "got married"
+    },
+    {
+      "vi": "Họ sinh con vào tháng trước.",
+      "en": [
+        "They had a baby last month."
+      ],
+      "word": "had a baby"
+    },
+    {
+      "vi": "Tôi học xong phổ thông năm 2016.",
+      "en": [
+        "I finished school in 2016.",
+        "I finished school in twenty sixteen."
+      ],
+      "word": "finished school"
+    },
+    {
+      "vi": "Bà tôi qua đời năm 2015.",
+      "en": [
+        "My grandmother died in 2015.",
+        "My grandma died in 2015.",
+        "My grandmother died in twenty fifteen."
+      ],
+      "word": "died"
+    },
+    {
+      "vi": "Họ muốn kết hôn vào mùa hè tới.",
+      "en": [
+        "They want to get married next summer."
+      ],
+      "word": "get married"
+    },
+    {
+      "vi": "Ông tôi muốn nghỉ hưu năm 60 tuổi.",
+      "en": [
+        "My grandfather wants to stop working at 60.",
+        "My grandpa wants to stop working at 60.",
+        "My grandfather wants to stop working at sixty."
+      ],
+      "word": "stop working"
+    }
   ]
 }

@@ -30,11 +30,18 @@ Cấu trúc words.json:
   "grammar": [                                 # tùy chọn: có "words", "grammar" hoặc cả hai
     {"q": "Yesterday we ___ a bear.", "options": ["see", "saw", "seen"],
      "answer": 1, "note": "quy tắc ngắn, tùy chọn"}
-  ]
+  ],
+  "translate": [                               # tùy chọn: dạng "T" dịch câu Việt→Anh (học viên gõ)
+    {"vi": "Tôi sinh năm 1998.", "en": ["I was born in 1998."], "word": "be born"}
+  ],
+  "translate_seconds": 25                      # tùy chọn: số giây mỗi câu dạng T, mặc định 25
 }
 Dạng "G" (ngữ pháp) dùng danh sách "grammar": mỗi mục đúng 3 phương án, "answer" là chỉ số 0–2.
 "types" bỏ trống: chỉ words = bốc 4/5 dạng; chỉ grammar = ["G"]; có cả hai = bốc 3 dạng
 từ vựng rồi thêm phần G ở cuối.
+Dạng "T" dùng danh sách "translate": "en" là MỌI đáp án chấp nhận được (chấm không phân biệt
+hoa/thường, dấu câu, khoảng trắng, dấu nháy cong/thẳng). Có "translate" mà "types" bỏ trống
+thì phần T (per_type câu) được thêm vào CUỐI, sau các phần trên.
 """
 
 import argparse
@@ -57,6 +64,8 @@ TYPE_FIELDS = {
     "E": ["w", "coll", "collA"],
 }
 GRAMMAR_ID = "G"
+TRANSLATE_ID = "T"
+DEFAULT_T_SECONDS = 25
 N_OPTIONS = 3
 DEFAULT_PARTS = 4     # không có "types": bốc ngẫu nhiên 4 dạng
 DEFAULT_PER_TYPE = 5
@@ -72,8 +81,8 @@ def resolve_config(cfg):
     types = cfg.get("types")
     if types is not None:
         if (not isinstance(types, list) or not types
-                or any(t not in TYPE_FIELDS and t != GRAMMAR_ID for t in types)):
-            errors.append("'types' phải là danh sách không rỗng gồm các mã A, B, C, D, E, G "
+                or any(t not in TYPE_FIELDS and t not in (GRAMMAR_ID, TRANSLATE_ID) for t in types)):
+            errors.append("'types' phải là danh sách không rỗng gồm các mã A, B, C, D, E, G, T "
                           "(ví dụ [\"A\", \"C\", \"G\"])")
             types = None
         elif len(set(types)) != len(types):
@@ -85,7 +94,7 @@ def resolve_config(cfg):
     if isinstance(per_type, bool) or not isinstance(per_type, int) or per_type < 1:
         errors.append("'per_type' phải là số nguyên dương")
         per_type = DEFAULT_PER_TYPE
-    n_parts = len(types) if types else DEFAULT_PARTS
+    n_parts = len(types) if types else DEFAULT_PARTS + (1 if cfg.get("translate") else 0)
     return types, per_type, n_parts, n_parts * per_type, errors
 
 
@@ -96,8 +105,39 @@ def part_plan(cfg):
     if types is None:
         has_g = bool(cfg.get("grammar"))
         return list(TYPE_FIELDS), DEFAULT_PARTS - (1 if has_g else 0), has_g
-    wt = [t for t in types if t != GRAMMAR_ID]
+    wt = [t for t in types if t in TYPE_FIELDS]
     return wt, len(wt), GRAMMAR_ID in types
+
+
+def has_translate_part(cfg):
+    types = resolve_config(cfg)[0]
+    return TRANSLATE_ID in types if types else bool(cfg.get("translate"))
+
+
+def validate_translate(items):
+    if not isinstance(items, list):
+        return ["'translate' phải là một danh sách"]
+    errors, seen = [], {}
+    for i, t in enumerate(items, 1):
+        if not isinstance(t, dict):
+            errors.append(f"Dịch câu #{i}: phải là một đối tượng có vi, en")
+            continue
+        tag = f"Dịch câu #{i} ({str(t.get('vi', '???'))[:30]})"
+        vi = t.get("vi")
+        if not isinstance(vi, str) or not vi.strip():
+            errors.append(f"{tag}: thiếu câu tiếng Việt 'vi'")
+        else:
+            k = " ".join(vi.lower().split())
+            if k in seen:
+                errors.append(f"{tag}: trùng câu với dịch câu #{seen[k]}")
+            seen.setdefault(k, i)
+        en = t.get("en")
+        if not (isinstance(en, list) and en and all(isinstance(e, str) and e.strip() for e in en)):
+            errors.append(f"{tag}: 'en' phải là danh sách (không rỗng) các đáp án tiếng Anh")
+        for k in ("word", "note"):
+            if k in t and not isinstance(t[k], str):
+                errors.append(f"{tag}: '{k}' phải là chuỗi")
+    return errors
 
 
 def validate_grammar(items):
@@ -155,6 +195,19 @@ def validate(words, cfg=None):
         errors.append("'types' có G nhưng file không có danh sách 'grammar'")
     if types and n_word_parts and not words:
         errors.append("'types' có dạng từ vựng (A–E) nhưng file không có danh sách 'words'")
+
+    translate = cfg.get("translate") or []
+    if has_translate_part(cfg):
+        if not translate:
+            errors.append("'types' có T nhưng file không có danh sách 'translate'")
+        else:
+            errors += validate_translate(translate)
+            if len(translate) < per_type:
+                errors.append(f"Chỉ có {len(translate)} câu dịch. Cần TỐI THIỂU {per_type} "
+                              f"(per_type) cho phần T.")
+    ts = cfg.get("translate_seconds", DEFAULT_T_SECONDS)
+    if isinstance(ts, bool) or not isinstance(ts, int) or ts < 1:
+        errors.append("'translate_seconds' phải là số nguyên dương")
 
     if grammar:
         errors += validate_grammar(grammar)
@@ -236,10 +289,16 @@ def build(cfg, out_path):
     words_js = json.dumps(slim, ensure_ascii=False, indent=2)
     g_slim = [{k: g[k] for k in ("q", "options", "answer", "note") if k in g} for g in grammar]
     grammar_js = json.dumps(g_slim, ensure_ascii=False, indent=2)
+    translate = (cfg.get("translate") or []) if has_translate_part(cfg) else []
+    t_slim = [{k: t[k] for k in ("vi", "en", "word", "note") if k in t} for t in translate]
+    translate_js = json.dumps(t_slim, ensure_ascii=False, indent=2)
+    t_seconds = int(cfg.get("translate_seconds", DEFAULT_T_SECONDS))
 
     html = (html
             .replace("__WORDS__", words_js)
             .replace("__GRAMMAR__", grammar_js)
+            .replace("__TRANSLATE__", translate_js)
+            .replace("__T_SECONDS__", str(t_seconds))
             .replace("__ENDPOINT__", endpoint)
             .replace("__SECONDS__", str(seconds))
             .replace("__TYPE_IDS__", json.dumps(types))
@@ -252,7 +311,7 @@ def build(cfg, out_path):
     with open(out_path, "w", encoding="utf-8") as fh:
         fh.write(html)
 
-    return len(words) + len(grammar), seconds, endpoint, types, per_type, total
+    return len(words) + len(grammar) + len(translate), seconds, endpoint, types, per_type, total
 
 
 def main():
@@ -275,7 +334,7 @@ def main():
     with open(args.config, encoding="utf-8") as fh:
         cfg = json.load(fh)
 
-    if "title" not in cfg or ("words" not in cfg and "grammar" not in cfg):
+    if "title" not in cfg or not any(k in cfg for k in ("words", "grammar", "translate")):
         sys.exit("Lỗi: file JSON phải có 'title' và ít nhất một trong 'words' / 'grammar'.")
 
     if not args.skip_check or args.check:
@@ -296,7 +355,7 @@ def main():
 
     n, sec, ep, types, per_type, total = build(cfg, args.output)
     print(f"Đã dựng xong: {args.output}")
-    default_order = "ngẫu nhiên 3/5 + G" if cfg.get("grammar") else "ngẫu nhiên 4/5"
+    default_order = ("ngẫu nhiên 3/5 + G" if cfg.get("grammar") else "ngẫu nhiên 4/5")         + (" + T" if cfg.get("translate") else "")
     print(f"  dạng: {''.join(types) if types else default_order} · {per_type} câu/phần · {total} câu/lượt")
     print(f"  {n} mục · {sec} giây/câu · gửi kết quả: "
           f"{'CÓ (' + ep[-24:] + ')' if ep else 'KHÔNG (chế độ sao chép thủ công)'}")
