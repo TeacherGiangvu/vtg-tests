@@ -84,6 +84,13 @@
   .qprompt .def{display:block;background:var(--beige-soft);border-left:4px solid var(--terra);
     padding:12px 15px;border-radius:0 8px 8px 0;font-size:17px;font-style:italic;margin-top:4px;}
   .opts{display:flex;flex-direction:column;gap:10px;}
+  .tbox{display:flex;flex-direction:column;gap:10px;}
+  .tbox input{width:100%;font-family:var(--sans);font-size:18px;color:var(--ink);padding:13px 14px;
+    border:1.5px solid var(--line);border-radius:10px;background:#fff;box-sizing:border-box;}
+  .tbox input:focus{outline:none;border-color:var(--green);}
+  .tbox input.ok{border-color:var(--ok);background:var(--ok-bg);}
+  .tbox input.no{border-color:var(--bad);background:var(--bad-bg);}
+  .tbox .btn{align-self:flex-start;}
   .opt{display:flex;align-items:flex-start;gap:12px;border:1.5px solid var(--line);border-radius:10px;
     padding:13px 15px;cursor:pointer;background:#fff;font-size:15.5px;line-height:1.45;text-align:left;
     font-family:var(--sans);color:var(--ink);transition:.12s;}
@@ -157,7 +164,7 @@
   <header>
     <div class="kicker">VTG English · IELTS 6.0 · Unit 1 · Review</div>
     <h1>Vocabulary Quiz — Unit 1 Vocabulary Extension: Starting somewhere new</h1>
-    <div class="sub">Words from the Vocabulary Extension Unit 1 list (handed out in Lesson 1)</div>
+    <div class="sub">Words from the Vocabulary Extension Unit 1 list (handed out in Lesson 1) + 5 câu dịch Việt → Anh</div>
   </header>
 
   <!-- ============ START ============ -->
@@ -178,7 +185,7 @@
     <ul class="intro-list">
       <li id="intro-1"></li>
       <li id="intro-2"></li>
-      <li>Mỗi câu chỉ có <b>10 giây</b> để trả lời. Hết giờ sẽ tự hiện đáp án và <b>câu đó tính là sai</b> — hãy đọc nhanh và chọn dứt khoát.</li>
+      <li>Mỗi câu chỉ có <b>10 giây</b> để trả lời<span id="intro-t"></span>. Hết giờ sẽ tự hiện đáp án và <b>câu đó tính là sai</b> — hãy đọc nhanh và chọn dứt khoát.</li>
       <li>Trả lời xong mỗi câu sẽ thấy <b>đáp án đúng ngay</b>. Cuối bài có <b>bảng tổng kết</b> để xem lại.</li>
       <li>Kết quả sẽ được <b>gửi tự động cho thầy/cô</b> khi em làm xong.</li>
     </ul>
@@ -262,6 +269,7 @@
    ================================================================== */
 const ENDPOINT = "https://script.google.com/macros/s/AKfycby57HegnnckxSVtfJwqULkn4atHPG4G_YMSb5S9GyaSOCyxQLR6kpl1LqJTQi3woSF8/exec";
 const SECONDS_PER_Q = 10;
+const T_SECONDS = 35;   /* số giây mỗi câu dịch (dạng T) */
 const TYPE_IDS = null;   /* null = bốc ngẫu nhiên 4 trong 5 dạng */
 const PER_TYPE = 5;   /* số câu mỗi phần */
 
@@ -450,6 +458,69 @@ const WORDS = [
 ];
 /* Câu ngữ pháp (dạng G): {q, options:[3], answer:chỉ số, note?} */
 const GRAMMAR = [];
+/* Câu dịch Việt→Anh (dạng T): {vi, en:[mọi đáp án chấp nhận], word?, note?} */
+const TRANSLATE = [
+  {
+    "vi": "(adapt to a new culture) Cần thời gian để thích nghi với một nền văn hoá mới.",
+    "en": [
+      "It takes time to adapt to a new culture",
+      "It takes some time to adapt to a new culture",
+      "It takes a long time to adapt to a new culture",
+      "You need time to adapt to a new culture",
+      "We need time to adapt to a new culture"
+    ],
+    "word": "adapt to a new culture"
+  },
+  {
+    "vi": "(live on the outskirts) Gia đình tôi sống ở vùng ngoại ô thành phố.",
+    "en": [
+      "My family lives on the outskirts of the city",
+      "My family lives on the outskirts of the town",
+      "My family live on the outskirts of the city",
+      "My family live on the outskirts of the town"
+    ],
+    "word": "live on the outskirts"
+  },
+  {
+    "vi": "(multicultural society) Úc là một xã hội đa văn hoá.",
+    "en": [
+      "Australia is a multicultural society"
+    ],
+    "word": "multicultural society"
+  },
+  {
+    "vi": "(become a member) Tôi muốn trở thành thành viên của câu lạc bộ thanh niên.",
+    "en": [
+      "I want to become a member of the youth club",
+      "I want to become a member of a youth club",
+      "I want to become a member of our youth club",
+      "I want to become a member of this youth club",
+      "I'd like to become a member of the youth club",
+      "I'd like to become a member of a youth club",
+      "I'd like to become a member of our youth club",
+      "I'd like to become a member of this youth club",
+      "I would like to become a member of the youth club",
+      "I would like to become a member of a youth club",
+      "I would like to become a member of our youth club",
+      "I would like to become a member of this youth club"
+    ],
+    "word": "become a member"
+  },
+  {
+    "vi": "(integrate into the community) Anh ấy đã hoà nhập vào cộng đồng địa phương rất nhanh.",
+    "en": [
+      "He integrated into the local community very quickly",
+      "He integrated into the local community quickly",
+      "He integrated into the community very quickly",
+      "He integrated into the community quickly",
+      "He very quickly integrated into the local community",
+      "He very quickly integrated into the community",
+      "He quickly integrated into the local community",
+      "He quickly integrated into the community"
+    ],
+    "word": "integrate into the community"
+  }
+];
 
 const TYPES = [
   { id:"A", name:"Chọn nghĩa tiếng Việt", short:"Anh→Việt",
@@ -463,9 +534,16 @@ const TYPES = [
   { id:"E", name:"Hoàn thành cụm từ", short:"Cụm từ",
     build:w=>`Hoàn thành cụm từ sau:<br><span style="font-size:21px">${gapify(w.coll)}</span>`, key:"collA" },
   { id:"G", name:"Chọn đáp án ngữ pháp đúng", short:"Ngữ pháp", grammar:true,
-    build:g=>gapify(g.q) }
+    build:g=>gapify(g.q) },
+  { id:"T", name:"Dịch câu sang tiếng Anh", short:"Dịch câu", translate:true,
+    build:t=>`Dịch câu sau sang tiếng Anh: <span class="def">${t.vi}</span>` }
 ];
-const WORD_TYPES = TYPES.filter(t=>!t.grammar);
+const WORD_TYPES = TYPES.filter(t=>!t.grammar && !t.translate);
+/* Chấm câu dịch: bỏ hoa/thường, dấu câu, khoảng trắng thừa, dấu nháy cong */
+function norm(s){
+  return s.toLowerCase().replace(/[‘’`]/g,"'")
+    .replace(/[.,!?;:"“”]/g," ").replace(/\s+/g," ").trim();
+}
 
 function gapify(s){ return s.replace("___", '<span class="gap">&nbsp;</span>'); }
 function shuffle(a){
@@ -475,7 +553,7 @@ function shuffle(a){
 }
 const $ = id => document.getElementById(id);
 
-const NPARTS = TYPE_IDS ? TYPE_IDS.length : 4;
+const NPARTS = TYPE_IDS ? TYPE_IDS.length : 4 + (TRANSLATE.length ? 1 : 0);
 const TOTAL  = NPARTS * PER_TYPE;
 
 /* Điền phần giới thiệu và số câu theo cấu hình */
@@ -485,6 +563,10 @@ $("intro-2").innerHTML = TYPE_IDS
   : GRAMMAR.length
     ? `Ngân hàng có <b>5 dạng từ vựng</b> (Anh→Việt, Việt→Anh, Điền từ vào câu, Định nghĩa tiếng Anh, Hoàn thành cụm từ) và <b>phần Ngữ pháp</b>. Mỗi lượt bốc ngẫu nhiên <b>3 dạng từ vựng</b>, rồi đến phần Ngữ pháp.`
     : `Ngân hàng có <b>5 dạng</b>: Anh→Việt, Việt→Anh, Điền từ vào câu, Định nghĩa tiếng Anh, Hoàn thành cụm từ. Mỗi lượt bốc ngẫu nhiên <b>4 dạng</b>.`;
+if(!TYPE_IDS && TRANSLATE.length)
+  $("intro-2").innerHTML += ` Phần cuối là <b>Dịch câu</b>: em <b>gõ</b> câu tiếng Anh rồi bấm <b>Kiểm tra</b> (hoặc Enter).`;
+if(TRANSLATE.length && (!TYPE_IDS || TYPE_IDS.includes("T")))
+  $("intro-t").innerHTML = ` (riêng phần <b>Dịch câu</b>: <b>${T_SECONDS} giây</b> mỗi câu)`;
 $("counter").textContent = `Câu 1 / ${TOTAL}`;
 $("sec-part").textContent = `Phần 1 / ${NPARTS}`;
 $("score-total").textContent = `/${TOTAL}`;
@@ -496,15 +578,24 @@ let timerId=null, timeLeft=0;
 
 function buildQuiz(){
   const types = TYPE_IDS ? TYPE_IDS.map(id=>TYPES.find(t=>t.id===id))
-    : GRAMMAR.length ? [...shuffle(WORD_TYPES).slice(0,NPARTS-1), TYPES.find(t=>t.grammar)]
-                     : shuffle(WORD_TYPES).slice(0,NPARTS);
-  const nWordParts = types.filter(t=>!t.grammar).length;
+    : [...shuffle(WORD_TYPES).slice(0, GRAMMAR.length ? 3 : 4),
+       ...(GRAMMAR.length ? [TYPES.find(t=>t.grammar)] : []),
+       ...(TRANSLATE.length ? [TYPES.find(t=>t.translate)] : [])];
+  const nWordParts = types.filter(t=>!t.grammar && !t.translate).length;
   const pool  = shuffle(WORDS).slice(0,nWordParts*PER_TYPE);
   const gpool = shuffle(GRAMMAR).slice(0,PER_TYPE);
+  const tpool = shuffle(TRANSLATE).slice(0,PER_TYPE);
   const qs=[];
-  let wi=0, gi=0;
+  let wi=0, gi=0, tj=0;
   types.forEach((t,ti)=>{
     for(let i=0;i<PER_TYPE;i++){
+      if(t.translate){
+        const x = tpool[tj++];
+        qs.push({ part:ti+1, typeName:t.name, typeShort:t.short, word:x.word||x.en[0],
+          translate:true, accept:x.en.map(norm), note:x.note||"", sec:T_SECONDS,
+          prompt:t.build(x), correct:x.en[0], options:[] });
+        continue;
+      }
       if(t.grammar){
         const g = gpool[gi++];
         const correct = g.options[g.answer];
@@ -554,7 +645,7 @@ function stopTimer(){ if(timerId){ clearInterval(timerId); timerId=null; } }
 function paintTimer(){
   const wrap=$("timerwrap");
   $("clock").textContent=timeLeft;
-  $("tbar-fill").style.width=(timeLeft/SECONDS_PER_Q*100)+"%";
+  $("tbar-fill").style.width=(timeLeft/(quiz[idx].sec||SECONDS_PER_Q)*100)+"%";
   wrap.classList.remove("warn","danger","over");
   if(timeLeft<=5) wrap.classList.add("danger");
   else if(timeLeft<=10) wrap.classList.add("warn");
@@ -562,7 +653,7 @@ function paintTimer(){
 
 function startTimer(){
   stopTimer();
-  timeLeft=SECONDS_PER_Q;
+  timeLeft=quiz[idx].sec||SECONDS_PER_Q;
   paintTimer();
   timerId=setInterval(()=>{
     timeLeft--;
@@ -574,6 +665,7 @@ function startTimer(){
 /* Gợi ý sau mỗi câu: từ vựng cần nhớ, hoặc quy tắc (note) của câu ngữ pháp */
 function hint(q){
   if(q.grammar) return q.note ? ` — Quy tắc: <b>${q.note}</b>` : "";
+  if(q.translate) return (q.note ? ` — ${q.note}` : "") + ` — từ vựng cần nhớ: <b>${q.word}</b>`;
   return ` — từ vựng cần nhớ: <b>${q.word}</b>`;
 }
 
@@ -586,8 +678,13 @@ function timeUp(){
   wrap.classList.add("over");
   $("clock").textContent="0";
   const q=quiz[idx];
+  if(q.translate){
+    const typed=$("t-in").value.trim();
+    if(typed){ locked=false; checkT(true); return; }   /* đã gõ: chấm phần đã gõ */
+    $("t-in").disabled=true; $("t-btn").classList.add("hidden");
+  }
   answers.push({q,chosen:"(hết giờ)",ok:false,timeout:true});
-  [...$("opts").children].forEach(el=>{
+  if(!q.translate) [...$("opts").children].forEach(el=>{
     el.classList.add("locked");
     const txt=el.querySelector("span:last-child").textContent;
     if(txt===q.correct) el.classList.add("correct");
@@ -607,6 +704,14 @@ function renderQ(){
   $("sec-name").textContent=q.typeName;
   $("prompt").innerHTML=q.prompt;
   const box=$("opts"); box.innerHTML="";
+  if(q.translate){
+    box.innerHTML=`<div class="tbox"><input type="text" id="t-in" autocomplete="off" autocapitalize="off"
+      autocorrect="off" spellcheck="false" placeholder="Gõ câu tiếng Anh ở đây…">
+      <button class="btn" id="t-btn">Kiểm tra</button></div>`;
+    $("t-btn").onclick=()=>checkT(false);
+    $("t-in").addEventListener("keydown",e=>{ if(e.key==="Enter") checkT(false); });
+    setTimeout(()=>$("t-in").focus(),50);
+  }
   const letters=["A","B","C","D"];
   q.options.forEach((opt,i)=>{
     const b=document.createElement("button");
@@ -636,6 +741,20 @@ function choose(btn,chosen){
   if(ok){ fb.className="feedback show good"; fb.innerHTML=`<b>Chính xác!</b> ${q.correct}${q.grammar?hint(q):""}`; }
   else { fb.className="feedback show bad";
     fb.innerHTML=`<b>Chưa đúng.</b> Đáp án đúng là: <b>${q.correct}</b>${hint(q)}`; }
+  $("btn-next").classList.remove("hidden");
+}
+
+function checkT(fromTimeout){
+  const inp=$("t-in"), typed=inp.value.trim();
+  if(locked || (!typed && !fromTimeout)) { if(!typed) inp.focus(); return; }
+  locked=true; stopTimer();
+  const q=quiz[idx], ok=q.accept.includes(norm(typed));
+  answers.push({q,chosen:typed,ok});
+  inp.disabled=true; inp.classList.add(ok?"ok":"no"); $("t-btn").classList.add("hidden");
+  const fb=$("feedback");
+  if(ok){ fb.className="feedback show good"; fb.innerHTML=`<b>Chính xác!</b> ${q.correct}`; }
+  else { fb.className="feedback show bad";
+    fb.innerHTML=`${fromTimeout?"<b>⏱ Hết giờ!</b> Chấm phần em đã gõ. ":""}<b>Chưa đúng.</b> Đáp án đúng là: <b>${q.correct}</b>${hint(q)}`; }
   $("btn-next").classList.remove("hidden");
 }
 
