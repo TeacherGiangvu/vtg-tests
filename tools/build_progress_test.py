@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "template" / "progress_test_template.html"
 VOCAB_BUILD = ROOT / "tools" / "vocab-quiz" / "scripts" / "build_quiz.py"
 LETTERS = "ABCDEFG"
-PART_KEYS = {"id", "label", "name", "nav", "rubric", "audio", "kind", "layout", "passage", "qs"}
+PART_KEYS = {"id", "label", "name", "nav", "rubric", "audio", "kind", "layout", "passage", "inline", "qs"}
 Q_KEYS = {"no", "text", "opts", "correct", "pattern", "accept"}
 
 
@@ -62,8 +62,16 @@ def validate(cfg):
             errors.append(f"{tag}: has audio:true but the test has no 'audio' file")
         if p.get("passage") and not (p["passage"].get("title") and p["passage"].get("html")):
             errors.append(f"{tag}: passage needs 'title' and 'html'")
+        if p.get("inline") and kind != "input":
+            errors.append(f"{tag}: 'inline' only works with kind 'input'")
         for q in p.get("qs") or []:
             qt = f"{tag} Q{q.get('no', '?')}"
+            if p.get("inline") and kind == "input":
+                if p.get("passage"):
+                    if f'<span class="bl">({q.get("no")})' not in p["passage"].get("html", ""):
+                        errors.append(f"{qt}: inline passage has no <span class=\"bl\">({q.get('no')}) ...</span> gap")
+                elif "<span class='gap'></span>" not in (q.get("text") or ""):
+                    errors.append(f"{qt}: inline question text needs one <span class='gap'></span>")
             if q.get("no") != expected_no:
                 errors.append(f"{qt}: expected question number {expected_no}")
             expected_no += 1
@@ -121,7 +129,9 @@ def intro_extra(parts):
         if p.get("audio"):
             lines.append(f"<li><b>{label} là phần nghe.</b> File nghe được gắn sẵn ngay đầu {label}. "
                          f"Mỗi câu em <b>được nghe 2 lần</b>, hãy đeo tai nghe trước khi bắt đầu.</li>")
-        if p["kind"] == "input":
+        if p["kind"] == "input" and p.get("inline"):
+            lines.append(f"<li><b>{label} em gõ từ trực tiếp vào chỗ trống</b> ngay trong đề, không phải kéo xuống ô khác.</li>")
+        elif p["kind"] == "input":
             lines.append(f"<li><b>{label} em phải tự gõ từ</b> vào ô trống — đề đã cho sẵn chữ cái đầu "
                          f"và số ô chữ tương ứng.</li>")
     return "\n".join("      " + li for li in lines)

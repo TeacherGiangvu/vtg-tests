@@ -29,7 +29,7 @@ One JSON file per test, named like the output: `A2_Progress_Test_03.json` builds
 ```
 
 - Required: `level`, `title`, `parts`. Optional (with defaults): `heading` (title without "VTG ·"), `kicker` ("VTG English"), `quiz_name` (heading; the name shown in the Google Sheet), `footer`, `minutes` (30), `audio`, `endpoint` (default Sheet endpoint; `""` turns sending off).
-- Part: `id`, `label`, `name`, `rubric`, `kind` (`mcq` or `input`); optional `nav` (short top-bar label), `audio: true`, `layout` (`col` or `row`), `passage` (`{title, html}`).
+- Part: `id`, `label`, `name`, `rubric`, `kind` (`mcq` or `input`); optional `nav` (short top-bar label), `audio: true`, `layout` (`col` or `row`), `passage` (`{title, html}`), `inline: true` (input parts only: the answer box sits at the gap, `<span class="bl">(N) ...</span>` inside the passage, or `<span class='gap'></span>` inside each question text).
 - MCQ question: `no`, `opts` (2–7, letters A–G), `correct` (letter), optional `text` (use `<span class='gap'></span>` for the blank). Input question: `no`, `text`, `pattern`, `correct`, optional `accept` (other spellings also marked correct, e.g. `["sports center"]`; the correction table still shows `correct`).
 - Question numbers must run 1, 2, 3... across all parts. The builder checks this, the answer letters, duplicate options and the audio file, and builds nothing if there is a problem.
 - `audio` is a path from the repo root. Put mp3s in `audio/` (git-ignored; the sound is embedded in the HTML).

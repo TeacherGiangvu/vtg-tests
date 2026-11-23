@@ -130,6 +130,15 @@
   .ansline input.no{border-color:var(--bad);background:var(--bad-bg);}
   .keyans{font-size:13.5px;color:var(--ok);font-weight:600;}
 
+.inl{white-space:nowrap;}
+  .inl .inn{color:var(--terra);font-size:13px;font-weight:700;margin-right:3px;}
+  .gapinp{font-family:var(--sans);font-size:16px;width:150px;max-width:62vw;padding:2px 6px;margin:0 3px;color:var(--ink);
+    text-align:center;background:#fff;border:none;border-bottom:2px solid var(--terra);border-radius:5px 5px 0 0;}
+  .gapinp:focus{outline:none;background:var(--beige-soft);border-bottom-color:var(--green);}
+  .gapinp.filled{border-bottom-color:var(--green);}
+  .gapinp.ok{border-bottom-color:var(--ok);background:var(--ok-bg);}
+  .gapinp.no{border-bottom-color:var(--bad);background:var(--bad-bg);}
+  .inl .keyans{display:inline-block;margin-left:6px;}
   .passage{background:var(--beige-soft);border-radius:11px;padding:19px 21px;margin-bottom:6px;
     font-size:15.5px;line-height:1.9;border:1px solid var(--line);}
   .passage h4{margin:0 0 10px;font-family:var(--serif);font-size:18px;color:var(--green);}
@@ -268,10 +277,10 @@ Em hãy mở lại file bằng <b>Safari</b> hoặc <b>Chrome</b> và bật Java
     <ul class="intro-list">
       <li>Bài thi gồm <b>5 phần, tổng 40 câu</b>. Mỗi câu đúng được <b>1 điểm</b>.</li>
       <li>Thời gian làm bài là <b>60 phút cho cả bài</b> — không giới hạn thời gian từng câu. Em có thể làm câu nào trước cũng được và <b>quay lại sửa</b> thoải mái.</li>
-      <li><b>Part 1 em phải tự gõ từ</b> vào ô trống — đề đã cho sẵn chữ cái đầu và số ô chữ tương ứng.</li>
-      <li><b>Part 2 em phải tự gõ từ</b> vào ô trống — đề đã cho sẵn chữ cái đầu và số ô chữ tương ứng.</li>
-      <li><b>Part 3 em phải tự gõ từ</b> vào ô trống — đề đã cho sẵn chữ cái đầu và số ô chữ tương ứng.</li>
-      <li><b>Part 5 em phải tự gõ từ</b> vào ô trống — đề đã cho sẵn chữ cái đầu và số ô chữ tương ứng.</li>
+      <li><b>Part 1 em gõ từ trực tiếp vào chỗ trống</b> ngay trong đề, không phải kéo xuống ô khác.</li>
+      <li><b>Part 2 em gõ từ trực tiếp vào chỗ trống</b> ngay trong đề, không phải kéo xuống ô khác.</li>
+      <li><b>Part 3 em gõ từ trực tiếp vào chỗ trống</b> ngay trong đề, không phải kéo xuống ô khác.</li>
+      <li><b>Part 5 em gõ từ trực tiếp vào chỗ trống</b> ngay trong đề, không phải kéo xuống ô khác.</li>
       <li>Trong lúc làm bài <b>sẽ không hiện đáp án</b>. Toàn bộ đáp án và bảng chữa chi tiết chỉ xuất hiện <b>sau khi nộp bài</b>.</li>
       <li>Hết 60 phút hệ thống sẽ <b>tự động nộp bài</b>. Kết quả được <b>gửi tự động cho thầy/cô</b>.</li>
     </ul>
@@ -410,7 +419,8 @@ const PARTS = [
         "pattern": "chọn 1 từ / cụm từ trong khung",
         "correct": "percent"
       }
-    ]
+    ],
+    "inline": true
   },
   {
     "id": "part2",
@@ -484,7 +494,8 @@ const PARTS = [
         "pattern": "(fit)",
         "correct": "fitness"
       }
-    ]
+    ],
+    "inline": true
   },
   {
     "id": "part3",
@@ -497,43 +508,43 @@ const PARTS = [
     "qs": [
       {
         "no": 21,
-        "text": "If you study in the country where the language is spoken, you will learn to speak it <span class='gap'><\/span> than if you stay at home.",
+        "text": "If you study in the country where the language is spoken, you will learn to speak it <span class='gap'><\/span> (well) than if you stay at home.",
         "pattern": "(well)",
         "correct": "better"
       },
       {
         "no": 22,
-        "text": "My diet has improved because I eat <span class='gap'><\/span> than I did in the past.",
+        "text": "My diet has improved because I eat <span class='gap'><\/span> (little) than I did in the past.",
         "pattern": "(little)",
         "correct": "less"
       },
       {
         "no": 23,
-        "text": "In my experience, rich people are not always <span class='gap'><\/span> than poor people.",
+        "text": "In my experience, rich people are not always <span class='gap'><\/span> (happy) than poor people.",
         "pattern": "(happy)",
         "correct": "happier"
       },
       {
         "no": 24,
-        "text": "Taking exercise outdoors is <span class='gap'><\/span> than going to a gym.",
+        "text": "Taking exercise outdoors is <span class='gap'><\/span> (enjoyable) than going to a gym.",
         "pattern": "(enjoyable)",
         "correct": "more enjoyable"
       },
       {
         "no": 25,
-        "text": "They gave the prize to Saleem because he was the student in the class who had worked the <span class='gap'><\/span>.",
+        "text": "They gave the prize to Saleem because he was the student in the class who had worked the <span class='gap'><\/span> (hard).",
         "pattern": "(hard)",
         "correct": "hardest"
       },
       {
         "no": 26,
-        "text": "People won't understand you unless you speak <span class='gap'><\/span> than you do now.",
+        "text": "People won't understand you unless you speak <span class='gap'><\/span> (clearly) than you do now.",
         "pattern": "(clearly)",
         "correct": "more clearly"
       },
       {
         "no": 27,
-        "text": "The distance from London to Bangkok is <span class='gap'><\/span> than the distance to Moscow.",
+        "text": "The distance from London to Bangkok is <span class='gap'><\/span> (far) than the distance to Moscow.",
         "pattern": "(far)",
         "correct": "further",
         "accept": [
@@ -542,23 +553,24 @@ const PARTS = [
       },
       {
         "no": 28,
-        "text": "Pollution in my country is growing <span class='gap'><\/span>, because nowadays there is more traffic and more industry.",
+        "text": "Pollution in my country is growing <span class='gap'><\/span> (bad), because nowadays there is more traffic and more industry.",
         "pattern": "(bad)",
         "correct": "worse"
       },
       {
         "no": 29,
-        "text": "In Australia, January is often the <span class='gap'><\/span> month of the year.",
+        "text": "In Australia, January is often the <span class='gap'><\/span> (hot) month of the year.",
         "pattern": "(hot)",
         "correct": "hottest"
       },
       {
         "no": 30,
-        "text": "Brisbane had the second <span class='gap'><\/span> rainfall in its history this year.",
+        "text": "Brisbane had the second <span class='gap'><\/span> (high) rainfall in its history this year.",
         "pattern": "(high)",
         "correct": "highest"
       }
-    ]
+    ],
+    "inline": true
   },
   {
     "id": "part4",
@@ -663,7 +675,8 @@ const PARTS = [
         "pattern": "giới từ",
         "correct": "On"
       }
-    ]
+    ],
+    "inline": true
   }
 ];
 
@@ -700,14 +713,19 @@ function buildPaper(){
         <audio id="nativeAudio" controls preload="metadata" src="${AUDIO_SRC}" style="width:100%"></audio>
       </div>`;
     }
+    const inl = p.kind === "input" && p.inline;      // ô gõ nằm ngay tại chỗ trống
     if(p.passage){
-      card.innerHTML += `<div class="passage"><h4>${p.passage.title}</h4>${p.passage.html}</div>`;
+      let ph = p.passage.html;
+      if(inl) ph = ph.replace(/<span class="bl">\((\d+)\)[^<]*<\/span>/g, (m, n) => inlineInput(n));
+      card.innerHTML += `<div class="passage"><h4>${p.passage.title}</h4>${ph}</div>`;
     }
 
     p.qs.forEach(q => {
+      if(inl && p.passage) return;                  // câu nằm trong đoạn văn, không cần thẻ riêng
       const d = document.createElement("div");
       d.className = "q"; d.id = "q" + q.no;
-      const body = q.text ? q.text : (p.audio ? "<i style='color:#5A5A55'>Nghe câu nói và chọn câu trả lời phù hợp nhất.</i>" : "");
+      let body = q.text ? q.text : (p.audio ? "<i style='color:#5A5A55'>Nghe câu nói và chọn câu trả lời phù hợp nhất.</i>" : "");
+      if(inl) body = body.replace(/<span class='gap'><\/span>/g, inlineInput(q.no, true));
       d.innerHTML = `<div class="qhead"><div class="qno">${q.no}</div><div class="qtext">${body}</div></div>`;
 
       if(p.kind === "mcq"){
@@ -722,7 +740,7 @@ function buildPaper(){
           wrap.appendChild(b);
         });
         d.appendChild(wrap);
-      } else {
+      } else if(!inl){
         const line = document.createElement("div");
         line.className = "ansline";
         line.innerHTML = `<div class="pattern">${q.pattern}</div>`;
@@ -741,7 +759,23 @@ function buildPaper(){
       card.appendChild(d);
     });
     box.appendChild(card);
+    if(inl) p.qs.forEach(q => bindInline(q.no));
   });
+}
+
+function inlineInput(no, bare){
+  return `<span class="inl">${bare ? "" : `<b class="inn">(${no})</b>`}<input type="text" id="inp${no}" class="gapinp" `
+    + `autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Câu ${no}"></span>`;
+}
+function bindInline(no){
+  const inp = $("inp" + no);
+  inp.oninput = () => {
+    answers[no] = inp.value.trim();
+    if(!answers[no]) delete answers[no];
+    inp.classList.toggle("filled", !!answers[no]);
+    const d = $("q" + no); if(d) d.classList.toggle("done", !!answers[no]);
+    updateProgress();
+  };
 }
 
 function pick(no, letter, wrap, btn){

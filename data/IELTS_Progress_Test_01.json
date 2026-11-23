@@ -79,7 +79,8 @@
           "pattern": "chọn 1 từ / cụm từ trong khung",
           "correct": "percent"
         }
-      ]
+      ],
+      "inline": true
     },
     {
       "id": "part2",
@@ -153,7 +154,8 @@
           "pattern": "(fit)",
           "correct": "fitness"
         }
-      ]
+      ],
+      "inline": true
     },
     {
       "id": "part3",
@@ -166,43 +168,43 @@
       "qs": [
         {
           "no": 21,
-          "text": "If you study in the country where the language is spoken, you will learn to speak it <span class='gap'></span> than if you stay at home.",
+          "text": "If you study in the country where the language is spoken, you will learn to speak it <span class='gap'></span> (well) than if you stay at home.",
           "pattern": "(well)",
           "correct": "better"
         },
         {
           "no": 22,
-          "text": "My diet has improved because I eat <span class='gap'></span> than I did in the past.",
+          "text": "My diet has improved because I eat <span class='gap'></span> (little) than I did in the past.",
           "pattern": "(little)",
           "correct": "less"
         },
         {
           "no": 23,
-          "text": "In my experience, rich people are not always <span class='gap'></span> than poor people.",
+          "text": "In my experience, rich people are not always <span class='gap'></span> (happy) than poor people.",
           "pattern": "(happy)",
           "correct": "happier"
         },
         {
           "no": 24,
-          "text": "Taking exercise outdoors is <span class='gap'></span> than going to a gym.",
+          "text": "Taking exercise outdoors is <span class='gap'></span> (enjoyable) than going to a gym.",
           "pattern": "(enjoyable)",
           "correct": "more enjoyable"
         },
         {
           "no": 25,
-          "text": "They gave the prize to Saleem because he was the student in the class who had worked the <span class='gap'></span>.",
+          "text": "They gave the prize to Saleem because he was the student in the class who had worked the <span class='gap'></span> (hard).",
           "pattern": "(hard)",
           "correct": "hardest"
         },
         {
           "no": 26,
-          "text": "People won't understand you unless you speak <span class='gap'></span> than you do now.",
+          "text": "People won't understand you unless you speak <span class='gap'></span> (clearly) than you do now.",
           "pattern": "(clearly)",
           "correct": "more clearly"
         },
         {
           "no": 27,
-          "text": "The distance from London to Bangkok is <span class='gap'></span> than the distance to Moscow.",
+          "text": "The distance from London to Bangkok is <span class='gap'></span> (far) than the distance to Moscow.",
           "pattern": "(far)",
           "correct": "further",
           "accept": [
@@ -211,23 +213,24 @@
         },
         {
           "no": 28,
-          "text": "Pollution in my country is growing <span class='gap'></span>, because nowadays there is more traffic and more industry.",
+          "text": "Pollution in my country is growing <span class='gap'></span> (bad), because nowadays there is more traffic and more industry.",
           "pattern": "(bad)",
           "correct": "worse"
         },
         {
           "no": 29,
-          "text": "In Australia, January is often the <span class='gap'></span> month of the year.",
+          "text": "In Australia, January is often the <span class='gap'></span> (hot) month of the year.",
           "pattern": "(hot)",
           "correct": "hottest"
         },
         {
           "no": 30,
-          "text": "Brisbane had the second <span class='gap'></span> rainfall in its history this year.",
+          "text": "Brisbane had the second <span class='gap'></span> (high) rainfall in its history this year.",
           "pattern": "(high)",
           "correct": "highest"
         }
-      ]
+      ],
+      "inline": true
     },
     {
       "id": "part4",
@@ -332,7 +335,8 @@
           "pattern": "giới từ",
           "correct": "On"
         }
-      ]
+      ],
+      "inline": true
     }
   ]
 }
