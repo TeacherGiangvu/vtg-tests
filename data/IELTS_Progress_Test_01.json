@@ -1,0 +1,338 @@
+{
+  "level": "IELTS",
+  "title": "VTG · IELTS 6.0 Progress Test Units 1–2",
+  "heading": "IELTS 6.0 Progress Test Units 1–2",
+  "kicker": "VTG English · Complete IELTS Bands 5–6.5",
+  "quiz_name": "IELTS 6.0 Progress Test Units 1-2 (Complete IELTS)",
+  "footer": "VTG English · Complete IELTS Bands 5–6.5 · Progress Test Units 1–2 · © Cambridge University Press 2012",
+  "minutes": 60,
+  "parts": [
+    {
+      "id": "part1",
+      "label": "Part 1",
+      "name": "Complete the paragraph",
+      "nav": "Part 1",
+      "rubric": "Questions 1 – 10 · Complete the paragraph by writing one word/phrase from the box in each gap. There are three extra words/phrases you do not need to use.",
+      "kind": "input",
+      "passage": {
+        "title": "Culture shock",
+        "html": "<div style='border:1px solid #c9bfae;border-radius:8px;padding:9px 12px;margin-bottom:12px;font-weight:600'>affects &nbsp;·&nbsp; although &nbsp;·&nbsp; as a result &nbsp;·&nbsp; effects &nbsp;·&nbsp; especially &nbsp;·&nbsp; in fact &nbsp;·&nbsp; on the other hand &nbsp;·&nbsp; percent &nbsp;·&nbsp; percentage &nbsp;·&nbsp; problem &nbsp;·&nbsp; so &nbsp;·&nbsp; therefore &nbsp;·&nbsp; trouble</div><p>We may think that different parts of the world are becoming more and more similar, but culture shock is still a very common <span class=\"bl\">(1) ……</span> for people who travel to another country. It <span class=\"bl\">(2) ……</span> most travellers by making them anxious, homesick or uncomfortable in the new culture. <span class=\"bl\">(3) ……</span> most people eventually grow accustomed to the new country, the <span class=\"bl\">(4) ……</span> of culture shock can last for years.</p><p>It is likely that a lower <span class=\"bl\">(5) ……</span> of tourists suffer from culture shock than people going to work or study in a new country. Tourists tend to spend time with other tourists and stay in international hotels. <span class=\"bl\">(6) ……</span>, they do not live with the local population or have to cope with the culture.</p><p>Culture shock is <span class=\"bl\">(7) ……</span> strong for people going to work abroad. On the one hand, they have to deal with a difficult new working environment and <span class=\"bl\">(8) ……</span> they do not get the support which students or other overseas visitors receive. <span class=\"bl\">(9) ……</span>, nearly 30 <span class=\"bl\">(10) ……</span> of overseas workers and their families find culture shock so hard to cope with that they return home early.</p>"
+      },
+      "qs": [
+        {
+          "no": 1,
+          "text": "Gap (1)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "problem"
+        },
+        {
+          "no": 2,
+          "text": "Gap (2)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "affects"
+        },
+        {
+          "no": 3,
+          "text": "Gap (3)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "Although"
+        },
+        {
+          "no": 4,
+          "text": "Gap (4)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "effects"
+        },
+        {
+          "no": 5,
+          "text": "Gap (5)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "percentage"
+        },
+        {
+          "no": 6,
+          "text": "Gap (6)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "As a result"
+        },
+        {
+          "no": 7,
+          "text": "Gap (7)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "especially"
+        },
+        {
+          "no": 8,
+          "text": "Gap (8)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "on the other hand"
+        },
+        {
+          "no": 9,
+          "text": "Gap (9)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "In fact"
+        },
+        {
+          "no": 10,
+          "text": "Gap (10)",
+          "pattern": "chọn 1 từ / cụm từ trong khung",
+          "correct": "percent"
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "label": "Part 2",
+      "name": "Word formation",
+      "nav": "Part 2",
+      "rubric": "Questions 11 – 20 · Complete the text by writing the words in brackets in the correct form.",
+      "kind": "input",
+      "passage": {
+        "title": "City life and health",
+        "html": "<p>Many aspects of city life, such as pollution, may be harmful (harm) to our health and general well-being and most people find living and working in big cities <span class=\"bl\">(11) ……</span> (stress). They are <span class=\"bl\">(12) ……</span> (general) in such a hurry that they do not eat well. Also, their exercise routine tends to be <span class=\"bl\">(13) ……</span> (regular) and there may be many days or weeks when they take no exercise at all.</p><p>However, studies show that it is extremely important to be <span class=\"bl\">(14) ……</span> (care) about what you eat. A <span class=\"bl\">(15) ……</span> (health) diet should include plenty of fresh fruit and vegetables. On the other hand, you can put on weight <span class=\"bl\">(16) ……</span> (ease) if you eat well but do not take exercise, so it is important to take a <span class=\"bl\">(17) ……</span> (reason) amount of exercise every day to stay fit. Unfortunately, our routines often make it <span class=\"bl\">(18) ……</span> (convenient) or difficult to find time for regular exercise. When people start to take exercise, their feeling of well-being often increases <span class=\"bl\">(19) ……</span> (dramatic) and they also benefit from an increased level of <span class=\"bl\">(20) ……</span> (fit).</p>"
+      },
+      "qs": [
+        {
+          "no": 11,
+          "text": "Gap (11) — từ gốc: <b>stress</b>",
+          "pattern": "(stress)",
+          "correct": "stressful"
+        },
+        {
+          "no": 12,
+          "text": "Gap (12) — từ gốc: <b>general</b>",
+          "pattern": "(general)",
+          "correct": "generally"
+        },
+        {
+          "no": 13,
+          "text": "Gap (13) — từ gốc: <b>regular</b>",
+          "pattern": "(regular)",
+          "correct": "irregular"
+        },
+        {
+          "no": 14,
+          "text": "Gap (14) — từ gốc: <b>care</b>",
+          "pattern": "(care)",
+          "correct": "careful"
+        },
+        {
+          "no": 15,
+          "text": "Gap (15) — từ gốc: <b>health</b>",
+          "pattern": "(health)",
+          "correct": "healthy"
+        },
+        {
+          "no": 16,
+          "text": "Gap (16) — từ gốc: <b>ease</b>",
+          "pattern": "(ease)",
+          "correct": "easily"
+        },
+        {
+          "no": 17,
+          "text": "Gap (17) — từ gốc: <b>reason</b>",
+          "pattern": "(reason)",
+          "correct": "reasonable"
+        },
+        {
+          "no": 18,
+          "text": "Gap (18) — từ gốc: <b>convenient</b>",
+          "pattern": "(convenient)",
+          "correct": "inconvenient"
+        },
+        {
+          "no": 19,
+          "text": "Gap (19) — từ gốc: <b>dramatic</b>",
+          "pattern": "(dramatic)",
+          "correct": "dramatically"
+        },
+        {
+          "no": 20,
+          "text": "Gap (20) — từ gốc: <b>fit</b>",
+          "pattern": "(fit)",
+          "correct": "fitness"
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "label": "Part 3",
+      "name": "Adjectives and adverbs",
+      "nav": "Part 3",
+      "rubric": "Questions 21 – 30 · Complete the sentences with the correct form of the adjective or adverb in brackets.",
+      "kind": "input",
+      "layout": "col",
+      "qs": [
+        {
+          "no": 21,
+          "text": "If you study in the country where the language is spoken, you will learn to speak it <span class='gap'></span> than if you stay at home.",
+          "pattern": "(well)",
+          "correct": "better"
+        },
+        {
+          "no": 22,
+          "text": "My diet has improved because I eat <span class='gap'></span> than I did in the past.",
+          "pattern": "(little)",
+          "correct": "less"
+        },
+        {
+          "no": 23,
+          "text": "In my experience, rich people are not always <span class='gap'></span> than poor people.",
+          "pattern": "(happy)",
+          "correct": "happier"
+        },
+        {
+          "no": 24,
+          "text": "Taking exercise outdoors is <span class='gap'></span> than going to a gym.",
+          "pattern": "(enjoyable)",
+          "correct": "more enjoyable"
+        },
+        {
+          "no": 25,
+          "text": "They gave the prize to Saleem because he was the student in the class who had worked the <span class='gap'></span>.",
+          "pattern": "(hard)",
+          "correct": "hardest"
+        },
+        {
+          "no": 26,
+          "text": "People won't understand you unless you speak <span class='gap'></span> than you do now.",
+          "pattern": "(clearly)",
+          "correct": "more clearly"
+        },
+        {
+          "no": 27,
+          "text": "The distance from London to Bangkok is <span class='gap'></span> than the distance to Moscow.",
+          "pattern": "(far)",
+          "correct": "further",
+          "accept": [
+            "farther"
+          ]
+        },
+        {
+          "no": 28,
+          "text": "Pollution in my country is growing <span class='gap'></span>, because nowadays there is more traffic and more industry.",
+          "pattern": "(bad)",
+          "correct": "worse"
+        },
+        {
+          "no": 29,
+          "text": "In Australia, January is often the <span class='gap'></span> month of the year.",
+          "pattern": "(hot)",
+          "correct": "hottest"
+        },
+        {
+          "no": 30,
+          "text": "Brisbane had the second <span class='gap'></span> rainfall in its history this year.",
+          "pattern": "(high)",
+          "correct": "highest"
+        }
+      ]
+    },
+    {
+      "id": "part4",
+      "label": "Part 4",
+      "name": "Quantity words",
+      "nav": "Part 4",
+      "rubric": "Questions 31 – 35 · Choose the best alternative (A, B or C) for each of these sentences.",
+      "kind": "mcq",
+      "layout": "col",
+      "qs": [
+        {
+          "no": 31,
+          "text": "This leaflet does not give very <span class='gap'></span> information about the city.",
+          "opts": [
+            "many",
+            "much",
+            "little"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 32,
+          "text": "In my view, there is a <span class='gap'></span> of ways in which the situation could be improved.",
+          "opts": [
+            "great deal of",
+            "large amount",
+            "large number"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 33,
+          "text": "Most foreigners have difficulty understanding our culture because <span class='gap'></span> of them manage to learn the language.",
+          "opts": [
+            "few",
+            "little",
+            "a few"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 34,
+          "text": "There are <span class='gap'></span> opportunities to study abroad when you are a student.",
+          "opts": [
+            "a great deal of",
+            "plenty of",
+            "a large amount of"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 35,
+          "text": "The schools have poor exam results because the government spends <span class='gap'></span> money on schools.",
+          "opts": [
+            "any",
+            "few",
+            "little"
+          ],
+          "correct": "C"
+        }
+      ]
+    },
+    {
+      "id": "part5",
+      "label": "Part 5",
+      "name": "Prepositions",
+      "nav": "Part 5",
+      "rubric": "Questions 36 – 40 · Complete these sentences by writing a preposition (by, for, with, to, etc.) in each gap.",
+      "kind": "input",
+      "layout": "col",
+      "qs": [
+        {
+          "no": 36,
+          "text": "Living abroad can give rise <span class='gap'></span> feelings of homesickness.",
+          "pattern": "giới từ",
+          "correct": "to"
+        },
+        {
+          "no": 37,
+          "text": "From my point <span class='gap'></span> view, people can learn a lot from going to live somewhere new.",
+          "pattern": "giới từ",
+          "correct": "of"
+        },
+        {
+          "no": 38,
+          "text": "After spending several months in the city, I became accustomed <span class='gap'></span> the way of life.",
+          "pattern": "giới từ",
+          "correct": "to"
+        },
+        {
+          "no": 39,
+          "text": "Attitudes <span class='gap'></span> organic food are changing.",
+          "pattern": "giới từ",
+          "correct": "to",
+          "accept": [
+            "towards"
+          ]
+        },
+        {
+          "no": 40,
+          "text": "Preparing food can take up a lot of time. <span class='gap'></span> the other hand, it can be enjoyable.",
+          "pattern": "giới từ",
+          "correct": "On"
+        }
+      ]
+    }
+  ]
+}
