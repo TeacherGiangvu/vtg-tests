@@ -1,0 +1,415 @@
+{
+  "level": "A2",
+  "title": "VTG · A2 Progress Test 7",
+  "heading": "A2 Progress Test 7",
+  "kicker": "VTG English · Cambridge English Empower",
+  "quiz_name": "A2 Progress Test 7 (Empower)",
+  "footer": "VTG English · Cambridge English Empower A2 Progress Test 7 · © UCLES 2022",
+  "minutes": 40,
+  "audio": "audio/A2_Progress_Test_07.mp3",
+  "parts": [
+    {
+      "id": "part1",
+      "label": "Part 1",
+      "name": "Listening — Choose the best reply",
+      "nav": "Nghe",
+      "rubric": "Questions 1 – 8. You will hear eight short sentences. For each one, choose the best reply. You will hear each sentence twice.",
+      "audio": true,
+      "kind": "mcq",
+      "qs": [
+        {
+          "no": 1,
+          "opts": [
+            "Great! I love it!",
+            "That’s all right.",
+            "Excuse me, but this is mine."
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 2,
+          "opts": [
+            "Really? Why?",
+            "Great! I’m going too.",
+            "I’m sorry, I don’t know."
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 3,
+          "opts": [
+            "Great!",
+            "I’d like some help.",
+            "Is it? I’m really sorry."
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 4,
+          "opts": [
+            "Don’t worry.",
+            "You’re welcome.",
+            "Excuse me, please."
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 5,
+          "opts": [
+            "No problem. They all look the same.",
+            "That’s a pity. I don’t have one.",
+            "Excuse me. It’s raining."
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 6,
+          "opts": [
+            "Certainly. What’s the seat number?",
+            "It doesn’t matter. There are lots of other seats.",
+            "Excuse me. It’s my seat."
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 7,
+          "opts": [
+            "Great!",
+            "Sure, no problem.",
+            "No, wait."
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 8,
+          "opts": [
+            "It doesn’t matter. This is seat 42.",
+            "That’s all right. I’m sitting here.",
+            "I’m sorry. I didn’t see the seat number."
+          ],
+          "correct": "C"
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "label": "Part 2",
+      "name": "Transport words",
+      "rubric": "Questions 9 – 16. Choose the missing word (A, B or C) for each space.",
+      "kind": "mcq",
+      "qs": [
+        {
+          "no": 9,
+          "text": "The seats in the bus are small and hard, so they’re not very <span class='gap'></span>.",
+          "opts": [
+            "dangerous",
+            "comfortable",
+            "empty"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 10,
+          "text": "Motorbikes can be very <span class='gap'></span> if you don’t ride them carefully.",
+          "opts": [
+            "dangerous",
+            "expensive",
+            "comfortable"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 11,
+          "text": "I don’t like helicopters because they aren’t very <span class='gap'></span>.",
+          "opts": [
+            "sure",
+            "safe",
+            "serious"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 12,
+          "text": "I don’t travel by plane very often because it’s <span class='gap'></span>.",
+          "opts": [
+            "fast",
+            "clean",
+            "expensive"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 13,
+          "text": "If you want to go to Cambridge, you need to <span class='gap'></span> trains in London.",
+          "opts": [
+            "miss",
+            "change",
+            "bring"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 14,
+          "text": "We can <span class='gap'></span> a tram to the beach from here.",
+          "opts": [
+            "take",
+            "travel",
+            "carry"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 15,
+          "text": "The bus to the station was late, so Jack <span class='gap'></span> his train.",
+          "opts": [
+            "lost",
+            "failed",
+            "missed"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 16,
+          "text": "The bus was very hot and crowded, so I got <span class='gap'></span> and walked home.",
+          "opts": [
+            "on",
+            "off",
+            "away"
+          ],
+          "correct": "B"
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "label": "Part 3",
+      "name": "Words about transport",
+      "rubric": "Questions 17 – 24. The first letter is already there. There is one space for each other letter in the word. Write the words.",
+      "kind": "input",
+      "qs": [
+        {
+          "no": 17,
+          "text": "This goes very fast on the water.",
+          "pattern": "s _ _ _ _ _ _ _ _",
+          "correct": "speedboat"
+        },
+        {
+          "no": 18,
+          "text": "You need to wash your car when it is this.",
+          "pattern": "d _ _ _ _",
+          "correct": "dirty"
+        },
+        {
+          "no": 19,
+          "text": "A train is this if there are no people on it.",
+          "pattern": "e _ _ _ _",
+          "correct": "empty"
+        },
+        {
+          "no": 20,
+          "text": "You do this at the start of your train journey.",
+          "pattern": "g _ _   o _",
+          "correct": "get on"
+        },
+        {
+          "no": 21,
+          "text": "A bus ticket is this when it doesn’t cost much money.",
+          "pattern": "c _ _ _ _",
+          "correct": "cheap"
+        },
+        {
+          "no": 22,
+          "text": "This is a very big boat.",
+          "pattern": "s _ _ _",
+          "correct": "ship"
+        },
+        {
+          "no": 23,
+          "text": "The metro is this when there are a lot of people there.",
+          "pattern": "c _ _ _ _ _ _",
+          "correct": "crowded"
+        },
+        {
+          "no": 24,
+          "text": "This has two wheels and it isn’t a bike.",
+          "pattern": "s _ _ _ _ _ _",
+          "correct": "scooter"
+        }
+      ]
+    },
+    {
+      "id": "part4",
+      "label": "Part 4",
+      "name": "A holiday in Lisbon",
+      "rubric": "Questions 25 – 32. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "passage": {
+        "title": "A holiday in Lisbon",
+        "html": "<p>Last spring I had a holiday in Lisbon, in Portugal. I love walking around city streets, and I like <span class=\"bl\">(25) ……</span> photos too. Lisbon is perfect for that. I <span class=\"bl\">(26) ……</span> stay there very long – only 4 days – but it’s quite a small city, and it’s easy to get around. I usually hate <span class=\"bl\">(27) ……</span> by metro, but I didn’t mind <span class=\"bl\">(28) ……</span> the metro in Lisbon, because it’s clean and never too crowded. I didn’t <span class=\"bl\">(29) ……</span> everything in the city, but I had a great time.</p><p>I don’t like <span class=\"bl\">(30) ……</span> in big hotels, because I think they’re boring. So I stayed with a friendly Portuguese family. I ate my breakfast there, but I didn’t <span class=\"bl\">(31) ……</span> my other meals with them because there are so many great restaurants in Lisbon. When my friends ask me ‘Why <span class=\"bl\">(32) ……</span> to Lisbon?’, the answer is easy: ‘It’s my favourite city!’</p>"
+      },
+      "qs": [
+        {
+          "no": 25,
+          "opts": [
+            "taking",
+            "takes",
+            "take"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 26,
+          "opts": [
+            "did",
+            "don’t",
+            "didn’t"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 27,
+          "opts": [
+            "travel",
+            "travels",
+            "travelling"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 28,
+          "opts": [
+            "using",
+            "use",
+            "used"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 29,
+          "opts": [
+            "sees",
+            "see",
+            "seeing"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 30,
+          "opts": [
+            "stay",
+            "staying",
+            "stayed"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 31,
+          "opts": [
+            "have",
+            "had",
+            "having"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 32,
+          "opts": [
+            "did you go",
+            "you went",
+            "you did go"
+          ],
+          "correct": "A"
+        }
+      ]
+    },
+    {
+      "id": "part5",
+      "label": "Part 5",
+      "name": "Travel sentences",
+      "rubric": "Questions 33 – 40. Choose the best answer (A, B or C) for each space.",
+      "kind": "mcq",
+      "qs": [
+        {
+          "no": 33,
+          "text": "My parents love <span class='gap'></span> in the countryside.",
+          "opts": [
+            "cycle",
+            "cycling",
+            "cycled"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 34,
+          "text": "I <span class='gap'></span> travel a lot when I was a student.",
+          "opts": [
+            "didn’t",
+            "don’t",
+            "doesn’t"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 35,
+          "text": "I hate <span class='gap'></span> in the rain.",
+          "opts": [
+            "walk",
+            "walked",
+            "walking"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 36,
+          "text": "Where <span class='gap'></span> get off the bus?",
+          "opts": [
+            "you did",
+            "did you",
+            "didn’t you"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 37,
+          "text": "‘Did you come by train?’ ‘Yes, I <span class='gap'></span>.’",
+          "opts": [
+            "didn’t",
+            "did",
+            "do"
+          ],
+          "correct": "B"
+        },
+        {
+          "no": 38,
+          "text": "I don’t like <span class='gap'></span> by metro when it’s busy.",
+          "opts": [
+            "travelling",
+            "travel",
+            "travelled"
+          ],
+          "correct": "A"
+        },
+        {
+          "no": 39,
+          "text": "Did your friend <span class='gap'></span> to the USA on holiday?",
+          "opts": [
+            "went",
+            "goes",
+            "go"
+          ],
+          "correct": "C"
+        },
+        {
+          "no": 40,
+          "text": "Maria doesn’t like <span class='gap'></span> because it’s so expensive.",
+          "opts": [
+            "flies",
+            "fly",
+            "flying"
+          ],
+          "correct": "C"
+        }
+      ]
+    }
+  ]
+}
