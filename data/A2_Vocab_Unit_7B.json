@@ -1,0 +1,253 @@
+{
+ "level": "A2",
+ "topic": "Unit_7B",
+ "title": "Vocabulary Quiz — Unit 7B: Transport opinions",
+ "kicker": "Empower A2 · Unit 7B · Review",
+ "subtitle": "Transport adjectives (opposites), metro and bus words, and opinions from the lesson",
+ "seconds": 10,
+ "words": [
+  {
+   "w": "fast",
+   "vi": "nhanh",
+   "def": "moving or happening quickly",
+   "sent": "The new metro is very ___. It takes only ten minutes to the city centre.",
+   "sentA": "fast",
+   "coll": "a ___ train",
+   "collA": "fast"
+  },
+  {
+   "w": "slow",
+   "vi": "chậm",
+   "def": "not fast",
+   "sent": "The bus was so ___ that I was late for school.",
+   "sentA": "slow",
+   "coll": "a ___ journey",
+   "collA": "slow"
+  },
+  {
+   "w": "safe",
+   "vi": "an toàn",
+   "def": "not dangerous; you will not get hurt",
+   "sent": "I like cycling on this road because it is quiet and ___.",
+   "sentA": "safe",
+   "coll": "a ___ way to travel",
+   "collA": "safe"
+  },
+  {
+   "w": "dangerous",
+   "vi": "nguy hiểm",
+   "def": "something that can hurt you",
+   "sent": "Don't ride a scooter without a helmet. It's ___.",
+   "sentA": "dangerous",
+   "coll": "a ___ road",
+   "collA": "dangerous"
+  },
+  {
+   "w": "empty",
+   "vi": "vắng, trống",
+   "def": "with nobody or nothing inside",
+   "sent": "I always get a seat because the train is ___ at six in the morning.",
+   "sentA": "empty",
+   "coll": "an ___ bus",
+   "collA": "empty"
+  },
+  {
+   "w": "crowded",
+   "vi": "đông đúc, chật người",
+   "def": "with too many people",
+   "sent": "I don't like the metro at 8 a.m. It's so ___.",
+   "sentA": "crowded",
+   "coll": "a ___ train",
+   "collA": "crowded"
+  },
+  {
+   "w": "full",
+   "vi": "đầy, chật, hết chỗ",
+   "def": "with no more space inside",
+   "sent": "Sorry, we can't get on this bus. It's ___.",
+   "sentA": "full",
+   "coll": "a ___ bus",
+   "collA": "full"
+  },
+  {
+   "w": "comfortable",
+   "vi": "thoải mái, dễ chịu",
+   "def": "pleasant to sit in; making your body feel good",
+   "sent": "Alex's car is big and ___. He can sit in it for hours.",
+   "sentA": "comfortable",
+   "coll": "a ___ seat",
+   "collA": "comfortable"
+  },
+  {
+   "w": "uncomfortable",
+   "vi": "khó chịu, không thoải mái",
+   "def": "not pleasant to sit in",
+   "sent": "The seats on this old bus are hard and ___.",
+   "sentA": "uncomfortable",
+   "coll": "an ___ seat",
+   "collA": "uncomfortable"
+  },
+  {
+   "w": "cheap",
+   "vi": "rẻ",
+   "def": "not costing a lot of money",
+   "sent": "A bus ticket is only 7,000 dong. It's very ___.",
+   "sentA": "cheap",
+   "coll": "a ___ ticket",
+   "collA": "cheap"
+  },
+  {
+   "w": "expensive",
+   "vi": "đắt",
+   "def": "costing a lot of money",
+   "sent": "A taxi from the airport is ___, so I take the bus.",
+   "sentA": "expensive",
+   "coll": "an ___ taxi",
+   "collA": "expensive"
+  },
+  {
+   "w": "clean",
+   "vi": "sạch",
+   "def": "not dirty",
+   "sent": "The trains in Tokyo are always very ___.",
+   "sentA": "clean",
+   "coll": "a ___ station",
+   "collA": "clean"
+  },
+  {
+   "w": "dirty",
+   "vi": "bẩn",
+   "def": "not clean",
+   "sent": "I don't like this bus. The windows are ___.",
+   "sentA": "dirty",
+   "coll": "a ___ train",
+   "collA": "dirty"
+  },
+  {
+   "w": "traffic",
+   "vi": "giao thông, xe cộ (trên đường)",
+   "def": "all the cars and buses on a road",
+   "sent": "I was late because of the ___. There were cars everywhere.",
+   "sentA": "traffic",
+   "coll": "sit in ___",
+   "collA": "traffic"
+  },
+  {
+   "w": "metro",
+   "vi": "tàu điện ngầm / metro",
+   "def": "a train system under the ground in a big city",
+   "sent": "Svetlana goes to work on the ___ because it's quick.",
+   "sentA": "metro",
+   "coll": "take the ___",
+   "collA": "metro"
+  },
+  {
+   "w": "station",
+   "vi": "nhà ga, trạm",
+   "def": "a place where trains or buses stop for passengers",
+   "sent": "The Moscow metro ___ looks like a palace.",
+   "sentA": "station",
+   "coll": "a train / bus ___",
+   "collA": "station"
+  },
+  {
+   "w": "express bus",
+   "vi": "xe buýt nhanh (ít điểm dừng)",
+   "def": "a bus that goes fast and stops only at a few places",
+   "sent": "In Cape Town, the ___ has its own road.",
+   "sentA": "express bus",
+   "coll": "take an ___",
+   "collA": "express bus"
+  },
+  {
+   "w": "journey",
+   "vi": "chuyến đi",
+   "def": "the time you spend going from one place to another",
+   "sent": "The ___ from my house to the office takes about an hour.",
+   "sentA": "journey",
+   "coll": "a long ___",
+   "collA": "journey"
+  },
+  {
+   "w": "beautiful",
+   "vi": "đẹp",
+   "def": "very nice to look at",
+   "sent": "I love the Moscow stations. I think they're ___.",
+   "sentA": "beautiful",
+   "coll": "a ___ station",
+   "collA": "beautiful"
+  },
+  {
+   "w": "terrible",
+   "vi": "tệ, kinh khủng",
+   "def": "very bad",
+   "sent": "Alex doesn't like the metro stations. He thinks they're ___.",
+   "sentA": "terrible",
+   "coll": "a ___ journey",
+   "collA": "terrible"
+  }
+ ],
+ "translate": [
+  {
+   "vi": "Tôi thích đi tàu điện ngầm vì nó nhanh.",
+   "en": [
+    "I love going on the metro because it's fast.",
+    "I love going on the metro because it is fast.",
+    "I like going on the metro because it's fast.",
+    "I like going on the metro because it is fast."
+   ],
+   "word": "love / fast"
+  },
+  {
+   "vi": "Tôi ghét ngồi trong xe buýt đông người.",
+   "en": [
+    "I hate sitting on a crowded bus.",
+    "I hate sitting in a crowded bus.",
+    "I hate sitting on crowded buses.",
+    "I hate sitting on the crowded bus."
+   ],
+   "word": "hate / crowded"
+  },
+  {
+   "vi": "Vé xe buýt rất rẻ.",
+   "en": [
+    "The bus ticket is very cheap.",
+    "Bus tickets are very cheap.",
+    "A bus ticket is very cheap.",
+    "The bus tickets are very cheap."
+   ],
+   "word": "cheap"
+  },
+  {
+   "vi": "Tôi không ngại lái xe trong giờ cao điểm.",
+   "en": [
+    "I don't mind driving in the traffic.",
+    "I don't mind driving in traffic.",
+    "I do not mind driving in the traffic.",
+    "I do not mind driving in traffic."
+   ],
+   "word": "don't mind / traffic"
+  },
+  {
+   "vi": "Những chiếc ghế trên xe buýt này không thoải mái.",
+   "en": [
+    "The seats on this bus are uncomfortable.",
+    "The seats on this bus aren't comfortable.",
+    "The seats on this bus are not comfortable.",
+    "These seats on the bus are uncomfortable."
+   ],
+   "word": "uncomfortable"
+  },
+  {
+   "vi": "Đi xe máy ở đây rất nguy hiểm.",
+   "en": [
+    "Riding a scooter here is very dangerous.",
+    "Riding a scooter here is dangerous.",
+    "It's very dangerous to ride a scooter here.",
+    "It is very dangerous to ride a scooter here."
+   ],
+   "word": "dangerous"
+  }
+ ],
+ "translate_seconds": 35
+}
